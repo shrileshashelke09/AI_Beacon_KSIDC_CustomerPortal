@@ -3,12 +3,6 @@ package com.Page_Repositary;
 import org.openqa.selenium.By;
 
 public class Basic_Information {
-	
-	
-	
-	
-	
-
     public By LoginButton = By.xpath("(//button[@class='button secondary btn-medium'])[2]");
 	
 	public By EnterEmailAddress = By.xpath("(//input[@placeholder='Email Address'])[1]");
