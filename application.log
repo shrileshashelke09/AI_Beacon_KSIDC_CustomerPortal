@@ -1,0 +1,9 @@
+[INFO ] 2024-11-27 20:00:22.548 [main] Log - *** Running test method Business_Information_Module...
+[INFO ] 2024-11-27 20:00:32.628 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2024-11-27 20:01:09.244 [main] Log - Title is displayed : KSIDC
+[INFO ] 2024-11-27 20:01:09.288 [main] Log - Button visible !
+[INFO ] 2024-11-27 20:01:22.752 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
+[INFO ] 2024-11-27 20:01:25.241 [main] Log - KSIDC.15@gmail.com
+[INFO ] 2024-11-27 20:01:27.797 [main] Log - KSIDCcp@123#
+[INFO ] 2024-11-27 20:01:38.530 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
+[INFO ] 2024-11-27 20:01:38.533 [main] Log - Login successfully :true
