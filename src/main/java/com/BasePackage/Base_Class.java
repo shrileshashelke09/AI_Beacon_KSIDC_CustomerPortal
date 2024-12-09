@@ -187,8 +187,7 @@ public static  String  GetMobileNumberOTP(String MobNo) throws ClassNotFoundExce
 		//callableStatement.setLong(1, 9999999991L);
 		
 		//System.out.println("Stored procedure called with parameter: 9999999991");
-		
-		 // Execute stored procedure
+		Thread.sleep(5000);		 // Execute stored procedure
         ResultSet resultSet = callableStatement.executeQuery();
         while (resultSet.next()) {
             OTP = resultSet.getString("OTP");

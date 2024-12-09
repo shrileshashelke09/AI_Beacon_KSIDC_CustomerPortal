@@ -1,9 +1,37 @@
-[INFO ] 2024-11-27 20:00:22.548 [main] Log - *** Running test method Business_Information_Module...
-[INFO ] 2024-11-27 20:00:32.628 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2024-11-27 20:01:09.244 [main] Log - Title is displayed : KSIDC
-[INFO ] 2024-11-27 20:01:09.288 [main] Log - Button visible !
-[INFO ] 2024-11-27 20:01:22.752 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
-[INFO ] 2024-11-27 20:01:25.241 [main] Log - KSIDC.15@gmail.com
-[INFO ] 2024-11-27 20:01:27.797 [main] Log - KSIDCcp@123#
-[INFO ] 2024-11-27 20:01:38.530 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
-[INFO ] 2024-11-27 20:01:38.533 [main] Log - Login successfully :true
+[INFO ] 2024-12-09 12:34:56.513 [main] Log - *** Running test method Register_Page_Module...
+[INFO ] 2024-12-09 12:35:03.991 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2024-12-09 12:35:23.418 [main] Log - Title is displayed : KSIDC
+[INFO ] 2024-12-09 12:35:23.431 [main] Log - Button visible !
+[INFO ] 2024-12-09 12:35:29.662 [main] Log - Validated Registration button visibility : true
+[INFO ] 2024-12-09 12:35:39.919 [main] Log - Register Button ClickedBy.xpath: (//button[text()='Register'])[2]
+[INFO ] 2024-12-09 12:35:39.921 [main] Log - Registration button clicked : true
+[INFO ] 2024-12-09 12:35:39.985 [main] Log - Headline is Enter Your Mobile NumberBy.xpath: //h3[normalize-space()='Enter Your Mobile Number']
+[INFO ] 2024-12-09 12:35:39.985 [main] Log - Headline is Enter Your Mobile Number : true
+[INFO ] 2024-12-09 12:35:40.052 [main] Log - Mobile number field visibleBy.xpath: //label[normalize-space()='Mobile Number']
+[INFO ] 2024-12-09 12:35:40.053 [main] Log - Mobile number field is displayed : true
+[INFO ] 2024-12-09 12:35:40.101 [main] Log - Asterisk Mark VisibleBy.xpath: (//label[@class='form-label input-main-label required-star'])[3]
+[INFO ] 2024-12-09 12:35:40.102 [main] Log - Mobile number field is displayed : true
+[INFO ] 2024-12-09 12:35:40.186 [main] Log - Send verification Button visibleBy.xpath: //div[@id='register-Modal']//button[@type='submit'][normalize-space()='Send Verification Code']
+[INFO ] 2024-12-09 12:35:40.187 [main] Log - SendVerificationCode button is displayed : true
+[INFO ] 2024-12-09 12:35:40.272 [main] Log - Close Button VisibleBy.xpath: (//button[@class='button round-button round-bg-none'])[2]
+[INFO ] 2024-12-09 12:35:40.274 [main] Log - close button is displayed : true
+[INFO ] 2024-12-09 12:35:40.494 [main] Log - Entered Mobile NumberBy.xpath: //input[@placeholder='Mobile Number']
+[INFO ] 2024-12-09 12:35:40.495 [main] Log - Entered valid Mobile Number showing : true
+[INFO ] 2024-12-09 12:36:00.926 [main] Log - send OTP Button clickedBy.xpath: //div[@id='register-Modal']//button[@type='submit'][normalize-space()='Send Verification Code']
+[INFO ] 2024-12-09 12:36:00.927 [main] Log - A confirmation message is displayed; code is sent to the mobile number.  : true
+[INFO ] 2024-12-09 12:36:02.145 [main] Log - OTP ENteredBy.xpath: (//input[@placeholder='XXXX'])[1]
+[INFO ] 2024-12-09 12:36:02.146 [main] Log - OTP Entered  : true
+[INFO ] 2024-12-09 12:36:12.700 [main] Log - Verify OTP clickedBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[2]
+[INFO ] 2024-12-09 12:36:12.702 [main] Log - Button Clicked  : true
+[INFO ] 2024-12-09 12:36:12.765 [main] Log - Enter your Email diapledBy.xpath: //div[@id='email-Modal']//h3[contains(text(),'Enter Your Email')]
+[INFO ] 2024-12-09 12:36:12.766 [main] Log - Enter Your Email is displayed; code is sent to the mobile number.  : true
+[INFO ] 2024-12-09 12:36:12.823 [main] Log - Email Field visibleBy.xpath: (//label[@class='form-label input-main-label required-star'])[5]
+[INFO ] 2024-12-09 12:36:12.824 [main] Log - Email field is displayed : true
+[INFO ] 2024-12-09 12:36:12.995 [main] Log -  Email Entered By.xpath: (//label[@class='form-label input-main-label required-star'])[5]
+[INFO ] 2024-12-09 12:36:12.995 [main] Log - Entered Email is displayed : true
+[INFO ] 2024-12-09 12:36:33.277 [main] Log - Send OTP button clicked for EmailBy.xpath: (//button[@class='w-100 button primary btn-medium'])[2]
+[INFO ] 2024-12-09 12:36:33.279 [main] Log - send OTP button clicked : true
+[INFO ] 2024-12-09 12:36:33.360 [main] Log - VerificationCodeHeadlineEmail displayedBy.xpath: (//label[normalize-space()='Verification Code'] )[2]
+[INFO ] 2024-12-09 12:36:33.361 [main] Log - Verificaion Code headline is showing : true
+[INFO ] 2024-12-09 12:36:33.429 [main] Log - Enter Your OTP Headline displayed 
+[INFO ] 2024-12-09 12:36:33.429 [main] Log - Enter Your OTP is showing : true

@@ -2,32 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-27T10:20:58 IST" name="Default suite" finished-at="2024-11-27T10:25:38 IST" duration-ms="280100">
+  <suite started-at="2024-12-09T12:34:54 IST" name="Default suite" finished-at="2024-12-09T12:37:18 IST" duration-ms="144602">
     <groups>
     </groups>
-    <test started-at="2024-11-27T10:20:58 IST" name="Default test" finished-at="2024-11-27T10:25:38 IST" duration-ms="280100">
-      <class name="com.test.Login.UserLogin">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.Login.UserLogin@6bd61f98]" started-at="2024-11-27T10:20:55 IST" name="reference" finished-at="2024-11-27T10:20:58 IST" duration-ms="2852" status="PASS">
+    <test started-at="2024-12-09T12:34:54 IST" name="Default test" finished-at="2024-12-09T12:37:18 IST" duration-ms="144602">
+      <class name="com.test.Login.Registration_Process_AllScenarios">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.Login.Registration_Process_AllScenarios@b9b00e0]" started-at="2024-12-09T12:34:52 IST" name="reference" finished-at="2024-12-09T12:34:54 IST" duration-ms="1606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
-        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.Login.UserLogin@6bd61f98]" started-at="2024-11-27T10:21:01 IST" name="RUNALL" data-provider="TestData" finished-at="2024-11-27T10:25:38 IST" duration-ms="276958" status="PASS">
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.Login.Registration_Process_AllScenarios@b9b00e0]" started-at="2024-12-09T12:34:56 IST" name="RUNALL" data-provider="TestData4" finished-at="2024-12-09T12:37:18 IST" duration-ms="142631" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{=, date=5, date1=4, DayMonth=Sep, DayWeek=1, hours=8, minutes=0, module= Deployment/ Prod Cutover , moduleName=prod, Month= September , MonthDay= 1 , MonthWeek= SEP 01 - SEP 07 , New Day=Tuesday, project= Swiss solutions inc , projectName=Swiss solutions inc , projectName1= Oracle America INC , ProjectName2=Swiss solutions inc, Run=Yes, TestScenario=TC_TimeSheetModule, Valid Day=Monday, VALID DAY IN CAPS=MON, workDescription=Worked on module A}]]>
+                <![CDATA[{=, ChiefPromoterFullName=ABC54R34easew4, CompanyPAN=Ijgst6566y, ConfirmPassword=KSIDCcp@123#, EmailAddress=KSIDC.15@gmail.com, MobileNumber=8080808080, Password=KSIDCcp@123#, Run=Yes, TestScenario=Register_Page_Module, VerificationCode=}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@4d48bd85]]>
+                <![CDATA[org.testng.TestRunner@834831b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RUNALL -->
-      </class> <!-- com.test.Login.UserLogin -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:com.test.Login.Registration_Process_AllScenarios@b9b00e0]" started-at="2024-12-09T12:37:18 IST" name="Close" finished-at="2024-12-09T12:37:20 IST" duration-ms="1461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- com.test.Login.Registration_Process_AllScenarios -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
