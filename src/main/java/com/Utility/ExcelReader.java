@@ -19,7 +19,7 @@ public class ExcelReader {
 		this.sheetName = sheetName;
 	}
 	private  static XSSFSheet getSheet() throws IOException {
-		FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\TestData.xlsx");
+		FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\TestData4.xlsx");
 		try (XSSFWorkbook workbook = new XSSFWorkbook(fis)) {
 			XSSFSheet sheet = workbook.getSheet(sheetName);
 			return sheet;

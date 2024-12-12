@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import com.BasePackage.Base_Class;
 import com.Page_Repositary.PageRepository_Login;
+import com.extentReports.ExtentTestManager;
 
 public class PageLoginpage extends Base_Class{
 	
@@ -33,38 +34,44 @@ public class PageLoginpage extends Base_Class{
 	}*/
 	
 	public boolean isLoginButtonVisible() {
+		ExtentTestManager.startTest("TC:02 - Verify Login Button Present");
 		ElementDisplayed(LoginPageRepositary.loginButton);
 		return true;
 	}
 	public boolean Clickloginbutton() throws InterruptedException{
+		ExtentTestManager.startTest("TC:03 - Click login button");
 		click(LoginPageRepositary.loginButton);
 		Thread.sleep(1000);
 		return true;
 	}
 	public boolean isLoginpopupdisplayed() {
+		ExtentTestManager.startTest("TC:04 - Login popup Display checking");
 		ElementDisplayed(LoginPageRepositary.Popup);
 		return true;
 	}
 	public boolean isclosebuttonvisible() {
+		ExtentTestManager.startTest("TC:05 -Login popup Close button vivibility Checking");
 		ElementDisplayed(LoginPageRepositary.Closebutton);
 		return true;
 	}
 	public boolean clickclosebutton() throws InterruptedException {
+		ExtentTestManager.startTest("TC:06 -Close button Functionality checking");
 		click(LoginPageRepositary.Closebutton);
 		Thread.sleep(1000);
 		return true;
 	}
 	public boolean isFieldsvisible() {
+		ExtentTestManager.startTest("TC:07 -Email Address and Password field visibility Checking");
 		ElementDisplayed(LoginPageRepositary.emailaddress);
 		ElementDisplayed(LoginPageRepositary.password);
 		return true;
 	}
     //password and email id invalid entry message validation   
 	public boolean invalidemail() throws InterruptedException {
-        	 
-        	 input(LoginPageRepositary.emailaddress, "abcf");
-        	 input(LoginPageRepositary.password,"ssss");
-        	 return true;	 
+		ExtentTestManager.startTest("TC:08 -Email Address Validation");
+		input(LoginPageRepositary.emailaddress, "abcf");
+    	input(LoginPageRepositary.password,"ssss");
+    	 return true;		 
       
          }
     public boolean insideloginclick() throws InterruptedException {
@@ -78,17 +85,21 @@ public class PageLoginpage extends Base_Class{
          
          //password masking
     public boolean passwordmasking() {
-        	 
-        	 WebElement masking=driver.findElement(LoginPageRepositary.password);
-        	 String typeAttribute = masking.getAttribute("type");
-             return "password".equals(typeAttribute);
+    	
+    	ExtentTestManager.startTest("TC:09 -Password Masking Checking");
+    	WebElement masking=driver.findElement(LoginPageRepositary.password);
+   	 	String typeAttribute = masking.getAttribute("type");
+        return "password".equals(typeAttribute);
         	 
          }
          //eyeview button
          
     public boolean eyeviewclick() throws InterruptedException {
-        	 click(LoginPageRepositary.eyeicon);
-        	 return true;
+    	ExtentTestManager.startTest("TC:10 -Eye Icon Functionality Checking");
+    	click(LoginPageRepositary.eyeicon);
+   	    return true;
+    	
+        	 
          }
          //login without email and pass
     public boolean nocredentiallogin() throws InterruptedException {

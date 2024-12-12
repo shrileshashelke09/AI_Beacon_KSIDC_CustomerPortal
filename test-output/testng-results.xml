@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-27T10:20:58 IST" name="Default suite" finished-at="2024-11-27T10:25:38 IST" duration-ms="280100">
+  <suite started-at="2024-12-12T10:46:14 IST" name="Default suite" finished-at="2024-12-12T10:49:04 IST" duration-ms="169825">
     <groups>
     </groups>
-    <test started-at="2024-11-27T10:20:58 IST" name="Default test" finished-at="2024-11-27T10:25:38 IST" duration-ms="280100">
-      <class name="com.test.Login.UserLogin">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.Login.UserLogin@6bd61f98]" started-at="2024-11-27T10:20:55 IST" name="reference" finished-at="2024-11-27T10:20:58 IST" duration-ms="2852" status="PASS">
+    <test started-at="2024-12-12T10:46:14 IST" name="Default test" finished-at="2024-12-12T10:49:04 IST" duration-ms="169825">
+      <class name="com.test.BusinessInformation_Modules.Tentative_Project_Cost_AllScenarios">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Tentative_Project_Cost_AllScenarios@48aca48b]" started-at="2024-12-12T10:46:12 IST" name="reference" finished-at="2024-12-12T10:46:14 IST" duration-ms="1482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
-        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.Login.UserLogin@6bd61f98]" started-at="2024-11-27T10:21:01 IST" name="RUNALL" data-provider="TestData" finished-at="2024-11-27T10:25:38 IST" duration-ms="276958" status="PASS">
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Tentative_Project_Cost_AllScenarios@48aca48b]" started-at="2024-12-12T10:46:16 IST" name="RUNALL" data-provider="TestData4" finished-at="2024-12-12T10:49:04 IST" duration-ms="168089" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{=, date=5, date1=4, DayMonth=Sep, DayWeek=1, hours=8, minutes=0, module= Deployment/ Prod Cutover , moduleName=prod, Month= September , MonthDay= 1 , MonthWeek= SEP 01 - SEP 07 , New Day=Tuesday, project= Swiss solutions inc , projectName=Swiss solutions inc , projectName1= Oracle America INC , ProjectName2=Swiss solutions inc, Run=Yes, TestScenario=TC_TimeSheetModule, Valid Day=Monday, VALID DAY IN CAPS=MON, workDescription=Worked on module A}]]>
+                <![CDATA[{BuildingCivilWorks=4343535, Deposits=654656, EmailAddress=sanoopsanoop@gmail.com, Land=324545, LandDevelopment=234324, MarketingAndPromotionalExpenses=324234234, MiscFixedAssets=5466575, Others=334344, Password=S@noopGopinatH@123, PlantMachinery=31231312, PreliminaryExpenses=43534534, Run=Yes, Specify=XD324R322332, TechnicalKnowHowFees=3232323, TechnologyOptimizationAndProductDevelopment=334343434, TestingAndCertification=987654567, TestScenario=Tentative_project_cost_Module, Utilities=665655, Vehicles=327352, WorkingCapitalAmt=243435, WorkingCapitalMargin=426347}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@4d48bd85]]>
+                <![CDATA[org.testng.TestRunner@540dbda9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RUNALL -->
-      </class> <!-- com.test.Login.UserLogin -->
+      </class> <!-- com.test.BusinessInformation_Modules.Tentative_Project_Cost_AllScenarios -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

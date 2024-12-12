@@ -61,9 +61,10 @@ public class Base_Class {
 		
 		String Browser = configloader().getProperty("Browser");
 		String Url = configloader().getProperty("URL");
+		ExtentTestManager.startTest("TC:01 - User Access to KSIDC Portal via URL");
 		
 		switch (Browser.toUpperCase()) {
-
+		
 		case "CHROME":
 
 			ChromeOptions options = new ChromeOptions();
@@ -71,14 +72,16 @@ public class Base_Class {
 			options.addArguments("--disable-extensions");
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\linita.shivalkar\\Desktop\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(options);		
+			driver = new ChromeDriver(options);	
+			ExtentTestManager.getTest().log(Status.PASS, "Step:01 - CHROME BROWSER Opened");
 			break;
 
 		case "FIREFOX":
 
 			
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();			
+			driver = new FirefoxDriver();	
+			ExtentTestManager.getTest().log(Status.PASS, "Step:01 - FIREFOX BROWSER Opened");
 			break;
 
 		default:
@@ -92,6 +95,7 @@ public class Base_Class {
 		
 		
 		driver.get(Url);
+		ExtentTestManager.getTest().log(Status.PASS, "Step:02 - KSIDC Application URL launched");
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		Thread.sleep(10000);

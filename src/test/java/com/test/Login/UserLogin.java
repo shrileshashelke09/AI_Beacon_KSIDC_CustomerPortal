@@ -61,9 +61,8 @@ public class UserLogin extends Base_Class {
 				ExtentTestManager.startTest(testdata.get("TestScenario").toString());
 				Log.info("*** Running test method " + testdata.get("TestScenario").toString() + "...");
 				context.setAttribute("fileName", "Login");
-				Base_Class.SetUp();
-				ExtentTestManager.getTest().log(Status.PASS,
-						"Application Login " + com.BasePackage.Base_Class.Pagetitle);
+				/*ExtentTestManager.getTest().log(Status.PASS,
+						"Application Login " + com.BasePackage.Base_Class.Pagetitle);*/
 				Log.info("Login successful !");
 				Thread.sleep(3000);		
 				
@@ -72,63 +71,73 @@ public class UserLogin extends Base_Class {
 
 
 				//EWC Leave Selection
-				ExtentTestManager.startTest("TestScenario01 : Login page");
+				ExtentTestManager.startTest("KSIDC Login page Module");
+				Base_Class.SetUp();
 				Thread.sleep(3000);
 			
 				//boolean flag1 = PageLoginpage.clickRegisterButton(null);
 				//ExtentTestManager.getTest().log(Status.PASS, "Validated Leave Request Form : " + flag1);
 				//Log.info("Validated Leave Request Form : " + flag1);
-				
+				//TC02
 				boolean Loginvisible=PageLoginpage.isLoginButtonVisible();
-				ExtentTestManager.getTest().log(Status.PASS,"validate login button visible:"+Loginvisible);
+				ExtentTestManager.getTest().log(Status.PASS,"Step:01-validate login button visible:"+Loginvisible);
 				Log.info("validate login button is visible:"+Loginvisible);
 			
+				//TC03
 				boolean flag1=PageLoginpage.Clickloginbutton();
-				ExtentTestManager.getTest().log(Status.PASS,"validate button click:"+flag1);
+				ExtentTestManager.getTest().log(Status.PASS,"Step:01-Login Button Click :"+flag1);
 				Log.info("validate login button click:"+flag1);
 			
+				//TC04
 				boolean popup=PageLoginpage.isLoginpopupdisplayed();
-				ExtentTestManager.getTest().log(Status.PASS,"Pop is visible"+popup);
+				ExtentTestManager.getTest().log(Status.PASS,"Step:01 :Login Popup is visible "+popup);
 				Log.info("pop is visible: "+ popup);
 			
+				//TC05
 				boolean closebutton=PageLoginpage.isclosebuttonvisible();
-				ExtentTestManager.getTest().log(Status.PASS,"validate the button is visible:"+closebutton);
+				ExtentTestManager.getTest().log(Status.PASS,"Step:01-Close button Visible: "+closebutton);
 				Log.info("Close button visible or not: "+closebutton);
 			
+				//TC06
 				boolean closebuttonclick=PageLoginpage.clickclosebutton();
-				ExtentTestManager.getTest().log(Status.PASS,"close button is clicked"+closebuttonclick);
+				ExtentTestManager.getTest().log(Status.PASS,"Step:01-close button is clicked "+closebuttonclick);
 				Log.info("close button is clicked "+closebuttonclick);
 			
+				//TC07
 				boolean feildsvisible=PageLoginpage.isFieldsvisible();
-				ExtentTestManager.getTest().log(Status.PASS,"email and password are visible"+feildsvisible);
+				ExtentTestManager.getTest().log(Status.PASS,"Step:01-Email and password Fields are visible "+feildsvisible);
 				Log.info("email and password are visible "+feildsvisible);
 			
+				
 				//clicking login button again to initiate login 
 				boolean loginagain=PageLoginpage.Clickloginbutton();
 				ExtentTestManager.getTest().log(Status.PASS,"validate button click:"+loginagain);
 				Log.info("validate login button click:"+loginagain);
 			
+				//TC08
 				//For the invalid email and password message validation
 				boolean invalidemail=PageLoginpage.invalidemail();
-				ExtentTestManager.getTest().log(Status.PASS,"enter invalid email and password"+invalidemail);
+				ExtentTestManager.getTest().log(Status.PASS,"Step:01:Enter invalid email and password"+invalidemail);
 				Log.info("enter invalid email and password "+invalidemail);
 			
+				
 				boolean insidelogin=PageLoginpage.insideloginclick();
-				ExtentTestManager.getTest().log(Status.PASS,"click on the insidelogin"+insidelogin);
+				ExtentTestManager.getTest().log(Status.PASS,"Step:02:click on the insidelogin"+insidelogin);
 				Log.info("inside login click "+insidelogin);
 			
 				boolean invalidmessage=PageLoginpage.invalidmessage();
-				ExtentTestManager.getTest().log(Status.PASS,"validate the error message"+invalidmessage);
+				ExtentTestManager.getTest().log(Status.PASS,"Step:03: validate the error message"+invalidmessage);
 				Log.info("validate error message "+invalidmessage);
 			
+				//TC09
 				//Password Masking
 				boolean masking=PageLoginpage.passwordmasking();
-				ExtentTestManager.getTest().log(Status.PASS,"password masked "+masking);
+				ExtentTestManager.getTest().log(Status.PASS,"Step:01:password masked "+masking);
 				Log.info("password masked "+masking);
 			
-				//Eyeview
+				//TC10
 				boolean eyeview=PageLoginpage.eyeviewclick();
-				ExtentTestManager.getTest().log(Status.PASS,"eye view clicked "+eyeview);
+				ExtentTestManager.getTest().log(Status.PASS,"Step:01:eye view clicked "+eyeview);
 				Log.info("eyeview clicked "+eyeview);
 			
 				//Blank email and password validation
