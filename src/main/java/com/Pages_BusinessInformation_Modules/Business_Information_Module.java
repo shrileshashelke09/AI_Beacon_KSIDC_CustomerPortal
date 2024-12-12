@@ -124,13 +124,30 @@ public class Business_Information_Module extends Base_Class {
 			return true;
 		}
 		//TC020 //TC021
-		public boolean EnterDocketandLoanAmount (String EnterDocketAmount , String EnterLoanAmount) throws InterruptedException {
+		public boolean EnterDocketAmount (String EnterDocketAmount ) throws InterruptedException {
 			ElementDisplayed(Business_Information.DocketAmount);
 			Log.info("Docket Amount field displayed" + Business_Information.DocketAmount);
 			Thread.sleep(1000);
 			input(Business_Information.EnterDocketAmount ,EnterDocketAmount );
 			Log.info(EnterDocketAmount);
 			Thread.sleep(2000);
+//			ElementDisplayed(Business_Information.LoanAmountRequired);
+//			Log.info("Loan Amount required field displayed" + Business_Information.LoanAmountRequired);
+//			Thread.sleep(1000);
+//			input(Business_Information.EnterLoanAmount ,EnterLoanAmount );
+//			Log.info(EnterLoanAmount);
+//			Thread.sleep(1000);
+			return true;
+		}
+		//TC021
+		
+		public boolean EnterLoanAmount (String EnterLoanAmount) throws InterruptedException {
+//			ElementDisplayed(Business_Information.DocketAmount);
+//			Log.info("Docket Amount field displayed" + Business_Information.DocketAmount);
+//			Thread.sleep(1000);
+//			input(Business_Information.EnterDocketAmount ,EnterDocketAmount );
+//			Log.info(EnterDocketAmount);
+//			Thread.sleep(2000);
 			ElementDisplayed(Business_Information.LoanAmountRequired);
 			Log.info("Loan Amount required field displayed" + Business_Information.LoanAmountRequired);
 			Thread.sleep(1000);
