@@ -39,6 +39,7 @@ public class Base_Class {
 	public WebDriver getDriver() {
 		return driver;
 	}
+	//commited
 	
 	public static By loginbutn= By.xpath("//*[@id=\"navbarsExample04\"]/div/button[1]");
 	private static By L_username = By.xpath("//input[@placeholder='Email Address']");
