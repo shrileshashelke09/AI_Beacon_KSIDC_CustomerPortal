@@ -29,7 +29,8 @@ public class Register_Page {
 
 	public By OTPExpired = By.xpath("//*[@id=\"mobileValidate-Modal\"]/div/div/form/div/div[1]/span/div");
 
-	public By InvalidOTP = By.xpath("//*[@id=\"mobileValidate-Modal\"]/div/div/form/div/div[1]/div");
+	public By InvalidOTP = By.xpath("//div[@id='mobileValidate-Modal']//div[contains(@class,'rz-message rz-messages-error')]"
+			+ "[normalize-space()='Invalid OTP. You have 3 more attempt(s) left.']");
 
 	public By OTPRequired = By.xpath("//div[@class='rz-message rz-messages-error ']");
 
@@ -51,8 +52,8 @@ public class Register_Page {
 
 	public By SubmitOTPofEmail = By.xpath("(//button[@class=' w-100 button primary btn-medium'])[3]");
 
-	public By invalidOTPError = By.xpath(
-			"//div[@id='emailValidate-Modal']//div[contains(@class,'rz-message rz-messages-error')][normalize-space()='Invalid OTP. You have 3 more attempt(s) left.']");
+	public By invalidOTPErrorEmail = By.xpath(
+			"//div[@id='emailValidate-Modal']//div[@class='rz-message rz-messages-error '][normalize-space()='Invalid OTP. You have 3 more attempt(s) left.']");
 
 	public By ExpiredOTPError = By.xpath(
 			"//div[@id='emailValidate-Modal']//div[contains(@class,'rz-message rz-messages-error')][normalize-space()='OTP has expired.Please re-send']");

@@ -143,11 +143,11 @@ public class Business_Information {
     
     public By Submit = By.xpath("//button[@class='button primary btn-medium d-flex align-items-center justify-content-center']");
 
-    public By SuucessGreenMark = By.xpath("//div[@class='success-animation']");
+    public By SuucessGreenMark = By.xpath("//img[@alt='success animation']");
     
-    public By SuccessMessage = By.xpath("(//span[@class='d-flex text-center py-4'])[1]");
+    public By SuccessMessage = By.xpath("//span[contains(text(),'Thank you!')]");
     
-    public By LoanAppbutton = By.xpath("(//button[@class='w-100 button primary btn-medium'])[1]");
+    public By LoanAppbutton = By.xpath("//button[normalize-space()='Proceed to Loan Application']");
     		
 
 

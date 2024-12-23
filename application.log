@@ -1,52 +1,15 @@
-[INFO ] 2024-12-12 10:46:16.580 [main] Log - *** Running test method Tentative_project_cost_Module...
-[INFO ] 2024-12-12 10:46:27.591 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2024-12-12 10:46:45.384 [main] Log - Title is displayed : KSIDC
-[INFO ] 2024-12-12 10:46:45.386 [main] Log - Button visible !
-[INFO ] 2024-12-12 10:46:58.702 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
-[INFO ] 2024-12-12 10:47:01.144 [main] Log - sanoopsanoop@gmail.com
-[INFO ] 2024-12-12 10:47:03.800 [main] Log - S@noopGopinatH@123
-[INFO ] 2024-12-12 10:47:14.427 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
-[INFO ] 2024-12-12 10:47:42.700 [main] Log - Tentative project cost opened
-[INFO ] 2024-12-12 10:47:42.701 [main] Log - Login successfully :true
-[INFO ] 2024-12-12 10:47:43.961 [main] Log - 31231312
-[INFO ] 2024-12-12 10:47:43.963 [main] Log - Plant And Machinery Entered :true
-[INFO ] 2024-12-12 10:47:45.537 [main] Log - 324545
-[INFO ] 2024-12-12 10:47:45.539 [main] Log - Land Entered :true
-[INFO ] 2024-12-12 10:47:47.088 [main] Log - 234324
-[INFO ] 2024-12-12 10:47:47.092 [main] Log - Land and Development Entered :true
-[INFO ] 2024-12-12 10:47:48.466 [main] Log - 4343535
-[INFO ] 2024-12-12 10:47:48.468 [main] Log - Building & Civil Works' Entered :true
-[INFO ] 2024-12-12 10:47:50.007 [main] Log - 665655
-[INFO ] 2024-12-12 10:48:00.556 [main] Log - Utilities Entered :true
-[INFO ] 2024-12-12 10:48:01.867 [main] Log - 5466575
-[INFO ] 2024-12-12 10:48:01.868 [main] Log - Misc Fixed Assets Entered :true
-[INFO ] 2024-12-12 10:48:03.388 [main] Log - 654656
-[INFO ] 2024-12-12 10:48:03.390 [main] Log - Deposits Entered :true
-[INFO ] 2024-12-12 10:48:04.814 [main] Log - 43534534
-[INFO ] 2024-12-12 10:48:04.815 [main] Log - Priliminary Expense Entered :true
-[INFO ] 2024-12-12 10:48:04.949 [main] Log - 54454 : false
-[INFO ] 2024-12-12 10:48:05.951 [main] Log - Validated Preoperative Expense :true
-[INFO ] 2024-12-12 10:48:16.623 [main] Log - 20,97,071 : true
-[INFO ] 2024-12-12 10:48:16.624 [main] Log - Validated Contingencies :true
-[INFO ] 2024-12-12 10:48:17.974 [main] Log - 426347
-[INFO ] 2024-12-12 10:48:17.979 [main] Log - Working Capital Margin Entered :true
-[INFO ] 2024-12-12 10:48:19.329 [main] Log - 243435
-[INFO ] 2024-12-12 10:48:19.331 [main] Log - Working Capital Amt Entered :true
-[INFO ] 2024-12-12 10:48:20.788 [main] Log - 3232323
-[INFO ] 2024-12-12 10:48:20.790 [main] Log - Working Capital Amt Entered :true
-[INFO ] 2024-12-12 10:48:22.117 [main] Log - 327352
-[INFO ] 2024-12-12 10:48:22.118 [main] Log - Vehicles Entered :true
-[INFO ] 2024-12-12 10:48:23.455 [main] Log - 334343434
-[INFO ] 2024-12-12 10:48:23.457 [main] Log - Technology Optimization & Product Development Entered :true
-[INFO ] 2024-12-12 10:48:24.936 [main] Log - 987654567
-[INFO ] 2024-12-12 10:48:24.939 [main] Log - Testing & Certification Entered :true
-[INFO ] 2024-12-12 10:48:26.420 [main] Log - 324234234
-[INFO ] 2024-12-12 10:48:26.421 [main] Log - Marketing and PromotionalExpense Entered :true
-[INFO ] 2024-12-12 10:48:27.652 [main] Log - 334344
-[INFO ] 2024-12-12 10:48:41.260 [main] Log - Others Entered :true
-[INFO ] 2024-12-12 10:48:42.752 [main] Log - XD324R322332
-[INFO ] 2024-12-12 10:48:42.756 [main] Log - Specify Entered :true
-[INFO ] 2024-12-12 10:48:59.437 [main] Log - Successfully Submitted
-[INFO ] 2024-12-12 10:48:59.440 [main] Log - Successfully Submitted :true
-[INFO ] 2024-12-12 10:49:03.518 [main] Log - Logout is done
-[INFO ] 2024-12-12 10:49:04.287 [main] Log - *** Test Suite Tentative_project_cost_Module ending ***
+[INFO ] 2024-12-23 10:41:24.747 [main] Log - *** Running test method Entrepreneur_Details_Module...
+[INFO ] 2024-12-23 10:41:26.385 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2024-12-23 10:41:54.515 [main] Log - Title is displayed : KSIDC
+[INFO ] 2024-12-23 10:41:54.516 [main] Log - Button visible !
+[INFO ] 2024-12-23 10:42:07.748 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
+[INFO ] 2024-12-23 10:42:09.916 [main] Log - KSIDC.15@gmail.com
+[INFO ] 2024-12-23 10:42:12.073 [main] Log - KSIDCcp@123#
+[INFO ] 2024-12-23 10:42:22.280 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
+[INFO ] 2024-12-23 10:42:32.464 [main] Log - Continue button clickedBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2024-12-23 10:42:34.472 [main] Log - Login successfully :true
+[INFO ] 2024-12-23 10:42:45.730 [main] Log - Entrepreneur Details window appears.By.xpath: //span[text()='Entrepreneurs Info']
+[INFO ] 2024-12-23 10:42:45.764 [main] Log - Entrepreneur Details Header displayedBy.xpath: //h4[text()='Entrepreneur Details']
+[INFO ] 2024-12-23 10:42:45.800 [main] Log - Add Entrepreneur button displayedBy.xpath: //button[@class='button btn-medium secondary w-auto']/parent::div
+[INFO ] 2024-12-23 10:42:58.947 [main] Log - Add Entrepreneur button clickedBy.xpath: //button[@class='button btn-medium secondary w-auto']/parent::div
+[INFO ] 2024-12-23 10:43:00.041 [main] Log - "Terms and Conditions" checkbox available.By.xpath: (//div[@class='rz-chkbox-box']//span[@class='rz-chkbox-icon'])[3]

@@ -66,7 +66,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 
 
 				// TC001
-				ExtentTestManager.startTest("TestScenario01 : Login for Business Information Module");
+				ExtentTestManager.startTest("TC001 : Login with Valid Credentials");
 				Log.info("Button visible !");
 				boolean Login = Existing_Liability_Module.Login(EmailAddress, Password);
 				ExtentTestManager.getTest().log(Status.PASS, "Enter Username" + Login);
@@ -76,7 +76,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 
 				// TC002
 
-				ExtentTestManager.startTest(" Navigate to Existing Liability Page");
+				ExtentTestManager.startTest("TC002 - Navigate to Existing Liability Page");
 				boolean NavigatetoExistingLiabilityPage = Existing_Liability_Module.ClickExistingLiability();
 				ExtentTestManager.getTest().log(Status.PASS,
 						"  Navigate through the menu to 'Business Information'." + NavigatetoExistingLiabilityPage);
@@ -87,7 +87,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 
 				// TC003
 
-				ExtentTestManager.startTest(" Heading displayed");
+				ExtentTestManager.startTest(" TC003 - Verify Heading of 'Existing Liability' Window");
 				boolean ValidateHeader = Existing_Liability_Module.Heading();
 				ExtentTestManager.getTest().log(Status.PASS, "  Check the window heading.'." + ValidateHeader);
 				ExtentTestManager.getTest().log(Status.PASS,
@@ -95,7 +95,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 
 				// TC004
 
-				ExtentTestManager.startTest(" Content displayed from Existing Liability Page");
+				ExtentTestManager.startTest(" TC004 -Verify Text in 'Existing Liability' Window");
 				boolean ValidateContentforpage = Existing_Liability_Module.DisplayContent();
 				ExtentTestManager.getTest().log(Status.PASS,
 						"  Located the text \"Begin your journey! Click 'Add Liabilities' to add the details of each one\" in the grid..'."
@@ -105,33 +105,30 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 
 				// TC005
 
-//				ExtentTestManager.startTest(" Navigate to Existing Liability Page");
-//				boolean ValidateSkipforNowLink = Existing_Liability_Module.ValidateSkipForNow();
-//				ExtentTestManager.getTest().log(Status.PASS , "1. Locate the 'Skip this For Now' button in the grid.\r\n"
-//						+ "2. Click the button." +  ValidateSkipforNowLink );
-//				ExtentTestManager.getTest().log(Status.PASS ," The button is available and clickable, allowing navigation to the next component.:" + ValidateSkipforNowLink);
+				ExtentTestManager.startTest(" TC005 - Check 'Skip this For Now' Button Availability");
+				boolean ValidateSkipforNowLink = Existing_Liability_Module.ValidateSkipForNow();
+				ExtentTestManager.getTest().log(Status.PASS , "1. Locate the 'Skip this For Now' button in the grid.\r\n"
+						+ "2. Click the button." +  ValidateSkipforNowLink );
+				ExtentTestManager.getTest().log(Status.PASS ," The button is available and clickable, allowing navigation to the next component.:" + ValidateSkipforNowLink);
 
 				// TC006
 
-				ExtentTestManager.startTest(" The window redirects to the main window without saving changes.");
+				ExtentTestManager.startTest(" TC006 - Verify 'Add Liabilities' Button Availability");
 				boolean ClickOnAddLiablityButton = Existing_Liability_Module.ClickonAddLiabilityButton();
+				ExtentTestManager.getTest().log(Status.PASS, " 1. Locate the 'Add Liabilities' button." + ClickOnAddLiablityButton);
 				ExtentTestManager.getTest().log(Status.PASS, " 2. Click the button.:" + ClickOnAddLiablityButton);
-                boolean ClickCancelButton = Existing_Liability_Module.ClickonCancelButton();
+				ExtentTestManager.getTest().log(Status.PASS, " The button is visible and clickable, redirecting to the 'Add Liabilities' section." + ClickOnAddLiablityButton);
+
+				//TC007
+				ExtentTestManager.startTest(" TC007 - Test 'Cancel' Button Functionality");
+				boolean ClickCancelButton = Existing_Liability_Module.ClickonCancelButton();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Click the 'Cancel' button." + ClickCancelButton);
 				ExtentTestManager.getTest().log(Status.PASS,
 						" The window redirects to the main window without saving changes.:" + ClickCancelButton);
 
-				// TC007
-
-				ExtentTestManager.startTest(" The button is visible and clickable, redirecting to the 'Add Liabilities' section.");
-				boolean ClickAddLiablityButton = Existing_Liability_Module.ClickonAddLiabilityButton();
-				ExtentTestManager.getTest().log(Status.PASS,"1. Locate the 'Add Liabilities' button." + ClickAddLiablityButton);
-				ExtentTestManager.getTest().log(Status.PASS, " 2. Click the button.:" + ClickAddLiablityButton);
-				ExtentTestManager.getTest().log(Status.PASS," The button is visible and clickable, redirecting to the 'Add Liabilities' section.:"+ ClickAddLiablityButton);
-
 				// TC008
 
-				ExtentTestManager.startTest(" The field is available, and a selection can be made.");
+				ExtentTestManager.startTest(" TC008 - Verify 'Liability Category' Field");
 				boolean SelectLiabilityCategory = Existing_Liability_Module.SelectLiabilityCategory();
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Locate 'Liability Category' field." + SelectLiabilityCategory);
@@ -142,7 +139,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 
 				// TC009
 
-				ExtentTestManager.startTest(" TThe field accepts alphanumeric data.");
+				ExtentTestManager.startTest(" TC009 - Verify 'Guarantee Company Name' Field");
 				boolean EnterCompanyName = Existing_Liability_Module
 						.ENterGuaranteeCompanyName(GuaranteeCompanyNameTest);
 				ExtentTestManager.getTest().log(Status.PASS,
@@ -153,7 +150,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 
 				// TC010
 
-				ExtentTestManager.startTest(" The field accepts alphanumeric data.");
+				ExtentTestManager.startTest(" TC010 - Verify 'Guarantee Company Pan' Field");
 				boolean EnterCompanyPAN = Existing_Liability_Module
 						.ENterGuaranteeCompanyNamePANTest(GuaranteeCompanyPanTest);
 				ExtentTestManager.getTest().log(Status.PASS,
@@ -164,8 +161,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 
 				// TC011
 
-				ExtentTestManager
-						.startTest(" The field accepts alphanumeric input and updates 'Bank' and 'Branch' fields..");
+				ExtentTestManager.startTest(" TC011 - Verify 'IFSC Code' Field");
 				boolean EnterIFSCCode = Existing_Liability_Module.ENterIFSCCode(IFSCCodeTest);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Locate 'IFSC Code' field." + EnterIFSCCode);
 				ExtentTestManager.getTest().log(Status.PASS,
@@ -176,7 +172,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 
 				// TC012
 
-				ExtentTestManager.startTest(" The field is available, and a selection can be made.");
+				ExtentTestManager.startTest(" TC012 - Verify 'Loan Purpose' Field");
 				boolean SelectLoanPurpose = Existing_Liability_Module.selectLoanPurpose();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Locate 'Loan Purpose' field." + SelectLoanPurpose);
 				ExtentTestManager.getTest().log(Status.PASS, " 2. Make a selection.(Business):" + SelectLoanPurpose);
@@ -185,7 +181,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 				
 				//TC013
 				
-				ExtentTestManager.startTest(" The field accepts numeric data.");
+				ExtentTestManager.startTest(" TC013 - Verify 'Sanction Amount' Field");
 				boolean EnterSanctionAmount = Existing_Liability_Module.EntersanctionAmount(SanctionAmount);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Locate 'Sanction Amount' field." + EnterSanctionAmount);
 				ExtentTestManager.getTest().log(Status.PASS, " 2. Enter numeric data.:" + EnterSanctionAmount);
@@ -193,7 +189,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 				
 				//TC014
 				
-				ExtentTestManager.startTest(" The field accepts numeric data.");
+				ExtentTestManager.startTest(" TC014 -Verify 'Outstanding Balance' Field");
 				boolean EnterOutstandingAmount = Existing_Liability_Module.EnterOutstandingAmount(OutstandingBalance);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Locate 'Outstanding Balance' field." + EnterOutstandingAmount);
 				ExtentTestManager.getTest().log(Status.PASS, " 2. Enter numeric data.:" + EnterOutstandingAmount);
@@ -202,7 +198,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 				//TC015
 				
 
-				ExtentTestManager.startTest(" The field is available, and a selection can be made.");
+				ExtentTestManager.startTest(" TC015 - Verify 'Status Of Loan' Field");
 				boolean SelectStatusOfLoan = Existing_Liability_Module.SelectStatusOfLoan();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Locate 'Status Of Loan' field." + SelectStatusOfLoan);
 				ExtentTestManager.getTest().log(Status.PASS, " 2. Make a selection.(Standard):" + SelectStatusOfLoan);
@@ -211,7 +207,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 				//TC016
 				
 				
-				ExtentTestManager.startTest(" Accept numeric data");
+				ExtentTestManager.startTest(" TC016 - Verify 'Loan Arrears' Field");
 				boolean EnerLoanArrears = Existing_Liability_Module.EnterLoanArrears(LoanArrears);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Locate Loan Arrears field" + EnerLoanArrears);
 				ExtentTestManager.getTest().log(Status.PASS, " 2. Enter Numeric data:" + EnerLoanArrears);
@@ -220,7 +216,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 				
 				//TC017
 				
-				ExtentTestManager.startTest(" Accept Alphanumeric data");
+				ExtentTestManager.startTest(" TC017 -Verify 'Security' Field");
 				boolean EnerSecurityDetails = Existing_Liability_Module.EnterSecurity(Security);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Locate Security field" + EnerSecurityDetails);
 				ExtentTestManager.getTest().log(Status.PASS, " 2. Enter AlphaNumeric data:" + EnerSecurityDetails);
@@ -228,7 +224,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 				
 				//TC018
 				
-				ExtentTestManager.startTest(" Information is saved as draft, allowing return to main window.");
+				ExtentTestManager.startTest(" TC018 - Test 'Save as Draft' Button Functionality");
 				boolean ClickSaveAsDraft = Existing_Liability_Module.ClickSaveAsDraft();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Enter several fields." + ClickSaveAsDraft);
 				ExtentTestManager.getTest().log(Status.PASS, " 2. Click the 'Save as Draft' button.:" + ClickSaveAsDraft);
@@ -236,14 +232,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 				
 				//TC019
 				
-//				ExtentTestManager.startTest(" Data submitted, and window redirects to the main window.");
-//				boolean ClickSaveAndProceeded = Existing_Liability_Module.ClicktoSaveAndProceed();
-//				ExtentTestManager.getTest().log(Status.PASS, "1. Enter several fields." + ClickSaveAndProceeded);
-//				ExtentTestManager.getTest().log(Status.PASS, " 2. Click 'Save and Proceed'.:" + ClickSaveAndProceeded);
-//				ExtentTestManager.getTest().log(Status.PASS," Data submitted, and window redirects to the main window.:" + ClickSaveAndProceeded);
-				
-				//Update and proceed
-				ExtentTestManager.startTest(" Data submitted, and window redirects to the main window.");
+      			ExtentTestManager.startTest(" TC019 - Test 'Update and Proceed' Button Functionality");
 				boolean ClickUpdateeAndProceeded = Existing_Liability_Module.ClicktoSaveAndProceed();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Enter several fields." + ClickUpdateeAndProceeded);
 				ExtentTestManager.getTest().log(Status.PASS, " 2. Click 'Save and Proceed'.:" + ClickUpdateeAndProceeded);
@@ -251,7 +240,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 				
 				//TC020
 				
-				ExtentTestManager.startTest(" The button is visible and clickable, navigating to the next component.");
+				ExtentTestManager.startTest(" TC020 -Verify 'Continue' Button Availability");
 				boolean Clicktocontinue = Existing_Liability_Module.ClicktoContinue();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Locate the 'Continue' button." + Clicktocontinue);
 				ExtentTestManager.getTest().log(Status.PASS, " 2. Click the button.:" + Clicktocontinue);

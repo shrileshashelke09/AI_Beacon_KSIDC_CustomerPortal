@@ -73,23 +73,16 @@ public class Business_Information_AllScenarios extends Base_Class {
 				Thread.sleep(3000);
 
 				// TC001
-				ExtentTestManager.startTest("TestScenario01 : Login for Business Information Module");
+				ExtentTestManager.startTest("TC001 : Login for Business Information Module");
 				boolean Login = Business_Information_Module.Login(EmailAddress, Password);
-//				
-				// ExtentTestManager.startTest("Login successfully" + Login);
-				ExtentTestManager.getTest().log(Status.PASS, "Login successfully" + Login);
-				Log.info("Login successfully :" + Login);
+				ExtentTestManager.getTest().log(Status.PASS, "1. Navigate to the login page." + Login);
+				ExtentTestManager.getTest().log(Status.PASS, "2. Enter valid username and password." + Login);
+				ExtentTestManager.getTest().log(Status.PASS, "3. Click on the 'Login' button." + Login);
+				ExtentTestManager.getTest().log(Status.PASS,"User is successfully logged into the application and redirected to the home page. :" + Login);
 
-				// Logout KSIDC
-
-//				boolean LogoutKSIDC = Business_Information_Module.Logout();
-//				ExtentTestManager.getTest().log(Status.PASS,"Logout Successfully" + LogoutKSIDC);
-//				Log.info("Logged out !" + LogoutKSIDC);
-
-				// TC003
-
+				// TC002
+				ExtentTestManager.startTest("TC002 - Verify User Can Select Product on Home Page " );
 				boolean EnquiryNowTermLoanKSIDC = Business_Information_Module.EnquiryNowTermLoanKSIDC();
-				ExtentTestManager.startTest("Verify User Can Select Product on Home Page " + EnquiryNowTermLoanKSIDC);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Navigate to the home page." + EnquiryNowTermLoanKSIDC);
 				ExtentTestManager.getTest().log(Status.PASS,
 						"2. Click on 'Enquire Now' button for any listed product." + EnquiryNowTermLoanKSIDC);
@@ -98,22 +91,22 @@ public class Business_Information_AllScenarios extends Base_Class {
 				Log.info("Enquiry now button clicked and Redirected to Business Information page :"
 						+ EnquiryNowTermLoanKSIDC);
 
-				// TC004
-				ExtentTestManager.startTest("Business information header is displyed");
+				// TC003
+				ExtentTestManager.startTest("TC003 - Business information header is displyed");
 				boolean BusinessinfoHeader = Business_Information_Module.BusinessinfoHeader();
-				ExtentTestManager.getTest().log(Status.PASS, "Heading is 'Business Information'." + BusinessinfoHeader);
-				Log.info("Business information header is displyed :" + BusinessinfoHeader);
+				ExtentTestManager.getTest().log(Status.PASS, "1. Check the heading of the page." + BusinessinfoHeader);
+				ExtentTestManager.getTest().log(Status.PASS,"Heading is 'Business Information'. :" + BusinessinfoHeader);
 
-				// TC005
-				ExtentTestManager.startTest("Display Name Field - Alphanumeric Input");
+				// TC004
+				ExtentTestManager.startTest("TC004 - Display Name Field - Alphanumeric Input");
 				boolean Displayname = Business_Information_Module.Displaynamevisibility(DisplayName);
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Enter alphanumeric characters in the Display Name field." + Displayname);
 				ExtentTestManager.getTest().log(Status.PASS, "Alphanumeric input is accepted." + Displayname);
 				Log.info("Display name is displyed :" + Displayname);
 
-//TC018
-				ExtentTestManager.startTest("Selected Institution type displyed");
+//TC005
+				ExtentTestManager.startTest("TC005 - Selected Institution type displyed");
 				boolean SelectInstitutionType = Business_Information_Module.SelectInstitutionTypes();
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Click on 'Institution Types' dropdown." + SelectInstitutionType);
@@ -122,7 +115,8 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Selected option is reflected in the field." + SelectInstitutionType);
 				Log.info("Selected Institution type displyed :" + SelectInstitutionType);
 
-				ExtentTestManager.startTest("Selected Scheme displyed");
+				//TC006
+				ExtentTestManager.startTest("TC006 - Scheme Selection from Dropdown");
 				boolean SelectScheme = Business_Information_Module.selectScheme();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Scheme' dropdown." + SelectScheme);
 				ExtentTestManager.getTest().log(Status.PASS, "2. Select an option." + SelectScheme);
@@ -130,26 +124,25 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Selected option is reflected in the field." + SelectScheme);
 				Log.info("Selected Scheme displyed :" + SelectScheme);
 
-				// TC020
-				ExtentTestManager.startTest("Docket Amount Field - Range Validation");
+				// TC007
+				ExtentTestManager.startTest("TC007 - Docket Amount Field - Range Validation");
 				boolean EnterDocketAmount = Business_Information_Module.EnterDocketAmount(DocketAmount);
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Enter a numeric value within acceptable range. 100 to 500 Lakhs" + EnterDocketAmount);
 				ExtentTestManager.getTest().log(Status.PASS, "Input is accepted." + EnterDocketAmount);
 
-				// TC21
+				// TC008
 
-				ExtentTestManager.startTest("Loan Amount Less Than Docket Amount Validation");
+				ExtentTestManager.startTest("TC008 - Loan Amount Less Than Docket Amount Validation");
 				boolean EnterLoanAmount = Business_Information_Module.EnterLoanAmount(LoanAmountRequired);
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Enter Loan Amount Required less than Docket Amount." + EnterLoanAmount);
 				ExtentTestManager.getTest().log(Status.PASS,
 						"Inputs are accepted and no validation error is shown." + EnterLoanAmount);
 
-				// TC022
-				ExtentTestManager.startTest("Promoter Contribution Autoload");
-				boolean ValidatePromoterContributionAmount = Business_Information_Module
-						.ValidatePromoterContribution(DocketAmount, LoanAmountRequired);
+				// TC0009
+				ExtentTestManager.startTest("TC009 - Promoter Contribution Autoload");
+				boolean ValidatePromoterContributionAmount = Business_Information_Module.ValidatePromoterContribution(DocketAmount, LoanAmountRequired);
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Calculate difference of Docket Amount and Loan Amount Required."
 								+ ValidatePromoterContributionAmount);
@@ -160,8 +153,8 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Promoter Contribution is autoloaded correctly." + ValidatePromoterContributionAmount);
 				Log.info("Entered Amount displyed :" + ValidatePromoterContributionAmount);
 
-				// TC023
-				ExtentTestManager.startTest("Chief Promoter Full Name Autoload");
+				// TC010
+				ExtentTestManager.startTest("TC010 - Chief Promoter Full Name Autoload");
 				boolean ValidateAItoloadedchiefname = Business_Information_Module.ChiefPromoterFullNameAutoload();
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Verify that Chief Promoter Full Name is prefilled." + ValidateAItoloadedchiefname);
@@ -169,8 +162,8 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Field is auto-filled with registered Chief Promoter's name." + ValidateAItoloadedchiefname);
 				Log.info("Chief name displayed :" + ValidateAItoloadedchiefname);
 
-				// TC024
-				ExtentTestManager.startTest("Mobile No Autoloaded from Registration");
+				// TC011
+				ExtentTestManager.startTest("TC011 - Mobile No Autoloaded from Registration");
 				boolean ValidateAItoloadedMobileNumber = Business_Information_Module.MobileNumberAutolad();
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Verify that Mobile No is correctly prefilled." + ValidateAItoloadedchiefname);
@@ -178,8 +171,8 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Field is auto-filled with registered mobile number." + ValidateAItoloadedchiefname);
 				Log.info("Mobile Number displayed :" + ValidateAItoloadedMobileNumber);
 
-				// TC025
-				ExtentTestManager.startTest("Email ID Autoloaded from Registration");
+				// TC012
+				ExtentTestManager.startTest("TC012 - Email ID Autoloaded from Registration");
 				boolean ValidateAutoloadedEmail = Business_Information_Module.ValidateEmailID();
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Verify that Email ID is prefilled from registration info." + ValidateAutoloadedEmail);
@@ -187,8 +180,8 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Field is auto-filled with registered email ID." + ValidateAutoloadedEmail);
 				Log.info("Email displayed :" + ValidateAutoloadedEmail);
 
-				// TC026
-				ExtentTestManager.startTest("Gender Selection from Dropdown");
+				// TC013
+				ExtentTestManager.startTest("TC013 - Gender Selection from Dropdown");
 				boolean SelectGenderMale = Business_Information_Module.SelectGender();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Gender' dropdown." + SelectGenderMale);
 				ExtentTestManager.getTest().log(Status.PASS, "2. Select 'Male'." + SelectGenderMale);
@@ -196,9 +189,9 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Selected option is reflected in the field." + SelectGenderMale);
 				Log.info("selected Gender displayed :" + SelectGenderMale);
 
-				// TC027
+				// TC014
 
-				ExtentTestManager.startTest("Loan Purpose Selection from Dropdown");
+				ExtentTestManager.startTest("TC014 - Loan Purpose Selection from Dropdown");
 				boolean SelectLoanPurpose = Business_Information_Module.SelectLoanPurpose();
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Click on 'Loan Purpose' dropdown." + SelectLoanPurpose);
@@ -207,8 +200,8 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Selected option is reflected in the field." + SelectLoanPurpose);
 				Log.info("Loan purpose displayed :" + SelectLoanPurpose);
 
-//TC028
-				ExtentTestManager.startTest("Select Sector  from Dropdown");
+//TC015
+				ExtentTestManager.startTest("TC015 - Select Sector  from Dropdown");
 				boolean SelectSector = Business_Information_Module.SelectSector();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Sector' dropdown." + SelectSector);
 				ExtentTestManager.getTest().log(Status.PASS, "2. Select 'prefered option." + SelectSector);
@@ -216,8 +209,8 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Selected option is reflected in the field." + SelectSector);
 				Log.info("Selected sector displayed :" + SelectSector);
 
-				// TC029
-				ExtentTestManager.startTest("Selecte Subsector from dropdown");
+				// TC016
+				ExtentTestManager.startTest("TC016 - Selecte Subsector from dropdown");
 				boolean SelectSubSector = Business_Information_Module.SelectSubSector();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'SubSector' dropdown." + SelectSubSector);
 				ExtentTestManager.getTest().log(Status.PASS, "2. Select 'prefered option." + SelectSubSector);
@@ -225,8 +218,8 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Selected option is reflected in the field." + SelectSubSector);
 				Log.info("Selected Subsector displayed :" + SelectSubSector);
 
-				// TC030
-				ExtentTestManager.startTest("Product/Service Name Field as Alphanumeric");
+				// TC017
+				ExtentTestManager.startTest("TC017 - Product/Service Name Field as Alphanumeric");
 				boolean EnterProductServiceName = Business_Information_Module
 						.EnterProductServiceName(ProductServiceName);
 				ExtentTestManager.getTest().log(Status.PASS,
@@ -235,8 +228,8 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Alphanumeric input is accepted." + EnterProductServiceName);
 				Log.info("Entered Product Service name displayed :" + EnterProductServiceName);
 
-				// TC031
-				ExtentTestManager.startTest("State Autoloaded as Kerala");
+				// TC018
+				ExtentTestManager.startTest("TC018 - State Autoloaded as Kerala");
 				boolean ValidateAutoloadedState = Business_Information_Module.ValidateAutoloadedState();
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Check if the state field is prefilled with 'Kerala'." + ValidateAutoloadedState);
@@ -244,130 +237,130 @@ public class Business_Information_AllScenarios extends Base_Class {
 						"Field is auto-filled with 'Kerala'." + ValidateAutoloadedState);
 				Log.info("Autoloaded state is :" + ValidateAutoloadedState);
 
-				// TC032
-				ExtentTestManager.startTest("Project Location as KANNUR from Dropdown");
+				// TC019
+				ExtentTestManager.startTest("TC019 - Project Location as KANNUR from Dropdown");
 				boolean SelectProjectLocation = Business_Information_Module.SelectProjectLocation();
 				ExtentTestManager.getTest().log(Status.PASS,"1. Click on 'Project Location' dropdown." + SelectProjectLocation);
 				ExtentTestManager.getTest().log(Status.PASS, "2. Select 'KANNUR'." + SelectProjectLocation);
 				ExtentTestManager.getTest().log(Status.PASS,"Selected option is reflected in the field." + SelectProjectLocation);
 				Log.info("Selected Project location is :" + SelectProjectLocation);
 
-				// TC033
+				// TC020
 				ExtentTestManager.startTest("Project Type as Expansion from Dropdown");
 				boolean SelectProjectType = Business_Information_Module.SelectProjectType();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Project Type' dropdown." + SelectProjectType);
 				ExtentTestManager.getTest().log(Status.PASS,"Selected option is reflected in the field." + SelectProjectType);
 				Log.info("Selected Project tyoe is displyed :" + SelectProjectType);
 
-				// TC034
-				ExtentTestManager.startTest("Break Even Period Entry");
+				// TC021
+				ExtentTestManager.startTest("TC021 - Break Even Period Entry");
 				boolean EnterBreakEvenPeriod = Business_Information_Module.EnterBreakEvenPeriod(BreakEvenPeriod);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Enter '24' in Break Even Period field." + EnterBreakEvenPeriod);
 				ExtentTestManager.getTest().log(Status.PASS,"Numeric input is accepted." + EnterBreakEvenPeriod);
 				Log.info("Period is displyed :" + EnterBreakEvenPeriod);
 
-				// TC035
+				// TC022
 
-				ExtentTestManager.startTest("Tentative Project Start Date Entry");
+				ExtentTestManager.startTest("TC022 - Tentative Project Start Date Entry");
 				boolean SelectTentativeDate = Business_Information_Module.SelectTentativeprojectDate();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Use date picker or manually enter a date in Tentative Project Start Date field." + SelectTentativeDate);
 				ExtentTestManager.getTest().log(Status.PASS,"Accepted date is displayed in the field." + SelectTentativeDate);
 				Log.info("Selected Date displyed :" + SelectTentativeDate);
 
-				// TC036
+				// TC023
 				
-				ExtentTestManager.startTest("Project Implementation Period Entry");
+				ExtentTestManager.startTest("TC023 - Project Implementation Period Entry");
 				boolean EnterProjectImplemenationPeriod = Business_Information_Module.EnterProjectImplementaionPeriod(ProjectImplementationPeriodInMonths);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Enter '24' months in the Project Implementation Period field." + EnterProjectImplemenationPeriod);
 				ExtentTestManager.getTest().log(Status.PASS,"Numeric input is accepted." + EnterProjectImplemenationPeriod);
 				Log.info("Entered period displyed :" + EnterProjectImplemenationPeriod);
 
-				// TC037
+				// TC024
 				
-				ExtentTestManager.startTest("Approx Total Labour Count Entry");
+				ExtentTestManager.startTest("TC024 - Approx Total Labour Count Entry");
 				boolean EnterApproxLabourCount = Business_Information_Module.EnterLabourCount(ApproxTotalLabourCount);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Enter '1000' in Approx Total Labour Count field." + EnterApproxLabourCount);
 				ExtentTestManager.getTest().log(Status.PASS,"Numeric input is accepted." + EnterApproxLabourCount);
 				Log.info("Entered Labour count displyed :" + EnterApproxLabourCount);
 
-				// TC038
+				// TC025
 
-				ExtentTestManager.startTest("Contractor Department Dropdown Selection");
+				ExtentTestManager.startTest("TC025 - Contractor Department Dropdown Selection");
 				boolean SelectContractorDepartment = Business_Information_Module.SelectContractorDepartment();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Contractor Department' dropdown. 2. Select an option." + SelectContractorDepartment);
 				ExtentTestManager.getTest().log(Status.PASS,"Selected option is reflected in the field." + SelectContractorDepartment);
 				Log.info("Selected Department displyed :" + SelectContractorDepartment);
 
-				// TC039
+				// TC026
 				
-				ExtentTestManager.startTest("Contractor Classification Dropdown Selection");
+				ExtentTestManager.startTest("TC026 - Contractor Classification Dropdown Selection");
 				boolean SelectContractorClassification = Business_Information_Module.SelectContractorClassification();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Contractor Classification' dropdown.\r\n"
 						+ "2. Select an option." + SelectContractorClassification);
 				ExtentTestManager.getTest().log(Status.PASS,"Selected option is reflected in the field." + SelectContractorClassification);
 				Log.info("Selected classification displyed :" + SelectContractorClassification);
 
-				// TC040
+				// TC027
 				
-				ExtentTestManager.startTest("Docket Number Numeric Entry");
+				ExtentTestManager.startTest("TC027 - Docket Number Numeric Entry");
 				boolean EnterDocketNumber = Business_Information_Module.EnterDocketNumber(DocketNumber);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Enter numeric value in Docket Number field." + EnterDocketNumber);
 				ExtentTestManager.getTest().log(Status.PASS,"Numeric input is accepted." + EnterDocketNumber);
 				Log.info("Docket Number  displyed :" + EnterDocketNumber);
 
-				// TC041
+				// TC028
 				
-				ExtentTestManager.startTest("Treasury Release Date Entry");
+				ExtentTestManager.startTest("TC028 - Treasury Release Date Entry");
 				boolean EntertreasuryReleaseDate = Business_Information_Module.EnterTreasuryReleaseDate(TreasuryReleaseDate);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Use date picker or manually enter a date in Treasury Release Date field." + EntertreasuryReleaseDate);
 				ExtentTestManager.getTest().log(Status.PASS,"Accepted date is displayed in the field." + EntertreasuryReleaseDate);
 				Log.info("Date  displyed :" + EntertreasuryReleaseDate);
 
-				// TC042
-				ExtentTestManager.startTest("Project Land Selection from Dropdown");
+				// TC029
+				ExtentTestManager.startTest("TC029 - Project Land Selection from Dropdown");
 				boolean SelectProjectLand = Business_Information_Module.SelectProjectLand();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Project Land' dropdown.\r\n"
 						+ "2. Select 'Owned'." + SelectProjectLand);
 				ExtentTestManager.getTest().log(Status.PASS, "Selected option is reflected in the field." + SelectProjectLand);
                 Log.info("Selected Project Land  displyed :" + SelectProjectLand);
 
-				// TC043
+				// TC030
 
-				ExtentTestManager.startTest("Production Capacity Alphanumeric Entry");
+				ExtentTestManager.startTest("TC030 - Production Capacity Alphanumeric Entry");
 				boolean ProductionCapacity = Business_Information_Module
 						.EnterProductionCapacity(ProductionCapacityQuantityPerAnnumTest);
 				ExtentTestManager.getTest().log(Status.PASS, "1. Enter alphanumeric value in Production Capacity field." + ProductionCapacity);
 				ExtentTestManager.getTest().log(Status.PASS, "Alphanumeric input is accepted." + ProductionCapacity);
                 Log.info("Entered Capacity displayed :" + ProductionCapacity);
 
-				// TC044
+				// TC031
                 
-				ExtentTestManager.startTest("Pollution Category Selection from Dropdown");
+				ExtentTestManager.startTest("TC031 - Pollution Category Selection from Dropdown");
 				boolean SelectPollutionCategory = Business_Information_Module.SelectPollutionCategory();
 				ExtentTestManager.getTest().log(Status.PASS,"1. Click on 'Pollution Category' dropdown.\r\n"
 						+ "2. Select 'Green'." + SelectPollutionCategory);
 				ExtentTestManager.getTest().log(Status.PASS,"Selected pollution category displayed" + SelectPollutionCategory);
                 Log.info("Selected pollution category displayed :" + SelectPollutionCategory);
 
-				// TC045
+				// TC032
                 
-				ExtentTestManager.startTest("Project Nature Selection from Dropdown");
+				ExtentTestManager.startTest("TC032 - Project Nature Selection from Dropdown");
 				boolean SelectrojectNature = Business_Information_Module.SelectProjectNature();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Project Nature' dropdown.\r\n"
 						+ "2. Select 'Project Nature'." + SelectrojectNature);
 				ExtentTestManager.getTest().log(Status.PASS, "Selected Project Nature displayed" + SelectrojectNature);
 Log.info("Selected Project Nature displayed :" + SelectrojectNature);
 
-				// TC046
-ExtentTestManager.startTest("First Charge For The Collateral Security - Radio Button Selection");
+				// TC033
+ExtentTestManager.startTest("TC033 - First Charge For The Collateral Security - Radio Button Selection");
 				boolean SelectYESforfirstcharge = Business_Information_Module.SelectYESforFirstcharge();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Select 'Yes' for First Charge For The Collateral Security." + SelectYESforfirstcharge);
 				ExtentTestManager.getTest().log(Status.PASS, "Radio button selection is reflected correctly." + SelectYESforfirstcharge);
 Log.info("Selected YES displayed :" + SelectYESforfirstcharge);
 
-				// TC047
+				// TC034
 
-ExtentTestManager.startTest("Exclusive First Charge on Company Assets - Radio Button Selection");
+ExtentTestManager.startTest("TC034 - Exclusive First Charge on Company Assets - Radio Button Selection");
 				boolean SelectYESforExclusivefirstcharge = Business_Information_Module
 						.SelectYESforExclusiveFirstcharge();
 				ExtentTestManager.getTest().log(Status.PASS,
@@ -376,15 +369,10 @@ ExtentTestManager.startTest("Exclusive First Charge on Company Assets - Radio Bu
 						"Radio button selection is reflected correctly." + SelectYESforExclusivefirstcharge);
 			Log.info("Selected YES displayed :" + SelectYESforExclusivefirstcharge);
 
-				// TC048
-				boolean SelectYesforExistingAsset = Business_Information_Module.ExistingAsset();
-				ExtentTestManager.startTest("Selected YES displayed" + SelectYesforExistingAsset);
-				ExtentTestManager.getTest().log(Status.PASS, "Selected YES displayed" + SelectYesforExistingAsset);
-				Log.info("Selected YES displayed :" + SelectYesforExistingAsset);
+			
+				// TC035
 
-				// TC049
-
-				ExtentTestManager.startTest("Terms and Conditions Checkbox Tick");
+				ExtentTestManager.startTest("TC035 - Terms and Conditions Checkbox Tick");
 				boolean SelectCheckboxforTermsandCondition = Business_Information_Module.CheckboxofTermsandCondition();
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Tick the terms and conditions checkbox." + SelectCheckboxforTermsandCondition);
@@ -392,24 +380,25 @@ ExtentTestManager.startTest("Exclusive First Charge on Company Assets - Radio Bu
 						"Checkbox is checked." + SelectCheckboxforTermsandCondition);
 				Log.info("Checked checkbox displayed :" + SelectCheckboxforTermsandCondition);
 
-				// TC050
+				// TC036
 
-				ExtentTestManager.startTest("Submit Button Click");
+				ExtentTestManager.startTest("TC036 - Submit Button Click");
 				boolean submit = Business_Information_Module.Submit();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Click the 'Submit' button." + submit);
 				ExtentTestManager.getTest().log(Status.PASS, "Form is successfully submitted, and a confirmation message is displayed." + submit);
                 Log.info("Business information submitted :" + submit);
 
-				// TC051
+				// TC037
 
-				ExtentTestManager.startTest("Successful Submission Message");
-				boolean successcheck = Business_Information_Module.Submit();
+				ExtentTestManager.startTest("TC037 - Successful Submission Message");
+				boolean successcheck = Business_Information_Module.SuccessCheck();
 				ExtentTestManager.getTest().log(Status.PASS,
 						"1. Verify the success message after submission." + successcheck);
 				ExtentTestManager.getTest().log(Status.PASS,
 						"Success message is displayed confirming submission." + successcheck);
 				Log.info("Business information Sucessfully submitted :" + successcheck);
 
+				
 				// App Logout
 
 				Thread.sleep(2000);

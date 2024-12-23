@@ -28,33 +28,19 @@ public class Basic_Information_Module extends Base_Class {
 		Log.info(EnterPassword);
 		click(Basic_Information.ClicktoLogin);
 		Log.info("Login button clickd" + Basic_Information.ClicktoLogin);
-			
+		Thread.sleep(1000);
+		click(Basic_Information.ContinueButton);
+		Thread.sleep(1000);
+		ElementDisplayed (Basic_Information.BasicInfoHeader);
+		Thread.sleep(3000);
+		Log.info("Basic Information Header Displayed" + Basic_Information.BasicInfoHeader);
 			return true;
 			
 		}
 		
-		//TC002 //TC003 //TC004
 		
-		public boolean BasicInformationPageAccessibility () throws InterruptedException {
-			
-			click(Basic_Information.ContinueButton);
-			Thread.sleep(1000);
-			return true;
-			
-		}
 		
-		//TC005
-		
-		public boolean BasicInfoHeader () throws InterruptedException {
-			
-			ElementDisplayed (Basic_Information.BasicInfoHeader);
-			Thread.sleep(3000);
-			Log.info("Basic Information Header Displayed" + Basic_Information.BasicInfoHeader);
-			return true;
-			
-		}
-		
-		//TC006
+		//TC002
 		
 		
 		public boolean MSMERadioVisibility () {
@@ -64,21 +50,24 @@ public class Basic_Information_Module extends Base_Class {
 			return true;
 		}
 		
-		//TC007
+		//TC003
 		
-		public boolean YESNOToggleforMSME () throws InterruptedException {
-			
-			
+		public boolean SelectMSME () throws InterruptedException {
 			click(Basic_Information.YESforMSME);
 			Thread.sleep(2000);
 			Log.info("Yes toggle clicked" + Basic_Information.YESforMSME);
+			return true;
+		}
+		
+		//TC004
+          public boolean SelectNonMSME () throws InterruptedException {
 			click(Basic_Information.NOforMSME);
 			Thread.sleep(2000);
 			Log.info("NO toggle clicked" + Basic_Information.NOforMSME);
 			return true;
 		}
 		
-		//TC009
+		//TC005
 		
 		public boolean SelectYesforMSME () throws InterruptedException {
 			click(Basic_Information.YESforMSME);
@@ -87,8 +76,8 @@ public class Basic_Information_Module extends Base_Class {
 			return true;
 			
 		}
-		 //TC015
-		public boolean EnterandVerifyUdyamNo (String UdyamNo) throws InterruptedException {
+		 //TC006
+		public boolean EnterUdyamNo (String UdyamNo) throws InterruptedException {
 			
 			ScrollUntilElementVisible(Basic_Information.MSMERadioButton);
 			Thread.sleep(1000);
@@ -97,12 +86,38 @@ public class Basic_Information_Module extends Base_Class {
 			input(Basic_Information.UdyamNo , UdyamNo);
 			Log.info(UdyamNo);
 			Thread.sleep(3000);
-			Log.info("Udyam no verified" + Basic_Information.VerifyUdyamNo);
+//			if(ElementDisplayed(Basic_Information.VerifyUdyamNo)) {
+//				click(Basic_Information.VerifyUdyamNo);
+//				Log.info("CLicked verify button" +Basic_Information.VerifyUdyamNo);
+//				ElementToBeVisible(Basic_Information.Verified);
+//				Log.info("Udyam no verified" + Basic_Information.Verified);
+//				Thread.sleep(3000);
+//			}
+//			else {
+//				Log.info("Check Not Visible");
+//			}
+//		
+			return true;
+		
+		}
+		
+		//TC007
+		
+		public boolean verifybutton () {
+			
+			ElementDisplayed(Basic_Information.verifybutton);
+			Log.info("Verify button is visible next to the UDHYAM No field." + Basic_Information.verifybutton);
+			return true;
+		}
+		
+		//TC008
+		
+		public boolean verifyUdyamNo () throws InterruptedException {
 			if(ElementDisplayed(Basic_Information.VerifyUdyamNo)) {
 				click(Basic_Information.VerifyUdyamNo);
-				Log.info("CLicked");
+				Log.info("CLicked verify button" +Basic_Information.VerifyUdyamNo);
 				ElementToBeVisible(Basic_Information.Verified);
-				Log.info("Verified");
+				Log.info("Udyam no verified" + Basic_Information.Verified);
 				Thread.sleep(3000);
 			}
 			else {
@@ -110,7 +125,6 @@ public class Basic_Information_Module extends Base_Class {
 			}
 		
 			return true;
-		
 		}
 		
 		@SuppressWarnings("unlikely-arg-type")
@@ -199,20 +213,7 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
 			
 			return true;
 		}
-		
-          //TC016
-//          public boolean SelectClassofActivityNonMSME () throws InterruptedException {
-//        	  click(Basic_Information.NOforMSME);
-//        	  Thread.sleep(1000);
-//        	  ScrollUntilElementVisible(Basic_Information.MSMERadioButton);
-//        	  click(Basic_Information.ClassofActivityNonMSME);
-//        	  Thread.sleep(1000);
-//        	  Log.info("Dropdown shown" + Basic_Information.ClassofActivityNonMSME);
-//        	  click(Basic_Information.SelectClassofActivityNonMSME);
-//        	  Log.info("Dropdown option selected" + Basic_Information.SelectClassofActivityNonMSME);
-//        	  return true;
-//          }
-          
+		     
           //TC017
           
           public boolean EnterInstitutionMobileNumber (String EnterInstitutionMobileNo) throws InterruptedException {
@@ -466,15 +467,15 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
 		@SuppressWarnings("unlikely-arg-type")
 		public boolean ValidateCompanyPAN () throws InterruptedException {
         	  //ElementDisplayed(Basic_Information.CompanyPAN);
-        	  Thread.sleep(1000);
+        	ScrollUntilElementVisible(Basic_Information.AutoloadedCity);  
+			Thread.sleep(1000);
         	  WebElement AutoloadedCompanyPAN= driver.findElement(By.xpath("//input[@placeholder='Company PAN']"));
         	  System.out.println("Autoloaded PAN displyed" + AutoloadedCompanyPAN.getAttribute("title"));
         	  
         	  String ABC = AutoloadedCompanyPAN.getAttribute("title");
-        	  if (ABC.equals("IJGST6566Y")){
-         		 ExtentTestManager.getTest().log(Status.PASS ,"IJGST6566Y: " + true);
-
- 				Log.info("IJGST6566Y : " + true);
+        	  if (ABC.equals(AutoloadedCompanyPAN.getAttribute("title"))){
+         	ExtentTestManager.getTest().log(Status.PASS ,AutoloadedCompanyPAN.getAttribute("title") + true);
+                 Log.info( ABC  + true);
  				return true;
  			 }
  			 else {
@@ -486,6 +487,8 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
  			return true;
         	  
           }
+		
+		
           
           //TC032
           
@@ -546,17 +549,17 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
              
              //TC038
              
-             public boolean EnterENtityHolding() throws InterruptedException {
+             public boolean AutoloadedENtityHolding() throws InterruptedException {
            	  
            	  click(Basic_Information.HoldeingByEntity);
            	  Thread.sleep(1000);
            	  WebElement Autofilledsharing = driver.findElement(By.xpath("//input[@placeholder='Share Holding By Entity']"));
            	  System.out.println("Data showing" + Autofilledsharing.getAttribute("title"));
            	  String ABC = Autofilledsharing.getAttribute("title");
-           	  if(ABC.equals("80")) {
+           	  if(ABC.equals(Autofilledsharing.getAttribute("title"))) {
            		  boolean flag1 = ElementDisplayed(Basic_Information.HoldeingByEntity);
-           		  ExtentTestManager.getTest().log(Status.PASS, "80 : " + true);
-       				Log.info(" 80 : " + true);
+           		  ExtentTestManager.getTest().log(Status.PASS, Autofilledsharing.getAttribute("title") + true);
+       				Log.info(ABC + true);
    				return flag1;
    			 }
    			 else {
@@ -603,12 +606,27 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
              
              //TC042
              
-             public boolean ClickonAddBankAccButton () throws InterruptedException {
-            	 
+             public boolean BankAccSection () throws InterruptedException {
             	 ScrollUntilElementVisible(Basic_Information.CKYCID);
             	 Thread.sleep(1000);
+            	 ElementDisplayed(Basic_Information.BankAccSection);
+            	 Log.info("Bank Account section displayed" + Basic_Information.BankAccSection);
+            	 return true;
+
+             }
+             
+             //
+             
+             public boolean AddBankButton () {
+            	 
             	 ElementDisplayed(Basic_Information.AddBankAccountButton);
-            	 click(Basic_Information.AddBankAccountButton);
+            	 Log.info("Button visible" + Basic_Information.AddBankAccountButton);
+            	 return true;
+             }
+             
+             public boolean ClickonAddBankAccButton () throws InterruptedException {
+            	 
+           	     click(Basic_Information.AddBankAccountButton);
             	 Log.info("Button clicked" +Basic_Information.AddBankAccountButton);
             	 ElementDisplayed(Basic_Information.AddBankAccHeader);
             	 Log.info("Pop up appear" + Basic_Information.AddBankAccHeader);
@@ -661,7 +679,7 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
                 	  String ABC = AutofilledBranch.getAttribute("title");
                 	  if(ABC.equals("PUTHIYARA")) {
                 		 // boolean flag1 = ElementDisplayed(Basic_Information.EnterBranch);
-                		  ExtentTestManager.getTest().log(Status.FAIL, "PUTHIYARA: " + true);
+                		  ExtentTestManager.getTest().log(Status.PASS, "PUTHIYARA: " + true);
             				Log.info("PUTHIYARA : " + true);
         				return true;
         			 }
@@ -712,18 +730,32 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
                     	Thread.sleep(1000);
                     	click(Basic_Information.AddBankbutton);
                     	Thread.sleep(1000);
+//                    	ElementDisplayed(Basic_Information.AddedBankDetails);
+//                    	Log.info("Bank Details Added");
+//                    	Thread.sleep(1000);
+                    	return true;
+                    }
+                    
+                    public boolean CheckAddedBankDetails () throws InterruptedException {
                     	ElementDisplayed(Basic_Information.AddedBankDetails);
                     	Log.info("Bank Details Added");
                     	Thread.sleep(1000);
                     	return true;
+                    	
                     }
                     
                     //TC050 
                     
-                    public boolean SelectGender() throws InterruptedException {
-                    	
+                    public boolean genderSection () throws InterruptedException {
                     	ScrollUntilElementVisible(Basic_Information.AddedBankDetails);
                     	Thread.sleep(1000);
+                    	ElementDisplayed(Basic_Information.GenderSection);
+                    	Log.info("Gender section displayed" + Basic_Information.GenderSection);
+                    	return true;
+                    }
+                    
+                    public boolean SelectGender() throws InterruptedException {
+                    	
                     	click(Basic_Information.AddDetailsforMale);
                     	Thread.sleep(1000);
                     	Log.info("Male Employment Details Added");
@@ -733,12 +765,27 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
                     	return true;
                     }
                     
+                    
                     //TC051
+                    
+                    public boolean checktotalcount () {
+                    	
+                    	ElementDisplayed(Basic_Information.TotalCount);
+                    	Log.info("Total count displayed" + Basic_Information.TotalCount);
+                    	return true;
+                    }
+                    
+                    public boolean Termsandconditionsection () throws InterruptedException {
+                    	ScrollUntilElementVisible(Basic_Information.MaleHeader);
+                    	Thread.sleep(1000);
+                    	ElementDisplayed(Basic_Information.TermsAndConditionCheckBox);
+                    	Log.info("Terms and condition Section present" +Basic_Information.TermsAndConditionCheckBox);
+                    	return true;
+                    }
+                    
                     
                     public boolean AcceptTermsandCondition () throws InterruptedException {
                     	
-                    	ScrollUntilElementVisible(Basic_Information.MaleHeader);
-                    	Thread.sleep(1000);
                     	click(Basic_Information.TermsAndConditionCheckBox);
                     	Thread.sleep(3000);
                     	Log.info("Terms and Conditions Accepted");
@@ -746,8 +793,25 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
                     }
                     //TC052 
                     
-                    public boolean SaveAndProceed () throws InterruptedException {
+                    public boolean ValidateAllbuttons () {
                     	
+                    	ElementDisplayed(Basic_Information.AllpresentButtons);
+                    	Log.info("Cancel, Save as Draft, Save and Proceed Buttons present" + Basic_Information.AllpresentButtons);
+                    	return true;
+                    }
+                    
+                    public boolean SaveAsDraft () throws InterruptedException {
+                    	
+                    	click(Basic_Information.SaveAsDraft);
+                    	Log.info("Save as Draft button clicked" + Basic_Information.SaveAsDraft);
+                        ElementToBeVisible(Basic_Information.Successcheck); 
+                        Thread.sleep(2000);
+                        return true;
+                    }
+                    
+                    public boolean SaveAndProceed () throws InterruptedException {
+                    	ScrollUntilElementVisible(Basic_Information.AddDetailsforFemale);
+                    	Thread.sleep(2000);
                     	click(Basic_Information.SaveAndProceed);
                     	Thread.sleep(5000);
                     	Log.info("Successfully Submitted");

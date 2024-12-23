@@ -80,176 +80,152 @@ public class Tentative_Project_Cost_AllScenarios extends Base_Class{
 				String Specify = testdata.get("Specify").toString();
 
 				//TC001
-				ExtentTestManager.startTest("TestScenario01 : Login for Business Information Module");
+				ExtentTestManager.startTest("TC001 : Verify Navigation to 'Tentative Project Cost Break Up'");
 				boolean Login = Tentative_project_cost_Module.Login(EmailAddress, Password);
-				ExtentTestManager.getTest().log(Status.PASS , "Login successfully" + Login);
-				Log.info("Login successfully :" + Login);
+				ExtentTestManager.getTest().log(Status.PASS , "Enter Email" + Login);
+				ExtentTestManager.getTest().log(Status.PASS , "Enter Password" + Login);
+				ExtentTestManager.getTest().log(Status.PASS , "Click login button" + Login);
+				ExtentTestManager.getTest().log(Status.PASS , "Click on continue" + Login);
 				
 				//TC002
-				ExtentTestManager.startTest(" Plant And Machinery Entered");
+				ExtentTestManager.startTest(" TC002 - 'Plant & Machinery' Field - Numeric Input");
 				boolean EnterPlantAndMachinery = Tentative_project_cost_Module.EnterPlantAndMachinery(PlantMachinery);
-				ExtentTestManager.getTest().log(Status.PASS , "Plant And Machinery Entered" + EnterPlantAndMachinery);
-				Log.info("Plant And Machinery Entered :" + EnterPlantAndMachinery);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Plant & Machinery'." + EnterPlantAndMachinery);
+				ExtentTestManager.getTest().log(Status.PASS ,"Numeric value is accepted. :" + EnterPlantAndMachinery);
 				
 				
 				//TC003
 				
-				ExtentTestManager.startTest(" Land Entered");
+				ExtentTestManager.startTest("TC003 -  'Land' Field - Numeric Input");
 				boolean EnterLand = Tentative_project_cost_Module.EnterLand(Land);
-				ExtentTestManager.getTest().log(Status.PASS , "Land Entered" + EnterLand);
-				Log.info("Land Entered :" + EnterLand);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Land'." + EnterLand);
+				ExtentTestManager.getTest().log(Status.PASS ,"Numeric value is accepted. :" + EnterLand);
 				
 				//TC004
 				
-				ExtentTestManager.startTest(" Land and Development Entered");
+				ExtentTestManager.startTest("TC004 - 'Land Development' Field - Numeric Input");
 				boolean EnterLandAndDevelopment = Tentative_project_cost_Module.EnterLandDevelopmenent(LandDevelopment);
-				ExtentTestManager.getTest().log(Status.PASS , "Land and Development Entered" + EnterLandAndDevelopment);
-				Log.info("Land and Development Entered :" + EnterLandAndDevelopment);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Land Development'." + EnterLandAndDevelopment);
+				ExtentTestManager.getTest().log(Status.PASS ,"Numeric value is accepted. :" + EnterLandAndDevelopment);
 				
 				//TC005
 				
-				ExtentTestManager.startTest(" Building & Civil Works' Entered");
+				ExtentTestManager.startTest(" TC005 - 'Building & Civil Works' Field - Numeric Input");
 				boolean EnterBuildingAndCoWorkers = Tentative_project_cost_Module.EnterBuildingCivilWorks(BuildingCivilWorks);
-				ExtentTestManager.getTest().log(Status.PASS , "Building & Civil Works' Entered" + EnterBuildingAndCoWorkers);
-				Log.info("Building & Civil Works' Entered :" + EnterBuildingAndCoWorkers);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Building & Civil Works'." + EnterBuildingAndCoWorkers);
+				ExtentTestManager.getTest().log(Status.PASS ,"Numeric value is accepted.:" + EnterBuildingAndCoWorkers);
 				
 				//TC006
 				
-				ExtentTestManager.startTest(" Utilities Entered");
+				ExtentTestManager.startTest(" TC006 - 'Utilities' Field - Numeric Input");
 				boolean EnterUtilities = Tentative_project_cost_Module.EnterUtilities(Utilities);
-				ExtentTestManager.getTest().log(Status.PASS , "Utilities Entered" + EnterUtilities);
-				Log.info("Utilities Entered :" + EnterUtilities);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Utilities'." + EnterUtilities);
+				ExtentTestManager.getTest().log(Status.PASS , "Numeric value is accepted.'." + EnterUtilities);
 				
 				//TC007 
 				
-				ExtentTestManager.startTest(" Misc Fixed Assets Entered");
+				ExtentTestManager.startTest(" TC007 - 'Misc Fixed Assets' Field - Numeric Input");
 				boolean EnterMiscFixasset = Tentative_project_cost_Module.EnterMiscFixedAssets(MiscFixedAssets);
-				ExtentTestManager.getTest().log(Status.PASS , "Misc Fixed Assets Entered" + EnterMiscFixasset);
-				Log.info("Misc Fixed Assets Entered :" + EnterMiscFixasset);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Misc Fixed Assets'." + EnterMiscFixasset);
+				ExtentTestManager.getTest().log(Status.PASS , "Numeric value is accepted.." + EnterMiscFixasset);
 				
 				//TC008
 				
-				ExtentTestManager.startTest(" Deposits Entered");
+				ExtentTestManager.startTest(" TC008 - 'Deposits' Field - Numeric Input");
 				boolean EnterDeposits= Tentative_project_cost_Module.EnterDeposite(Deposits);
-				ExtentTestManager.getTest().log(Status.PASS , "Deposits Entered" + EnterDeposits);
-				Log.info("Deposits Entered :" + EnterDeposits);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Deposits'." + EnterDeposits);
+				ExtentTestManager.getTest().log(Status.PASS , "Numeric value is accepted." + EnterDeposits);
 				
 				//TC009
                 
-				ExtentTestManager.startTest(" Priliminary Expense Entered");
+				ExtentTestManager.startTest(" TC009 - 'Preliminary Expenses' Field - Numeric Input");
 				boolean EnterPriliminaryExpense = Tentative_project_cost_Module.EnterPriliminaryExpense(PreliminaryExpenses);
-				ExtentTestManager.getTest().log(Status.PASS , "Priliminary Expense Entered" + EnterPriliminaryExpense);
-				Log.info("Priliminary Expense Entered :" + EnterPriliminaryExpense);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Preliminary Expenses'." + EnterPriliminaryExpense);
+				ExtentTestManager.getTest().log(Status.PASS , "Numeric value is accepted." + EnterPriliminaryExpense);
 				
 				//TC010
-				ExtentTestManager.startTest(" Validated Preoperative Expense");
+				ExtentTestManager.startTest("TC010 -Verify 'Preoperative Expenses' Amount is Loaded");
 				boolean ValidatePreoperativeExpense  = Tentative_project_cost_Module.ValidatePreoperativeExpenses();
-				ExtentTestManager.getTest().log(Status.PASS , "Validated Preoperative Expense" + ValidatePreoperativeExpense);
-				Log.info("Validated Preoperative Expense :" + ValidatePreoperativeExpense);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Check the 'Preoperative Expenses' field." + ValidatePreoperativeExpense);
+				ExtentTestManager.getTest().log(Status.PASS , "The appropriate amount is loaded in the 'Preoperative Expenses' field." + ValidatePreoperativeExpense);
 				
 				//TC011
 				
-				ExtentTestManager.startTest(" Validated Contingencies");
+				ExtentTestManager.startTest(" TC011 - Verify 'Contingencies' Amount is Loaded");
 				boolean ValidateContingencies  = Tentative_project_cost_Module.ValidateContingencies();
-				ExtentTestManager.getTest().log(Status.PASS , "Validated Contingencies" + ValidateContingencies);
-				Log.info("Validated Contingencies :" + ValidateContingencies);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Check the 'Contingencies' field." + ValidateContingencies);
+				ExtentTestManager.getTest().log(Status.PASS , "The appropriate amount is loaded in the 'Contingencies' field." + ValidateContingencies);
 				
 				//TC012
 				
-				ExtentTestManager.startTest(" Working Capital Margin Entered");
+				ExtentTestManager.startTest(" TC012 - 'Working Capital Margin' Field - Numeric Input");
 				boolean EnterWorkingCapitalMargin  = Tentative_project_cost_Module.WorkingCapitalMargin(WorkingCapitalMargin);
-				ExtentTestManager.getTest().log(Status.PASS , "Working Capital Margin Entered" + EnterWorkingCapitalMargin);
-				Log.info("Working Capital Margin Entered :" + EnterWorkingCapitalMargin);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Working Capital Margin'." + EnterWorkingCapitalMargin);
+				ExtentTestManager.getTest().log(Status.PASS ,"Numeric value is accepted." + EnterWorkingCapitalMargin);
 				
 				//TC013
 				
-				ExtentTestManager.startTest(" Working Capital Amt Entered");
+				ExtentTestManager.startTest(" TC013 - 'Working Capital' Field - Numeric Input");
 				boolean EnterWorkingCapitalAMt  = Tentative_project_cost_Module.WorkingCapital(WorkingCapitalAmt);
-				ExtentTestManager.getTest().log(Status.PASS , "Working Capital Amt Entered" + EnterWorkingCapitalAMt);
-				Log.info("Working Capital Amt Entered :" + EnterWorkingCapitalAMt);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Working Capital'." + EnterWorkingCapitalAMt);
+				ExtentTestManager.getTest().log(Status.PASS ,"Numeric value is accepted." + EnterWorkingCapitalAMt);
 				
 				
 				//TC014
 				
-				ExtentTestManager.startTest(" Technical Amt Entered");
+				ExtentTestManager.startTest("TC014 - 'Technical Know-How Fees' Field - Numeric Input");
 				boolean EnterTechnicalFees  = Tentative_project_cost_Module.TechnicalFees(TechnicalKnowHowFees);
-				ExtentTestManager.getTest().log(Status.PASS , "Technical Amt Entered" + EnterTechnicalFees);
-				Log.info("Working Capital Amt Entered :" + EnterTechnicalFees);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Technical Know-How Fees'." + EnterTechnicalFees);
+				ExtentTestManager.getTest().log(Status.PASS ,"Numeric value is accepted." + EnterTechnicalFees);
 				
 				//TC015 
 				
-				ExtentTestManager.startTest(" Vehicles Entered");
+				ExtentTestManager.startTest("TC015 - 'Vehicles' Field - Numeric Input");
 				boolean EnterVehicle  = Tentative_project_cost_Module.Vehicles(Vehicles);
-				ExtentTestManager.getTest().log(Status.PASS , "Vehicles Entered" + EnterVehicle);
-				Log.info("Vehicles Entered :" + EnterVehicle);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Vehicles'." + EnterVehicle);
+				ExtentTestManager.getTest().log(Status.PASS , "Numeric value is accepted." + EnterVehicle);
 				
 				//TC016 
 				
-				ExtentTestManager.startTest(" Technology Optimization & Product Development Entered");
+				ExtentTestManager.startTest(" TC016 - 'Technology Optimization & Product Development' Field - Numeric Input");
 				boolean EnterTechnologyOptimizationAndProductDevelopment  = Tentative_project_cost_Module.EnterTechnologyOptimizationAndProductDevelopment(TechnologyOptimizationAndProductDevelopment);
-				ExtentTestManager.getTest().log(Status.PASS , "Technology Optimization & Product Development Entered" + EnterTechnologyOptimizationAndProductDevelopment);
-				Log.info("Technology Optimization & Product Development Entered :" + EnterTechnologyOptimizationAndProductDevelopment);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Technology Optimization & Product Development'." + EnterTechnologyOptimizationAndProductDevelopment);
+				ExtentTestManager.getTest().log(Status.PASS ,"Numeric value is accepted." + EnterTechnologyOptimizationAndProductDevelopment);
 				
 				//TC017
 				
-				ExtentTestManager.startTest(" Testing & Certification Entered");
+				ExtentTestManager.startTest(" TC017 - 'Testing & Certification' Field - Numeric Input");
 				boolean EnterTestingAndCertification  = Tentative_project_cost_Module.EnterTestingAndCertification(TestingAndCertification);
-				ExtentTestManager.getTest().log(Status.PASS , "Testing & Certification Entered" + EnterTestingAndCertification);
-				Log.info("Testing & Certification Entered :" + EnterTestingAndCertification);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Testing & Certification'." + EnterTestingAndCertification);
+				ExtentTestManager.getTest().log(Status.PASS ,"Numeric value is accepted." + EnterTestingAndCertification);
+				
+				//TC018
+				ExtentTestManager.startTest(" TC018 - 'Marketing & Promotional Expenses' Field - Numeric Input");
+				boolean EnterMarketingExpense  = Tentative_project_cost_Module.EnterMarketingExpense(MarketingAndPromotionalExpenses);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Marketing & Promotional Expenses'." + EnterMarketingExpense);
+				ExtentTestManager.getTest().log(Status.PASS ,"Numeric value is accepted." + EnterMarketingExpense);
 				
 				//TC019
-				ExtentTestManager.startTest(" Marketing and Promotional Expense Entered");
-				boolean EnterMarketingExpense  = Tentative_project_cost_Module.EnterMarketingExpense(MarketingAndPromotionalExpenses);
-				ExtentTestManager.getTest().log(Status.PASS , "Marketing and Promotional Expense Entered" + EnterMarketingExpense);
-				Log.info("Marketing and PromotionalExpense Entered :" + EnterMarketingExpense);
+				
+				ExtentTestManager.startTest(" TC019 - 'Others' Field - Numeric Input");
+				boolean EnterOthers  = Tentative_project_cost_Module.EnterOthers(Others);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter numeric value in 'Others'." + EnterOthers);
+				ExtentTestManager.getTest().log(Status.PASS ,"Numeric value is accepted, and other related fields are updated accordingly." + EnterOthers);
 				
 				//TC020
 				
-				ExtentTestManager.startTest(" Others Entered");
-				boolean EnterOthers  = Tentative_project_cost_Module.EnterOthers(Others);
-				ExtentTestManager.getTest().log(Status.PASS , "Others Entered" + EnterOthers);
-				Log.info("Others Entered :" + EnterOthers);
+				ExtentTestManager.startTest("TC020 - 'Specify' field- alphanumeric");
+				boolean EnterSpecify = Tentative_project_cost_Module.EnterSpecify(Specify);
+				ExtentTestManager.getTest().log(Status.PASS , "1. Enter alphanumeric data in specify field " + EnterSpecify);
+				ExtentTestManager.getTest().log(Status.PASS ,"Alphanumeric data accepted in specify field" + EnterSpecify);
+				
 				
 				//TC021
 				
-				ExtentTestManager.startTest(" Specify Entered");
-				boolean EnterSpecify = Tentative_project_cost_Module.EnterSpecify(Specify);
-				ExtentTestManager.getTest().log(Status.PASS , "Specify Entered" + EnterSpecify);
-				Log.info("Specify Entered :" + EnterSpecify);
-				
-				
-				//TC022
-				
-				ExtentTestManager.startTest(" Save and Proceeded");
+				ExtentTestManager.startTest(" TC021 - Save and Proceed from 'Tentative Project Cost Break Up'");
 				boolean SaveandProceed  = Tentative_project_cost_Module.SaveAndProceed();
-				ExtentTestManager.getTest().log(Status.PASS , "Successfully Submitted" + SaveandProceed);
-				Log.info("Successfully Submitted :" + SaveandProceed);
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
+				ExtentTestManager.getTest().log(Status.PASS , "1. Click on the 'Save and Proceed' button." + SaveandProceed);
+				ExtentTestManager.getTest().log(Status.PASS ,"Data is saved successfully, and navigation proceeds to the next step" + SaveandProceed);
 				
 				
 				

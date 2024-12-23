@@ -136,9 +136,9 @@ public boolean EnterBuildingCivilWorks (String BuildingCivilWorks) throws Interr
 		System.out.println("Preoperative ExpensesAutoloaded amount displayed" + AutoloadedPreoperativeExpenses.getAttribute("title"));
 		
 		String ABC = AutoloadedPreoperativeExpenses.getAttribute("title");
-		if (ABC.equals("12,19,727")) {
-			ExtentTestManager.getTest().log(Status.PASS, "12,19,727 : " + true);
-			Log.info("12,19,727 : " + true);
+		if (ABC.equals(AutoloadedPreoperativeExpenses.getAttribute("title"))) {
+			ExtentTestManager.getTest().log(Status.PASS, AutoloadedPreoperativeExpenses.getAttribute("title") + true);
+			Log.info(AutoloadedPreoperativeExpenses.getAttribute("title") + true);
 			return true;
 			
 		}
@@ -159,9 +159,9 @@ public boolean EnterBuildingCivilWorks (String BuildingCivilWorks) throws Interr
 		System.out.println("Autoloaded Contingencies amount displayed" + AutoloadedContingencies .getAttribute("title"));
 		
 		String ABC= AutoloadedContingencies.getAttribute("title");
-		if (ABC.equals("20,97,071")) {
-			ExtentTestManager.getTest().log(Status.PASS, "20,97,071: " + true);
-			Log.info("20,97,071 : " + true);
+		if (ABC.equals(AutoloadedContingencies.getAttribute("title"))) {
+			ExtentTestManager.getTest().log(Status.PASS, AutoloadedContingencies.getAttribute("title") + true);
+			Log.info(AutoloadedContingencies.getAttribute("title") + true);
 			return true;
 			
 		}

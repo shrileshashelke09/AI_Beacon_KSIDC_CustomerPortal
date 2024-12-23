@@ -42,7 +42,7 @@ public class Project_Details_Module extends Base_Class {
 	// TC003
 
 	public boolean EnterProjectDescription(String EnterProjectDescription) throws InterruptedException {
-		clear(Project_Details.EnterProjectDescription);
+		//clear(Project_Details.EnterProjectDescription);
 		Thread.sleep(1000);
 		input(Project_Details.EnterProjectDescription, EnterProjectDescription);
 		Thread.sleep(1000);
@@ -53,7 +53,7 @@ public class Project_Details_Module extends Base_Class {
 	// TC004
 
 	public boolean EnterInnovationOrIdeaForProduct(String EnterInnovationOrIdeaForProduct) throws InterruptedException {
-        clear(Project_Details.EnterInnovationOrIdeaForProduct);
+        //clear(Project_Details.EnterInnovationOrIdeaForProduct);
 		input(Project_Details.EnterInnovationOrIdeaForProduct, EnterInnovationOrIdeaForProduct);
 		Thread.sleep(1000);
 		Log.info(EnterInnovationOrIdeaForProduct);
@@ -63,7 +63,7 @@ public class Project_Details_Module extends Base_Class {
 	// TC005
 
 	public boolean EnterTechnologyOrProvenConcept(String EnterTechnologyOrProvenConcept) throws InterruptedException {
-        clear(Project_Details.EnterTechnologyOrProvenConcept);
+        //clear(Project_Details.EnterTechnologyOrProvenConcept);
 		input(Project_Details.EnterTechnologyOrProvenConcept, EnterTechnologyOrProvenConcept);
 		Thread.sleep(1000);
 		Log.info(EnterTechnologyOrProvenConcept);
@@ -74,7 +74,7 @@ public class Project_Details_Module extends Base_Class {
 
 	public boolean EnterAddressableOrserviceableMarket(String EnterAddressableOrserviceableMarket)
 			throws InterruptedException {
-clear(Project_Details.EnterAddressableOrserviceableMarket);
+//clear(Project_Details.EnterAddressableOrserviceableMarket);
 		input(Project_Details.EnterAddressableOrserviceableMarket, EnterAddressableOrserviceableMarket);
 		Thread.sleep(1000);
 		Log.info(EnterAddressableOrserviceableMarket);
@@ -84,7 +84,7 @@ clear(Project_Details.EnterAddressableOrserviceableMarket);
 	// TC007
 
 	public boolean EnterReachOutStrategies(String EnterReachOutStrategies) throws InterruptedException {
-clear(Project_Details.EnterReachOutStrategies);
+//clear(Project_Details.EnterReachOutStrategies);
 		input(Project_Details.EnterReachOutStrategies, EnterReachOutStrategies);
 		Thread.sleep(1000);
 		Log.info(EnterReachOutStrategies);
@@ -94,7 +94,7 @@ clear(Project_Details.EnterReachOutStrategies);
 	// TC008
 	public boolean EnterProposedRevenueModelPricing(String EnterProposedRevenueModelPricing)
 			throws InterruptedException {
-clear(Project_Details.EnterProposedRevenueModelPricing);
+//clear(Project_Details.EnterProposedRevenueModelPricing);
 		input(Project_Details.EnterProposedRevenueModelPricing, EnterProposedRevenueModelPricing);
 		Thread.sleep(1000);
 		Log.info(EnterProposedRevenueModelPricing);
@@ -104,7 +104,7 @@ clear(Project_Details.EnterProposedRevenueModelPricing);
 	// TC009
 
 	public boolean EnterCurrentStatusOfProject(String EnterCurrentStatusOfProject) throws InterruptedException {
-clear(Project_Details.EnterCurrentStatusOfProject);
+//clear(Project_Details.EnterCurrentStatusOfProject);
 		input(Project_Details.EnterCurrentStatusOfProject, EnterCurrentStatusOfProject);
 		Thread.sleep(1000);
 		Log.info(EnterCurrentStatusOfProject);
@@ -115,7 +115,7 @@ clear(Project_Details.EnterCurrentStatusOfProject);
 
 	public boolean EnterMarketAndFutureProfitability(String EnterMarketAndFutureProfitability)
 			throws InterruptedException {
-clear(Project_Details.EnterMarketAndFutureProfitability);
+//clear(Project_Details.EnterMarketAndFutureProfitability);
 		input(Project_Details.EnterMarketAndFutureProfitability, EnterMarketAndFutureProfitability);
 		Thread.sleep(1000);
 		Log.info(EnterMarketAndFutureProfitability);
@@ -125,7 +125,7 @@ clear(Project_Details.EnterMarketAndFutureProfitability);
 	// TC011
 
 	public boolean EnterExitOptionsForLender(String EnterExitOptionsForLender) throws InterruptedException {
-clear(Project_Details.EnterExitOptionsForLender);
+//clear(Project_Details.EnterExitOptionsForLender);
 		input(Project_Details.EnterExitOptionsForLender, EnterExitOptionsForLender);
 		Thread.sleep(1000);
 		Log.info(EnterExitOptionsForLender);
@@ -136,7 +136,7 @@ clear(Project_Details.EnterExitOptionsForLender);
 
 	public boolean EnterProductOrServicesOrRawmeterialsOfTheProject(
 			String EnterProductOrServicesOrRawmeterialsOfTheProject) throws InterruptedException {
-clear(Project_Details.EnterProductOrServicesOrRawmeterialsOfTheProject);
+//clear(Project_Details.EnterProductOrServicesOrRawmeterialsOfTheProject);
 		input(Project_Details.EnterProductOrServicesOrRawmeterialsOfTheProject,
 				EnterProductOrServicesOrRawmeterialsOfTheProject);
 		Thread.sleep(1000);
@@ -183,6 +183,8 @@ clear(Project_Details.EnterProductOrServicesOrRawmeterialsOfTheProject);
 
 	public boolean ClickonAddProjectUnitDetails() throws InterruptedException {
 
+		//ScrollUntilElementVisible(Project_Details.IsneededadditionalUnits);
+		Thread.sleep(1000);
 		click(Project_Details.AddProjectDetailsButton);
 		Thread.sleep(2000);
 		Log.info("Add project Unit Details button clicked" + Project_Details.AddProjectDetailsButton);

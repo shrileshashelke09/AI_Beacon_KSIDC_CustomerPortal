@@ -1,4 +1,4 @@
-package com.Page_Repositary;
+package com.Page_Repositary; 
 
 import org.openqa.selenium.By;
 

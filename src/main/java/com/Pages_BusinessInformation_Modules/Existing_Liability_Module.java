@@ -60,7 +60,7 @@ public class Existing_Liability_Module extends Base_Class {
 	// TC005
 
 	public boolean ValidateSkipForNow() throws InterruptedException {
-
+       ScrollUntilElementVisible(Existing_Liability.Heading);
 		ElementDisplayed(Existing_Liability.SkipForNow);
 		Log.info("Skip for now displayed" + Existing_Liability.SkipForNow);
 		Thread.sleep(1000);
@@ -74,6 +74,17 @@ public class Existing_Liability_Module extends Base_Class {
 	// TC006
 	
 	
+
+		public boolean ClickonAddLiabilityButton() throws InterruptedException {
+			click(Existing_Liability.ExistingLiabilities);
+			ElementDisplayed(Existing_Liability.AddLiabilityButton);
+			Log.info("Add Liability button displayed" + Existing_Liability.AddLiabilityButton);
+			Thread.sleep(1000);
+			click(Existing_Liability.AddLiabilityButton);
+			Log.info("The button is visible and clickable, redirecting to the 'Add Liabilities' section.");
+			return true;
+		}
+		//TC007
 	public boolean ClickonCancelButton() throws InterruptedException {
 		//click(Existing_Liability.AddLiabilityButton);
         ScrollUntilElementVisible(Existing_Liability.LoanPurpose);
@@ -85,23 +96,13 @@ public class Existing_Liability_Module extends Base_Class {
 		return true;
 	}
 	
-	//TC007
 	
-
-	public boolean ClickonAddLiabilityButton() throws InterruptedException {
-
-		ElementDisplayed(Existing_Liability.AddLiabilityButton);
-		Log.info("Add Liability button displayed" + Existing_Liability.AddLiabilityButton);
-		Thread.sleep(1000);
-		click(Existing_Liability.AddLiabilityButton);
-		Log.info("The button is visible and clickable, redirecting to the 'Add Liabilities' section.");
-		return true;
-	}
 
 	// TC008
 
 	public boolean SelectLiabilityCategory() throws InterruptedException {
-
+		click(Existing_Liability.AddLiabilityButton);
+		Thread.sleep(1000);
 		ElementDisplayed(Existing_Liability.LiabilityCategory);
 		Log.info("Liability Category displayed" + Existing_Liability.LiabilityCategory);
 		click(Existing_Liability.LiabilityCategory);

@@ -24,6 +24,8 @@ public class Basic_Information {
 	
 	public By UdyamNo = By.xpath("//input[@placeholder='UDYAM-XX-00-0000000']");
 	
+	public By verifybutton = By.xpath("(//a[text()='Verify'])[1]");
+	
 	public By VerifyUdyamNo = By.xpath("(//a[@class='button tertiary inside-btn enabled'])[1]");
 	
 	public By Verified = By.xpath("(//span[@class='material-symbols-rounded'])[5]");
@@ -76,6 +78,8 @@ public class Basic_Information {
     
     public By CompanyPAN = By.xpath("(//input[@placeholder='Company PAN']");
     
+	public By verifybuttonPAN = By.xpath("(//a[normalize-space()='Verify'])[2]/parent::div");
+    
     public By EnterCIN = By.xpath("//input[@placeholder='CIN ']");
     
     public By EnterRating = By.xpath("//input[@placeholder='External Credit Rating']");
@@ -118,9 +122,13 @@ public class Basic_Information {
     
     public By EnterAccNumber = By.xpath("//input[@placeholder='Account Number']");
     
+    public By BankAccSection = By.xpath("//p[text()='Bank Account Details']");
+    
     public By AddBankbutton = By.xpath("//button[@class='button primary btn-medium']");
     
     public By AddedBankDetails = By.xpath("//div[@class='chip active']");
+    
+    public By GenderSection = By.xpath("//h6[text()='Additional gender wise employment details']");
     
     public By MaleHeader = By.xpath("(//div[@class='card-sub-heading d-flex flex-column flex-sm-row align-items-start align-items-sm-center align-items-md-center justify-content-between'])[1]");
     
@@ -128,7 +136,15 @@ public class Basic_Information {
     
     public By AddDetailsforFemale = By.xpath("(//span[@class='rz-button-box'])[4]");
     
+    public By TotalCount = By.xpath("//span[@class='total-gender-count']");
+    
     public By TermsAndConditionCheckBox = By.xpath("//span[@class='rz-chkbox-icon']/parent::div");
+    
+    public By AllpresentButtons = By.xpath("//form[@class='rz-form']//div[@class='d-flex flex-column flex-sm-row justify-content-end align-items-center gap-2 pt-4']");
+    
+    public By SaveAsDraft = By.xpath("//button[normalize-space()='Save as Draft']");
+    
+    public By Successcheck = By.xpath("//div[@class='rz-growl-item']");
     
     public By SaveAndProceed = By.xpath("//button[normalize-space()='Save and Proceed']");
     

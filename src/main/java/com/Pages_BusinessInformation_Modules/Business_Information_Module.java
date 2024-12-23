@@ -34,32 +34,6 @@ public class Business_Information_Module extends Base_Class {
 		
 	}
 	
-	//Logout
-	
-//	public boolean Logout () throws InterruptedException {
-//		
-//		click(Business_Information.LoginIdUSer);
-//		Thread.sleep(1000);
-//		click(Business_Information.LogOut);
-//		return true;
-//		
-//	}
-	
-	//TC002 
-//	public boolean Invalidcredentials(String EnterEmailAddress , String EnterPassword) throws InterruptedException {
-//		click(Business_Information.LoginButton);
-//		Log.info("Login button Clicked" + Business_Information.LoginButton );
-//		Thread.sleep(2000);
-//		input(Business_Information.EnterEmailAddress , EnterEmailAddress);
-//		Log.info(EnterEmailAddress);
-//		Thread.sleep(2000);
-//		input(Business_Information.EnterPassword ,EnterPassword);
-//		Log.info(EnterPassword);
-//		click(Business_Information.ClicktoLogin);
-//		Log.info("Login button clickd" + Business_Information.ClicktoLogin);
-//		return false;
-//	}
-	
 	
 	//TC003
 	public boolean EnquiryNowTermLoanKSIDC () throws InterruptedException {
@@ -68,7 +42,7 @@ public class Business_Information_Module extends Base_Class {
 		ScrollUntilElementVisible(Business_Information.Scroll);
 		Thread.sleep(3000);
 		click(Business_Information.EnquiryNowTermLoanKSIDC);
-		Thread.sleep(3000);
+		ElementToBeVisible(Business_Information.BusinessinfoHeader);
 		Log.info("Enquiry Now button clicked" + Business_Information.EnquiryNowTermLoanKSIDC);
 		return true;
 		
@@ -76,10 +50,11 @@ public class Business_Information_Module extends Base_Class {
 	
 	//TC004 
 	
-	public boolean BusinessinfoHeader () {
+	public boolean BusinessinfoHeader () throws InterruptedException {
 		
 		ElementDisplayed (Business_Information.BusinessinfoHeader);
 		Log.info("Business Information Header visible" + Business_Information.BusinessinfoHeader);
+		Thread.sleep(1000);
 		return true;
 	}
 	
@@ -163,16 +138,16 @@ public class Business_Information_Module extends Base_Class {
 			Log.info("Promoter Contribution Field displayed" + Business_Information.PromoterContribution);
 			Thread.sleep(1000);
 			
-	        input(Business_Information.EnterDocketAmount ,EnterDocketAmount );
-			Log.info(EnterDocketAmount);
-			Thread.sleep(2000);
-			ElementDisplayed(Business_Information.LoanAmountRequired);
-			Log.info("Loan Amount required field displayed" + Business_Information.LoanAmountRequired);
-			Thread.sleep(1000);
-			input(Business_Information.EnterLoanAmount ,EnterLoanAmount );
-			Log.info(EnterLoanAmount);
-			Thread.sleep(3000);
-			
+//	        input(Business_Information.EnterDocketAmount ,EnterDocketAmount );
+//			Log.info(EnterDocketAmount);
+//			Thread.sleep(2000);
+//			ElementDisplayed(Business_Information.LoanAmountRequired);
+//			Log.info("Loan Amount required field displayed" + Business_Information.LoanAmountRequired);
+//			Thread.sleep(1000);
+//			input(Business_Information.EnterLoanAmount ,EnterLoanAmount );
+//			Log.info(EnterLoanAmount);
+//			Thread.sleep(3000);
+//			
 		click(Business_Information.PromoterContribution);
 		Thread.sleep(2000);
 //		   int expectedContribution = Integer.parseInt(EnterDocketAmount) - Integer.parseInt(EnterLoanAmount);
@@ -549,19 +524,15 @@ public class Business_Information_Module extends Base_Class {
                     	   click(Business_Information.SelectYESforexclusive);
                     	   ScrollUntilElementVisible(Business_Information.ProjectNature);
                     	   Thread.sleep(1000);
+                    	   ElementDisplayed(Business_Information.ExistingAsset);
+                      	 Log.info("Data field displayed" + Business_Information.ExistingAsset);
+                    	   click(Business_Information.SelectYesforExistingAsset);
+                    	   ScrollUntilElementVisible(Business_Information.FirstCharge);
+                    	   Thread.sleep(1000);
                     	   return true;
                        }
                          
-                         public boolean ExistingAsset () throws InterruptedException {
-                        	 
-                        	 ElementDisplayed(Business_Information.ExistingAsset);
-                        	 Log.info("Data field displayed" + Business_Information.ExistingAsset);
-                      	   click(Business_Information.SelectYesforExistingAsset);
-                      	   ScrollUntilElementVisible(Business_Information.FirstCharge);
-                      	   Thread.sleep(1000);
-                      	   return true;
-                        	 
-                         }
+                    
                          
                          //TC049
                          
@@ -581,6 +552,9 @@ public class Business_Information_Module extends Base_Class {
                         	 ElementDisplayed(Business_Information.Submit);
                         	 Log.info("Submit button displayed" + Business_Information.Submit);
                         	 click(Business_Information.Submit);
+                        	 Log.info("Submit button clicked"+Business_Information.Submit);
+                        	 ElementToBeVisible(Business_Information.SuucessGreenMark);
+                        	 Log.info("Success check displayed" + Business_Information.SuucessGreenMark);
                         	 return true;
                         	 
                         	 
@@ -588,15 +562,14 @@ public class Business_Information_Module extends Base_Class {
                          
                          //TC051 
                          
-                         public boolean SuccessChecke () throws InterruptedException {
+                         public boolean SuccessCheck () throws InterruptedException {
                         	 
                         	 ElementDisplayed(Business_Information.SuucessGreenMark);
                         	 Log.info("SuccessMark displayed" + Business_Information.SuucessGreenMark);
                         	 ElementDisplayed(Business_Information.SuccessMessage);
                         	 Log.info("Suucess message displayed" + Business_Information.SuccessMessage);
                         	 ElementDisplayed(Business_Information.LoanAppbutton);
-                        	 click(Business_Information.LoanAppbutton);
-                        	 Log.info("Loan Application button clicked" + Business_Information.LoanAppbutton);
+                        	 Log.info("Loan Application button shown" + Business_Information.LoanAppbutton);
                         	 return true;
                          }
                        
