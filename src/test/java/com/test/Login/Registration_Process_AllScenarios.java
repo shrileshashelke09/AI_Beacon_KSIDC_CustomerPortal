@@ -69,6 +69,7 @@ public class Registration_Process_AllScenarios extends Base_Class {
 				Log.info("Button visible !");
 				Thread.sleep(3000);
 				
+				
 				// TC002
 				
 				ExtentTestManager.startTest("TC002-Verify Register Button Visibility");
