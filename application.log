@@ -1,22 +1,20 @@
-[INFO ] 2024-12-24 15:43:12.437 [main] Log - *** Running test method Register_Page_Module...
-[INFO ] 2024-12-24 15:43:14.697 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2024-12-24 15:43:48.360 [main] Log - Title is displayed : KSIDC
-[INFO ] 2024-12-24 15:43:48.369 [main] Log - Button visible !
-[INFO ] 2024-12-24 15:43:54.498 [main] Log - Validated Registration button visibility : true
-[INFO ] 2024-12-24 15:43:58.725 [main] Log - Register Button ClickedBy.xpath: (//button[text()='Register'])[2]
-[INFO ] 2024-12-24 15:43:58.727 [main] Log - Registration button clicked : true
-[INFO ] 2024-12-24 15:43:58.782 [main] Log - Headline is Enter Your Mobile NumberBy.xpath: //h3[normalize-space()='Enter Your Mobile Number']
-[INFO ] 2024-12-24 15:43:58.784 [main] Log - Headline is Enter Your Mobile Number : true
-[INFO ] 2024-12-24 15:43:58.848 [main] Log - Mobile number field visibleBy.xpath: //label[normalize-space()='Mobile Number']
-[INFO ] 2024-12-24 15:43:58.849 [main] Log - Mobile number field is displayed : true
-[INFO ] 2024-12-24 15:43:58.895 [main] Log - Asterisk Mark VisibleBy.xpath: (//label[@class='form-label input-main-label required-star'])[3]
-[INFO ] 2024-12-24 15:43:58.896 [main] Log - Mobile number field is displayed : true
-[INFO ] 2024-12-24 15:43:58.975 [main] Log - Send verification Button visibleBy.xpath: //div[@id='register-Modal']//button[@type='submit'][normalize-space()='Send Verification Code']
-[INFO ] 2024-12-24 15:43:58.977 [main] Log - SendVerificationCode button is displayed : true
-[INFO ] 2024-12-24 15:43:59.041 [main] Log - Close Button VisibleBy.xpath: (//button[@class='button round-button round-bg-none'])[2]
-[INFO ] 2024-12-24 15:43:59.042 [main] Log - close button is displayed : true
-[INFO ] 2024-12-24 15:44:03.331 [main] Log - Mobile Number Required is displayedBy.xpath: //div[@class='rz-message rz-messages-error ']
-[INFO ] 2024-12-24 15:44:03.333 [main] Log - Mobile Number  required error showing : true
-[INFO ] 2024-12-24 15:44:07.565 [main] Log - Window closedBy.xpath: (//button[@class='button round-button round-bg-none'])[2]
-[INFO ] 2024-12-24 15:44:07.566 [main] Log - Close icon clicked and popup got closed : true
-[INFO ] 2024-12-24 15:44:13.164 [main] Log - Entered Mobile NumberBy.xpath: //input[@placeholder='Mobile Number']
+[INFO ] 2024-12-26 18:10:02.137 [main] Log - *** Running test method Other_Share_Pattern_Details_Module...
+[INFO ] 2024-12-26 18:10:04.399 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2024-12-26 18:10:19.584 [main] Log - Title is displayed : KSIDC
+[INFO ] 2024-12-26 18:10:22.604 [main] Log - Button visible !
+[INFO ] 2024-12-26 18:10:26.787 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
+[INFO ] 2024-12-26 18:10:28.949 [main] Log - KSIDC.15@gmail.com
+[INFO ] 2024-12-26 18:10:31.099 [main] Log - KSIDCcp@123#
+[INFO ] 2024-12-26 18:10:35.306 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
+[INFO ] 2024-12-26 18:10:41.508 [main] Log - Successfully Logged inBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2024-12-26 18:10:41.509 [main] Log - Login successfully :true
+[INFO ] 2024-12-26 18:10:52.992 [main] Log - Navigated to 'Other Share Pattern Details'By.xpath: //a[normalize-space()='2.3 Other Share Pattern Details']
+[INFO ] 2024-12-26 18:10:54.049 [main] Log - Header displayedBy.xpath: //h4[text()='Other Share Pattern Details']
+[INFO ] 2024-12-26 18:10:54.099 [main] Log - Field is availableBy.xpath: //input[@placeholder='Number Of Non-Major Share Holders']
+[INFO ] 2024-12-26 18:10:55.185 [main] Log - 4
+[INFO ] 2024-12-26 18:10:55.242 [main] Log - Field is availableBy.xpath: //input[@placeholder='Percentage Of Share Holding']
+[INFO ] 2024-12-26 18:10:56.325 [main] Log - 20
+[INFO ] 2024-12-26 18:10:57.400 [main] Log - Cancel button presentBy.xpath: //a[text()='Cancel']
+[INFO ] 2024-12-26 18:10:58.458 [main] Log - Save As Draft Button button presentBy.xpath: //button[text()='Save as Draft']
+[INFO ] 2024-12-26 18:11:00.858 [main] Log - Logout is done
+[INFO ] 2024-12-26 18:11:01.242 [main] Log - *** Test Suite Other_Share_Pattern_Details_Module ending ***

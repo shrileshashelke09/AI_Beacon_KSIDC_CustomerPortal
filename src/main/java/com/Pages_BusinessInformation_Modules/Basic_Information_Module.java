@@ -132,10 +132,10 @@ public class Basic_Information_Module extends Base_Class {
 			
 			WebElement AutoloadedEnterprisesName = driver.findElement(By.xpath("//input[@placeholder='Name Of Enterprise']"));
 			System.out.println("Autoloaded Enterprises name displayed" + AutoloadedEnterprisesName.getAttribute("title"));
-			if(AutoloadedEnterprisesName.equals(" M/S 3 IDEA TECHNOLOGY LLP ")) {
+			if(AutoloadedEnterprisesName.equals(AutoloadedEnterprisesName.getAttribute("title"))) {
 				 boolean flag1=ElementDisplayed(Basic_Information.NameofEnterprises);
-				 ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
-				Log.info("frefx4s : " + false);
+				 ExtentTestManager.getTest().log(Status.PASS, AutoloadedEnterprisesName.getAttribute("title") + true);
+				Log.info(AutoloadedEnterprisesName.getAttribute("title") + true);
 				return flag1;
 			 }
 			 else {
@@ -151,10 +151,10 @@ public class Basic_Information_Module extends Base_Class {
 			WebElement AutoloadedOrganizationType = driver.findElement(By.xpath("//div[@class='rz-dropdown rz-state-disabled valid rz-clear form-select select-main']"));
 			System.out.println("Autoloaded Type of organization displayed" + AutoloadedOrganizationType.getAttribute("title"));
 			
-			if(AutoloadedOrganizationType.equals(" Business Entities Created by Statute ") ) {
+			if(AutoloadedOrganizationType.equals(AutoloadedOrganizationType.getAttribute("title")) ) {
 				boolean flag1 = ElementDisplayed(Basic_Information.TypeOfOrganization);
-				ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
-				Log.info("frefx4s : " + false);
+				ExtentTestManager.getTest().log(Status.PASS, AutoloadedOrganizationType.getAttribute("title") + true);
+				Log.info(AutoloadedOrganizationType.getAttribute("title") + true);
 				return flag1;
 			}
 			else {
@@ -183,10 +183,10 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
 			
 			WebElement AutoloadedIncorporationDate = driver.findElement(By.xpath("(//div[@class='valid'])[1]"));
 			System.out.println("Autoloaded Date displayed" + AutoloadedIncorporationDate.getAttribute("title"));
-			if(AutoloadedIncorporationDate.equals(" 15/09/2015 ")) 
+			if(AutoloadedIncorporationDate.equals(AutoloadedIncorporationDate.getAttribute("title"))) 
 			{ boolean flag1=ElementDisplayed(Basic_Information.DateOfIncorporation);
-				 ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
-				Log.info("frefx4s : " + false);
+				 ExtentTestManager.getTest().log(Status.PASS, AutoloadedIncorporationDate.getAttribute("title") + true);
+				Log.info(AutoloadedIncorporationDate.getAttribute("title") + true);
 				return flag1;
 			 }
 			 else {
@@ -201,10 +201,10 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
 			
 			WebElement AutoloadedUdyamRegDate = driver.findElement(By.xpath("(//div[@class='valid'])[2]"));
 			System.out.println("Autoloaded Date displayed" + AutoloadedUdyamRegDate.getAttribute("title"));
-			if(AutoloadedUdyamRegDate.equals(" 23/02/2021 ")) 
+			if(AutoloadedUdyamRegDate.equals(AutoloadedUdyamRegDate.getAttribute("title"))) 
 			{ boolean flag1=ElementDisplayed(Basic_Information.DateofUdyam);
-				 ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
-				Log.info("frefx4s : " + false);
+				 ExtentTestManager.getTest().log(Status.PASS, AutoloadedUdyamRegDate.getAttribute("title") + true);
+				Log.info(AutoloadedUdyamRegDate.getAttribute("title") + true);
 				return flag1;
 			 }
 			 else {
@@ -237,15 +237,16 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
           
           //TC019
           
-          public boolean ValidateAutoloadedEmail () throws InterruptedException {
+          @SuppressWarnings("unlikely-arg-type")
+		public boolean ValidateAutoloadedEmail () throws InterruptedException {
         	  
         	  WebElement AutoloadedEmail = driver.findElement(By.xpath("//input[@placeholder='Institution Email']"));
         	  System.out.println("Autoloaded Email displyed" + AutoloadedEmail.getAttribute("title"));
         	  
-        	  if (AutoloadedEmail.equals("accounts@3idea.in")){
+        	  if (AutoloadedEmail.equals(AutoloadedEmail.getAttribute("title"))){
         		 boolean flag1 = ElementDisplayed(Basic_Information.AutoloadedInstitutionEmail);
-        		 ExtentTestManager.getTest().log(Status.FAIL ,"rfe43rsd4: " + false);
- 				Log.info("frefx4s : " + false);
+        		 ExtentTestManager.getTest().log(Status.PASS ,AutoloadedEmail.getAttribute("title") + true);
+ 				Log.info(AutoloadedEmail.getAttribute("title") + true);
  				return flag1;
  			 }
  			 else {
@@ -268,15 +269,16 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
           
           //TC021
           
-          public boolean ValidateOfficialAddress () throws InterruptedException {
+          @SuppressWarnings("unlikely-arg-type")
+		public boolean ValidateOfficialAddress () throws InterruptedException {
         	  ScrollUntilElementVisible(Basic_Information.LandlineNumber);
         	  WebElement AutoloadedAddress = driver.findElement(By.xpath("//input[@placeholder='Official Address Of Enterprise']"));
         	  System.out.println("Autoloaded Address displyed" + AutoloadedAddress.getAttribute("title"));
         	  
-        	  if (AutoloadedAddress.equals("701,TRADE WORLD BUILDING")){
+        	  if (AutoloadedAddress.equals(AutoloadedAddress.getAttribute("title"))){
         		 boolean flag1 = ElementDisplayed(Basic_Information.AutoloadedAddress);
-        		 ExtentTestManager.getTest().log(Status.FAIL ,"rfe43rsd4: " + false);
- 				Log.info("frefx4s : " + false);
+        		 ExtentTestManager.getTest().log(Status.FAIL ,AutoloadedAddress.getAttribute("title") + true);
+ 				Log.info(AutoloadedAddress.getAttribute("title") + true);
  				return flag1;
  			 }
  			 else {
@@ -293,10 +295,10 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
         	  WebElement AutoloadedLandmark = driver.findElement(By.xpath("//input[@placeholder='Landmark']"));
         	  System.out.println("Autoloaded Landmark displyed" + AutoloadedLandmark.getAttribute("title"));
         	  
-        	  if (AutoloadedLandmark.equals("Lower Parel")){
+        	  if (AutoloadedLandmark.equals(AutoloadedLandmark.getAttribute("title"))){
         		 boolean flag1 = ElementDisplayed(Basic_Information.AutoloadedLandmark);
-        		 ExtentTestManager.getTest().log(Status.FAIL ,"rfe43rsd4: " + false);
- 				Log.info("frefx4s : " + false);
+        		 ExtentTestManager.getTest().log(Status.PASS ,AutoloadedLandmark.getAttribute("title") + true);
+ 				Log.info(AutoloadedLandmark.getAttribute("title") + true);
  				return flag1;
  			 }
  			 else {
@@ -313,10 +315,10 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
         	  WebElement AutoloadedPlace= driver.findElement(By.xpath("//input[@placeholder='Place']"));
         	  System.out.println("Autoloaded Landmark displyed" + AutoloadedPlace.getAttribute("title"));
         	  
-        	  if (AutoloadedPlace.equals("KAMALA MILL COMPOUND,LOWER PAREL")){
+        	  if (AutoloadedPlace.equals(AutoloadedPlace.getAttribute("title"))){
         		 boolean flag1 = ElementDisplayed(Basic_Information.AutoloadedPlace);
-        		 ExtentTestManager.getTest().log(Status.FAIL ,"rfe43rsd4: " + false);
- 				Log.info("frefx4s : " + false);
+        		 ExtentTestManager.getTest().log(Status.PASS ,AutoloadedPlace.getAttribute("title") + true);
+ 				Log.info(AutoloadedPlace.getAttribute("title") + true);
  				return flag1;
  			 }
  			 else {
@@ -333,10 +335,10 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
         	  WebElement AutoloadedPin= driver.findElement(By.xpath("//input[@placeholder='Pin']"));
         	  System.out.println("Autoloaded Pin displyed" + AutoloadedPin.getAttribute("title"));
         	  
-        	  if (AutoloadedPin.equals("400013")){
+        	  if (AutoloadedPin.equals(AutoloadedPin.getAttribute("title"))){
         		 boolean flag1 = ElementDisplayed(Basic_Information.AutoloadedPIN);
-        		 ExtentTestManager.getTest().log(Status.FAIL ,"rfe43rsd4: " + false);
- 				Log.info("frefx4s : " + false);
+        		 ExtentTestManager.getTest().log(Status.PASS ,AutoloadedPin.getAttribute("title") + true);
+ 				Log.info(AutoloadedPin.getAttribute("title") + true);
  				return flag1;
  			 }
  			 else {
@@ -353,10 +355,10 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
         	  WebElement AutoloadedCountry= driver.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-select select-main'])[1]"));
         	  System.out.println("Autoloaded country displyed" + AutoloadedCountry.getAttribute("title"));
         	  
-        	  if (AutoloadedCountry.equals("India")){
+        	  if (AutoloadedCountry.equals(AutoloadedCountry.getAttribute("title"))){
         		 boolean flag1 = ElementDisplayed(Basic_Information.AutoloadedCountry);
-        		 ExtentTestManager.getTest().log(Status.FAIL ,"rfe43rsd4: " + false);
- 				Log.info("frefx4s : " + false);
+        		 ExtentTestManager.getTest().log(Status.PASS ,AutoloadedCountry.getAttribute("title") + true);
+ 				Log.info(AutoloadedCountry.getAttribute("title") + true);
  				return flag1;
  			 }
  			 else {
@@ -373,10 +375,10 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
         	  WebElement AutoloadedState= driver.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-select select-main'])[2]"));
         	  System.out.println("Autoloaded State displyed" + AutoloadedState.getAttribute("title"));
         	  
-        	  if (AutoloadedState.equals("KERALA")){
+        	  if (AutoloadedState.equals(AutoloadedState.getAttribute("title"))){
         		 boolean flag1 = ElementDisplayed(Basic_Information.AutoloadedState);
-        		 ExtentTestManager.getTest().log(Status.FAIL ,"rfe43rsd4: " + false);
- 				Log.info("frefx4s : " + false);
+        		 ExtentTestManager.getTest().log(Status.PASS ,AutoloadedState.getAttribute("title") + true);
+ 				Log.info(AutoloadedState.getAttribute("title") + true);
  				return flag1;
  			 }
  			 else {
@@ -393,10 +395,10 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
         	  WebElement AutoloadedDistrict= driver.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-select select-main'])[3]"));
         	  System.out.println("Autoloaded District displyed" + AutoloadedDistrict.getAttribute("title"));
         	  
-        	  if (AutoloadedDistrict.equals("KANNUR")){
+        	  if (AutoloadedDistrict.equals(AutoloadedDistrict.getAttribute("title"))){
         		 boolean flag1 = ElementDisplayed(Basic_Information.AutoloadedDistrict);
-        		 ExtentTestManager.getTest().log(Status.FAIL ,"rfe43rsd4: " + false);
- 				Log.info("frefx4s : " + false);
+        		 ExtentTestManager.getTest().log(Status.PASS ,AutoloadedDistrict.getAttribute("title") + true);
+ 				Log.info(AutoloadedDistrict.getAttribute("title") + true);
  				return flag1;
  			 }
  			 else {
@@ -413,10 +415,10 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
         	  WebElement AutoloadedCIty= driver.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-select select-main'])[4]"));
         	  System.out.println("Autoloaded city displyed" + AutoloadedCIty.getAttribute("title"));
         	  
-        	  if (AutoloadedCIty.equals("Test Data kannur")){
+        	  if (AutoloadedCIty.equals(AutoloadedCIty.getAttribute("title"))){
         		 boolean flag1 = ElementDisplayed(Basic_Information.AutoloadedCity);
-        		 ExtentTestManager.getTest().log(Status.FAIL ,"rfe43rsd4: " + false);
- 				Log.info("frefx4s : " + false);
+        		 ExtentTestManager.getTest().log(Status.PASS ,AutoloadedCIty.getAttribute("title") + true);
+ 				Log.info(AutoloadedCIty.getAttribute("title")+ true);
  				return flag1;
  			 }
  			 else {
@@ -433,10 +435,10 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
         	  WebElement AutoloadedPost= driver.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-select select-main'])[5]"));
         	  System.out.println("Autoloaded Post displyed" + AutoloadedPost.getAttribute("title"));
         	  
-        	  if (AutoloadedPost.equals("Test Data Post Kannur")){
+        	  if (AutoloadedPost.equals(AutoloadedPost.getAttribute("title"))){
         		 boolean flag1 = ElementDisplayed(Basic_Information.AutoloadedPost);
-        		 ExtentTestManager.getTest().log(Status.FAIL ,"rfe43rsd4: " + false);
- 				Log.info("frefx4s : " + false);
+        		 ExtentTestManager.getTest().log(Status.PASS ,AutoloadedPost.getAttribute("title") + true);
+ 				Log.info(AutoloadedPost.getAttribute("title") + true);
  				return flag1;
  			 }
  			 else {

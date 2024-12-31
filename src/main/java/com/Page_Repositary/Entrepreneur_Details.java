@@ -185,9 +185,9 @@ public class Entrepreneur_Details {
 	//public By AddedAwardDetails = By.xpath("(//a[@class='chip-text-wrapper text-decoration-none'])[3]");
 
 //	public By AddAward = By.xpath("(//button[text()='Add Details'])[1]");
-//	
+	
 	public By AddedAwardGrid = By.xpath("(//a[@class='chip-text-wrapper text-decoration-none'])[3]");
-//	
+
     public By editAwardReceivedBy = By.xpath("//label[text()='Award Received Year']/parent::div");
 	
 	public By editSelectAwardReceivedYear = By.xpath("(//span[text()='2023'])[2]");

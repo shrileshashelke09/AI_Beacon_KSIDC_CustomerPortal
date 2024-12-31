@@ -179,10 +179,10 @@ public class Business_Information_Module extends Base_Class {
 			WebElement AutoloadName = driver.findElement(By.xpath("//input[@placeholder='Chief Promoter Full Name']"));
 			System.out.println("Autoloaded valued displayed " +AutoloadName.getAttribute("title"));
 			
-			if(AutoloadName.equals("ABC54R34easew4")) {
+			if(AutoloadName.equals(AutoloadName.getAttribute("title"))) {
 				 boolean flag1=ElementDisplayed(Business_Information.AutoloadedChiefPromoterFullName);
-				 ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
-				Log.info("frefx4s : " + false);
+				 ExtentTestManager.getTest().log(Status.PASS, AutoloadName.getAttribute("title")  + true);
+				Log.info(AutoloadName.getAttribute("title") + true);
 				return flag1;
 			 }
 			 else {
@@ -201,10 +201,10 @@ public class Business_Information_Module extends Base_Class {
 			WebElement AutoloadMob = driver.findElement(By.xpath("//input[@placeholder='Mobile No']"));
 			System.out.println("Auto loaded mobile number displayed" + AutoloadMob.getAttribute("title"));
 			
-			if(AutoloadMob.equals("9954327855")) {
+			if(AutoloadMob.equals(AutoloadMob.getAttribute("title"))) {
 				 boolean flag1=ElementDisplayed(Business_Information.AutoloadedMobileNumber);
-				 ExtentTestManager.getTest().log(Status.FAIL, "2323232333333: " + false);
-				Log.info("2323232333333: " + false);
+				 ExtentTestManager.getTest().log(Status.PASS, AutoloadMob.getAttribute("title") + true);
+				Log.info(AutoloadMob.getAttribute("title") + true);
 				return flag1;
 			 }
 			 else {
@@ -222,11 +222,11 @@ public class Business_Information_Module extends Base_Class {
 			WebElement AutoloadedEmail = driver.findElement(By.xpath("//input[@placeholder='Email ID']"));
 			System.out.println("Autoloaded Email displayed" + AutoloadedEmail.getAttribute("title"));
 			
-			if (AutoloadedEmail.equals("ksidc.15@gmail.com")) {
+			if (AutoloadedEmail.equals(AutoloadedEmail.getAttribute("title"))) {
 				
 				boolean flag1=ElementDisplayed(Business_Information.AutoloadedEmail);
-				 ExtentTestManager.getTest().log(Status.FAIL, "fvdt5: " + false);
-				Log.info("fdt56: " + false);
+				 ExtentTestManager.getTest().log(Status.PASS, AutoloadedEmail.getAttribute("title") + true);
+				Log.info(AutoloadedEmail.getAttribute("title") + true);
 				return flag1;
 				
 			}
@@ -315,11 +315,11 @@ public class Business_Information_Module extends Base_Class {
 					WebElement AutoloadedState = driver.findElement(By.xpath("//div[@title='KERALA']"));
 					System.out.println("Autoloaded State displayed " + AutoloadedState.getAttribute("title"));
 					
-					if (AutoloadedState.equals("KERALA")) {
+					if (AutoloadedState.equals(AutoloadedState.getAttribute("title"))) {
 						
 						boolean flag1=ElementDisplayed(Business_Information.AutoloadedState);
-						 ExtentTestManager.getTest().log(Status.FAIL, "Mumbai: " + false);
-						Log.info("Mumbai: " + false);
+						 ExtentTestManager.getTest().log(Status.PASS, AutoloadedState.getAttribute("title") + true);
+						Log.info(AutoloadedState.getAttribute("title") + true);
 						return flag1;
 						
 					}

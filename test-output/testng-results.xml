@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-24T15:12:25 IST" name="Default suite" finished-at="2024-12-24T15:13:09 IST" duration-ms="43927">
+  <suite started-at="2024-12-26T18:10:01 IST" name="Default suite" finished-at="2024-12-26T18:11:01 IST" duration-ms="59704">
     <groups>
     </groups>
-    <test started-at="2024-12-24T15:12:25 IST" name="Default test" finished-at="2024-12-24T15:13:09 IST" duration-ms="43927">
-      <class name="com.test.BusinessInformation_Modules.Entity_Details_AllScenarios">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Entity_Details_AllScenarios@5b94b04d]" started-at="2024-12-24T15:12:25 IST" name="reference" finished-at="2024-12-24T15:12:25 IST" duration-ms="437" status="PASS">
+    <test started-at="2024-12-26T18:10:01 IST" name="Default test" finished-at="2024-12-26T18:11:01 IST" duration-ms="59704">
+      <class name="com.test.BusinessInformation_Modules.Other_Share_Pattern_Details_AllScenarios">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Other_Share_Pattern_Details_AllScenarios@5b94b04d]" started-at="2024-12-26T18:10:01 IST" name="reference" finished-at="2024-12-26T18:10:01 IST" duration-ms="344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
-        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Entity_Details_AllScenarios@5b94b04d]" started-at="2024-12-24T15:12:26 IST" name="RUNALL" data-provider="TestData4" finished-at="2024-12-24T15:13:09 IST" duration-ms="43050" status="PASS">
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Other_Share_Pattern_Details_AllScenarios@5b94b04d]" started-at="2024-12-26T18:10:02 IST" name="RUNALL" data-provider="TestData4" finished-at="2024-12-26T18:11:01 IST" duration-ms="59178" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AddressLine1=DS4T54TGRFX5, AddressLine2=BSH4TR6SH7U4, AddressLine3=VGETW53, CKYCID=12345678912345, CompanyPAN=ASDRT6677Y, CompanyPAN1=ASDZX4567E, EmailAddress=KSIDC.15@gmail.com, ExternalCreditRatingTest=80, GSTIN=22AAAAA0000A1Z5, InstitutionEmail=ERA@GMAIL.COM, InstitutionMobile=9876544567, LandMark=D3DW, NameOfInstitution=KERALA INSTITUTE123, Password=KSIDCcp@123#, PercentageOfShareHolding=20, Pin=672210, Place=EDF22323323, Run=Yes, TAN=PDES03028F, TestScenario=Entity_Details_Module, TIN=L17110MH197}]]>
+                <![CDATA[{EmailAddress=KSIDC.15@gmail.com, NoOnNonMajorShareHolders=4, Password=KSIDCcp@123#, PercentageOfShareHolded=20, Run=Yes, TestScenario=Other_Share_Pattern_Details_Module}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@7068f7ca]]>
+                <![CDATA[org.testng.TestRunner@38548b19]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RUNALL -->
-      </class> <!-- com.test.BusinessInformation_Modules.Entity_Details_AllScenarios -->
+      </class> <!-- com.test.BusinessInformation_Modules.Other_Share_Pattern_Details_AllScenarios -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
