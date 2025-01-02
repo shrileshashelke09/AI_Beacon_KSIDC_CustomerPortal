@@ -1,20 +1,17 @@
-[INFO ] 2024-12-26 18:10:02.137 [main] Log - *** Running test method Other_Share_Pattern_Details_Module...
-[INFO ] 2024-12-26 18:10:04.399 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2024-12-26 18:10:19.584 [main] Log - Title is displayed : KSIDC
-[INFO ] 2024-12-26 18:10:22.604 [main] Log - Button visible !
-[INFO ] 2024-12-26 18:10:26.787 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
-[INFO ] 2024-12-26 18:10:28.949 [main] Log - KSIDC.15@gmail.com
-[INFO ] 2024-12-26 18:10:31.099 [main] Log - KSIDCcp@123#
-[INFO ] 2024-12-26 18:10:35.306 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
-[INFO ] 2024-12-26 18:10:41.508 [main] Log - Successfully Logged inBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2024-12-26 18:10:41.509 [main] Log - Login successfully :true
-[INFO ] 2024-12-26 18:10:52.992 [main] Log - Navigated to 'Other Share Pattern Details'By.xpath: //a[normalize-space()='2.3 Other Share Pattern Details']
-[INFO ] 2024-12-26 18:10:54.049 [main] Log - Header displayedBy.xpath: //h4[text()='Other Share Pattern Details']
-[INFO ] 2024-12-26 18:10:54.099 [main] Log - Field is availableBy.xpath: //input[@placeholder='Number Of Non-Major Share Holders']
-[INFO ] 2024-12-26 18:10:55.185 [main] Log - 4
-[INFO ] 2024-12-26 18:10:55.242 [main] Log - Field is availableBy.xpath: //input[@placeholder='Percentage Of Share Holding']
-[INFO ] 2024-12-26 18:10:56.325 [main] Log - 20
-[INFO ] 2024-12-26 18:10:57.400 [main] Log - Cancel button presentBy.xpath: //a[text()='Cancel']
-[INFO ] 2024-12-26 18:10:58.458 [main] Log - Save As Draft Button button presentBy.xpath: //button[text()='Save as Draft']
-[INFO ] 2024-12-26 18:11:00.858 [main] Log - Logout is done
-[INFO ] 2024-12-26 18:11:01.242 [main] Log - *** Test Suite Other_Share_Pattern_Details_Module ending ***
+[INFO ] 2024-12-31 17:08:44.189 [main] Log - *** Running test method Enterpreneur_Document_Upload_Module...
+[INFO ] 2024-12-31 17:08:46.168 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2024-12-31 17:08:58.065 [main] Log - Title is displayed : KSIDC
+[INFO ] 2024-12-31 17:09:01.085 [main] Log - Button visible !
+[INFO ] 2024-12-31 17:09:05.340 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
+[INFO ] 2024-12-31 17:09:07.726 [main] Log - KSIDC.15@gmail.com
+[INFO ] 2024-12-31 17:09:10.004 [main] Log - KSIDCcp@123#
+[INFO ] 2024-12-31 17:09:14.285 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
+[INFO ] 2024-12-31 17:09:26.651 [main] Log - Login successfully :true
+[INFO ] 2024-12-31 17:09:38.720 [main] Log - Document Upload Option clickedBy.xpath: //a[normalize-space()='2.4 Document Upload']
+[INFO ] 2024-12-31 17:09:38.721 [main] Log - Document Upload clicked
+[INFO ] 2024-12-31 17:09:39.780 [main] Log - Header displayedBy.xpath: //h4[text()='Document Upload']
+[INFO ] 2024-12-31 17:09:49.121 [main] Log - PAN Image document clicked and Document details displayed for uploadBy.xpath: (//a[normalize-space()='PAN Image'])[1]
+[INFO ] 2024-12-31 17:09:50.182 [main] Log - Upload option is presentBy.xpath: //span[text()='Upload Document']/parent::span
+[INFO ] 2024-12-31 17:09:53.242 [main] Log - path is :D:\Git_KSIDC\KSIDC_CustomerPortal-master\AI_Beacon_KSIDC_CustomerPortal
+[INFO ] 2024-12-31 17:10:02.294 [main] Log - Logout is done
+[INFO ] 2024-12-31 17:10:02.994 [main] Log - *** Test Suite Enterpreneur_Document_Upload_Module ending ***
