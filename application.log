@@ -1,17 +1,33 @@
-[INFO ] 2024-12-31 17:08:44.189 [main] Log - *** Running test method Enterpreneur_Document_Upload_Module...
-[INFO ] 2024-12-31 17:08:46.168 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2024-12-31 17:08:58.065 [main] Log - Title is displayed : KSIDC
-[INFO ] 2024-12-31 17:09:01.085 [main] Log - Button visible !
-[INFO ] 2024-12-31 17:09:05.340 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
-[INFO ] 2024-12-31 17:09:07.726 [main] Log - KSIDC.15@gmail.com
-[INFO ] 2024-12-31 17:09:10.004 [main] Log - KSIDCcp@123#
-[INFO ] 2024-12-31 17:09:14.285 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
-[INFO ] 2024-12-31 17:09:26.651 [main] Log - Login successfully :true
-[INFO ] 2024-12-31 17:09:38.720 [main] Log - Document Upload Option clickedBy.xpath: //a[normalize-space()='2.4 Document Upload']
-[INFO ] 2024-12-31 17:09:38.721 [main] Log - Document Upload clicked
-[INFO ] 2024-12-31 17:09:39.780 [main] Log - Header displayedBy.xpath: //h4[text()='Document Upload']
-[INFO ] 2024-12-31 17:09:49.121 [main] Log - PAN Image document clicked and Document details displayed for uploadBy.xpath: (//a[normalize-space()='PAN Image'])[1]
-[INFO ] 2024-12-31 17:09:50.182 [main] Log - Upload option is presentBy.xpath: //span[text()='Upload Document']/parent::span
-[INFO ] 2024-12-31 17:09:53.242 [main] Log - path is :D:\Git_KSIDC\KSIDC_CustomerPortal-master\AI_Beacon_KSIDC_CustomerPortal
-[INFO ] 2024-12-31 17:10:02.294 [main] Log - Logout is done
-[INFO ] 2024-12-31 17:10:02.994 [main] Log - *** Test Suite Enterpreneur_Document_Upload_Module ending ***
+[INFO ] 2025-01-02 12:28:24.044 [main] Log - *** Running test method Basic_Information_Module...
+[INFO ] 2025-01-02 12:28:25.662 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-01-02 12:28:39.252 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-01-02 12:28:39.257 [main] Log - Button visible !
+[INFO ] 2025-01-02 12:28:46.437 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
+[INFO ] 2025-01-02 12:28:48.612 [main] Log - sanoop008@gmail.com
+[INFO ] 2025-01-02 12:28:50.771 [main] Log - S@noopGopinatH@123
+[INFO ] 2025-01-02 12:28:54.959 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
+[INFO ] 2025-01-02 12:29:04.202 [main] Log - Basic Information Header DisplayedBy.xpath: //h4[text()='Basic Information']
+[INFO ] 2025-01-02 12:29:04.239 [main] Log - MSME Radio button displayedBy.xpath: //div[@class='col-12']
+[INFO ] 2025-01-02 12:29:10.639 [main] Log - Yes toggle clickedBy.xpath: (//label[@class='rz-radiobutton-label']/parent::div)[1]
+[INFO ] 2025-01-02 12:29:16.927 [main] Log - NO toggle clickedBy.xpath: (//label[@class='rz-radiobutton-label']/parent::div)[2]
+[INFO ] 2025-01-02 12:29:21.227 [main] Log - Clicked on Yes toggle for MSME
+[INFO ] 2025-01-02 12:29:24.307 [main] Log - Udyam No data field displayedBy.xpath: //input[@placeholder='UDYAM-XX-00-0000000']
+[INFO ] 2025-01-02 12:29:24.472 [main] Log - UDYAM-MH-19-0044030
+[INFO ] 2025-01-02 12:29:27.518 [main] Log - Verify button is visible next to the UDHYAM No field.By.xpath: (//a[text()='Verify'])[1]
+[INFO ] 2025-01-02 12:29:31.860 [main] Log - CLicked verify buttonBy.xpath: (//a[@class='button tertiary inside-btn enabled'])[1]
+[INFO ] 2025-01-02 12:30:15.947 [main] Log - Udyam no verifiedBy.xpath: (//span[@class='material-symbols-rounded'])[5]
+[INFO ] 2025-01-02 12:30:21.093 [main] Log - Class of Activity data field displayedBy.xpath: (//label[text()='Class Of Activity']/parent::div)[1]
+[INFO ] 2025-01-02 12:30:25.255 [main] Log - Dropdown displayedBy.xpath: (//label[text()='Class Of Activity']/parent::div)[1]
+[INFO ] 2025-01-02 12:30:31.536 [main] Log - Class of Activity get selectedBy.xpath: //span[text()='ACTIVITIES OF OTHER TRANSPORT AGENCIES']
+[INFO ] 2025-01-02 12:30:34.785 [main] Log - 9876543213
+[INFO ] 2025-01-02 12:30:36.000 [main] Log - 01234567899
+[INFO ] 2025-01-02 12:30:37.050 [main] Log - Autoloaded Email ID displayed :true
+[INFO ] 2025-01-02 12:30:38.328 [main] Log - CustomerPortal123
+[INFO ] 2025-01-02 12:30:39.406 [main] Log - Autoloaded Address displayed :true
+[INFO ] 2025-01-02 12:30:40.450 [main] Log - Autoloaded Landmark displayed :true
+[INFO ] 2025-01-02 12:30:41.496 [main] Log - Autoloaded place displayed :true
+[INFO ] 2025-01-02 12:30:42.546 [main] Log -  Pin displayed :true
+[INFO ] 2025-01-02 12:30:43.592 [main] Log -  Country displayed :true
+[INFO ] 2025-01-02 12:30:44.639 [main] Log -  state displayed :true
+[INFO ] 2025-01-02 12:30:45.686 [main] Log -  District displayed :true
+[INFO ] 2025-01-02 12:30:46.730 [main] Log -  City displayed :true

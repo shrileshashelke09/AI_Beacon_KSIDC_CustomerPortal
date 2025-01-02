@@ -68,7 +68,9 @@ public class Basic_Information {
         
     public By AutoloadedDistrict = By.xpath("(//div[@class='rz-dropdown valid rz-clear form-select select-main'])[3]");
     
-    public By AutoloadedCity = By.xpath("(//div[@class='rz-dropdown valid rz-clear form-select select-main'])[4]");
+    public By City = By.xpath("(//label[@class='rz-dropdown-label rz-inputtext  rz-placeholder'])[5]]");
+    
+    public By SelectCity = By.xpath("//span[text()='payyanur']");
     
     public By AutoloadedPost = By.xpath("(//div[@class='rz-dropdown valid rz-clear form-select select-main'])[5]");
     

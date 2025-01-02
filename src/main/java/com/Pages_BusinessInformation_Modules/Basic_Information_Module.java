@@ -411,19 +411,12 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
           
           //TC028
           
-          public boolean ValidateCity () throws InterruptedException {
-        	  WebElement AutoloadedCIty= driver.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-select select-main'])[4]"));
-        	  System.out.println("Autoloaded city displyed" + AutoloadedCIty.getAttribute("title"));
-        	  
-        	  if (AutoloadedCIty.equals(AutoloadedCIty.getAttribute("title"))){
-        		 boolean flag1 = ElementDisplayed(Basic_Information.AutoloadedCity);
-        		 ExtentTestManager.getTest().log(Status.PASS ,AutoloadedCIty.getAttribute("title") + true);
- 				Log.info(AutoloadedCIty.getAttribute("title")+ true);
- 				return flag1;
- 			 }
- 			 else {
- 				 Thread.sleep(1000);
- 			 }
+          public boolean SelectCity () throws InterruptedException {
+        	  click(Basic_Information.City);
+        	  Thread.sleep(1000);
+        	  click(Basic_Information.SelectCity);
+        	  Thread.sleep(1000);
+        	  Log.info("City selected" + Basic_Information.SelectCity);
  			
  			return true;
         	  
@@ -469,7 +462,7 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
 		@SuppressWarnings("unlikely-arg-type")
 		public boolean ValidateCompanyPAN () throws InterruptedException {
         	  //ElementDisplayed(Basic_Information.CompanyPAN);
-        	ScrollUntilElementVisible(Basic_Information.AutoloadedCity);  
+        	ScrollUntilElementVisible(Basic_Information.City);  
 			Thread.sleep(1000);
         	  WebElement AutoloadedCompanyPAN= driver.findElement(By.xpath("//input[@placeholder='Company PAN']"));
         	  System.out.println("Autoloaded PAN displyed" + AutoloadedCompanyPAN.getAttribute("title"));
