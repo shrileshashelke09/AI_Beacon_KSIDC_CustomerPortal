@@ -260,9 +260,9 @@ public class Basic_Information_AllScenarios extends Base_Class{
                     
                     //TC025
                     ExtentTestManager.startTest(" TC025 - CIty displayed");
-					boolean ValidateCIty = Basic_Information_Module.SelectCity();
-					ExtentTestManager.getTest().log(Status.PASS , " City displayed" + ValidateCIty);
-                    Log.info(" City displayed :" + ValidateCIty);
+					boolean SelectCity = Basic_Information_Module.SelectCity();
+					ExtentTestManager.getTest().log(Status.PASS , " City displayed" + SelectCity);
+                    Log.info(" City displayed :" + SelectCity);
                     
                     //TC026
                     
@@ -491,21 +491,21 @@ public class Basic_Information_AllScenarios extends Base_Class{
 					ExtentTestManager.getTest().log(Status.PASS , " Buttons are visible. :" + CheckAllButtons);
                     
 					//TC056
-//					ExtentTestManager.startTest(" TC056 - Test Functionality of Save as Draft Button");
-//					boolean ClickSaveAsDraft = Basic_Information_Module.SaveAsDraft();
-//					ExtentTestManager.getTest().log(Status.PASS , "   1.Click Save as Draft.\r\n"
-//							+ "2. Verify if data is saved to draft.." + ClickSaveAsDraft);
-//					ExtentTestManager.getTest().log(Status.PASS , " Data is saved as draft and can be retrieved later.. :" + ClickSaveAsDraft);
-//                    
-//                   
-//					//TC057
-//                   
-//                    ExtentTestManager.startTest(" TC057 - Test Functionality of Save and Proceed Button ");
-//					boolean SubmitBasicInfo = Basic_Information_Module.SaveAndProceed();
-//					ExtentTestManager.getTest().log(Status.PASS , "  1. Click Save and Proceed.\r\n"
-//							+ "2. Verify if data is saved and next component loads." + SubmitBasicInfo);
-//					ExtentTestManager.getTest().log(Status.PASS ," Data is saved and user is redirected to next component.:" + SubmitBasicInfo);
-//                    
+					ExtentTestManager.startTest(" TC056 - Test Functionality of Save as Draft Button");
+					boolean ClickSaveAsDraft = Basic_Information_Module.SaveAsDraft();
+					ExtentTestManager.getTest().log(Status.PASS , "   1.Click Save as Draft.\r\n"
+							+ "2. Verify if data is saved to draft.." + ClickSaveAsDraft);
+					ExtentTestManager.getTest().log(Status.PASS , " Data is saved as draft and can be retrieved later.. :" + ClickSaveAsDraft);
+                    
+                   
+					//TC057
+                   
+                    ExtentTestManager.startTest(" TC057 - Test Functionality of Save and Proceed Button ");
+					boolean SubmitBasicInfo = Basic_Information_Module.SaveAndProceed();
+					ExtentTestManager.getTest().log(Status.PASS , "  1. Click Save and Proceed.\r\n"
+							+ "2. Verify if data is saved and next component loads." + SubmitBasicInfo);
+					ExtentTestManager.getTest().log(Status.PASS ," Data is saved and user is redirected to next component.:" + SubmitBasicInfo);
+                    
                     
 					//App Logout
 					

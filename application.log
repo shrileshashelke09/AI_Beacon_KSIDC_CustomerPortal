@@ -1,33 +1,43 @@
-[INFO ] 2025-01-02 12:28:24.044 [main] Log - *** Running test method Basic_Information_Module...
-[INFO ] 2025-01-02 12:28:25.662 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-01-02 12:28:39.252 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-01-02 12:28:39.257 [main] Log - Button visible !
-[INFO ] 2025-01-02 12:28:46.437 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
-[INFO ] 2025-01-02 12:28:48.612 [main] Log - sanoop008@gmail.com
-[INFO ] 2025-01-02 12:28:50.771 [main] Log - S@noopGopinatH@123
-[INFO ] 2025-01-02 12:28:54.959 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
-[INFO ] 2025-01-02 12:29:04.202 [main] Log - Basic Information Header DisplayedBy.xpath: //h4[text()='Basic Information']
-[INFO ] 2025-01-02 12:29:04.239 [main] Log - MSME Radio button displayedBy.xpath: //div[@class='col-12']
-[INFO ] 2025-01-02 12:29:10.639 [main] Log - Yes toggle clickedBy.xpath: (//label[@class='rz-radiobutton-label']/parent::div)[1]
-[INFO ] 2025-01-02 12:29:16.927 [main] Log - NO toggle clickedBy.xpath: (//label[@class='rz-radiobutton-label']/parent::div)[2]
-[INFO ] 2025-01-02 12:29:21.227 [main] Log - Clicked on Yes toggle for MSME
-[INFO ] 2025-01-02 12:29:24.307 [main] Log - Udyam No data field displayedBy.xpath: //input[@placeholder='UDYAM-XX-00-0000000']
-[INFO ] 2025-01-02 12:29:24.472 [main] Log - UDYAM-MH-19-0044030
-[INFO ] 2025-01-02 12:29:27.518 [main] Log - Verify button is visible next to the UDHYAM No field.By.xpath: (//a[text()='Verify'])[1]
-[INFO ] 2025-01-02 12:29:31.860 [main] Log - CLicked verify buttonBy.xpath: (//a[@class='button tertiary inside-btn enabled'])[1]
-[INFO ] 2025-01-02 12:30:15.947 [main] Log - Udyam no verifiedBy.xpath: (//span[@class='material-symbols-rounded'])[5]
-[INFO ] 2025-01-02 12:30:21.093 [main] Log - Class of Activity data field displayedBy.xpath: (//label[text()='Class Of Activity']/parent::div)[1]
-[INFO ] 2025-01-02 12:30:25.255 [main] Log - Dropdown displayedBy.xpath: (//label[text()='Class Of Activity']/parent::div)[1]
-[INFO ] 2025-01-02 12:30:31.536 [main] Log - Class of Activity get selectedBy.xpath: //span[text()='ACTIVITIES OF OTHER TRANSPORT AGENCIES']
-[INFO ] 2025-01-02 12:30:34.785 [main] Log - 9876543213
-[INFO ] 2025-01-02 12:30:36.000 [main] Log - 01234567899
-[INFO ] 2025-01-02 12:30:37.050 [main] Log - Autoloaded Email ID displayed :true
-[INFO ] 2025-01-02 12:30:38.328 [main] Log - CustomerPortal123
-[INFO ] 2025-01-02 12:30:39.406 [main] Log - Autoloaded Address displayed :true
-[INFO ] 2025-01-02 12:30:40.450 [main] Log - Autoloaded Landmark displayed :true
-[INFO ] 2025-01-02 12:30:41.496 [main] Log - Autoloaded place displayed :true
-[INFO ] 2025-01-02 12:30:42.546 [main] Log -  Pin displayed :true
-[INFO ] 2025-01-02 12:30:43.592 [main] Log -  Country displayed :true
-[INFO ] 2025-01-02 12:30:44.639 [main] Log -  state displayed :true
-[INFO ] 2025-01-02 12:30:45.686 [main] Log -  District displayed :true
-[INFO ] 2025-01-02 12:30:46.730 [main] Log -  City displayed :true
+[INFO ] 2025-01-02 16:59:00.224 [main] Log - *** Running test method Project_Details_Module...
+[INFO ] 2025-01-02 16:59:01.816 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-01-02 16:59:05.602 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-01-02 16:59:08.617 [main] Log - Button visible !
+[INFO ] 2025-01-02 16:59:21.125 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
+[INFO ] 2025-01-02 16:59:23.269 [main] Log - KSIDC.011@gmail.com
+[INFO ] 2025-01-02 16:59:25.431 [main] Log - KSIDCcp@1234#
+[INFO ] 2025-01-02 16:59:29.593 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
+[INFO ] 2025-01-02 16:59:41.844 [main] Log - Login successfully :true
+[INFO ] 2025-01-02 16:59:50.863 [main] Log - Project details header displayedBy.xpath: //h4[normalize-space()='Project Details']/parent::div
+[INFO ] 2025-01-02 16:59:50.864 [main] Log - Heading confirms the user is on the Project details page :true
+[INFO ] 2025-01-02 16:59:53.000 [main] Log - ETWE656
+[INFO ] 2025-01-02 16:59:54.127 [main] Log - SHA436JD
+[INFO ] 2025-01-02 16:59:55.259 [main] Log - BJH7Y6UE4
+[INFO ] 2025-01-02 16:59:56.407 [main] Log - CXDZXS22
+[INFO ] 2025-01-02 16:59:57.563 [main] Log - BXNZFYEG
+[INFO ] 2025-01-02 16:59:58.679 [main] Log - CVSHSJD
+[INFO ] 2025-01-02 16:59:59.808 [main] Log - SDFGH
+[INFO ] 2025-01-02 17:00:00.925 [main] Log - ERTGHNBG
+[INFO ] 2025-01-02 17:00:02.047 [main] Log - SETWYS32323
+[INFO ] 2025-01-02 17:00:03.163 [main] Log - JFHVGUY875643875
+[INFO ] 2025-01-02 17:00:04.236 [main] Log - Section displayedBy.xpath: //p[normalize-space()='Is Needed Additional Units']/parent::div
+[INFO ] 2025-01-02 17:00:04.236 [main] Log - Section is visible :true
+[INFO ] 2025-01-02 17:00:05.273 [main] Log - Radio butn displayedBy.xpath: //div[@class='rz-radio-button-list-horizontal valid rz-state-empty']
+[INFO ] 2025-01-02 17:00:05.273 [main] Log - Confirmed as radio button :true
+[INFO ] 2025-01-02 17:00:06.312 [main] Log - Radio butn displayedBy.xpath: (//div[@class='rz-radio-btn'])[1]
+[INFO ] 2025-01-02 17:00:10.488 [main] Log - Yes button clickedBy.xpath: (//div[@class='rz-radio-btn'])[1]
+[INFO ] 2025-01-02 17:00:12.551 [main] Log - Button is visible after selection
+[INFO ] 2025-01-02 17:00:13.560 [main] Log - Button is visible after selection :true
+[INFO ] 2025-01-02 17:00:20.933 [main] Log - Add project Unit Details button clickedBy.xpath: //button[normalize-space()='Add Project Unit Details']
+[INFO ] 2025-01-02 17:00:20.933 [main] Log - Navigate to Add Project Unit Details page :true
+[INFO ] 2025-01-02 17:00:21.991 [main] Log - The pop-up window "Add Project Units Details" appears.
+[INFO ] 2025-01-02 17:00:21.991 [main] Log - The pop-up window "Add Project Units Details" appears. :true
+[INFO ] 2025-01-02 17:00:23.105 [main] Log - BSH3476
+[INFO ] 2025-01-02 17:00:24.311 [main] Log - DU3279DWDD
+[INFO ] 2025-01-02 17:00:25.434 [main] Log - 5
+[INFO ] 2025-01-02 17:00:26.624 [main] Log - Street 12B
+[INFO ] 2025-01-02 17:00:27.796 [main] Log - Apt 34C
+[INFO ] 2025-01-02 17:00:28.991 [main] Log - Near Park
+[INFO ] 2025-01-02 17:00:30.136 [main] Log - 123456
+[INFO ] 2025-01-02 17:00:39.675 [main] Log - State selectedBy.xpath: //span[text()='KERALA']
+[INFO ] 2025-01-02 17:00:47.990 [main] Log - District selectedBy.xpath: //span[text()='KANNUR']
+[INFO ] 2025-01-02 17:00:56.288 [main] Log - City selectedBy.xpath: //span[text()='payyanur']

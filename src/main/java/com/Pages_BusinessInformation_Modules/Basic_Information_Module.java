@@ -425,7 +425,7 @@ public boolean ValidateIncorporationDate () throws InterruptedException {
           //TC029
           
           public boolean ValidatePost () throws InterruptedException {
-        	  WebElement AutoloadedPost= driver.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-select select-main'])[5]"));
+        	  WebElement AutoloadedPost= driver.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-select select-main'])[4]"));
         	  System.out.println("Autoloaded Post displyed" + AutoloadedPost.getAttribute("title"));
         	  
         	  if (AutoloadedPost.equals(AutoloadedPost.getAttribute("title"))){
