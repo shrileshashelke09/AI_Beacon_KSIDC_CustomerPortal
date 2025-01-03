@@ -80,7 +80,7 @@ public class Project_Details {
 	
 	public By Post = By.xpath("//label[text()='Post']/parent::div");
 	
-	public By SelectPost = By.xpath("//span[text()='kannur post']");
+	public By SelectPost = By.xpath("//span[text()='test post']");
 	
 	public By EnterVillage = By.xpath("//input[@placeholder='Village']");
 	

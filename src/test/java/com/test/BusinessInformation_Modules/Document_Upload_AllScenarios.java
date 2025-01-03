@@ -57,13 +57,13 @@ public class Document_Upload_AllScenarios extends Base_Class {
 					// Log.info("Button visible !");
 					Thread.sleep(3000);
 
-					String EmailAddress = testdata.get("EmailAddress").toString();
-					String Password = testdata.get("Password").toString();
+//					String EmailAddress = testdata.get("EmailAddress").toString();
+//					String Password = testdata.get("Password").toString();
 	
 					// TC001
 					ExtentTestManager.startTest("TC001 : Login for Document_Upload Module");
 					Log.info("Button visible !");
-					boolean Login = Document_Upload_Module.Login(EmailAddress, Password);
+					boolean Login = Document_Upload_Module.login();
 					ExtentTestManager.getTest().log(Status.PASS, "Enter Username" + Login);
 					ExtentTestManager.getTest().log(Status.PASS, "Enter Password" + Login);
 					ExtentTestManager.getTest().log(Status.PASS, "Clicked on Login Button" + Login);

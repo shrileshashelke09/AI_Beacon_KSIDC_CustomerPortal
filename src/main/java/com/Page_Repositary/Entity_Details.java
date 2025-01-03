@@ -44,7 +44,7 @@ public class Entity_Details {
 
 	public By Calender = By.xpath("//span[@class='rz-button-icon-left rzi rzi-calendar']");
 
-	public By SelectDateofInc = By.xpath("(//span[text()='11'])[1]");
+	public By SelectDateofInc = By.xpath("(//span[text()='1'])[1]");
 
 	public By EnterAddress1 = By.xpath("//input[@placeholder='Address Line1']");
 

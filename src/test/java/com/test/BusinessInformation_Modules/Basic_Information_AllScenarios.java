@@ -59,8 +59,8 @@ public class Basic_Information_AllScenarios extends Base_Class{
 					Thread.sleep(3000);
 					
 					
-					String EmailAddress = testdata.get("EmailAddress").toString();
-					String Password = testdata.get("Password").toString();
+//					String EmailAddress = testdata.get("EmailAddress").toString();
+//					String Password = testdata.get("Password").toString();
 					String UdyamNoUdyogAadhaar = testdata.get("UdyamNoUdyogAadhaar").toString();
 					String InstitutionMobile = testdata.get("InstitutionMobile").toString();
 					String LandlineNumberTest = testdata.get("LandlineNumberTest").toString();
@@ -80,7 +80,7 @@ public class Basic_Information_AllScenarios extends Base_Class{
 					
 					//TC001
 					ExtentTestManager.startTest("TC001 : Login for Business Information Module");
-					boolean Login = Basic_Information_Module.Login(EmailAddress, Password);
+					boolean Login = Basic_Information_Module.login();
 					ExtentTestManager.getTest().log(Status.PASS, "1. Navigate to the login page." + Login);
 					ExtentTestManager.getTest().log(Status.PASS, "2. Enter valid username and password." + Login);
 					ExtentTestManager.getTest().log(Status.PASS, "3. Click on the 'Login' button." + Login);

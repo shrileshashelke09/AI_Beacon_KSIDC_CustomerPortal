@@ -1,5 +1,7 @@
 package com.Pages_BusinessInformation_Modules;
 
+import java.io.IOException;
+
 import com.BasePackage.Base_Class;
 import com.Page_Repositary.Existing_Liability;
 import com.Utility.Log;
@@ -10,19 +12,8 @@ public class Existing_Liability_Module extends Base_Class {
 
 	// TC001
 
-	public boolean Login(String EnterEmailAddress, String EnterPassword) throws InterruptedException {
-
-		click(Existing_Liability.LoginButton);
-		Log.info("Login button Clicked" + Existing_Liability.LoginButton);
-		Thread.sleep(2000);
-		input(Existing_Liability.EnterEmailAddress, EnterEmailAddress);
-		Log.info(EnterEmailAddress);
-		Thread.sleep(2000);
-		input(Existing_Liability.EnterPassword, EnterPassword);
-		Log.info(EnterPassword);
-		click(Existing_Liability.ClicktoLogin);
-		Log.info("Login button clickd" + Existing_Liability.ClicktoLogin);
-		Thread.sleep(5000);
+	public boolean login() throws InterruptedException, IOException {
+        Login();
 		click(Existing_Liability.ContinueButton);
 		Thread.sleep(5000);
 		return true;

@@ -1,4 +1,6 @@
 package com.Pages_BusinessInformation_Modules;
+import java.io.IOException;
+
 import com.BasePackage.Base_Class;
 import com.Page_Repositary.Document_Upload;
 import com.Utility.Log;
@@ -9,19 +11,9 @@ public class Document_Upload_Module extends Base_Class {
 	
 	//TC001
 	
-	public boolean Login(String EnterEmailAddress, String EnterPassword) throws InterruptedException {
+	public boolean login() throws InterruptedException, IOException {
 
-		click(Document_Upload.LoginButton);
-		Log.info("Login button Clicked" + Document_Upload.LoginButton);
-		Thread.sleep(2000);
-		input(Document_Upload.EnterEmailAddress, EnterEmailAddress);
-		Log.info(EnterEmailAddress);
-		Thread.sleep(2000);
-		input(Document_Upload.EnterPassword, EnterPassword);
-		Log.info(EnterPassword);
-		click(Document_Upload.ClicktoLogin);
-		Log.info("Login button clickd" + Document_Upload.ClicktoLogin);
-		Thread.sleep(5000);
+		Login();
 		click(Document_Upload.ContinueButton);
 		Thread.sleep(3000);
 		return true;

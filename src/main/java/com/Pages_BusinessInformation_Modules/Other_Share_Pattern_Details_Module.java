@@ -1,5 +1,7 @@
 package com.Pages_BusinessInformation_Modules;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -15,19 +17,9 @@ public class Other_Share_Pattern_Details_Module extends Base_Class {
 
 	Other_Share_Pattern_Details Other_Share_Pattern_Details = new Other_Share_Pattern_Details();
 
-	public boolean Login(String EnterEmailAddress, String EnterPassword) throws InterruptedException {
+	public boolean login() throws InterruptedException, IOException {
 
-		click(Other_Share_Pattern_Details.LoginButton);
-		Log.info("Login button Clicked" + Other_Share_Pattern_Details.LoginButton);
-		Thread.sleep(2000);
-		input(Other_Share_Pattern_Details.EnterEmailAddress, EnterEmailAddress);
-		Log.info(EnterEmailAddress);
-		Thread.sleep(2000);
-		input(Other_Share_Pattern_Details.EnterPassword, EnterPassword);
-		Log.info(EnterPassword);
-		click(Other_Share_Pattern_Details.ClicktoLogin);
-		Log.info("Login button clickd" + Other_Share_Pattern_Details.ClicktoLogin);
-		Thread.sleep(2000);
+		Login();
 		click(Other_Share_Pattern_Details.ContinueButton);
 		Log.info("Successfully Logged in" + Other_Share_Pattern_Details.ContinueButton);
 		return true;

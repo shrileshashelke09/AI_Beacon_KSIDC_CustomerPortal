@@ -52,8 +52,8 @@ public class Business_Information_AllScenarios extends Base_Class {
 				context.setAttribute("fileName", "LoginButton");
 				Base_Class.SetUp();
 
-				String EmailAddress = testdata.get("EmailAddress").toString();
-				String Password = testdata.get("Password").toString();
+//				String EmailAddress = testdata.get("EmailAddress").toString();
+//				String Password = testdata.get("Password").toString();
 				String DisplayName = testdata.get("DisplayName").toString();
 				String DocketAmount = testdata.get("DocketAmount").toString();
 				String LoanAmountRequired = testdata.get("LoanAmountRequired").toString();
@@ -74,7 +74,7 @@ public class Business_Information_AllScenarios extends Base_Class {
 
 				// TC001
 				ExtentTestManager.startTest("TC001 : Login for Business Information Module");
-				boolean Login = Business_Information_Module.Login(EmailAddress, Password);
+				boolean Login = Business_Information_Module.login();
 				ExtentTestManager.getTest().log(Status.PASS, "1. Navigate to the login page." + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "2. Enter valid username and password." + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "3. Click on the 'Login' button." + Login);

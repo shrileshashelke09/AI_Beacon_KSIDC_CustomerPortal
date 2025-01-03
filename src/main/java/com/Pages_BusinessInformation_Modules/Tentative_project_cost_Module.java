@@ -1,5 +1,7 @@
 package com.Pages_BusinessInformation_Modules;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -15,19 +17,9 @@ public class Tentative_project_cost_Module extends Base_Class {
 	
 	Tentative_project_cost Tentative_project_cost = new Tentative_project_cost ();
 	
-	public boolean Login (String EnterEmailAddress , String EnterPassword) throws InterruptedException {
+	public boolean login () throws InterruptedException,IOException {
 
-		click(Tentative_project_cost.LoginButton);
-		Log.info("Login button Clicked" + Tentative_project_cost.LoginButton );
-		Thread.sleep(2000);
-		input(Tentative_project_cost.EnterEmailAddress , EnterEmailAddress);
-		Log.info(EnterEmailAddress);
-		Thread.sleep(2000);
-		input(Tentative_project_cost.EnterPassword ,EnterPassword);
-		Log.info(EnterPassword);
-		click(Tentative_project_cost.ClicktoLogin);
-		Log.info("Login button clickd" + Tentative_project_cost.ClicktoLogin);
-		Thread.sleep(2000);
+		Login();
 		click(Tentative_project_cost.ContinueButton);
 		Thread.sleep(5000);
 		click(Tentative_project_cost.TentativeProjectCost);

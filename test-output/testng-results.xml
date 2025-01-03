@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-31T17:08:43 IST" name="Default suite" finished-at="2024-12-31T17:10:03 IST" duration-ms="79520">
+  <suite started-at="2025-01-03T15:09:48 IST" name="Default suite" finished-at="2025-01-03T15:11:18 IST" duration-ms="90516">
     <groups>
     </groups>
-    <test started-at="2024-12-31T17:08:43 IST" name="Default test" finished-at="2024-12-31T17:10:03 IST" duration-ms="79520">
-      <class name="com.test.BusinessInformation_Modules.Enterpreneur_Document_Upload_AllScenarios">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Enterpreneur_Document_Upload_AllScenarios@5b94b04d]" started-at="2024-12-31T17:08:42 IST" name="reference" finished-at="2024-12-31T17:08:43 IST" duration-ms="529" status="PASS">
+    <test started-at="2025-01-03T15:09:48 IST" name="Default test" finished-at="2025-01-03T15:11:18 IST" duration-ms="90516">
+      <class name="com.test.BusinessInformation_Modules.Business_Entrepreneur_Details_AllScenarios">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Business_Entrepreneur_Details_AllScenarios@5b94b04d]" started-at="2025-01-03T15:09:47 IST" name="reference" finished-at="2025-01-03T15:09:48 IST" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
-        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Enterpreneur_Document_Upload_AllScenarios@5b94b04d]" started-at="2024-12-31T17:08:44 IST" name="RUNALL" data-provider="TestData4" finished-at="2024-12-31T17:10:02 IST" duration-ms="78891" status="PASS">
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Business_Entrepreneur_Details_AllScenarios@5b94b04d]" started-at="2025-01-03T15:09:48 IST" name="RUNALL" data-provider="TestData4" finished-at="2025-01-03T15:11:18 IST" duration-ms="89980" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{EmailAddress=KSIDC.15@gmail.com, Password=KSIDCcp@123#, Run=Yes, TestScenario=Enterpreneur_Document_Upload_Module}]]>
+                <![CDATA[{DetailsOfPresentActivities=BXE46TRFN, EntrepreneurFund=2000, LastFinYearTotalIncome=80000, NetWorth=1000000, Run=Yes, TestScenario=Business_Entrepreneur_Details_Module}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@41aaedaa]]>
+                <![CDATA[org.testng.TestRunner@303a5119]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RUNALL -->
-      </class> <!-- com.test.BusinessInformation_Modules.Enterpreneur_Document_Upload_AllScenarios -->
+      </class> <!-- com.test.BusinessInformation_Modules.Business_Entrepreneur_Details_AllScenarios -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

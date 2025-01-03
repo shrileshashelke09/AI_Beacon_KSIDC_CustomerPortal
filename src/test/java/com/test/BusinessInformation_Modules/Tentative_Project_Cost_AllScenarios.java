@@ -59,8 +59,8 @@ public class Tentative_Project_Cost_AllScenarios extends Base_Class{
 				Thread.sleep(3000);
 				
 				
-				String EmailAddress = testdata.get("EmailAddress").toString();
-				String Password = testdata.get("Password").toString();
+//				String EmailAddress = testdata.get("EmailAddress").toString();
+//				String Password = testdata.get("Password").toString();
 				String PlantMachinery = testdata.get("PlantMachinery").toString();
 				String LandDevelopment = testdata.get("LandDevelopment").toString();
 				String BuildingCivilWorks = testdata.get("BuildingCivilWorks").toString();
@@ -81,7 +81,7 @@ public class Tentative_Project_Cost_AllScenarios extends Base_Class{
 
 				//TC001
 				ExtentTestManager.startTest("TC001 : Verify Navigation to 'Tentative Project Cost Break Up'");
-				boolean Login = Tentative_project_cost_Module.Login(EmailAddress, Password);
+				boolean Login = Tentative_project_cost_Module.login();
 				ExtentTestManager.getTest().log(Status.PASS , "Enter Email" + Login);
 				ExtentTestManager.getTest().log(Status.PASS , "Enter Password" + Login);
 				ExtentTestManager.getTest().log(Status.PASS , "Click login button" + Login);

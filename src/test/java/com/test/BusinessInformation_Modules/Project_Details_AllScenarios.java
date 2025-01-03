@@ -54,8 +54,8 @@ public class Project_Details_AllScenarios extends Base_Class{
 					// Log.info("Button visible !");
 					Thread.sleep(3000);
 
-					String EmailAddress = testdata.get("EmailAddress").toString();
-					String Password = testdata.get("Password").toString();
+//					String EmailAddress = testdata.get("EmailAddress").toString();
+//					String Password = testdata.get("Password").toString();
 					String ProjectDescription = testdata.get("ProjectDescription").toString();
 					String InnovationOrIdeaForProduct = testdata.get("InnovationOrIdeaForProduct").toString();
 					String TechnologyOrProvenConcept = testdata.get("TechnologyOrProvenConcept").toString();
@@ -80,7 +80,7 @@ public class Project_Details_AllScenarios extends Base_Class{
 					// TC001
 					ExtentTestManager.startTest("TC001 : Login for Project_Details Module");
 					Log.info("Button visible !");
-					boolean Login = Project_Details_Module.Login(EmailAddress, Password);
+					boolean Login = Project_Details_Module.login();
 					ExtentTestManager.getTest().log(Status.PASS, "Enter Username" + Login);
 					ExtentTestManager.getTest().log(Status.PASS, "Enter Password" + Login);
 					ExtentTestManager.getTest().log(Status.PASS, "Clicked on Login Button" + Login);

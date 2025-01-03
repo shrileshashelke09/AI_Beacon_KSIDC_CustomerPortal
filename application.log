@@ -1,43 +1,4 @@
-[INFO ] 2025-01-02 16:59:00.224 [main] Log - *** Running test method Project_Details_Module...
-[INFO ] 2025-01-02 16:59:01.816 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-01-02 16:59:05.602 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-01-02 16:59:08.617 [main] Log - Button visible !
-[INFO ] 2025-01-02 16:59:21.125 [main] Log - Login button ClickedBy.xpath: (//button[@class='button secondary btn-medium'])[2]
-[INFO ] 2025-01-02 16:59:23.269 [main] Log - KSIDC.011@gmail.com
-[INFO ] 2025-01-02 16:59:25.431 [main] Log - KSIDCcp@1234#
-[INFO ] 2025-01-02 16:59:29.593 [main] Log - Login button clickdBy.xpath: (//button[@class=' w-100 button primary btn-medium'])[1]
-[INFO ] 2025-01-02 16:59:41.844 [main] Log - Login successfully :true
-[INFO ] 2025-01-02 16:59:50.863 [main] Log - Project details header displayedBy.xpath: //h4[normalize-space()='Project Details']/parent::div
-[INFO ] 2025-01-02 16:59:50.864 [main] Log - Heading confirms the user is on the Project details page :true
-[INFO ] 2025-01-02 16:59:53.000 [main] Log - ETWE656
-[INFO ] 2025-01-02 16:59:54.127 [main] Log - SHA436JD
-[INFO ] 2025-01-02 16:59:55.259 [main] Log - BJH7Y6UE4
-[INFO ] 2025-01-02 16:59:56.407 [main] Log - CXDZXS22
-[INFO ] 2025-01-02 16:59:57.563 [main] Log - BXNZFYEG
-[INFO ] 2025-01-02 16:59:58.679 [main] Log - CVSHSJD
-[INFO ] 2025-01-02 16:59:59.808 [main] Log - SDFGH
-[INFO ] 2025-01-02 17:00:00.925 [main] Log - ERTGHNBG
-[INFO ] 2025-01-02 17:00:02.047 [main] Log - SETWYS32323
-[INFO ] 2025-01-02 17:00:03.163 [main] Log - JFHVGUY875643875
-[INFO ] 2025-01-02 17:00:04.236 [main] Log - Section displayedBy.xpath: //p[normalize-space()='Is Needed Additional Units']/parent::div
-[INFO ] 2025-01-02 17:00:04.236 [main] Log - Section is visible :true
-[INFO ] 2025-01-02 17:00:05.273 [main] Log - Radio butn displayedBy.xpath: //div[@class='rz-radio-button-list-horizontal valid rz-state-empty']
-[INFO ] 2025-01-02 17:00:05.273 [main] Log - Confirmed as radio button :true
-[INFO ] 2025-01-02 17:00:06.312 [main] Log - Radio butn displayedBy.xpath: (//div[@class='rz-radio-btn'])[1]
-[INFO ] 2025-01-02 17:00:10.488 [main] Log - Yes button clickedBy.xpath: (//div[@class='rz-radio-btn'])[1]
-[INFO ] 2025-01-02 17:00:12.551 [main] Log - Button is visible after selection
-[INFO ] 2025-01-02 17:00:13.560 [main] Log - Button is visible after selection :true
-[INFO ] 2025-01-02 17:00:20.933 [main] Log - Add project Unit Details button clickedBy.xpath: //button[normalize-space()='Add Project Unit Details']
-[INFO ] 2025-01-02 17:00:20.933 [main] Log - Navigate to Add Project Unit Details page :true
-[INFO ] 2025-01-02 17:00:21.991 [main] Log - The pop-up window "Add Project Units Details" appears.
-[INFO ] 2025-01-02 17:00:21.991 [main] Log - The pop-up window "Add Project Units Details" appears. :true
-[INFO ] 2025-01-02 17:00:23.105 [main] Log - BSH3476
-[INFO ] 2025-01-02 17:00:24.311 [main] Log - DU3279DWDD
-[INFO ] 2025-01-02 17:00:25.434 [main] Log - 5
-[INFO ] 2025-01-02 17:00:26.624 [main] Log - Street 12B
-[INFO ] 2025-01-02 17:00:27.796 [main] Log - Apt 34C
-[INFO ] 2025-01-02 17:00:28.991 [main] Log - Near Park
-[INFO ] 2025-01-02 17:00:30.136 [main] Log - 123456
-[INFO ] 2025-01-02 17:00:39.675 [main] Log - State selectedBy.xpath: //span[text()='KERALA']
-[INFO ] 2025-01-02 17:00:47.990 [main] Log - District selectedBy.xpath: //span[text()='KANNUR']
-[INFO ] 2025-01-02 17:00:56.288 [main] Log - City selectedBy.xpath: //span[text()='payyanur']
+[INFO ] 2025-01-03 16:29:51.494 [main] Log - *** Running test method Tentative_project_cost_Module...
+[INFO ] 2025-01-03 16:29:53.885 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-01-03 16:30:08.806 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-01-03 16:30:08.811 [main] Log - Button visible !

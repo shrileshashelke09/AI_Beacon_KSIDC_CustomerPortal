@@ -54,8 +54,8 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 				// Log.info("Button visible !");
 				Thread.sleep(3000);
 
-				String EmailAddress = testdata.get("EmailAddress").toString();
-				String Password = testdata.get("Password").toString();
+//				String EmailAddress = testdata.get("EmailAddress").toString();
+//				String Password = testdata.get("Password").toString();
 				String GuaranteeCompanyNameTest = testdata.get("GuaranteeCompanyNameTest").toString();
 				String GuaranteeCompanyPanTest = testdata.get("GuaranteeCompanyPanTest").toString();
 				String IFSCCodeTest = testdata.get("IFSCCodeTest").toString();
@@ -68,7 +68,7 @@ public class Existing_Liability_AllScenarios extends Base_Class {
 				// TC001
 				ExtentTestManager.startTest("TC001 : Login with Valid Credentials");
 				Log.info("Button visible !");
-				boolean Login = Existing_Liability_Module.Login(EmailAddress, Password);
+				boolean Login = Existing_Liability_Module.login();
 				ExtentTestManager.getTest().log(Status.PASS, "Enter Username" + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "Enter Password" + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "Clicked on Login Button" + Login);

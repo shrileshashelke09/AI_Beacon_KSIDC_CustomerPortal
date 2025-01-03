@@ -54,8 +54,8 @@ public class Other_Share_Pattern_Details_AllScenarios extends Base_Class {
 				// Log.info("Button visible !");
 				Thread.sleep(3000);
 
-				String EmailAddress = testdata.get("EmailAddress").toString();
-				String Password = testdata.get("Password").toString();
+//				String EmailAddress = testdata.get("EmailAddress").toString();
+//				String Password = testdata.get("Password").toString();
 				String NoOnNonMajorShareHolders = testdata.get("NoOnNonMajorShareHolders").toString();
 				String PercentageOfShareHolded = testdata.get("PercentageOfShareHolded").toString();
 
@@ -63,7 +63,7 @@ public class Other_Share_Pattern_Details_AllScenarios extends Base_Class {
 				// TC001
 				ExtentTestManager.startTest("TC001 : Login with Valid Credentials");
 				Log.info("Button visible !");
-				boolean Login = Other_Share_Pattern_Details_Module.Login(EmailAddress, Password);
+				boolean Login = Other_Share_Pattern_Details_Module.login();
 				ExtentTestManager.getTest().log(Status.PASS, "Enter Username" + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "Enter Password" + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "Clicked on Login Button" + Login);

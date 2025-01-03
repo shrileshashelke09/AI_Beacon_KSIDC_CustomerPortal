@@ -50,8 +50,8 @@ public class Entrepreneur_Details_AllScenarios extends Base_Class {
 				context.setAttribute("fileName", "LoginButton");
 				Base_Class.SetUp();
 
-				String EmailAddress = testdata.get("EmailAddress").toString();
-				String Password = testdata.get("Password").toString();
+//				String EmailAddress = testdata.get("EmailAddress").toString();
+//				String Password = testdata.get("Password").toString();
 				String Aadhaar= testdata.get("Aadhaar").toString();
 				String PAN = testdata.get("PAN").toString();
 				String DOB = testdata.get("DOB").toString();
@@ -87,7 +87,7 @@ public class Entrepreneur_Details_AllScenarios extends Base_Class {
 
 				// TC001
 				ExtentTestManager.startTest("TC001 : Login for Entrepreneur Details Module");
-				boolean Login = Entrepreneur_Details_Module.Login(EmailAddress, Password);
+				boolean Login = Entrepreneur_Details_Module.login();
 				ExtentTestManager.getTest().log(Status.PASS, "Enter Username" + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "Enter Password" + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "Click on Login button" + Login);

@@ -35,11 +35,12 @@ public class Base_Class {
 	public WebDriver getDriver() {
 		return driver;
 	}
-	
-	private static By L_username = By.xpath("//input[@id='username']");
-	private static By L_password = By.xpath("//input[@id='userpassword']");
-	private static By L_SignIn = By.xpath("//button[contains(text(),'Log In')]");
-	private static By L_LogOut= By.xpath("//a[text()='Click here to Logout']");
+	private static By LoginButton = By.xpath("(//button[@class='button secondary btn-medium'])[2]");
+	private static By EnterEmailAddress = By.xpath("(//input[@placeholder='Email Address'])[1]");
+	private static By EnterPassword = By.xpath("(//input[@placeholder='Password'])[1]");
+	private static By ClicktoLogin = By.xpath("(//button[@class=' w-100 button primary btn-medium'])[1]");
+	private static By ContinueButton = By.xpath("//button[@class='button primary btn-medium ms-auto']");
+    private static By L_LogOut= By.xpath("//a[text()='Click here to Logout']");
 	private static By L_LogAlert= By.xpath("//button[text()='Yes']");
 	
 	public static String Pagetitle;
@@ -52,11 +53,8 @@ public class Base_Class {
 	}
 
 	public  void SetUp() throws IOException, InterruptedException {
-		
-		String Browser = configloader().getProperty("Browser");
 		String Url = configloader().getProperty("URL");
-		String UserName = configloader().getProperty("UserName");
-		String Password = configloader().getProperty("Password");
+		String Browser = configloader().getProperty("Browser");
 		switch (Browser.toUpperCase()) {
 
 		case "CHROME":
@@ -88,9 +86,9 @@ public class Base_Class {
 		Thread.sleep(2000);
 		Pagetitle = driver.getTitle();
 		Log.info("Title is displayed : "+Pagetitle);
-//		input(L_username, UserName);
-//		input(L_password, Password);
-//		click(L_SignIn);
+		
+		
+		
 //		Boolean OrignalText1 = false;
 //		   try {
 //		   OrignalText1= driver.findElement(By.xpath("//a[text()='Click here to Logout']")).isDisplayed();}
@@ -113,6 +111,19 @@ public class Base_Class {
 //			   }
 
 
+	}
+	
+	public static  boolean Login ( ) throws InterruptedException, IOException {
+		String UserNameCP = configloader().getProperty("UserNameCP");
+		String PasswordCP = configloader().getProperty("PasswordCP");
+		click(LoginButton);
+		input(EnterEmailAddress ,UserNameCP);
+		Thread.sleep(1000);
+		input(EnterPassword, PasswordCP);
+		Thread.sleep(1000);
+		click(ClicktoLogin);
+		Thread.sleep(3000);
+		return true;
 	}
 
 	public static  String  GetMobileNumberOTP(String MobNo) throws ClassNotFoundException {

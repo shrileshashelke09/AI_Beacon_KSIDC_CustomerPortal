@@ -1,5 +1,7 @@
 package com.Pages_BusinessInformation_Modules;
 
+import java.io.IOException;
+
 import com.BasePackage.Base_Class;
 import com.Utility.Log;
 import com.Page_Repositary.Project_Details;
@@ -8,19 +10,9 @@ public class Project_Details_Module extends Base_Class {
 
 	Project_Details Project_Details = new Project_Details();
 
-	public boolean Login(String EnterEmailAddress, String EnterPassword) throws InterruptedException {
+	public boolean login() throws InterruptedException, IOException {
 
-		click(Project_Details.LoginButton);
-		Log.info("Login button Clicked" + Project_Details.LoginButton);
-		Thread.sleep(2000);
-		input(Project_Details.EnterEmailAddress, EnterEmailAddress);
-		Log.info(EnterEmailAddress);
-		Thread.sleep(2000);
-		input(Project_Details.EnterPassword, EnterPassword);
-		Log.info(EnterPassword);
-		click(Project_Details.ClicktoLogin);
-		Log.info("Login button clickd" + Project_Details.ClicktoLogin);
-		Thread.sleep(5000);
+		Login();
 		click(Project_Details.ContinueButton);
 		Thread.sleep(3000);
 		return true;
@@ -317,11 +309,11 @@ public class Project_Details_Module extends Base_Class {
 	// TC028
 
 	public boolean SelectPost() throws InterruptedException {
-		ScrollUntilElementVisible(Project_Details.SelectDistrict);
+		ScrollUntilElementVisible(Project_Details.District);
 		click(Project_Details.Post);
-		// Thread.sleep(10000);
+		 Thread.sleep(10000);
 		click(Project_Details.SelectPost);
-		// Thread.sleep(1000);
+		 Thread.sleep(1000);
 		Log.info("Post selected" + Project_Details.SelectPost);
 		return true;
 	}

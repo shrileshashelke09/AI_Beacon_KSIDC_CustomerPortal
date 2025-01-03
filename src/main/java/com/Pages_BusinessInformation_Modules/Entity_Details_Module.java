@@ -1,5 +1,7 @@
 package com.Pages_BusinessInformation_Modules;
 
+import java.io.IOException;
+
 import org.apache.hc.core5.http.EntityDetails;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -16,18 +18,9 @@ public class Entity_Details_Module extends Base_Class {
 	Entity_Details Entity_Details = new Entity_Details();
 	// TC001
 
-	public boolean Login(String EnterEmailAddress, String EnterPassword) throws InterruptedException {
+	public boolean login() throws InterruptedException, IOException {
 
-		click(Entity_Details.LoginButton);
-		Log.info("Login button Clicked" + Entity_Details.LoginButton);
-		Thread.sleep(2000);
-		input(Entity_Details.EnterEmailAddress, EnterEmailAddress);
-		Log.info(EnterEmailAddress);
-		Thread.sleep(2000);
-		input(Entity_Details.EnterPassword, EnterPassword);
-		Log.info(EnterPassword);
-		click(Entity_Details.ClicktoLogin);
-		Log.info("Login button clickd" + Entity_Details.ClicktoLogin);
+		Login();
 		click(Entity_Details.ContinueButton);
 		Log.info("Continue button clicked" + Entity_Details.ContinueButton);
 		Thread.sleep(2000);
@@ -37,9 +30,9 @@ public class Entity_Details_Module extends Base_Class {
 
 	// TC002
 	public boolean AccessEntityDetails() throws InterruptedException {
-		ScrollUntilElementVisible(Entity_Details.Scrolltobasic);
-		click(Entity_Details.EnterpreneurDetailsModule);
-		Thread.sleep(1000);
+//		ScrollUntilElementVisible(Entity_Details.Scrolltobasic);
+//		click(Entity_Details.EnterpreneurDetailsModule);
+//		Thread.sleep(1000);
 		click(Entity_Details.EntityDetails);
 		Log.info("User is navigated to Entity Details page." + Entity_Details.EntityDetails);
 		return true;

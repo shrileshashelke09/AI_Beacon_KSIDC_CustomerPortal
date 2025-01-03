@@ -1,5 +1,7 @@
 package com.Pages_BusinessInformation_Modules;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -17,18 +19,9 @@ public class Business_Information_Module extends Base_Class {
 	Business_Information Business_Information = new Business_Information ();
 	//TC001
 	
-	public boolean Login (String EnterEmailAddress , String EnterPassword) throws InterruptedException {
+	public boolean login () throws InterruptedException, IOException {
 
-	click(Business_Information.LoginButton);
-	Log.info("Login button Clicked" + Business_Information.LoginButton );
-	Thread.sleep(2000);
-	input(Business_Information.EnterEmailAddress , EnterEmailAddress);
-	Log.info(EnterEmailAddress);
-	Thread.sleep(2000);
-	input(Business_Information.EnterPassword ,EnterPassword);
-	Log.info(EnterPassword);
-	click(Business_Information.ClicktoLogin);
-	Log.info("Login button clickd" + Business_Information.ClicktoLogin);
+	Login();
 		
 		return true;
 		
