@@ -53,14 +53,24 @@ public class Document_Upload_Module extends Base_Class {
 	
 	//TC004
 	
-	public boolean UploadFile (String filepath) throws InterruptedException {
+	public boolean UploadDocFile (String filepath) throws InterruptedException {
 		ScrollUP();
 		//Thread.sleep(1000);
 		UploadFile(Document_Upload.UploadDocument , filepath);		
-		Thread.sleep(3000);
-		ElementToBeVisible(Document_Upload.AdharUpload);
+		ElementToBeVisible(Document_Upload.successpopup);
+		Thread.sleep(1000);
 		return true;
 	}
+	
+	//TC005
+	public boolean clickonContinue () throws InterruptedException {
+		
+		click(Document_Upload.ProcessContinueButton);
+		Thread.sleep(1000);
+		Log.info("Process continued" + Document_Upload.ProcessContinueButton);
+		return true;
+	}
+
 
 }
 

@@ -26,9 +26,15 @@ public class Document_Upload {
 	
 	public By Aadharinfo = By.xpath("//div[normalize-space()='STATE BANK OF INDIA - AADHAAR']");
 	
-	public By UploadDocument = By.xpath("//span[text()='Upload Document']/parent::span");
+	public By UploadDocument = By.xpath("//span[text()='Upload Document']/preceding-sibling::input");
 	
 	public By AdharUpload = By.xpath("//div[@class='d-flex align-items-center justify-content-between']");
+	
+	public By ProcessContinueButton = By.xpath("//button[normalize-space()='Continue']");
+	
+	public By successpopup = By.xpath("//span[@class='rz-growl-image rzi rzi-check']");
+	
+
 }
 
 

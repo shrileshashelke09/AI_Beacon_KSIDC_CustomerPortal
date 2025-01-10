@@ -8,6 +8,8 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -60,12 +62,32 @@ public class Base_Class {
 		case "CHROME":
 
 			ChromeOptions options = new ChromeOptions();
+            // Enable insecure downloads by setting Chrome preferences
+               Map<String, Object> prefs = new HashMap<>();
+               prefs.put("profile.default_content_setting_values.automatic_downloads", 1); // Allow automatic downloads
+               prefs.put("profile.default_content_setting_values.mixed_script", 1); // Allow insecure content globally
+               prefs.put("profile.default_content_settings.popups", 0); // Block popups
+               prefs.put("download.prompt_for_download", false); // Disable download prompt
+               prefs.put("download.default_directory", "C:\\Users\\pinku.peter\\Downloads"); // Set download directory
+
+               options.setExperimentalOption("prefs", prefs);
+
+               // Add necessary arguments
+               options.addArguments("--allow-running-insecure-content"); // Allow insecure content
+               options.addArguments("--ignore-certificate-errors"); // Ignore SSL certificate errors
+               options.addArguments("--disable-extensions");
+               options.addArguments("--start-maximized");
+               options.addArguments("--disable-popup-blocking");
+   			options.addArguments("--disable-extensions");
+
+               WebDriverManager.chromedriver().setup();
+               driver = new ChromeDriver(options);
+               break;
+
+
 			//options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-			options.addArguments("--disable-extensions");
 			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\linita.shivalkar\\Desktop\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(options);		
-			break;
+			
 
 		case "FIREFOX":
 

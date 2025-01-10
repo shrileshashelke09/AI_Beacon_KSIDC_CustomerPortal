@@ -57,13 +57,11 @@ public class Enterpreneur_Document_Upload_AllScenarios extends Base_Class {
 					// Log.info("Button visible !");
 					Thread.sleep(3000);
 
-					String EmailAddress = testdata.get("EmailAddress").toString();
-					String Password = testdata.get("Password").toString();
-	
+					
 					// TC001
 					ExtentTestManager.startTest("TC001 : Login for Document_Upload Module");
 					Log.info("Button visible !");
-					boolean Login = Enterpreneur_Document_Upload_Module.Login(EmailAddress, Password);
+					boolean Login = Enterpreneur_Document_Upload_Module.login();
 					ExtentTestManager.getTest().log(Status.PASS, "Enter Username" + Login);
 					ExtentTestManager.getTest().log(Status.PASS, "Enter Password" + Login);
 					ExtentTestManager.getTest().log(Status.PASS, "Clicked on Login Button" + Login);
@@ -87,7 +85,7 @@ public class Enterpreneur_Document_Upload_AllScenarios extends Base_Class {
 					//TC004
 					
 					ExtentTestManager.startTest("TC004 - Click Document Name");
-					boolean ClickPANImageDoc = Enterpreneur_Document_Upload_Module.ClickonPAN();
+					boolean ClickPANImageDoc = Enterpreneur_Document_Upload_Module.ClickonDocument();
 					ExtentTestManager.getTest().log(Status.PASS, "1. Click on a listed document name" + ClickPANImageDoc);
 					ExtentTestManager.getTest().log(Status.PASS, "Document details displayed for uploads" + ClickPANImageDoc);
 					
@@ -99,16 +97,52 @@ public class Enterpreneur_Document_Upload_AllScenarios extends Base_Class {
 					ExtentTestManager.getTest().log(Status.PASS, "Upload option is present" + UploadDocOption);
 					
 					//TC006
-					ExtentTestManager.startTest("TC004 - Upload a Document");
+					ExtentTestManager.startTest("TC006 - Document Specification Window");
+					boolean ValidateDocCriteria = Enterpreneur_Document_Upload_Module.ValidateDocCriteria();
+					ExtentTestManager.getTest().log(Status.PASS, "1. Observe specifications in the window" + ValidateDocCriteria);
+					ExtentTestManager.getTest().log(Status.PASS, "\"Max File Size: 5 MB, Accepted: PDF\" is displayed" + ValidateDocCriteria);
+					
+					
+					//TC007
+					ExtentTestManager.startTest("TC007 - Successful Document Upload");
 					boolean Uploadfile = Enterpreneur_Document_Upload_Module.UploadFile(filePath);
-					Thread.sleep(3000);
-					ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Upload Document' option" + Uploadfile);
-					ExtentTestManager.getTest().log(Status.PASS, "2. Browse and select a document <= 5MB" + Uploadfile);
-					ExtentTestManager.getTest().log(Status.PASS, "3. Click 'Upload'" + Uploadfile);
-					ExtentTestManager.getTest().log(Status.PASS, "Document is uploaded successfully" + Uploadfile);
+					ExtentTestManager.getTest().log(Status.PASS, "1. Upload a valid document" + Uploadfile);
+					ExtentTestManager.getTest().log(Status.PASS, "Document is uploaded successfully without issue" + Uploadfile);
+					
+					//TC008
+					
+					ExtentTestManager.startTest("TC008 - Options after Upload");
+					boolean validateOtherIcon = Enterpreneur_Document_Upload_Module.validateOtherIcon();
+					ExtentTestManager.getTest().log(Status.PASS, "1. Check available options" + validateOtherIcon);
+					ExtentTestManager.getTest().log(Status.PASS, "Options: View, Delete, Download" + validateOtherIcon);
+					
+					//TC009
+					
+					ExtentTestManager.startTest("TC009 - View Uploaded Document");
+					boolean ValidateUploadedDocument = Enterpreneur_Document_Upload_Module.ValidateUploadedDocument();
+					ExtentTestManager.getTest().log(Status.PASS, "1. Click View option" + ValidateUploadedDocument);
+					ExtentTestManager.getTest().log(Status.PASS, "Document is displayed for viewing" + ValidateUploadedDocument);
+					
+					//TC010
+					ExtentTestManager.startTest("TC010 - Download Uploaded Document");
+					boolean DownloadDocument = Enterpreneur_Document_Upload_Module.DownloadDocument();
+					ExtentTestManager.getTest().log(Status.PASS, "1. Click Download option" + DownloadDocument);
+					ExtentTestManager.getTest().log(Status.PASS, "Document is downloaded successfully" + DownloadDocument);
+					
+					//TC011
+					
+					ExtentTestManager.startTest("TC011 - Continue Button Presence");
+					boolean ContinueButtonPresence = Enterpreneur_Document_Upload_Module.ContinueButtonPresence();
+					ExtentTestManager.getTest().log(Status.PASS, "1. Observe UI elements" + ContinueButtonPresence);
+					ExtentTestManager.getTest().log(Status.PASS, "Continue button is present" + ContinueButtonPresence);
 					
 					
+					//TC012
 					
+					ExtentTestManager.startTest("TC012 - Confirmation After Mandatory Uploads");
+					boolean ClickOnContinue = Enterpreneur_Document_Upload_Module.ClickOnContinue();
+					ExtentTestManager.getTest().log(Status.PASS, "1. Click Continue" + ClickOnContinue);
+					ExtentTestManager.getTest().log(Status.PASS, "Confirmation message appears" + ClickOnContinue);
 					
 					
 					

@@ -86,13 +86,18 @@ public class Document_Upload_AllScenarios extends Base_Class {
 					//TC004
 					
 					ExtentTestManager.startTest("TC004 - Upload a Document");
-					boolean Uploadfile = Document_Upload_Module.UploadFile(filePath);
-					Thread.sleep(3000);
+					boolean Uploadfile = Document_Upload_Module.UploadDocFile(filePath);
 					ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Upload Document' option" + Uploadfile);
 					ExtentTestManager.getTest().log(Status.PASS, "2. Browse and select a document <= 5MB" + Uploadfile);
 					ExtentTestManager.getTest().log(Status.PASS, "3. Click 'Upload'" + Uploadfile);
 					ExtentTestManager.getTest().log(Status.PASS, "Document is uploaded successfully" + Uploadfile);
 					
+					//TC005
+					
+					ExtentTestManager.startTest("TC005 - Continue from Document Upload");
+					boolean ClickOnContinue = Document_Upload_Module.clickonContinue();
+					ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Continue' button on Document Upload page" + ClickOnContinue);
+					ExtentTestManager.getTest().log(Status.PASS, "Navigates to the next step in the process" + ClickOnContinue);
 					
 					
 					

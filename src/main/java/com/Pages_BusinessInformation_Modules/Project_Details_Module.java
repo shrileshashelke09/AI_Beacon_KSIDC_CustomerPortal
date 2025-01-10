@@ -23,6 +23,7 @@ public class Project_Details_Module extends Base_Class {
 	public boolean ProjectDetailsPage() throws InterruptedException {
 		ScrollUntilElementVisible(Project_Details.ScrolltoProjectdetails);
 		Thread.sleep(1000);
+		ElementToBeVisible(Project_Details.ProjectDetails);
 		ElementDisplayed(Project_Details.ProjectDetails);
 		click(Project_Details.ProjectDetails);
 		Thread.sleep(3000);

@@ -1,4 +1,27 @@
-[INFO ] 2025-01-03 16:29:51.494 [main] Log - *** Running test method Tentative_project_cost_Module...
-[INFO ] 2025-01-03 16:29:53.885 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-01-03 16:30:08.806 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-01-03 16:30:08.811 [main] Log - Button visible !
+[INFO ] 2025-01-10 11:14:18.002 [main] Log - *** Running test method Project_Cost_Verification_Module...
+[INFO ] 2025-01-10 11:14:20.377 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-01-10 11:14:35.917 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-01-10 11:14:38.930 [main] Log - Button visible !
+[INFO ] 2025-01-10 11:14:52.647 [main] Log - Login successfully :true
+[INFO ] 2025-01-10 11:15:17.127 [main] Log - Header shown correctlyBy.xpath: //h4[text()='Project Cost Verification Details']
+[INFO ] 2025-01-10 11:15:18.204 [main] Log - 3,12,31,312.00true
+[INFO ] 2025-01-10 11:15:19.273 [main] Log - 3,24,545.00true
+[INFO ] 2025-01-10 11:15:21.365 [main] Log - 2,34,324.00true
+[INFO ] 2025-01-10 11:15:22.443 [main] Log - 43,43,535.00true
+[INFO ] 2025-01-10 11:15:23.533 [main] Log - 6,65,655.00true
+[INFO ] 2025-01-10 11:15:24.605 [main] Log - 54,66,575.00true
+[INFO ] 2025-01-10 11:15:25.666 [main] Log - 3,27,352.00true
+[INFO ] 2025-01-10 11:15:26.729 [main] Log - 6,54,656.00true
+[INFO ] 2025-01-10 11:15:27.803 [main] Log - 4,35,34,534.00true
+[INFO ] 2025-01-10 11:15:28.874 [main] Log - 32,32,323.00true
+[INFO ] 2025-01-10 11:15:29.957 [main] Log - 12,60,000.00true
+[INFO ] 2025-01-10 11:15:31.026 [main] Log - 20,97,070.05true
+[INFO ] 2025-01-10 11:15:35.238 [main] Log - 422347
+[INFO ] 2025-01-10 11:15:39.470 [main] Log - 242235
+[INFO ] 2025-01-10 11:15:43.713 [main] Log - 3765433
+[INFO ] 2025-01-10 11:15:47.943 [main] Log - 76543
+[INFO ] 2025-01-10 11:15:52.173 [main] Log - 2345678
+[INFO ] 2025-01-10 11:15:56.409 [main] Log - 7786786
+[INFO ] 2025-01-10 11:21:44.171 [main] Log - CRFT6YHCFTRH6YUCGBTR6Y
+[INFO ] 2025-01-10 11:21:46.614 [main] Log - Logout is done
+[INFO ] 2025-01-10 11:21:46.885 [main] Log - *** Test Suite Project_Cost_Verification_Module ending ***

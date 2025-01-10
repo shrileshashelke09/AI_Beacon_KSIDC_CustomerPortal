@@ -61,15 +61,15 @@ public class Business_Entrepreneur_Details_AllScenarios extends Base_Class {
 				String ExtentOfFundsInvested = testdata.get("ExtentOfFundsInvested").toString();
 				String PercentageShareholding = testdata.get("PercentageShareholding").toString();
 				String NetLoss = testdata.get("NetLoss").toString();
-//				String P_AddressLine2 = testdata.get("P_AddressLine2").toString();
-//				String P_AddressLine3 = testdata.get("P_AddressLine3").toString();
-//				String LandMark = testdata.get("LandMark").toString();
-//				String Place = testdata.get("Place").toString();
-//				String Organization = testdata.get("Organization").toString();
-//				String CourseName = testdata.get("CourseName").toString();
-//				String From = testdata.get("From").toString();
-//				String To = testdata.get("To").toString();
-//				String Experience = testdata.get("Experience").toString();
+				String NetProfit = testdata.get("NetProfit").toString();
+				String IFSCCode = testdata.get("IFSCCode").toString();
+				String AccountNo = testdata.get("AccountNo").toString();
+				String OutstandingBalance = testdata.get("OutstandingBalance").toString();
+				String TenurePending = testdata.get("TenurePending").toString();
+				String CommittedAmount = testdata.get("CommittedAmount").toString();
+				String KeyConditionsOrMilestonesSetByVC = testdata.get("KeyConditionsOrMilestonesSetByVC").toString();
+				String AdditionalDetails = testdata.get("AdditionalDetails").toString();
+				String Funds = testdata.get("Funds").toString();
 //				String Summary = testdata.get("Summary").toString();
 //				String AwardName = testdata.get("AwardName").toString();
 //				String AwardProvidedby = testdata.get("AwardProvidedby").toString();
@@ -94,12 +94,14 @@ public class Business_Entrepreneur_Details_AllScenarios extends Base_Class {
 				ExtentTestManager.getTest().log(Status.PASS, "Login successfully" + Login);
 				Log.info("Login successfully :" + Login);
 
+				
 				// TC002
 			
 				ExtentTestManager.startTest("TC002 - Navigate to Business Finance Stage");
 				boolean EntrepreneurDetails = Business_Entrepreneur_Details_Module.BusinessEntrepreneurDetails();
 				ExtentTestManager.getTest().log(Status.PASS,"Attempt to navigate to Business Finance stage" + EntrepreneurDetails);
 				ExtentTestManager.getTest().log(Status.PASS,"User is navigated to Business Finance stage successfully" + EntrepreneurDetails);
+				
 				
 				//TC003
 				
@@ -225,13 +227,367 @@ public class Business_Entrepreneur_Details_AllScenarios extends Base_Class {
 	
 				//TC020
 				
-				ExtentTestManager.startTest("TC020 - \"Funds\" Field Visibility and Data Entry");
+				ExtentTestManager.startTest("TC020 - Company Name\" Field Visibility and Data Entry");
 				boolean EnterCompanyName = Business_Entrepreneur_Details_Module.EnterCompanyName(CoampanyName);
-				ExtentTestManager.getTest().log(Status.PASS,"1. View the fields" + EnterFunds);
-				ExtentTestManager.getTest().log(Status.PASS,"2. Enter numeric characters in the \"Last Fin Year Total Income (?)\" field" + EnterFunds);
-				ExtentTestManager.getTest().log(Status.PASS,"Funds\" field is visible and accepts numeric input" + EnterFunds);
+				ExtentTestManager.getTest().log(Status.PASS,"1. View the fields" + EnterCompanyName);
+				ExtentTestManager.getTest().log(Status.PASS,"2. Enter Alpha Numeric characters in \"Company Name\" field"  + EnterCompanyName);
+				ExtentTestManager.getTest().log(Status.PASS,"\"Company Name\" field is visible and accepts Alpha Numeric characters" + EnterCompanyName);
 				
+				//TC021
 				
+				ExtentTestManager.startTest("TC021 - \"Product/Service\" Field Visibility and Data Entry");
+				boolean EnterProduct = Business_Entrepreneur_Details_Module.EnterProduct(Product);
+				ExtentTestManager.getTest().log(Status.PASS,"1. View the fields" + EnterProduct);
+				ExtentTestManager.getTest().log(Status.PASS,"2. Enter Alpha Numeric characters in \"Product\" field"  + EnterProduct);
+				ExtentTestManager.getTest().log(Status.PASS,"\"Product/Service\" field is visible and accepts Alpha Numeric characters" + EnterProduct);
+				
+				//TC022
+				ExtentTestManager.startTest("TC022 - \"Extent of Funds Invested (?)\" Field Visibility and Data Entry");
+				boolean Enterfundinvestment = Business_Entrepreneur_Details_Module.Enterfundinvestment(ExtentOfFundsInvested);
+				ExtentTestManager.getTest().log(Status.PASS,"1. View the fields" + Enterfundinvestment);
+				ExtentTestManager.getTest().log(Status.PASS,"2. Enter Numeric characters in \"Extent of Funds Invested\" field"  + Enterfundinvestment);
+				ExtentTestManager.getTest().log(Status.PASS,"\"Extent of Funds Invested\" field is visible and accepts Numeric characters" + Enterfundinvestment);
+				
+				//TC023
+				ExtentTestManager.startTest("TC023 - \"Percentage of Share Holding\" Field Visibility and Data Entry");
+				boolean Entershareholding = Business_Entrepreneur_Details_Module.Entershareholding(PercentageShareholding);
+				ExtentTestManager.getTest().log(Status.PASS,"1. View the fields" + Entershareholding);
+				ExtentTestManager.getTest().log(Status.PASS,"2. Enter Numeric characters up to 100 in \"Percentage of Share Holding\" field"  + Entershareholding);
+				ExtentTestManager.getTest().log(Status.PASS,"\"Percentage of Share Holding\" field is visible and accepts up to 100 Numeric characters" + Entershareholding);
+				
+				//TC024
+				ExtentTestManager.startTest("TC024 - \"Profit/Loss ?\" Field Visibility and Option Selection");
+				boolean profitlosssection = Business_Entrepreneur_Details_Module.ProfitLossSection();
+				ExtentTestManager.getTest().log(Status.PASS,"1. View the fields" + profitlosssection);
+				ExtentTestManager.getTest().log(Status.PASS,"2. Select option from the \"Profit/Loss?\" radio button"  + profitlosssection);
+				ExtentTestManager.getTest().log(Status.PASS,"\"Profit/Loss?\" field is visible and option can be selected" + profitlosssection);
+				
+				//TC025
+				ExtentTestManager.startTest("TC025 - \"Net Loss(?)\" Field Visibility and Data Entry");
+				boolean EnterNetLoss = Business_Entrepreneur_Details_Module.EnterNetLoss(NetLoss);
+				ExtentTestManager.getTest().log(Status.PASS,"1. View the fields" + EnterNetLoss);
+				ExtentTestManager.getTest().log(Status.PASS,"2. Enter Numeric characters in \"Net Loss\" field"  + EnterNetLoss);
+				ExtentTestManager.getTest().log(Status.PASS,"\"Net Loss\" field is visible and accepts Numeric characters" + EnterNetLoss);
+				
+				//TC026
+				ExtentTestManager.startTest("TC026 - \"Add Company\" Button Functionality and Data Save");
+				boolean AddCompanydetails = Business_Entrepreneur_Details_Module.Addcompanydetails();
+				ExtentTestManager.getTest().log(Status.PASS,"1. Complete fields" + AddCompanydetails);
+				ExtentTestManager.getTest().log(Status.PASS,"2. Click on \"Add Company\" button"  + AddCompanydetails);
+				ExtentTestManager.getTest().log(Status.PASS,"Data is saved to the Company Details grid" + AddCompanydetails);
+				
+				//TC027
+				
+				ExtentTestManager.startTest("TC027 -Edit Company Details");
+				boolean EditCompanydetails = Business_Entrepreneur_Details_Module.EditComapanyDetails(NetProfit);
+				ExtentTestManager.getTest().log(Status.PASS,"1. Select a company" + EditCompanydetails);
+				ExtentTestManager.getTest().log(Status.PASS,"2. Edit details"  + EditCompanydetails);
+				ExtentTestManager.getTest().log(Status.PASS,"3. Save changes" + EditCompanydetails);
+				ExtentTestManager.getTest().log(Status.PASS,"Company details can be edited and saved successfully" + EditCompanydetails);
+
+				
+				//TC028
+				ExtentTestManager.startTest("TC028 -\"External Account Details\" Section Availability");
+				boolean ExternalAccountSection = Business_Entrepreneur_Details_Module.ExternalAccSectionAvailability();
+				ExtentTestManager.getTest().log(Status.PASS,"1. View the window sections" + ExternalAccountSection);
+				ExtentTestManager.getTest().log(Status.PASS,"\"External Account Details\" section is visible"  + ExternalAccountSection);
+				
+				//TC029
+				ExtentTestManager.startTest("TC029 -Select \"Yes\" for External Account Details");
+				boolean YesForExternalAccount = Business_Entrepreneur_Details_Module.selectYESforExternalAccount();
+				ExtentTestManager.getTest().log(Status.PASS,"1. Select \"Yes\" option from the radio button" + YesForExternalAccount);
+				ExtentTestManager.getTest().log(Status.PASS,"Radio button set to \"Yes\" and state is stored"  + YesForExternalAccount);
+				
+				//TC030
+				
+				ExtentTestManager.startTest("TC030 -Select \"Yes\" for External Account Details");
+				boolean CheckAddBankAccButton = Business_Entrepreneur_Details_Module.AddBankAccountButtonvisibility();
+				ExtentTestManager.getTest().log(Status.PASS,"1. View the buttons after selecting \"Yes\"" + CheckAddBankAccButton);
+				ExtentTestManager.getTest().log(Status.PASS,"\"Add Bank Account\" button is visible"  + CheckAddBankAccButton);
+				
+				//TC031
+				
+				ExtentTestManager.startTest("TC031 -\"Add Bank Account\" Button Functionality");
+				boolean ClickAddBankAccButton = Business_Entrepreneur_Details_Module.clickAddBankAccountButton();
+				ExtentTestManager.getTest().log(Status.PASS,"1. Click on \"Add Bank Account\" button" + ClickAddBankAccButton);
+				ExtentTestManager.getTest().log(Status.PASS,"Redirects to \"Add External Account Details\" popup window"  + ClickAddBankAccButton);
+				
+				//TC032
+				
+				ExtentTestManager.startTest("TC032 -\"IFSC CODE\" Field Availability and Data Entry");
+				boolean EnterIFSCCode = Business_Entrepreneur_Details_Module.EnterIFSCCode(IFSCCode);
+				ExtentTestManager.getTest().log(Status.PASS,"1. View the fields" + EnterIFSCCode);
+				ExtentTestManager.getTest().log(Status.PASS,"2. Enter Alpha Numeric characters in \"IFSC CODE\" field"  + EnterIFSCCode);
+				ExtentTestManager.getTest().log(Status.PASS,"\"IFSC CODE\" field is visible and accepts Alpha Numeric characters" + EnterIFSCCode);
+
+				//TC033
+				
+				ExtentTestManager.startTest("TC033 -Bank  Data Autoload from IFSC");
+				boolean ValidateBankName = Business_Entrepreneur_Details_Module.ValidateBankName();
+				ExtentTestManager.getTest().log(Status.PASS,"1. View autoloaded data in \"Bank\"  fields after entering IFSC" + ValidateBankName);
+				ExtentTestManager.getTest().log(Status.PASS,"\"Bank\" fields are auto-populated based on IFSC"  + ValidateBankName);
+
+				//TC034
+				
+				ExtentTestManager.startTest("TC034 -Branch  Data Autoload from IFSC");
+				boolean ValidateBranchName = Business_Entrepreneur_Details_Module.ValidateBranchName();
+				ExtentTestManager.getTest().log(Status.PASS,"1. View autoloaded data in \"Branch\"  fields after entering IFSC" + ValidateBranchName);
+				ExtentTestManager.getTest().log(Status.PASS,"\"Bank\" fields are auto-populated based on IFSC"  + ValidateBranchName);
+
+				//TC035
+				
+				ExtentTestManager.startTest("TC035 -\"Account Number\" Field Availability and Data Entry");
+				boolean EnterAccountNo = Business_Entrepreneur_Details_Module.AccountNodataField(AccountNo);
+				ExtentTestManager.getTest().log(Status.PASS,"1. View the fields" + EnterAccountNo);
+				ExtentTestManager.getTest().log(Status.PASS,"2. Enter Numeric characters in \"Account Number\" field"  + EnterAccountNo);
+				ExtentTestManager.getTest().log(Status.PASS,"\"Account Number\" field is visible and accepts Numeric characters" + EnterAccountNo);
+
+				//TC036
+				ExtentTestManager.startTest("TC036 -\"Add Bank\" Button Visibility");
+				boolean AddBankButtonVisibility = Business_Entrepreneur_Details_Module.AddBankAccountButtonvisibility();
+				ExtentTestManager.getTest().log(Status.PASS,"1. View the buttons on the window interface" + AddBankButtonVisibility);
+				ExtentTestManager.getTest().log(Status.PASS,"\"Add Bank\" button is visible"  + AddBankButtonVisibility);
+
+				//TC037
+				ExtentTestManager.startTest("TC037 -Add Bank Details - Basic Functionality");
+				boolean ClickAddBankButton = Business_Entrepreneur_Details_Module.ClickAddBankButton();
+				ExtentTestManager.getTest().log(Status.PASS,"1. Click Add Bank button" + ClickAddBankButton);
+				ExtentTestManager.getTest().log(Status.PASS,"Bank details saved to grid"  + ClickAddBankButton);
+
+				//TC038
+				ExtentTestManager.startTest("TC038 -Added  Bank Details in grid");
+				boolean ValidateBankDatainGrid = Business_Entrepreneur_Details_Module.ValidateBankDatainGrid();
+				ExtentTestManager.getTest().log(Status.PASS,"1. Check Added Bank Data" + ValidateBankDatainGrid);
+				ExtentTestManager.getTest().log(Status.PASS,"Bank details saved to grid"  + ValidateBankDatainGrid);
+
+				//TC039
+				ExtentTestManager.startTest("TC039 -Liabilities Details Section Availability");
+				boolean LiabilitySection = Business_Entrepreneur_Details_Module.Liabilitysection();
+				ExtentTestManager.getTest().log(Status.PASS,"Check if 'Liabilities Details' section is present" + LiabilitySection);
+				ExtentTestManager.getTest().log(Status.PASS,"Section is available"  + LiabilitySection);
+
+				//TC040
+				
+				ExtentTestManager.startTest("TC040 -Radio Button Selection - Yes Option");
+				boolean SelectYesforLiabilitySection = Business_Entrepreneur_Details_Module.SelectYESforLiability();
+				ExtentTestManager.getTest().log(Status.PASS,"Select 'Yes' option from the radio button" + SelectYesforLiabilitySection);
+				ExtentTestManager.getTest().log(Status.PASS,"'Yes' option is selected"  + SelectYesforLiabilitySection);
+
+				//TC041
+				
+				ExtentTestManager.startTest("TC041 -Add Liabilities Button - Visibility");
+				boolean AddLiabilityButton = Business_Entrepreneur_Details_Module.AddLiabilityButon();
+				ExtentTestManager.getTest().log(Status.PASS,"Check if 'Add Liabilities' button is visible" + AddLiabilityButton);
+				ExtentTestManager.getTest().log(Status.PASS,"Button is visible"  + AddLiabilityButton);
+
+				//TC042
+				
+				ExtentTestManager.startTest("TC042 -Add Liabilities Button - Functionality");
+				boolean ClickAddLiabilityButton = Business_Entrepreneur_Details_Module.ClickAddLiabilityButon();
+				ExtentTestManager.getTest().log(Status.PASS,"Click 'Add Liabilities' button" + ClickAddLiabilityButton);
+				ExtentTestManager.getTest().log(Status.PASS,"Redirected to 'Add Liabilities Details' popup window"  + ClickAddLiabilityButton);
+
+				//TC043
+				ExtentTestManager.startTest("TC043 -Add Liabilities Details - Window Heading");
+				boolean LiabilityHeading = Business_Entrepreneur_Details_Module.LiabilityHeading();
+				ExtentTestManager.getTest().log(Status.PASS,"Check window heading" + LiabilityHeading);
+				ExtentTestManager.getTest().log(Status.PASS,"Heading is correct"  + LiabilityHeading);
+
+				//TC044
+				ExtentTestManager.startTest("TC044 -Bank Field - Dropdown Selection");
+				boolean SelectBank = Business_Entrepreneur_Details_Module.selectBank();
+				ExtentTestManager.getTest().log(Status.PASS,"Attempt to select an option from 'Bank' field dropdown" + SelectBank);
+				ExtentTestManager.getTest().log(Status.PASS,"Dropdown displays options and selection is successful"  + SelectBank);
+
+				//TC045
+				ExtentTestManager.startTest("TC045 -Branch Field - Dropdown Selection");
+				boolean SelectBranch = Business_Entrepreneur_Details_Module.selectBranch();
+				ExtentTestManager.getTest().log(Status.PASS,"Attempt to select an option from 'Branch' field dropdown" + SelectBranch);
+				ExtentTestManager.getTest().log(Status.PASS,"Dropdown displays options and selection is successful"  + SelectBranch);
+
+				//TC046
+				ExtentTestManager.startTest("TC046 -Branch Field - Dropdown Selection");
+				boolean SelectLiabilityCategory = Business_Entrepreneur_Details_Module.selectLiabilityCategory();
+				ExtentTestManager.getTest().log(Status.PASS,"Attempt to select an option from 'Liability Category' field dropdown" + SelectLiabilityCategory);
+				ExtentTestManager.getTest().log(Status.PASS,"Dropdown displays options and selection is successful"  + SelectLiabilityCategory);
+
+				//TC047
+				ExtentTestManager.startTest("TC047 -Outstanding Balance Field - Numeric Input");
+				boolean EnterOutstandingAmount = Business_Entrepreneur_Details_Module.EnterOutstandingAmout(OutstandingBalance);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter numeric data in 'Outstanding Balance' field" + EnterOutstandingAmount);
+				ExtentTestManager.getTest().log(Status.PASS,"Numeric input is accepted"  + EnterOutstandingAmount);
+
+				//TC048
+				
+				ExtentTestManager.startTest("TC048 -Tenure Pending Field - Numeric Input");
+				boolean EnterTenuregAmount = Business_Entrepreneur_Details_Module.EnterTenurePending(TenurePending);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter numeric data in 'Tenure Pending' field" + EnterTenuregAmount);
+				ExtentTestManager.getTest().log(Status.PASS,"Numeric input is accepted"  + EnterTenuregAmount);
+
+				//TC049
+				ExtentTestManager.startTest("TC049 -Status Of Loan Field - Dropdown Selection");
+				boolean SelectstatusofLoan = Business_Entrepreneur_Details_Module.selectStatusOfLoan();
+				ExtentTestManager.getTest().log(Status.PASS,"Attempt to select an option from 'Status Of Loan' field dropdown" + SelectstatusofLoan);
+				ExtentTestManager.getTest().log(Status.PASS,"Dropdown displays options and selection is successful"  + SelectstatusofLoan);
+
+				//TC050
+				ExtentTestManager.startTest("TC050-Add Liabilities Button in Popup - Visibility");
+				boolean AddLiabilityDetailsButton = Business_Entrepreneur_Details_Module.AddLiabilityDetails();
+				ExtentTestManager.getTest().log(Status.PASS,"Check if 'Add Liabilities' button is visible" + AddLiabilityDetailsButton);
+				ExtentTestManager.getTest().log(Status.PASS,"Button is visible"  + AddLiabilityDetailsButton);
+
+				//TC051
+				ExtentTestManager.startTest("TC051 -Add Liabilities Button in Popup - Functionality");
+				boolean ClickAddLiabilityDetailsButton = Business_Entrepreneur_Details_Module.clickAddLiabilityDetailsButton();
+				ExtentTestManager.getTest().log(Status.PASS,"Click 'Add Liabilities' button" + ClickAddLiabilityDetailsButton);
+				ExtentTestManager.getTest().log(Status.PASS,"Data added and saved to grid"  + ClickAddLiabilityDetailsButton);
+
+				//TC052
+				
+				ExtentTestManager.startTest("TC052 -Edit Liabilities Details");
+				boolean EditAddLiabilityDetails = Business_Entrepreneur_Details_Module.EditLiabilityDetails();
+				ExtentTestManager.getTest().log(Status.PASS,"Edit Liability deyails" + EditAddLiabilityDetails);
+				ExtentTestManager.getTest().log(Status.PASS,"Edited liabilities details saved"  + EditAddLiabilityDetails);
+
+				//TC053
+				ExtentTestManager.startTest("TC053 -Venture Capitalist Section Availability");
+				boolean Venturesectionvisibility = Business_Entrepreneur_Details_Module.venturesection();
+				ExtentTestManager.getTest().log(Status.PASS,"Check if 'Whether The Shareholding Individual Is A Venture Capitalist' section is present" + Venturesectionvisibility);
+				ExtentTestManager.getTest().log(Status.PASS,"Section is available"  + Venturesectionvisibility);
+
+				//TC054
+				ExtentTestManager.startTest("TC054 -Radio Button Selection - Venture Capitalist Yes Option");
+				boolean Venturesectionselection = Business_Entrepreneur_Details_Module.SeletcYESforventuresection();
+				ExtentTestManager.getTest().log(Status.PASS,"Select 'Yes' option from the radio button" + Venturesectionselection);
+				ExtentTestManager.getTest().log(Status.PASS,"'Yes' option is selected"  + Venturesectionselection);
+
+				//TC055
+				
+				ExtentTestManager.startTest("TC055 -Term Sheet Received Field - Radio Button");
+				boolean YESforTermSheet = Business_Entrepreneur_Details_Module.TermSheetSection();
+				ExtentTestManager.getTest().log(Status.PASS,"Attempt to select 'Yes' or 'No' from 'Term Sheet Received' field options" + YESforTermSheet);
+				ExtentTestManager.getTest().log(Status.PASS,"Option selected successfully"  + YESforTermSheet);
+
+				//TC056
+				
+				ExtentTestManager.startTest("TC056 -Committed Amount Field - Numeric Input");
+				boolean EnterCommittedAmount = Business_Entrepreneur_Details_Module.EnterCommittedAmount(CommittedAmount);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter numeric data in 'Committed Amount' field" + EnterCommittedAmount);
+				ExtentTestManager.getTest().log(Status.PASS,"Numeric input is accepted"  + EnterCommittedAmount);
+
+				//TC057
+				
+				ExtentTestManager.startTest("TC057 -Key Conditions Field - Text Area Input");
+				boolean EnterKeyCondition = Business_Entrepreneur_Details_Module.EnterKeyCondition(KeyConditionsOrMilestonesSetByVC);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter alphanumeric and special characters (up to 2000) in 'Key Conditions / Milestones Set By VC'" + EnterKeyCondition);
+				ExtentTestManager.getTest().log(Status.PASS," input is accepted"  + EnterKeyCondition);
+
+				//TC058
+				
+				ExtentTestManager.startTest("TC058 -Additional Details Field - Text Area Input");
+				boolean EnterAdditionalDetails = Business_Entrepreneur_Details_Module.EnterAdditionalDetails(AdditionalDetails);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter numeric data in 'Additional Details' field" + EnterAdditionalDetails);
+				ExtentTestManager.getTest().log(Status.PASS," input is accepted"  + EnterAdditionalDetails);
+
+				//TC059
+				ExtentTestManager.startTest("TC059 -Fund Section Visibility");
+				boolean FundSection = Business_Entrepreneur_Details_Module.FundSection();
+				ExtentTestManager.getTest().log(Status.PASS,"Check if 'Fund' section is visible" + FundSection);
+				ExtentTestManager.getTest().log(Status.PASS," Section is visible"  + FundSection);
+
+				//TC060
+				
+				ExtentTestManager.startTest("TC060 -Add Fund Button - Functionality");
+				boolean AddFundButton = Business_Entrepreneur_Details_Module.AddFund();
+				ExtentTestManager.getTest().log(Status.PASS,"Click on 'Add Fund' button" + AddFundButton);
+				ExtentTestManager.getTest().log(Status.PASS,"Redirected to 'Add Extended Funds' popup window"  + AddFundButton);
+
+				//TC061
+				ExtentTestManager.startTest("TC061 -Add Extended Funds - Window Heading");
+				boolean ExtentFundHeading = Business_Entrepreneur_Details_Module.FundHeading();
+				ExtentTestManager.getTest().log(Status.PASS,"Verify window heading" + ExtentFundHeading);
+				ExtentTestManager.getTest().log(Status.PASS,"Heading is correct"  + ExtentFundHeading);
+
+				//TC062
+				ExtentTestManager.startTest("TC062 -Extent of Funds Field - Selection");
+				boolean ExtentFundselection= Business_Entrepreneur_Details_Module.AddExtentFund();
+				ExtentTestManager.getTest().log(Status.PASS,"Attempt to select data from 'Extent of Funds the Entrepreneur can Generate for a New Project'" + ExtentFundselection);
+				ExtentTestManager.getTest().log(Status.PASS,"Selection selected successful"  + ExtentFundselection);
+
+				//TC063
+				ExtentTestManager.startTest("TC063 -Funds Field - Numeric Input");
+				boolean EnterFund= Business_Entrepreneur_Details_Module.EnterExtentFund(Funds);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter numeric characters in 'Funds' field" + EnterFund);
+				ExtentTestManager.getTest().log(Status.PASS,"Input is accepted"  + EnterFund);
+
+				//TC064
+				
+				ExtentTestManager.startTest("TC064 -Add Funds Button - Visibility");
+				boolean AddFundDetailsButton= Business_Entrepreneur_Details_Module.AddFundButton();
+				ExtentTestManager.getTest().log(Status.PASS,"Check if 'Add Funds' button is visible" + AddFundDetailsButton);
+				ExtentTestManager.getTest().log(Status.PASS,"Button is visible"  + AddFundDetailsButton);
+
+				//TC065
+				ExtentTestManager.startTest("TC065 -Add Funds Button - Functionality");
+				boolean CLickAddFundDetailsButton= Business_Entrepreneur_Details_Module.ClickAddFundButton();
+				ExtentTestManager.getTest().log(Status.PASS,"Click 'Add Funds' button" + CLickAddFundDetailsButton);
+				ExtentTestManager.getTest().log(Status.PASS,"Funds are added successfully"  + CLickAddFundDetailsButton);
+
+				//TC066
+				
+				ExtentTestManager.startTest("TC066 -Cancel Button - Visibility");
+				boolean CancelButtonVisibility= Business_Entrepreneur_Details_Module.CancelButtonVisibility();
+				ExtentTestManager.getTest().log(Status.PASS,"Check if 'Cancel' button is visible" + CancelButtonVisibility);
+				ExtentTestManager.getTest().log(Status.PASS,"Button is visible"  + CancelButtonVisibility);
+
+				//TC067
+				
+				ExtentTestManager.startTest("TC067 -Save As Draft Button - Visibility");
+				boolean SaveAsDraftButtonVisibility= Business_Entrepreneur_Details_Module.SaveAsDraftButtonVisibility();
+				ExtentTestManager.getTest().log(Status.PASS,"Check if 'Save As Draft' button is visible" + SaveAsDraftButtonVisibility);
+				ExtentTestManager.getTest().log(Status.PASS,"Button is visible"  + SaveAsDraftButtonVisibility);
+
+				//TC068
+				
+				ExtentTestManager.startTest("TC068 -Save And Proceed Button - Visibility");
+				boolean SaveAndProceedButtonVisibility= Business_Entrepreneur_Details_Module.SaveAndProceedButtonVisibility();
+				ExtentTestManager.getTest().log(Status.PASS,"Check if 'Save And proceed' button is visible" + SaveAndProceedButtonVisibility);
+				ExtentTestManager.getTest().log(Status.PASS,"Button is visible"  + SaveAndProceedButtonVisibility);
+
+				//TC069
+				
+				ExtentTestManager.startTest("TC069 -Save As Draft Button - Functionality");
+				boolean ClickSaveAsDraftButton= Business_Entrepreneur_Details_Module.ClickSaveAsDraftButton();
+				ExtentTestManager.getTest().log(Status.PASS,"Click 'Save as Draft' button" + ClickSaveAsDraftButton);
+				ExtentTestManager.getTest().log(Status.PASS,"Data is saved as draft"  + ClickSaveAsDraftButton);
+
+				//TC070
+				
+				ExtentTestManager.startTest("TC070 -Update and Proceed Button - Functionality");
+				boolean ClickUpdateANdProceedButton= Business_Entrepreneur_Details_Module.clickUpdateeAndProceed();
+				ExtentTestManager.getTest().log(Status.PASS,"Click 'Update and Proceed' button" + ClickUpdateANdProceedButton);
+				ExtentTestManager.getTest().log(Status.PASS,"Data is saved, and process is finalized"  + ClickUpdateANdProceedButton);
+
+				//TC071
+				
+				ExtentTestManager.startTest("TC071 -Draft and Final Save Verification");
+				boolean Saveddata= Business_Entrepreneur_Details_Module.SavedDatainGrid();
+				ExtentTestManager.getTest().log(Status.PASS,"Check data in grid after 'Save as Draft' and 'Save and Proceed'" + Saveddata);
+				ExtentTestManager.getTest().log(Status.PASS,"Data appears correctly in grid"  + Saveddata);
+
+				//TC072
+				
+				ExtentTestManager.startTest("TC072 -Continue Button - Visibility");
+				boolean Continuebuttonvisibility= Business_Entrepreneur_Details_Module.Continuebuttonvisibility();
+				ExtentTestManager.getTest().log(Status.PASS,"Check visibility of 'Continue' button" + Continuebuttonvisibility);
+				ExtentTestManager.getTest().log(Status.PASS,"Button is visible"  + Continuebuttonvisibility);
+
+				//TC073
+				
+				ExtentTestManager.startTest("TC073 -Continue Button - Functionality");
+				boolean clickonContinue= Business_Entrepreneur_Details_Module.clickonContinue();
+				ExtentTestManager.getTest().log(Status.PASS,"Click 'Continue' button" + clickonContinue);
+				ExtentTestManager.getTest().log(Status.PASS,"Redirected to next stage or component"  + clickonContinue);
 
 				// App Logout
 
