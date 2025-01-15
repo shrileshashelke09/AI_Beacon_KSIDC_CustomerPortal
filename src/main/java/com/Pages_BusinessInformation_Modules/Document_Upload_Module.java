@@ -16,6 +16,7 @@ public class Document_Upload_Module extends Base_Class {
 		Login();
 		click(Document_Upload.ContinueButton);
 		Thread.sleep(3000);
+		ElementToBeVisible(Document_Upload.ScrolltoDocOption);
 		return true;
 
 	}
