@@ -1,15 +1,11 @@
-[INFO ] 2025-01-13 18:12:58.581 [main] Log - *** Running test method Plant_And_Machinery_Module...
-[INFO ] 2025-01-13 18:13:00.191 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-01-13 18:13:14.106 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-01-13 18:13:17.126 [main] Log - Button visible !
-[INFO ] 2025-01-13 18:13:34.023 [main] Log - Login successfully :true
-[INFO ] 2025-01-13 18:13:41.427 [main] Log - "Plant and Machinery" component is visible.By.xpath: //a[normalize-space()='4.2 Plant And Machinery']
-[INFO ] 2025-01-13 18:13:46.661 [main] Log - "Plant and Machinery" component Accessed.By.xpath: //a[normalize-space()='4.2 Plant And Machinery']
-[INFO ] 2025-01-13 18:13:47.722 [main] Log - Header displyed correctBy.xpath: //h4[text()='Plant & Machinery Details ']
-[INFO ] 2025-01-13 18:13:58.297 [main] Log - Data savedBy.xpath: //button[normalize-space()='Update and Proceed']
-[INFO ] 2025-01-13 18:13:58.345 [main] Log - Data is saved successfully and success message is displayed.By.xpath: //div[@class='rz-growl-item']
-[INFO ] 2025-01-13 18:13:58.392 [main] Log - Data displayed in gridBy.xpath: //span[@class='p-2']
-[INFO ] 2025-01-13 18:14:00.496 [main] Log - Continue button displayedBy.xpath: //button[normalize-space()='Continue']
-[INFO ] 2025-01-13 18:14:07.718 [main] Log - Process continuedBy.xpath: //button[normalize-space()='Continue']
-[INFO ] 2025-01-13 18:14:10.376 [main] Log - Logout is done
-[INFO ] 2025-01-13 18:14:11.072 [main] Log - *** Test Suite Plant_And_Machinery_Module ending ***
+[INFO ] 2025-01-20 17:15:53.437 [main] Log - *** Running test method Entrepreneur_Details_Module...
+[INFO ] 2025-01-20 17:15:55.793 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-01-20 17:15:59.192 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-01-20 17:15:59.197 [main] Log - Button visible !
+[INFO ] 2025-01-20 17:16:22.557 [main] Log - Login successfully :true
+[INFO ] 2025-01-20 17:16:26.850 [main] Log - Continue button clickedBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-01-20 17:16:28.862 [main] Log - Entrepreneur Details window appears.By.xpath: //span[text()='Entrepreneurs Info']
+[INFO ] 2025-01-20 17:16:28.931 [main] Log - Entrepreneur Details Header displayedBy.xpath: //h4[text()='Entrepreneur Details']
+[INFO ] 2025-01-20 17:16:28.998 [main] Log - Text from main window displayedBy.xpath: //span[contains(text(),'Entrepreneur Details (Enter Details of major Share')]
+[INFO ] 2025-01-20 17:16:29.089 [main] Log - Skip for Now locatedBy.xpath: //span[text()='Skip this for now']
+[INFO ] 2025-01-20 17:16:33.319 [main] Log - Skip for Now clickedBy.xpath: //span[text()='Skip this for now']

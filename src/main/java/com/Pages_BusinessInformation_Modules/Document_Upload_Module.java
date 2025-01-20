@@ -1,6 +1,9 @@
 package com.Pages_BusinessInformation_Modules;
 import java.io.IOException;
 
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.BasePackage.Base_Class;
 import com.Page_Repositary.Document_Upload;
 import com.Utility.Log;
@@ -39,15 +42,15 @@ public class Document_Upload_Module extends Base_Class {
 	
 	public boolean SelectDocname () throws InterruptedException {
 		
-		ScrollUntilElementVisible(Document_Upload.Scrolltobasicinfo);
+		//ScrollUntilElementVisible(Document_Upload.Scrolltobasicinfo);
 		Thread.sleep(1000);
-		ElementDisplayed(Document_Upload.ClicktoAadhar);
-		Log.info("Aadhar option displayed" + Document_Upload.ClicktoAadhar);
-		click(Document_Upload.ClicktoAadhar);
+		ElementDisplayed(Document_Upload.Document1);
+		Log.info("Document displayed" + Document_Upload.Document1);
+		click(Document_Upload.Document1);
 		Thread.sleep(1000);
-		ScrollUntilElementVisible(Document_Upload.Aadharinfo);
-		ElementDisplayed(Document_Upload.Aadharinfo);
-		Log.info("Aadhar details displayed" + Document_Upload.Aadharinfo);
+		ScrollUntilElementVisible(Document_Upload.DocumentInfo);
+		ElementDisplayed(Document_Upload.DocumentInfo);
+		Log.info("Aadhar details displayed" + Document_Upload.DocumentInfo);
 		Thread.sleep(2000);
 		return true;
 	}
@@ -57,9 +60,10 @@ public class Document_Upload_Module extends Base_Class {
 	public boolean UploadDocFile (String filepath) throws InterruptedException {
 		ScrollUP();
 		//Thread.sleep(1000);
-		UploadFile(Document_Upload.UploadDocument , filepath);		
+		UploadFile(Document_Upload.UploadDocument , filepath);	
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(Document_Upload.successpopup));
 		ElementToBeVisible(Document_Upload.successpopup);
-		Thread.sleep(1000);
 		return true;
 	}
 	
@@ -72,6 +76,7 @@ public class Document_Upload_Module extends Base_Class {
 		return true;
 	}
 
+	
 
 }
 

@@ -34,6 +34,10 @@ public class Document_Upload {
 	
 	public By successpopup = By.xpath("//span[@class='rz-growl-image rzi rzi-check']");
 	
+	public By Document1 = By.xpath("(//a[@class='chip-text-wrapper text-decoration-none'])[1]");
+	
+	public By DocumentInfo = By.xpath("//span[@class='font-16']");
+	
 
 }
 

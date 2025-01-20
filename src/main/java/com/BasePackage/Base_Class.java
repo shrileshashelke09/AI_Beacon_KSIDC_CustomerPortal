@@ -325,13 +325,18 @@ public static  String  GetEmailOTP(String Email) throws ClassNotFoundException {
 		return flag;
 	}
 	
-	public static void UploadFile(By locator, String path)
+	public static void UploadFile(By locator, String path) throws InterruptedException
 	{
 		WebElement uploadElement = driver.findElement(locator);
+		Thread.sleep(1000);
 		String path1=System.getProperty("user.dir");
+		Thread.sleep(1000);
 		Log.info("path is :" + path1);
-		uploadElement.sendKeys(path);
+		Thread.sleep(1000);
+        uploadElement.sendKeys(path);
+        
 	}
+	
 	
 	public static boolean ElementEnableOrDisable(By locator)
 	{

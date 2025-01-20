@@ -20,19 +20,18 @@ public class Entrepreneur_Details_Module extends Base_Class {
 	public boolean login() throws InterruptedException, IOException {
 
 		Login();
-		click(Entrepreneur_Details.ContinueButton);
-		Log.info("Continue button clicked" + Entrepreneur_Details.ContinueButton);
-		Thread.sleep(2000);
+//		click(Entrepreneur_Details.ContinueButton);
+//		Log.info("Continue button clicked" + Entrepreneur_Details.ContinueButton);
+//		Thread.sleep(2000);
 		return true;
 
 	}
 
 	// TC002
 	public boolean EntrepreneurDetails() throws InterruptedException {
-		ScrollUntilElementVisible(Entrepreneur_Details.Scrolltobasic);
-		click(Entrepreneur_Details.EnterpreneurDetailsModule);
-		Thread.sleep(1000);
-		// click(Entrepreneur_Details.EnterpreneurDetails);
+		click(Entrepreneur_Details.ContinueButton);
+		Log.info("Continue button clicked" + Entrepreneur_Details.ContinueButton);
+		Thread.sleep(2000);
 		Log.info("Entrepreneur Details window appears." + Entrepreneur_Details.EnterpreneurDetailsModule);
 		return true;
 	}

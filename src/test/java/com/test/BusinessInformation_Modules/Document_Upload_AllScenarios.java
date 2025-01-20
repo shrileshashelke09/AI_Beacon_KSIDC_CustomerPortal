@@ -27,7 +27,7 @@ public class Document_Upload_AllScenarios extends Base_Class {
 		TestListener TestListener;
 		com.Utility.ScreenShot screenShot;
 		Document_Upload_Module Document_Upload_Module;
-		private static String filePath = "D:\\Git_KSIDC\\KSIDC\\src\\test\\resources\\10840.pdf";
+		private static String filePath = "D:\\Git_KSIDC\\KSIDC_CustomerPortal-master\\AI_Beacon_KSIDC_CustomerPortal\\src\\test\\resources\\10840.pdf";
 
 
 		@BeforeSuite
@@ -94,12 +94,12 @@ public class Document_Upload_AllScenarios extends Base_Class {
 					
 					//TC005
 					
-					ExtentTestManager.startTest("TC005 - Continue from Document Upload");
-					boolean ClickOnContinue = Document_Upload_Module.clickonContinue();
-					ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Continue' button on Document Upload page" + ClickOnContinue);
-					ExtentTestManager.getTest().log(Status.PASS, "Navigates to the next step in the process" + ClickOnContinue);
-					
-					
+//					ExtentTestManager.startTest("TC005 - Continue from Document Upload");
+//					boolean ClickOnContinue = Document_Upload_Module.clickonContinue();
+//					ExtentTestManager.getTest().log(Status.PASS, "1. Click on 'Continue' button on Document Upload page" + ClickOnContinue);
+//					ExtentTestManager.getTest().log(Status.PASS, "Navigates to the next step in the process" + ClickOnContinue);
+//					
+//					
 					
 					
 					

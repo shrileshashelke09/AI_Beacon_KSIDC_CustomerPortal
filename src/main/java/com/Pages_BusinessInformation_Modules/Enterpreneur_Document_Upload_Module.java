@@ -14,8 +14,6 @@ public class Enterpreneur_Document_Upload_Module extends Base_Class {
 
 	public boolean login() throws InterruptedException, IOException {
 		Login();
-		click(Enterpreneur_Document_Upload.ContinueButton);
-		Thread.sleep(3000);
 		return true;
 
 	}
@@ -24,9 +22,8 @@ public class Enterpreneur_Document_Upload_Module extends Base_Class {
 
 	public boolean AccessDocUpload() throws InterruptedException {
 
-		ScrollUntilElementVisible(Enterpreneur_Document_Upload.ScrolltoStep2);
-		Thread.sleep(1000);
-		click(Enterpreneur_Document_Upload.DocUpload);
+		click(Enterpreneur_Document_Upload.ContinueButton);
+		Thread.sleep(3000);
 		Log.info("Document Upload Option clicked" + Enterpreneur_Document_Upload.DocUpload);
 		return true;
 	}

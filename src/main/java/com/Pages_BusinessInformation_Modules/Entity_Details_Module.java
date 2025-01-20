@@ -21,9 +21,6 @@ public class Entity_Details_Module extends Base_Class {
 	public boolean login() throws InterruptedException, IOException {
 
 		Login();
-		click(Entity_Details.ContinueButton);
-		Log.info("Continue button clicked" + Entity_Details.ContinueButton);
-		Thread.sleep(2000);
 		return true;
 
 	}
@@ -33,7 +30,9 @@ public class Entity_Details_Module extends Base_Class {
 //		ScrollUntilElementVisible(Entity_Details.Scrolltobasic);
 //		click(Entity_Details.EnterpreneurDetailsModule);
 //		Thread.sleep(1000);
-		click(Entity_Details.EntityDetails);
+		click(Entity_Details.ContinueButton);
+		Log.info("Continue button clicked" + Entity_Details.ContinueButton);
+		Thread.sleep(2000);
 		Log.info("User is navigated to Entity Details page." + Entity_Details.EntityDetails);
 		return true;
 	}
