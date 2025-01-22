@@ -28,11 +28,11 @@ public class Other_Share_Pattern_Details_Module extends Base_Class {
 
 	public boolean AccessOtherSharePatternPage() throws InterruptedException {
 
-		ScrollUntilElementVisible(Other_Share_Pattern_Details.Scrolltobasic);
-		Thread.sleep(1000);
-		click(Other_Share_Pattern_Details.EnterpreneurDetailsModule);
-		Thread.sleep(1000);
-		ScrollUntilElementVisible(Other_Share_Pattern_Details.ScrolltoEnterpreneurHeader);
+//		ScrollUntilElementVisible(Other_Share_Pattern_Details.Scrolltobasic);
+//		Thread.sleep(1000);
+//		click(Other_Share_Pattern_Details.EnterpreneurDetailsModule);
+//		Thread.sleep(1000);
+		ScrollUntilElementVisible(Other_Share_Pattern_Details.ScrolltoStep2);
 		Thread.sleep(1000);
 		click(Other_Share_Pattern_Details.OtherPattern);
 		Log.info("Navigated to 'Other Share Pattern Details'" + Other_Share_Pattern_Details.OtherPattern);

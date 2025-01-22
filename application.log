@@ -1,11 +1,9 @@
-[INFO ] 2025-01-20 17:15:53.437 [main] Log - *** Running test method Entrepreneur_Details_Module...
-[INFO ] 2025-01-20 17:15:55.793 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-01-20 17:15:59.192 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-01-20 17:15:59.197 [main] Log - Button visible !
-[INFO ] 2025-01-20 17:16:22.557 [main] Log - Login successfully :true
-[INFO ] 2025-01-20 17:16:26.850 [main] Log - Continue button clickedBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-01-20 17:16:28.862 [main] Log - Entrepreneur Details window appears.By.xpath: //span[text()='Entrepreneurs Info']
-[INFO ] 2025-01-20 17:16:28.931 [main] Log - Entrepreneur Details Header displayedBy.xpath: //h4[text()='Entrepreneur Details']
-[INFO ] 2025-01-20 17:16:28.998 [main] Log - Text from main window displayedBy.xpath: //span[contains(text(),'Entrepreneur Details (Enter Details of major Share')]
-[INFO ] 2025-01-20 17:16:29.089 [main] Log - Skip for Now locatedBy.xpath: //span[text()='Skip this for now']
-[INFO ] 2025-01-20 17:16:33.319 [main] Log - Skip for Now clickedBy.xpath: //span[text()='Skip this for now']
+[INFO ] 2025-01-22 10:47:43.843 [main] Log - *** Running test method Other_Share_Pattern_Details_Module...
+[INFO ] 2025-01-22 10:47:46.130 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-01-22 10:48:03.988 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-01-22 10:48:07.000 [main] Log - Button visible !
+[INFO ] 2025-01-22 10:48:25.687 [main] Log - Successfully Logged inBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-01-22 10:48:25.689 [main] Log - Login successfully :true
+[INFO ] 2025-01-22 10:48:31.272 [main] Log - Navigated to 'Other Share Pattern Details'By.xpath: //a[normalize-space()='2.3 Other Share Pattern Details']
+[INFO ] 2025-01-22 10:48:32.404 [main] Log - Header displayedBy.xpath: //h4[text()='Other Share Pattern Details']
+[INFO ] 2025-01-22 10:48:32.476 [main] Log - Field is availableBy.xpath: //input[@placeholder='Number Of Non-Major Share Holders']

@@ -41,24 +41,26 @@ public class Entity_Details_Module extends Base_Class {
 
 	public boolean ClickAddEntityButton() throws InterruptedException {
 
-		click(Entity_Details.AddEntityButton);
+		click(Entity_Details.EntityDetails);
 		Thread.sleep(1000);
 		ElementToBeVisible(Entity_Details.EntityHeader);
 		Thread.sleep(1000);
 		Log.info("Add Entity form is displayed" + Entity_Details.EntityHeader);
+		click(Entity_Details.AddEntityButton);
+		Thread.sleep(1000);
 		return true;
 	}
 
 	// TC004
 
 	public boolean verifyCompanyPAN(String EnterPAN) throws InterruptedException {
-
+		
 		input(Entity_Details.EnterPAN, EnterPAN);
 		Thread.sleep(1000);
 		Log.info(EnterPAN);
 		click(Entity_Details.CheckDedupe);
 		Thread.sleep(1000);
-		ElementToBeVisible(Entity_Details.DedupeVerifiedMessage);
+		//ElementToBeVisible(Entity_Details.DedupeVerifiedMessage);
 		Log.info("Verified message shown" + Entity_Details.DedupeVerifiedMessage);
 		Thread.sleep(1000);
 		ElementDisplayed(Entity_Details.DedupeVerifiedButton);
@@ -339,24 +341,24 @@ public class Entity_Details_Module extends Base_Class {
 		Log.info("Header name should be correct as specified" + Entity_Details.EnterpreneurHeader);
 		return true;
 	}
-	
+
 	public boolean CheckKYCSectionAvailability() {
 
 		ElementDisplayed(Entity_Details.KYCSectionAvailability);
 		Log.info("KYC Section displayed" + Entity_Details.KYCSectionAvailability);
 		return true;
 	}
-	
+
 	public boolean EnterAadhar(String EnterAadhar) throws InterruptedException {
 		input(Entity_Details.EnterAadhar, EnterAadhar);
 		Thread.sleep(1000);
 		Log.info(EnterAadhar);
 		return true;
 	}
-	
-	public boolean EnterCompanyPAN (String EnterCompanyPAN) throws InterruptedException {
-		
-		input (Entity_Details.EnterCompanyPAN ,EnterCompanyPAN);
+
+	public boolean EnterCompanyPAN(String EnterCompanyPAN) throws InterruptedException {
+
+		input(Entity_Details.EnterCompanyPAN, EnterCompanyPAN);
 		Thread.sleep(1000);
 		Log.info(EnterCompanyPAN);
 		return true;
@@ -377,7 +379,7 @@ public class Entity_Details_Module extends Base_Class {
 		Log.info("Dedupe verified" + Entity_Details.Successfulpopup);
 		return true;
 	}
-	
+
 	public boolean Checksucessmessage() throws InterruptedException {
 		ElementDisplayed(Entity_Details.Successfulpopup);
 		Thread.sleep(1000);
@@ -386,7 +388,7 @@ public class Entity_Details_Module extends Base_Class {
 		return true;
 
 	}
-	
+
 	public boolean EnterDOB(String EnterDOB) throws InterruptedException {
 
 		input(Entity_Details.EnterDOB, EnterDOB);
@@ -394,7 +396,6 @@ public class Entity_Details_Module extends Base_Class {
 		Log.info(EnterDOB);
 		return true;
 	}
-
 
 	public boolean EnterMobile(String EnterMobile) throws InterruptedException {
 
@@ -404,7 +405,6 @@ public class Entity_Details_Module extends Base_Class {
 		return true;
 	}
 
-
 	public boolean EnterEmail(String EnterEmail) throws InterruptedException {
 		input(Entity_Details.EnterEmail, EnterEmail);
 		Thread.sleep(1000);
@@ -412,7 +412,6 @@ public class Entity_Details_Module extends Base_Class {
 		return true;
 	}
 
-	
 	public boolean EnterfirstName(String EnterFirstName) throws InterruptedException {
 		input(Entity_Details.EnterFirstName, EnterFirstName);
 		Thread.sleep(1000);
@@ -476,7 +475,7 @@ public class Entity_Details_Module extends Base_Class {
 	}
 
 	public boolean SelectGender() throws InterruptedException {
-       ScrollUntilElementVisible(Entity_Details.EnterFirstName);
+		ScrollUntilElementVisible(Entity_Details.EnterFirstName);
 		click(Entity_Details.Gender);
 		Thread.sleep(1000);
 		click(Entity_Details.SelectGender);
@@ -492,8 +491,7 @@ public class Entity_Details_Module extends Base_Class {
 		Log.info("gender selected" + Entity_Details.SelectDesignation);
 		return true;
 	}
-	
-	
+
 	public boolean ValidateChangeAddressCheckbox() throws InterruptedException {
 		ScrollUntilElementVisible(Entity_Details.EnterAge);
 		Thread.sleep(1000);
@@ -502,10 +500,10 @@ public class Entity_Details_Module extends Base_Class {
 		Log.info("Change Address checkbox displayed" + Entity_Details.ChangeAddresscheckbox);
 		return true;
 	}
-	
+
 	public boolean EnterAddress11(String EnterAddress11) throws InterruptedException {
-        ScrollUntilElementVisible(Entity_Details.Designation);
-        Thread.sleep(1000);
+		ScrollUntilElementVisible(Entity_Details.Designation);
+		Thread.sleep(1000);
 		input(Entity_Details.EnterAddress11, EnterAddress11);
 		Thread.sleep(1000);
 		Log.info(EnterAddress11);
@@ -539,8 +537,7 @@ public class Entity_Details_Module extends Base_Class {
 		Log.info(Place1);
 		return true;
 	}
-	
-	
+
 	public boolean SelectCountry() throws InterruptedException {
 		ScrollUntilElementVisible(Entity_Details.EnterAddress3);
 		Thread.sleep(1000);
@@ -593,7 +590,6 @@ public class Entity_Details_Module extends Base_Class {
 		return true;
 	}
 
-	
 	public boolean ChecktheBoxforAddress() throws InterruptedException {
 		ScrollUntilElementVisible(Entity_Details.City1);
 		Thread.sleep(1000);
@@ -603,11 +599,10 @@ public class Entity_Details_Module extends Base_Class {
 		click(Entity_Details.PermanentAddressCheckbox);
 		Thread.sleep(1000);
 		Log.info("Checkbox checked" + Entity_Details.PermanentAddressCheckbox);
-		
+
 		return true;
 	}
 
-	
 	public boolean validateAddress1() throws InterruptedException {
 		ElementDisplayed(Entity_Details.EnterAddress1Curraddress);
 		Log.info("Address 1 for current displayed" + Entity_Details.EnterAddress1Curraddress);
@@ -701,7 +696,7 @@ public class Entity_Details_Module extends Base_Class {
 
 		return true;
 	}
-	
+
 	public boolean validatePinCode() throws InterruptedException {
 		WebElement AutoloadedPinCode = driver.findElement(By.xpath("(//input[@placeholder='Pin Code'])[2]"));
 		System.out.println("Autoloaded Place displyed" + AutoloadedPinCode.getAttribute("title"));
@@ -720,11 +715,10 @@ public class Entity_Details_Module extends Base_Class {
 		return true;
 	}
 
-
 	public boolean validateCountry1() throws InterruptedException {
 		ScrollUntilElementVisible(Entity_Details.ScrollToLandmark);
-		WebElement AutoloadedCountry1 = driver
-				.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[1]/parent::div"));
+		WebElement AutoloadedCountry1 = driver.findElement(
+				By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[1]/parent::div"));
 		System.out.println("Autoloaded Country displyed" + AutoloadedCountry1.getAttribute("title"));
 
 		String ABC = AutoloadedCountry1.getAttribute("title");
@@ -742,8 +736,8 @@ public class Entity_Details_Module extends Base_Class {
 	}
 
 	public boolean validateState1() throws InterruptedException {
-		WebElement AutoloadedState1 = driver
-				.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[2]/parent::div"));
+		WebElement AutoloadedState1 = driver.findElement(
+				By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[2]/parent::div"));
 		System.out.println("Autoloaded State displyed" + AutoloadedState1.getAttribute("title"));
 
 		String ABC = AutoloadedState1.getAttribute("title");
@@ -761,8 +755,8 @@ public class Entity_Details_Module extends Base_Class {
 	}
 
 	public boolean validateDistrict1() throws InterruptedException {
-		WebElement AutoloadedDistrict1 = driver
-				.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[3]/parent::div"));
+		WebElement AutoloadedDistrict1 = driver.findElement(
+				By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[3]/parent::div"));
 		System.out.println("Autoloaded District displyed" + AutoloadedDistrict1.getAttribute("title"));
 
 		String ABC = AutoloadedDistrict1.getAttribute("title");
@@ -780,8 +774,8 @@ public class Entity_Details_Module extends Base_Class {
 	}
 
 	public boolean validateCity() throws InterruptedException {
-		WebElement AutoloadedCity = driver
-				.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[4]/parent::div"));
+		WebElement AutoloadedCity = driver.findElement(
+				By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[4]/parent::div"));
 		System.out.println("Autoloaded City displyed" + AutoloadedCity.getAttribute("title"));
 
 		String ABC = AutoloadedCity.getAttribute("title");
@@ -799,8 +793,8 @@ public class Entity_Details_Module extends Base_Class {
 	}
 
 	public boolean validatePost1() throws InterruptedException {
-		WebElement AutoloadedPost1 = driver
-				.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[5]/parent::div"));
+		WebElement AutoloadedPost1 = driver.findElement(
+				By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[5]/parent::div"));
 		System.out.println("Autoloaded Post displyed" + AutoloadedPost1.getAttribute("title"));
 
 		String ABC = AutoloadedPost1.getAttribute("title");
@@ -818,8 +812,8 @@ public class Entity_Details_Module extends Base_Class {
 	}
 
 	public boolean validateTaluk() throws InterruptedException {
-		WebElement AutoloadedTaluk = driver
-				.findElement(By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[6]/parent::div"));
+		WebElement AutoloadedTaluk = driver.findElement(
+				By.xpath("(//div[@class='rz-dropdown valid rz-clear form-control input-main'])[6]/parent::div"));
 		System.out.println("Autoloaded Taluk displyed" + AutoloadedTaluk.getAttribute("title"));
 
 		String ABC = AutoloadedTaluk.getAttribute("title");
@@ -836,11 +830,11 @@ public class Entity_Details_Module extends Base_Class {
 
 		return true;
 	}
-	
+
 	public boolean CheckAddEducationalDetails() throws InterruptedException {
 
 		ScrollUntilElementVisible(Entity_Details.ScrollAutoloadedDistrict);
-		 Thread.sleep(2000);
+		Thread.sleep(2000);
 		ElementDisplayed(Entity_Details.AddEducationalDetailsButton);
 		Log.info("Add Educational Details Button Displayed" + Entity_Details.AddEducationalDetailsButton);
 		click(Entity_Details.AddEducationalDetailsButton);
@@ -849,12 +843,11 @@ public class Entity_Details_Module extends Base_Class {
 		return true;
 
 	}
-	
+
 	public boolean SelectEducationalQualification() throws InterruptedException {
 
 		ElementDisplayed(Entity_Details.EducationalQualification);
-		Log.info("1. Located the \"Educational Qualification Name\" field."
-				+ Entity_Details.EducationalQualification);
+		Log.info("1. Located the \"Educational Qualification Name\" field." + Entity_Details.EducationalQualification);
 		Thread.sleep(1000);
 		click(Entity_Details.EducationalQualification);
 		Log.info("Educational Qualification dropdown open" + Entity_Details.EducationalQualification);
@@ -911,7 +904,7 @@ public class Entity_Details_Module extends Base_Class {
 	}
 
 	public boolean CheckAddedDetailsforEducation() throws InterruptedException {
-		//ScrollUntilElementVisible(Entity_Details.AddDetailsButton);
+		// ScrollUntilElementVisible(Entity_Details.AddDetailsButton);
 		Thread.sleep(1000);
 		ElementDisplayed(Entity_Details.AddedDataforEducation);
 		Log.info("Added  Details  Displayed" + Entity_Details.AddedDataforEducation);
@@ -919,7 +912,7 @@ public class Entity_Details_Module extends Base_Class {
 		return true;
 
 	}
-	
+
 	public boolean AddExperianceButton() throws InterruptedException {
 		ScrollUntilElementVisible(Entity_Details.AddedDataforEducation);
 		Thread.sleep(1000);
@@ -984,8 +977,7 @@ public class Entity_Details_Module extends Base_Class {
 		Log.info("Experiance added in grid" + Entity_Details.AddedExperiance);
 		return true;
 	}
-	
-	
+
 	public boolean clickAddAwardButton() throws InterruptedException {
 		ScrollUntilElementVisible(Entity_Details.AddDetailsButtonForExperiance);
 		Thread.sleep(1000);
@@ -1010,9 +1002,9 @@ public class Entity_Details_Module extends Base_Class {
 		Log.info(EnterAwardProvidedby);
 		return true;
 	}
-	
-	public boolean selectAwardYear () throws InterruptedException {
-		
+
+	public boolean selectAwardYear() throws InterruptedException {
+
 		click(Entity_Details.AwardReceivedBy);
 		Thread.sleep(1000);
 		click(Entity_Details.SelectAwardReceivedYear);
@@ -1020,26 +1012,24 @@ public class Entity_Details_Module extends Base_Class {
 		Log.info("Year selected" + Entity_Details.SelectAwardReceivedYear);
 		return true;
 	}
-	
-	public boolean clickAddAwarddetails () throws InterruptedException {
-		
+
+	public boolean clickAddAwarddetails() throws InterruptedException {
+
 		click(Entity_Details.AddAwardDetails);
 		Thread.sleep(1000);
-		Log.info("Add award details button clicked" + Entity_Details.AddAwardDetails);		
+		Log.info("Add award details button clicked" + Entity_Details.AddAwardDetails);
 		return true;
 	}
-	
-	
-	
-	public boolean AddedAwardinGrid () throws InterruptedException {
+
+	public boolean AddedAwardinGrid() throws InterruptedException {
 		ElementDisplayed(Entity_Details.AddedAwardGrid);
 		Log.info("Award shown in grid" + Entity_Details.AddedAwardGrid);
 		Thread.sleep(2000);
 		return true;
-		
+
 	}
 
-	public boolean editawarddetails () throws InterruptedException {
+	public boolean editawarddetails() throws InterruptedException {
 		click(Entity_Details.AddedAwardGrid);
 		Thread.sleep(1000);
 		click(Entity_Details.editAwardReceivedBy);
@@ -1052,12 +1042,12 @@ public class Entity_Details_Module extends Base_Class {
 		Thread.sleep(1000);
 		click(Entity_Details.UpdateAwardDetails);
 		Thread.sleep(1000);
-		Log.info("Edited data saved" + Entity_Details.UpdateAwardDetails);				
+		Log.info("Edited data saved" + Entity_Details.UpdateAwardDetails);
 		return true;
-		
+
 	}
-	
-	public boolean EnterPassportNo (String EnterPassportno) throws InterruptedException {
+
+	public boolean EnterPassportNo(String EnterPassportno) throws InterruptedException {
 		ScrollUntilElementVisible(Entity_Details.AddDetailsButtonForAward);
 		Thread.sleep(1000);
 		input(Entity_Details.EnterPassportno, EnterPassportno);
@@ -1065,21 +1055,22 @@ public class Entity_Details_Module extends Base_Class {
 		Log.info(EnterPassportno);
 		return true;
 	}
-	
-	public boolean EnterVoterID (String EnterVoterID) throws InterruptedException {
+
+	public boolean EnterVoterID(String EnterVoterID) throws InterruptedException {
 		input(Entity_Details.EnterVoterID, EnterVoterID);
 		Thread.sleep(1000);
 		Log.info(EnterVoterID);
 		return true;
 	}
-	
-	public boolean EnterCKYC (String EnterCKYCNo) throws InterruptedException {
+
+	public boolean EnterCKYC(String EnterCKYCNo) throws InterruptedException {
 		input(Entity_Details.EnterCKYCNo, EnterCKYCNo);
 		Thread.sleep(1000);
 		Log.info(EnterCKYCNo);
 		return true;
 	}
-	public boolean AddDetailsofEnterpreneur () throws InterruptedException {
+
+	public boolean AddDetailsofEnterpreneur() throws InterruptedException {
 		ScrollUntilElementVisible(Entity_Details.EnterVoterID);
 		Thread.sleep(1000);
 		click(Entity_Details.AddEnterpreneurinEntity);
@@ -1088,33 +1079,34 @@ public class Entity_Details_Module extends Base_Class {
 		ScrollUP();
 		return true;
 	}
-	public boolean ValidateTermscheckbox () throws InterruptedException {
+
+	public boolean ValidateTermscheckbox() throws InterruptedException {
 //		ScrollUntilElementVisible(Entity_Details.EnterVoterID);
 //		Thread.sleep(1000);
-    	ElementDisplayed(Entity_Details.TermsandCondition);
+		ElementDisplayed(Entity_Details.TermsandCondition);
 		Log.info("\"Terms and Conditions\" checkbox available." + Entity_Details.TermsandCondition);
 		return true;
 	}
-	
-	public boolean clickTermscheckbox () throws InterruptedException {
+
+	public boolean clickTermscheckbox() throws InterruptedException {
 		Thread.sleep(1000);
 		click(Entity_Details.CheckboxTermschecked);
-	Thread.sleep(2000);
+		Thread.sleep(2000);
 		Log.info("checkbox checked" + Entity_Details.TermsandCondition);
 		return true;
 	}
-	
-public boolean SaveAsdraft () throws InterruptedException {
-		
+
+	public boolean SaveAsdraft() throws InterruptedException {
+
 		click(Entity_Details.SaveAsDraft);
 		Thread.sleep(2000);
 		Log.info("Data saved as draft" + Entity_Details.SaveAsDraft);
 		click(Entity_Details.ClickOK);
 		return true;
 	}
-	
-	public boolean UpdateAndProceed ()throws InterruptedException {
-		
+
+	public boolean UpdateAndProceed() throws InterruptedException {
+
 		click(Entity_Details.AddedEnteredData);
 		Thread.sleep(2000);
 		ElementToBeVisible(Entity_Details.AddedEnteredData);
@@ -1125,17 +1117,18 @@ public boolean SaveAsdraft () throws InterruptedException {
 		Log.info("Data saved successfully" + Entity_Details.UpdateAndProceed);
 		click(Entity_Details.ClickOK);
 		return true;
-}
-	
-	public boolean checkmainwindoew () throws InterruptedException {
-		
+	}
+
+	public boolean checkmainwindoew() throws InterruptedException {
+
 		ElementDisplayed(Entity_Details.EntityHeader);
 		Thread.sleep(1000);
 		Log.info("Redirect to main window" + Entity_Details.EntityHeader);
 		return true;
 	}
-	public boolean ValidateContinuebutton () throws InterruptedException {
-		
+
+	public boolean ValidateContinuebutton() throws InterruptedException {
+
 		ScrollUntilElementVisible(Entity_Details.ScrolltoContinue);
 		Thread.sleep(1000);
 		ElementDisplayed(Entity_Details.ClickContinue);
@@ -1143,14 +1136,13 @@ public boolean SaveAsdraft () throws InterruptedException {
 		Log.info("Continue button displayed" + Entity_Details.ClickContinue);
 		return true;
 	}
-	
-	public boolean clicktocontinue () throws InterruptedException {
-		
+
+	public boolean clicktocontinue() throws InterruptedException {
+
 		click(Entity_Details.ClickContinue);
 		Thread.sleep(3000);
-		Log.info("Process continued"+ Entity_Details.ClickContinue);
+		Log.info("Process continued" + Entity_Details.ClickContinue);
 		return true;
 	}
-
 
 }

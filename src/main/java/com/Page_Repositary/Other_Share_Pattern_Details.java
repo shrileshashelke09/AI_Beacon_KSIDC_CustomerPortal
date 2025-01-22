@@ -18,7 +18,7 @@ public class Other_Share_Pattern_Details {
 
 	public By EnterpreneurDetailsModule = By.xpath("//span[text()='Entrepreneurs Info']");
 	
-	public By ScrolltoEnterpreneurHeader = By.xpath("//h4[text()='Entrepreneur Details']");
+	public By ScrolltoStep2 = By.xpath("//h4[normalize-space()='Step 2']");
 	
 	public By OtherPattern = By.xpath("//a[normalize-space()='2.3 Other Share Pattern Details']");
 	

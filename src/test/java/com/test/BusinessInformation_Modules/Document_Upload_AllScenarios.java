@@ -27,7 +27,7 @@ public class Document_Upload_AllScenarios extends Base_Class {
 		TestListener TestListener;
 		com.Utility.ScreenShot screenShot;
 		Document_Upload_Module Document_Upload_Module;
-		private static String filePath = "D:\\Git_KSIDC\\KSIDC_CustomerPortal-master\\AI_Beacon_KSIDC_CustomerPortal\\src\\test\\resources\\10840.pdf";
+		private static String filePath = "D:\\Git_KSIDC\\KSIDC_CustomerPortal-master\\AI_Beacon_KSIDC_CustomerPortal\\src\\test\\resources\\e-sign.pdf";
 
 
 		@BeforeSuite

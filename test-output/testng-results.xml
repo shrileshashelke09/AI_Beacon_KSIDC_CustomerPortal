@@ -1,33 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-20T17:12:04 IST" name="Default suite" finished-at="2025-01-20T17:12:51 IST" duration-ms="47129">
+  <suite started-at="2025-01-22T10:42:51 IST" name="Default suite" finished-at="2025-01-22T10:45:47 IST" duration-ms="175711">
     <groups>
     </groups>
-    <test started-at="2025-01-20T17:12:04 IST" name="Default test" finished-at="2025-01-20T17:12:51 IST" duration-ms="47129">
-      <class name="com.test.BusinessInformation_Modules.Entrepreneur_Details_AllScenarios">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Entrepreneur_Details_AllScenarios@8c3b9d]" started-at="2025-01-20T17:12:03 IST" name="reference" finished-at="2025-01-20T17:12:04 IST" duration-ms="480" status="PASS">
+    <test started-at="2025-01-22T10:42:51 IST" name="Default test" finished-at="2025-01-22T10:45:47 IST" duration-ms="175711">
+      <class name="com.test.BusinessInformation_Modules.Other_Share_Pattern_Details_AllScenarios">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Other_Share_Pattern_Details_AllScenarios@8c3b9d]" started-at="2025-01-22T10:42:50 IST" name="reference" finished-at="2025-01-22T10:42:51 IST" duration-ms="558" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
-        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Entrepreneur_Details_AllScenarios@8c3b9d]" started-at="2025-01-20T17:12:04 IST" name="RUNALL" data-provider="TestData4" finished-at="2025-01-20T17:12:51 IST" duration-ms="46270" status="PASS">
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Other_Share_Pattern_Details_AllScenarios@8c3b9d]" started-at="2025-01-22T10:42:52 IST" name="RUNALL" data-provider="TestData4" finished-at="2025-01-22T10:45:47 IST" duration-ms="174897" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Aadhaar=121212121212, AwardName=DSR34T4FDS, AwardProvidedby=VDS4E5Y54Y45, CKYC=12345678912345, CourseName=B.E, DOB=03/12/1992, Email=CP@gmail.com, Experience=4.5, FirstName=Kia, From=03/12/2024, LandMark=EHYGRF, LastName=Derf, MiddleName=abc, Mobile=9123456789, Organization=BEYT4634, P_AddressLine1=YDGEF7634, P_AddressLine2=FSNEJ74, P_AddressLine3=SANJ43, PAN=RFOOY6578I, PassportNumber=LA123456, PercentageOfShareHolding=50, Place=YERGFYR, Run=Yes, Summary=CDR3F534T34EF, TestScenario=Entrepreneur_Details_Module, To=17/12/2024, VoterId=YCV0164822}]]>
+                <![CDATA[{NoOnNonMajorShareHolders=4, PercentageOfShareHolded=20, Run=Yes, TestScenario=Other_Share_Pattern_Details_Module}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@41f35f7c]]>
+                <![CDATA[org.testng.TestRunner@3005db4a]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:9918
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SPMUMLAP-070', ip: '192.168.0.139', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:9918
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SPMUMLAP-070', ip: '192.168.0.139', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:452)
+at com.test.BusinessInformation_Modules.Other_Share_Pattern_Details_AllScenarios.RUNALL(Other_Share_Pattern_Details_AllScenarios.java:188)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.net.ConnectException: Failed to connect to localhost/[0:0:0:0:0:0:0:1]:9918
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+at okhttp3.RealCall.execute(RealCall.java:77)
+at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+... 30 more
+Caused by: java.net.ConnectException: Connection refused: no further information
+at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:633)
+at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+... 50 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RUNALL -->
-      </class> <!-- com.test.BusinessInformation_Modules.Entrepreneur_Details_AllScenarios -->
+      </class> <!-- com.test.BusinessInformation_Modules.Other_Share_Pattern_Details_AllScenarios -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
