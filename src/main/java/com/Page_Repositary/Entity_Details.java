@@ -52,7 +52,7 @@ public class Entity_Details {
 
 	public By EnterAddress3 = By.xpath("//input[@placeholder='Address Line3']");
 
-	public By Landmark = By.xpath("//input[@placeholder='Landmark']");
+	public By Landmark = By.xpath("//input[@placeholder='LandMark']");
 
 	public By Place = By.xpath("//input[@placeholder='Place']");
 

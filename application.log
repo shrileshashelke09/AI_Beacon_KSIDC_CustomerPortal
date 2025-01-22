@@ -1,9 +1,18 @@
-[INFO ] 2025-01-22 10:47:43.843 [main] Log - *** Running test method Other_Share_Pattern_Details_Module...
-[INFO ] 2025-01-22 10:47:46.130 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-01-22 10:48:03.988 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-01-22 10:48:07.000 [main] Log - Button visible !
-[INFO ] 2025-01-22 10:48:25.687 [main] Log - Successfully Logged inBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-01-22 10:48:25.689 [main] Log - Login successfully :true
-[INFO ] 2025-01-22 10:48:31.272 [main] Log - Navigated to 'Other Share Pattern Details'By.xpath: //a[normalize-space()='2.3 Other Share Pattern Details']
-[INFO ] 2025-01-22 10:48:32.404 [main] Log - Header displayedBy.xpath: //h4[text()='Other Share Pattern Details']
-[INFO ] 2025-01-22 10:48:32.476 [main] Log - Field is availableBy.xpath: //input[@placeholder='Number Of Non-Major Share Holders']
+[INFO ] 2025-01-22 11:31:53.949 [main] Log - *** Running test method Entity_Details_Module...
+[INFO ] 2025-01-22 11:31:56.294 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-01-22 11:32:16.006 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-01-22 11:32:16.014 [main] Log - Button visible !
+[INFO ] 2025-01-22 11:32:33.082 [main] Log - Login successfully :true
+[INFO ] 2025-01-22 11:32:37.354 [main] Log - Continue button clickedBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-01-22 11:32:39.361 [main] Log - User is navigated to Entity Details page.By.xpath: //a[normalize-space()='2.2 Entity Details']
+[INFO ] 2025-01-22 11:32:45.726 [main] Log - Add Entity form is displayedBy.xpath: //h4[text()='Entity Details']
+[INFO ] 2025-01-22 11:32:52.202 [main] Log - ASJRT6677L
+[INFO ] 2025-01-22 11:32:57.596 [main] Log - Verified message shownBy.xpath: //div[@class='rz-growl-message']
+[INFO ] 2025-01-22 11:32:59.662 [main] Log - DEdupe verifiedBy.xpath: //button[text()='Dedupe Verified']
+[INFO ] 2025-01-22 11:33:01.933 [main] Log - KERALA INSTITUTE123
+[INFO ] 2025-01-22 11:33:12.600 [main] Log - Type of org selectedBy.xpath: //span[text()='Business Entities Created by Statute']
+[INFO ] 2025-01-22 11:33:23.346 [main] Log - Class of Activity selectedBy.xpath: //span[text()='ACTIVITIES OF OTHER TRANSPORT AGENCIES']
+[INFO ] 2025-01-22 11:33:33.924 [main] Log - Date selectedBy.xpath: (//span[text()='1'])[1]
+[INFO ] 2025-01-22 11:33:35.124 [main] Log - DS4T54TGRFX5
+[INFO ] 2025-01-22 11:33:36.342 [main] Log - BSH4TR6SH7U4
+[INFO ] 2025-01-22 11:33:37.558 [main] Log - VGETW53
