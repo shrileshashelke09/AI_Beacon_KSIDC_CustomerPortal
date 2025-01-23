@@ -1,18 +1,30 @@
-[INFO ] 2025-01-22 11:31:53.949 [main] Log - *** Running test method Entity_Details_Module...
-[INFO ] 2025-01-22 11:31:56.294 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-01-22 11:32:16.006 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-01-22 11:32:16.014 [main] Log - Button visible !
-[INFO ] 2025-01-22 11:32:33.082 [main] Log - Login successfully :true
-[INFO ] 2025-01-22 11:32:37.354 [main] Log - Continue button clickedBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-01-22 11:32:39.361 [main] Log - User is navigated to Entity Details page.By.xpath: //a[normalize-space()='2.2 Entity Details']
-[INFO ] 2025-01-22 11:32:45.726 [main] Log - Add Entity form is displayedBy.xpath: //h4[text()='Entity Details']
-[INFO ] 2025-01-22 11:32:52.202 [main] Log - ASJRT6677L
-[INFO ] 2025-01-22 11:32:57.596 [main] Log - Verified message shownBy.xpath: //div[@class='rz-growl-message']
-[INFO ] 2025-01-22 11:32:59.662 [main] Log - DEdupe verifiedBy.xpath: //button[text()='Dedupe Verified']
-[INFO ] 2025-01-22 11:33:01.933 [main] Log - KERALA INSTITUTE123
-[INFO ] 2025-01-22 11:33:12.600 [main] Log - Type of org selectedBy.xpath: //span[text()='Business Entities Created by Statute']
-[INFO ] 2025-01-22 11:33:23.346 [main] Log - Class of Activity selectedBy.xpath: //span[text()='ACTIVITIES OF OTHER TRANSPORT AGENCIES']
-[INFO ] 2025-01-22 11:33:33.924 [main] Log - Date selectedBy.xpath: (//span[text()='1'])[1]
-[INFO ] 2025-01-22 11:33:35.124 [main] Log - DS4T54TGRFX5
-[INFO ] 2025-01-22 11:33:36.342 [main] Log - BSH4TR6SH7U4
-[INFO ] 2025-01-22 11:33:37.558 [main] Log - VGETW53
+[INFO ] 2025-01-23 12:56:02.691 [main] Log - *** Running test method Technical_Know_Module...
+[INFO ] 2025-01-23 12:56:07.970 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-01-23 12:56:19.989 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-01-23 12:56:23.014 [main] Log - Button visible !
+[INFO ] 2025-01-23 12:56:38.193 [main] Log - Login successfully :true
+[INFO ] 2025-01-23 12:56:45.693 [main] Log - Vehicles Component is visible.By.xpath: //a[normalize-space()='4.11 Technical Know How Fees']
+[INFO ] 2025-01-23 12:56:52.005 [main] Log - Vehicles  component is accessable.By.xpath: //a[normalize-space()='4.11 Technical Know How Fees']
+[INFO ] 2025-01-23 12:56:53.066 [main] Log - Header displayed correctly By.xpath: //h4[text()='Technical Know-how Fee Details']
+[INFO ] 2025-01-23 12:56:54.142 [main] Log - Informative Message displayed correctly By.xpath: //span[normalize-space()='Begin your journey!']
+[INFO ] 2025-01-23 12:56:55.230 [main] Log - Skip for now displayedBy.xpath: //span[text()='Skip this for now']
+[INFO ] 2025-01-23 12:57:00.522 [main] Log - Skip for now displayedBy.xpath: //span[text()='Skip this for now']
+[INFO ] 2025-01-23 12:57:06.865 [main] Log - Add details button displayedBy.xpath: //button[normalize-space()='Add Details']
+[INFO ] 2025-01-23 12:57:13.146 [main] Log - Add details button clickedBy.xpath: //button[normalize-space()='Add Details']
+[INFO ] 2025-01-23 12:57:13.206 [main] Log - Field displayedBy.xpath: //input[@placeholder='Service Type']
+[INFO ] 2025-01-23 12:57:14.455 [main] Log - DCCRT
+[INFO ] 2025-01-23 12:57:15.523 [main] Log - Field displayedBy.xpath: //input[@placeholder='Service Provider']
+[INFO ] 2025-01-23 12:57:16.772 [main] Log - CRTG
+[INFO ] 2025-01-23 12:57:17.847 [main] Log - Field displayedBy.xpath: //input[@placeholder='Fee Amount (₹)']
+[INFO ] 2025-01-23 12:57:19.093 [main] Log - 45455454545
+[INFO ] 2025-01-23 12:57:25.442 [main] Log - Cancel button presentBy.xpath: //div[text()='Cancel']
+[INFO ] 2025-01-23 12:57:26.503 [main] Log - Save As Draft Button button presentBy.xpath: //div[normalize-space()='Save as Draft']
+[INFO ] 2025-01-23 12:57:27.592 [main] Log - Save And Proceed Button presentBy.xpath: //button[normalize-space()='Save and Proceed']
+[INFO ] 2025-01-23 12:57:33.941 [main] Log - Draft is saved successfully and success message is displayed.By.xpath: //div[@class='rz-growl-item']
+[INFO ] 2025-01-23 12:57:43.461 [main] Log - Data savedBy.xpath: //button[normalize-space()='Update and Proceed']
+[INFO ] 2025-01-23 12:57:43.515 [main] Log - Data is saved successfully and success message is displayed.By.xpath: //div[@class='rz-growl-item']
+[INFO ] 2025-01-23 12:57:43.570 [main] Log - Data displayed in gridBy.xpath: //span[@class='p-2']
+[INFO ] 2025-01-23 12:57:45.689 [main] Log - Continue button displayedBy.xpath: //button[normalize-space()='Continue']
+[INFO ] 2025-01-23 12:57:52.931 [main] Log - Process continuedBy.xpath: //button[normalize-space()='Continue']
+[INFO ] 2025-01-23 12:57:55.894 [main] Log - Logout is done
+[INFO ] 2025-01-23 12:57:56.634 [main] Log - *** Test Suite Technical_Know_Module ending ***

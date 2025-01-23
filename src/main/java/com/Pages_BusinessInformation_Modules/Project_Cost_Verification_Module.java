@@ -590,13 +590,14 @@ public class Project_Cost_Verification_Module extends Base_Class {
 
 	}
 	
-	public boolean ClickonSaveAndProceed () throws InterruptedException {
+	public boolean ClickonUpdateAndProceed () throws InterruptedException {
 		
 		ScrollUntilElementVisible(Project_Cost_Verification.Others);
 		Thread.sleep(1000);
-		click(Project_Cost_Verification.SaveAndProceed);
+		click(Project_Cost_Verification.UpdateAndProceed);
 		Thread.sleep(1000);
-		Log.info("Redirect to next component" + Project_Cost_Verification.SaveAndProceed);
+		Log.info("Redirect to next component" + Project_Cost_Verification.UpdateAndProceed);
+		Thread.sleep(1000);
 		return true;
 	}
 

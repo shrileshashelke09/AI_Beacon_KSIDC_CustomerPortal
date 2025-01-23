@@ -32,11 +32,10 @@ public class Project_Cost_Verification {
 	public By successpopup = By.xpath("//span[@class='rz-growl-image rzi rzi-check']");
 
 	public By SaveAndProceed = By.xpath("//button[text()='Save and Proceed']");
-	
+		
 	public By ScrolltoStep4 = By.xpath("//h4[normalize-space()='Step 4']");
 
 	public By ProjectCostVerification = By.xpath("//a[normalize-space()='4.1 Project Cost Verification']");
-
 	
 	public By UpdateAndProceed = By.xpath("//button[text()='Update and Proceed']");
 	

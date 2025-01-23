@@ -240,9 +240,9 @@ public class Project_Cost_Verification_AllScenarios extends Base_Class {
 					//TC027
 					
 					ExtentTestManager.startTest("TC027 - Redirection After \"Save and Proceed\"");
-					boolean ClickonSaveAndProceed = Project_Cost_Verification_Module.ClickonSaveAndProceed();
-					ExtentTestManager.getTest().log(Status.PASS , " 1. Click on 'Save and Proceed' button" + ClickonSaveAndProceed);
-					ExtentTestManager.getTest().log(Status.PASS ,"User is redirected to the next component of the application" + ClickonSaveAndProceed);
+					boolean ClickonUpdateAndProceed = Project_Cost_Verification_Module.ClickonUpdateAndProceed();
+					ExtentTestManager.getTest().log(Status.PASS , " 1. Click on 'Save and Proceed' button" + ClickonUpdateAndProceed);
+					ExtentTestManager.getTest().log(Status.PASS ,"User is redirected to the next component of the application" + ClickonUpdateAndProceed);
 					
 					
 					
