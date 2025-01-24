@@ -68,7 +68,7 @@ public class Plant_and_Machinery {
 
 	public By CancelButton = By.xpath("//div[text()='Cancel']");
 
-	public By SaveAsDraftButton = By.xpath("//button[normalize-space()='Save As Draft']");
+	public By SaveAsDraftButton = By.xpath("//*[normalize-space()='Save as Draft']");
 
 	public By SaveAndProceed = By.xpath("//button[normalize-space()='Save and Proceed']");
 
