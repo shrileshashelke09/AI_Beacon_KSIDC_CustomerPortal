@@ -1,0 +1,16 @@
+[INFO ] 2025-01-27 17:37:25.723 [main] Log - *** Running test method Technical_Know_Module...
+[INFO ] 2025-01-27 17:37:27.192 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-01-27 17:37:39.945 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-01-27 17:37:42.959 [main] Log - Button visible !
+[INFO ] 2025-01-27 17:37:57.680 [main] Log - Login successfully :true
+[INFO ] 2025-01-27 17:38:05.039 [main] Log - Vehicles Component is visible.By.xpath: //a[normalize-space()='5.1 Plant And Machinery']
+[INFO ] 2025-01-27 17:38:10.188 [main] Log - Vehicles  component is accessable.By.xpath: //a[normalize-space()='5.1 Plant And Machinery']
+[INFO ] 2025-01-27 17:38:10.252 [main] Log - Window AccessedBy.xpath: //h4[text()='Plant & Machinery Details ']
+[INFO ] 2025-01-27 17:38:12.309 [main] Log - Header displayed correctly By.xpath: //h4[text()='Plant & Machinery Details ']
+[INFO ] 2025-01-27 17:38:13.371 [main] Log - Informative Message displayed correctly By.xpath: //span[@class='d-flex justify-content-center']
+[INFO ] 2025-01-27 17:38:14.432 [main] Log - Stage Name displayed correctly By.xpath: //span[@class='d-flex justify-content-center']
+[INFO ] 2025-01-27 17:38:15.493 [main] Log - Sub Heading displayed correctly By.xpath: //span[normalize-space()='LIST OF PLANT & MACHINERY']
+[INFO ] 2025-01-27 17:38:16.556 [main] Log - Added data displayed correctly By.xpath: //span[@class='p-2']
+[INFO ] 2025-01-27 17:38:17.614 [main] Log - Total Amount displayed correctly By.xpath: //span[@class='text-end pl-3']
+[INFO ] 2025-01-27 17:38:20.038 [main] Log - Logout is done
+[INFO ] 2025-01-27 17:38:20.478 [main] Log - *** Test Suite Technical_Know_Module ending ***
