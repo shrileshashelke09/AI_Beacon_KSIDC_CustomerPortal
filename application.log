@@ -1,16 +1,14 @@
-[INFO ] 2025-01-27 17:37:25.723 [main] Log - *** Running test method Technical_Know_Module...
-[INFO ] 2025-01-27 17:37:27.192 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-01-27 17:37:39.945 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-01-27 17:37:42.959 [main] Log - Button visible !
-[INFO ] 2025-01-27 17:37:57.680 [main] Log - Login successfully :true
-[INFO ] 2025-01-27 17:38:05.039 [main] Log - Vehicles Component is visible.By.xpath: //a[normalize-space()='5.1 Plant And Machinery']
-[INFO ] 2025-01-27 17:38:10.188 [main] Log - Vehicles  component is accessable.By.xpath: //a[normalize-space()='5.1 Plant And Machinery']
-[INFO ] 2025-01-27 17:38:10.252 [main] Log - Window AccessedBy.xpath: //h4[text()='Plant & Machinery Details ']
-[INFO ] 2025-01-27 17:38:12.309 [main] Log - Header displayed correctly By.xpath: //h4[text()='Plant & Machinery Details ']
-[INFO ] 2025-01-27 17:38:13.371 [main] Log - Informative Message displayed correctly By.xpath: //span[@class='d-flex justify-content-center']
-[INFO ] 2025-01-27 17:38:14.432 [main] Log - Stage Name displayed correctly By.xpath: //span[@class='d-flex justify-content-center']
-[INFO ] 2025-01-27 17:38:15.493 [main] Log - Sub Heading displayed correctly By.xpath: //span[normalize-space()='LIST OF PLANT & MACHINERY']
-[INFO ] 2025-01-27 17:38:16.556 [main] Log - Added data displayed correctly By.xpath: //span[@class='p-2']
-[INFO ] 2025-01-27 17:38:17.614 [main] Log - Total Amount displayed correctly By.xpath: //span[@class='text-end pl-3']
-[INFO ] 2025-01-27 17:38:20.038 [main] Log - Logout is done
-[INFO ] 2025-01-27 17:38:20.478 [main] Log - *** Test Suite Technical_Know_Module ending ***
+[INFO ] 2025-01-29 15:55:48.059 [main] Log - *** Running test method Means of module...
+[INFO ] 2025-01-29 15:55:52.399 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-01-29 15:56:12.816 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-01-29 15:56:12.833 [main] Log - Button visible !
+[ERROR] 2025-01-29 15:56:21.142 [main] Log - *** Test execution Means of module failed...
+[ERROR] 2025-01-29 15:56:21.142 [main] Log - element click intercepted: Element <button class="button secondary btn-medium" data-bs-toggle="modal" data-bs-target="#login-Modal">...</button> is not clickable at point (1157, 38). Other element would receive the click: <div class="loader-inner loading">...</div>
+  (Session info: chrome=131.0.6778.267)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TCCOKLAP-5162', ip: '10.212.136.146', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\SILPA~1.SIV\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64032}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5dc59efaca980f75e916a3de7349c31e
+[INFO ] 2025-01-29 15:56:21.981 [main] Log - Logout is done
+[INFO ] 2025-01-29 15:56:22.609 [main] Log - *** Test Suite Means of module ending ***
