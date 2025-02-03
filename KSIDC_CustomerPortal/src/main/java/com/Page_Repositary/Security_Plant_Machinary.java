@@ -25,4 +25,14 @@ public class Security_Plant_Machinary {
 	public By AddedEnteredData = By.xpath("//span[@class='p-2']");
 
 	public By TotalAmount = By.xpath("//span[@class='text-end pl-3']");
+	
+	public By DataField = By.xpath("(//label[@class='rz-dropdown-label rz-inputtext ']/parent::div)[1]");
+	
+	public By MacineryName = By.xpath("//input[@name='MachineryName']");
+	
+	public By Questiontoggle = By.xpath("//p[@title='Do You Want To Edit The Tax Rate?']/parent::div");
+	
+	public By BCD = By.xpath("(//input[@name='MachineryBCD'])[1]");
+	
+	public By CancelButton = By.xpath("//div[text()='Cancel']");
 }

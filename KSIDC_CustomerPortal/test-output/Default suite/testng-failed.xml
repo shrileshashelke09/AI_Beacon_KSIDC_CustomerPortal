@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.BusinessInformation_Modules.Basic_Information_AllScenarios">
+      <class name="com.test.BusinessInformation_Modules.Security_Plant_Machinary_AllScenarios">
         <methods>
-          <include name="RUNALL" invocation-numbers="0"/>
+          <include name="RUNALL"/>
           <include name="reference"/>
         </methods>
-      </class> <!-- com.test.BusinessInformation_Modules.Basic_Information_AllScenarios -->
+      </class> <!-- com.test.BusinessInformation_Modules.Security_Plant_Machinary_AllScenarios -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -28,15 +28,17 @@ public class Means_Of_Finance_CalculationScenario extends Base_Class {
 		com.Utility.ScreenShot screenShot;
 		Means_Of_Finance_Module Means_Of_Finance_Module;
 
+		Means_Of_Finance_Module mfm = new Means_Of_Finance_Module();
+
 
 		@BeforeSuite
 		public void reference() {
-			ExcelReader = new com.Utility.ExcelReader("KSIDC_Entity_Doc_Upload");
+			ExcelReader = new com.Utility.ExcelReader("KSIDC_Means_Of_Finance");
 			log = new Log();
 			TestListener = new TestListener();
 			screenShot = new com.Utility.ScreenShot(null);
 			Base_Class = new Base_Class();
-			Means_Of_Finance_Module = new Means_Of_Finance_Module();
+			Means_Of_Finance_Module  = new Means_Of_Finance_Module();
 
 }
 		@Test(dataProvider = "TestData4")
@@ -56,14 +58,15 @@ public class Means_Of_Finance_CalculationScenario extends Base_Class {
 					// Log.info("Button visible !");
 					Thread.sleep(3000);
 
-					
+			
+					 
 					// TC001
-					ExtentTestManager.startTest("TC001 : Login for Document_Upload Module");
-					Log.info("Button visible !");
-					boolean Calculation = Means_Of_Finance_Module.Calculation();
-					ExtentTestManager.getTest().log(Status.PASS, "Project cost amount captured" + Calculation);
-					
-					
+						ExtentTestManager.startTest("TC001 : Login for Document_Upload Module");
+						Log.info("Button visible !");
+						boolean Calculation = Means_Of_Finance_Module.Calculation();
+						ExtentTestManager.getTest().log(Status.PASS, "Project cost amount captured" + Calculation);
+						
+									
 					
 					
 					//App Logout

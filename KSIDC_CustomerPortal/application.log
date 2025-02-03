@@ -1,28 +1,19 @@
-[INFO ] 2025-01-09 15:48:48.401 [main] Log - *** Running test method Entity_Document_Upload_Module...
-[INFO ] 2025-01-09 15:48:50.046 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-01-09 15:48:53.702 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-01-09 15:48:56.717 [main] Log - Button visible !
-[INFO ] 2025-01-09 15:49:16.723 [main] Log - Login successfully :true
-[INFO ] 2025-01-09 15:49:23.316 [main] Log - Document Upload clicked
-[INFO ] 2025-01-09 15:49:25.409 [main] Log - Document Upload Option displayedBy.xpath: //a[normalize-space()='3.3 Document Upload']
-[INFO ] 2025-01-09 15:49:30.632 [main] Log - Document Upload Option clickedBy.xpath: //a[normalize-space()='3.3 Document Upload']
-[INFO ] 2025-01-09 15:49:31.694 [main] Log - Upload window pop up displayedBy.xpath: //h4[text()='Document Upload']
-[INFO ] 2025-01-09 15:49:32.744 [main] Log - Header displayedBy.xpath: //h4[text()='Document Upload']
-[INFO ] 2025-01-09 15:49:33.834 [main] Log - Enterpreneur doc list displayedBy.xpath: //h5[text()='BUSINESS ENTREPRENEURS DETAILS']
-[INFO ] 2025-01-09 15:49:33.888 [main] Log - Entity doc list displayedBy.xpath: //h5[text()='BUSINESS ENTITY DETAILS']
-[INFO ] 2025-01-09 15:49:44.201 [main] Log -  document clicked and Document details displayed for uploadBy.xpath: (//a[@class='chip-text-wrapper text-decoration-none required-star'])[1]
-[INFO ] 2025-01-09 15:49:44.253 [main] Log - Document window displayedBy.xpath: //span[normalize-space()='Document Information']
-[INFO ] 2025-01-09 15:49:44.327 [main] Log - Document Name displayedBy.xpath: //div[normalize-space()='KIA ABC DERF - SCHEDULE OF IMPLEMENTATION OF THE KEY CONDITIONS SET BY VC']
-[INFO ] 2025-01-09 15:49:45.403 [main] Log - Upload option is presentBy.xpath: //span[text()='Upload Document']/preceding-sibling::input
-[INFO ] 2025-01-09 15:49:48.433 [main] Log - path is :D:\Git_KSIDC\KSIDC_CustomerPortal-master\AI_Beacon_KSIDC_CustomerPortal
-[INFO ] 2025-01-09 15:50:05.837 [main] Log - path is :D:\Git_KSIDC\KSIDC_CustomerPortal-master\AI_Beacon_KSIDC_CustomerPortal
-[INFO ] 2025-01-09 15:50:09.965 [main] Log - Uploaded documnt displayedBy.xpath: (//div[@class='d-flex'])[2]
-[INFO ] 2025-01-09 15:50:11.027 [main] Log - View buton displayedBy.xpath: //button[normalize-space()='View Document']
-[INFO ] 2025-01-09 15:50:12.086 [main] Log - Download buton displayedBy.xpath: //button[normalize-space()='View Document']
-[INFO ] 2025-01-09 15:50:13.129 [main] Log - Delete buton displayedBy.xpath: //button[normalize-space()='Delete Document']
-[INFO ] 2025-01-09 15:50:18.300 [main] Log - View buton clickedBy.xpath: //button[normalize-space()='View Document']
-[INFO ] 2025-01-09 15:50:28.904 [main] Log - Document downloadedBy.xpath: //button[normalize-space()='Download Document']
-[INFO ] 2025-01-09 15:50:29.964 [main] Log -  continue button displayedBy.xpath: //button[normalize-space()='Continue']
-[INFO ] 2025-01-09 15:50:35.343 [main] Log - Process continuedBy.xpath: //button[normalize-space()='Continue']
-[INFO ] 2025-01-09 15:50:38.121 [main] Log - Logout is done
-[INFO ] 2025-01-09 15:50:38.832 [main] Log - *** Test Suite Entity_Document_Upload_Module ending ***
+[INFO ] 2025-02-03 15:03:39.850 [main] Log - *** Running test method Security_Plant_Machinary_Module...
+[INFO ] 2025-02-03 15:03:43.110 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-03 15:04:05.780 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-02-03 15:04:08.790 [main] Log - Button visible !
+[INFO ] 2025-02-03 15:04:23.968 [main] Log - Login successfully :true
+[INFO ] 2025-02-03 15:04:31.384 [main] Log - Building and Component is visible.By.xpath: //a[normalize-space()='5.4 Building And Civil Works']
+[INFO ] 2025-02-03 15:04:36.636 [main] Log - Building and component is accessable.By.xpath: //a[normalize-space()='5.4 Building And Civil Works']
+[INFO ] 2025-02-03 15:04:41.971 [main] Log - Added data Opened By.xpath: //span[@class='p-2']
+[INFO ] 2025-02-03 15:04:42.124 [main] Log - Commercialtrue
+[INFO ] 2025-02-03 15:04:42.232 [main] Log - Existingtrue
+[INFO ] 2025-02-03 15:04:42.337 [main] Log - D4343true
+[INFO ] 2025-02-03 15:04:42.439 [main] Log - 12true
+[INFO ] 2025-02-03 15:04:42.533 [main] Log - 234true
+[INFO ] 2025-02-03 15:04:42.623 [main] Log - 6,68,43,221.00true
+[INFO ] 2025-02-03 15:04:42.724 [main] Log - FTY756HHtrue
+[INFO ] 2025-02-03 15:04:47.993 [main] Log - Cancel button clikedBy.xpath: //div[text()='Cancel']
+[INFO ] 2025-02-03 15:04:53.283 [main] Log - Process continuedBy.xpath: //button[normalize-space()='Continue']
+[INFO ] 2025-02-03 15:04:56.140 [main] Log - Logout is done
+[INFO ] 2025-02-03 15:04:56.921 [main] Log - *** Test Suite Security_Plant_Machinary_Module ending ***
