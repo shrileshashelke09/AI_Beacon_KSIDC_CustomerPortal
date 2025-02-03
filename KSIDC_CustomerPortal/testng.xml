@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.test.user.TimesheetModule.AllScenarios_TimesheetEditDeleteModule"/>
+      <class name="com.test.BusinessInformation_Modules.Tentative_Project_Cost_AllScenarios"/>
+      <class name="com.test.user.TimesheetModule.AllScenarios_TimeSheet_CancelRequests"/>
+      <class name="com.test.BusinessInformation_Modules.Building_Civil_Work_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Business_Document_Upload_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Land_Development_AllScenarios"/>
+      <class name="com.test.Login.Registration_Process_AllScenarios"/>
+      <class name="com.test.LeaveModule.AllScenarios_LeaveModule"/>
+      <class name="com.test.BusinessInformation_Modules.Technical_Know_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Basic_Information_AllScenarios"/>
+      <class name="com.test.LeaveModule.AllScenarios_EWCLeaveModule"/>
+      <class name="com.test.BusinessInformation_Modules.Preliminary_Expense_AllScenarios"/>
+      <class name="com.test.user.TimesheetModule.AllScenarios_TimesheetWeekandMonth"/>
+      <class name="com.test.BusinessInformation_Modules.Plant_And_Machinery_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Project_Cost_Verification_AllScenarios"/>
+      <class name="com.test.user.TimesheetModule.AllScenarios_TimesheetListModule"/>
+      <class name="com.Page_Login.Register_Page_Module"/>
+      <class name="com.test.user.TimesheetModule.AllScenarios_TimesheetCreateModule"/>
+      <class name="com.test.BusinessInformation_Modules.Security_Plant_Machinary_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Existing_Liability_AllScenarios"/>
+      <class name="com.test.Login.UserLogin"/>
+      <class name="com.test.BusinessInformation_Modules.Business_Entrepreneur_Details_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Entity_Details_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Business_Information_AllScenarios"/>
+      <class name="com.test.user.TimesheetModule.AllScenarios_TimeSheet_Approvals"/>
+      <class name="com.test.BusinessInformation_Modules.Entrepreneur_Details_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Other_Share_Pattern_Details_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Misc_Fixed_Asset_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Business_Entity_Details_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.ProjectCost_Document_Upload_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Utilities_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Land_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Means_Of_Finance_CalculationScenario"/>
+      <class name="com.test.BusinessInformation_Modules.Document_Upload_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Deposit_Details_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Project_Details_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Vehicle_Details_AllScenarios"/>
+      <class name="com.test.BusinessInformation_Modules.Enterpreneur_Document_Upload_AllScenarios"/>
+      <class name="com.test.user.TimesheetModule.AllScenarios_TimesheetOnBehalf"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
