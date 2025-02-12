@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-29T15:55:47 IST" name="Default suite" finished-at="2025-01-29T15:56:22 IST" duration-ms="35515">
+  <suite started-at="2025-02-12T11:52:58 IST" name="Default suite" finished-at="2025-02-12T11:54:12 IST" duration-ms="73904">
     <groups>
     </groups>
-    <test started-at="2025-01-29T15:55:47 IST" name="Default test" finished-at="2025-01-29T15:56:22 IST" duration-ms="35515">
-      <class name="com.test.BusinessInformation_Modules.MeansOfFinance_AllScenarios">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.MeansOfFinance_AllScenarios@5b218417]" started-at="2025-01-29T15:55:46 IST" name="reference" finished-at="2025-01-29T15:55:47 IST" duration-ms="574" status="PASS">
+    <test started-at="2025-02-12T11:52:58 IST" name="Default test" finished-at="2025-02-12T11:54:12 IST" duration-ms="73904">
+      <class name="com.test.BusinessInformation_Modules.Security_Land_AllScenarios">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Security_Land_AllScenarios@5b218417]" started-at="2025-02-12T11:52:57 IST" name="reference" finished-at="2025-02-12T11:52:58 IST" duration-ms="642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
-        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.MeansOfFinance_AllScenarios@5b218417]" started-at="2025-01-29T15:55:47 IST" name="RUNALL" data-provider="TestData4" finished-at="2025-01-29T15:56:22 IST" duration-ms="34667" status="PASS">
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Security_Land_AllScenarios@5b218417]" started-at="2025-02-12T11:52:59 IST" name="RUNALL" data-provider="TestData4" finished-at="2025-02-12T11:54:12 IST" duration-ms="73014" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{IncentivesAndGrants=1, InternalAccurals=1, Others=1, Run=Yes, ShareCapital=1, Specify=Test data, TermLoanFromOtherFI=1, TestScenario=Means of module, UnsecuredLoan=1}]]>
+                <![CDATA[{=, Run=Yes, TestScenario=SecurityLandModule}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@2aeefcc]]>
+                <![CDATA[org.testng.TestRunner@540a903b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RUNALL -->
-      </class> <!-- com.test.BusinessInformation_Modules.MeansOfFinance_AllScenarios -->
+      </class> <!-- com.test.BusinessInformation_Modules.Security_Land_AllScenarios -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

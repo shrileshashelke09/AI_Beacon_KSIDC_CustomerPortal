@@ -1,14 +1,30 @@
-[INFO ] 2025-01-29 15:55:48.059 [main] Log - *** Running test method Means of module...
-[INFO ] 2025-01-29 15:55:52.399 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-01-29 15:56:12.816 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-01-29 15:56:12.833 [main] Log - Button visible !
-[ERROR] 2025-01-29 15:56:21.142 [main] Log - *** Test execution Means of module failed...
-[ERROR] 2025-01-29 15:56:21.142 [main] Log - element click intercepted: Element <button class="button secondary btn-medium" data-bs-toggle="modal" data-bs-target="#login-Modal">...</button> is not clickable at point (1157, 38). Other element would receive the click: <div class="loader-inner loading">...</div>
-  (Session info: chrome=131.0.6778.267)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'TCCOKLAP-5162', ip: '10.212.136.146', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.267, chrome: {chromedriverVersion: 131.0.6778.264 (2d05e315153..., userDataDir: C:\Users\SILPA~1.SIV\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64032}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5dc59efaca980f75e916a3de7349c31e
-[INFO ] 2025-01-29 15:56:21.981 [main] Log - Logout is done
-[INFO ] 2025-01-29 15:56:22.609 [main] Log - *** Test Suite Means of module ending ***
+[INFO ] 2025-02-12 11:52:59.476 [main] Log - *** Running test method SecurityLandModule...
+[INFO ] 2025-02-12 11:53:05.273 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-12 11:53:26.981 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-02-12 11:53:26.986 [main] Log - Button visible !
+[INFO ] 2025-02-12 11:53:48.603 [main] Log - Navigate to SecuritylandBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-02-12 11:54:01.394 [main] Log - Click on the Test DataBy.xpath: //a[@class='chip-text-wrapper text-decoration-none' and contains(@title, 'TEST DATA') and contains(@title, '₹10,10,000.00')]
+[INFO ] 2025-02-12 11:54:03.617 [main] Log - TEST DATAtrue
+[INFO ] 2025-02-12 11:54:03.917 [main] Log - 785477true
+[INFO ] 2025-02-12 11:54:04.165 [main] Log - 76543235true
+[INFO ] 2025-02-12 11:54:04.368 [main] Log - 76545true
+[INFO ] 2025-02-12 11:54:06.669 [main] Log - Drytrue
+[INFO ] 2025-02-12 11:54:06.887 [main] Log - 7656.00true
+[INFO ] 2025-02-12 11:54:07.182 [main] Log - true
+[INFO ] 2025-02-12 11:54:07.324 [main] Log - 680702true
+[INFO ] 2025-02-12 11:54:07.497 [main] Log - true
+[INFO ] 2025-02-12 11:54:07.725 [main] Log - true
+[INFO ] 2025-02-12 11:54:07.886 [main] Log - true
+[INFO ] 2025-02-12 11:54:08.064 [main] Log - true
+[INFO ] 2025-02-12 11:54:08.215 [main] Log - THRISSURtrue
+[INFO ] 2025-02-12 11:54:08.385 [main] Log - THIROORtrue
+[INFO ] 2025-02-12 11:54:08.582 [main] Log - THRISSURtrue
+[INFO ] 2025-02-12 11:54:08.854 [main] Log - true
+[INFO ] 2025-02-12 11:54:09.016 [main] Log - true
+[INFO ] 2025-02-12 11:54:09.155 [main] Log - 5,00,000.00true
+[INFO ] 2025-02-12 11:54:09.333 [main] Log - 5,00,000.00true
+[INFO ] 2025-02-12 11:54:09.502 [main] Log - 10,000.00true
+[INFO ] 2025-02-12 11:54:09.675 [main] Log - 2,00,000.00true
+[INFO ] 2025-02-12 11:54:09.831 [main] Log - 6,00,000.00true
+[INFO ] 2025-02-12 11:54:12.299 [main] Log - Logout is done
+[INFO ] 2025-02-12 11:54:12.369 [main] Log - *** Test Suite SecurityLandModule ending ***
