@@ -1,16 +1,29 @@
-[INFO ] 2025-01-27 17:37:25.723 [main] Log - *** Running test method Technical_Know_Module...
-[INFO ] 2025-01-27 17:37:27.192 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-01-27 17:37:39.945 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-01-27 17:37:42.959 [main] Log - Button visible !
-[INFO ] 2025-01-27 17:37:57.680 [main] Log - Login successfully :true
-[INFO ] 2025-01-27 17:38:05.039 [main] Log - Vehicles Component is visible.By.xpath: //a[normalize-space()='5.1 Plant And Machinery']
-[INFO ] 2025-01-27 17:38:10.188 [main] Log - Vehicles  component is accessable.By.xpath: //a[normalize-space()='5.1 Plant And Machinery']
-[INFO ] 2025-01-27 17:38:10.252 [main] Log - Window AccessedBy.xpath: //h4[text()='Plant & Machinery Details ']
-[INFO ] 2025-01-27 17:38:12.309 [main] Log - Header displayed correctly By.xpath: //h4[text()='Plant & Machinery Details ']
-[INFO ] 2025-01-27 17:38:13.371 [main] Log - Informative Message displayed correctly By.xpath: //span[@class='d-flex justify-content-center']
-[INFO ] 2025-01-27 17:38:14.432 [main] Log - Stage Name displayed correctly By.xpath: //span[@class='d-flex justify-content-center']
-[INFO ] 2025-01-27 17:38:15.493 [main] Log - Sub Heading displayed correctly By.xpath: //span[normalize-space()='LIST OF PLANT & MACHINERY']
-[INFO ] 2025-01-27 17:38:16.556 [main] Log - Added data displayed correctly By.xpath: //span[@class='p-2']
-[INFO ] 2025-01-27 17:38:17.614 [main] Log - Total Amount displayed correctly By.xpath: //span[@class='text-end pl-3']
-[INFO ] 2025-01-27 17:38:20.038 [main] Log - Logout is done
-[INFO ] 2025-01-27 17:38:20.478 [main] Log - *** Test Suite Technical_Know_Module ending ***
+[INFO ] 2025-02-13 11:05:02.868 [main] Log - *** Running test method Misc_Fixed_Asset_Module...
+[INFO ] 2025-02-13 11:05:04.353 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-13 11:05:20.413 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-02-13 11:05:23.420 [main] Log - Button visible !
+[INFO ] 2025-02-13 11:05:41.212 [main] Log - Login successfull
+[INFO ] 2025-02-13 11:05:41.213 [main] Log - Login successfully :true
+[INFO ] 2025-02-13 11:05:41.259 [main] Log - Security Misc_Fixed_Asset  component is visible.By.xpath: //li[@class='step active']//span[text()='Security']
+[INFO ] 2025-02-13 11:05:41.259 [main] Log - Security stage page verified successfully :true
+[INFO ] 2025-02-13 11:05:41.301 [main] Log - Misc Fixed Assets Details component  component is visible.By.xpath: //li[@class='step active']//a[text()='Misc Fixed Assets']
+[INFO ] 2025-02-13 11:05:45.553 [main] Log - Misc Fixed Assets Details Heading is visible.By.xpath: //h4[text()='Misc Fixed Asset Details ']
+[INFO ] 2025-02-13 11:05:45.553 [main] Log - Misc Fixed Asset Details page is verified successfully :true
+[INFO ] 2025-02-13 11:05:49.788 [main] Log - View Misc Fixed Asset Details Grid Heading is visible.By.xpath: //div[@class='edit-entrepreneur']
+[INFO ] 2025-02-13 11:05:51.800 [main] Log - Verify View Misc Fixed Asset Details' page is opened. :true
+[INFO ] 2025-02-13 11:05:55.926 [main] Log -  Misc Fixed Asset field is displayed By.xpath: //input[@name='MiscFixedAsset']
+[INFO ] 2025-02-13 11:05:55.958 [main] Log - Misc Fixed Asset Text is DisabledBy.xpath: //input[@name='MiscFixedAsset']
+[INFO ] 2025-02-13 11:05:55.958 [main] Log - Verify Field is loaded with data and is disabled. :true
+[INFO ] 2025-02-13 11:05:55.984 [main] Log - Cost For Misc Fixed Including GST Text field is displayed By.xpath: //input[@name='MiscFixedAsset']
+[INFO ] 2025-02-13 11:05:56.010 [main] Log - Cost For Misc Fixed Including GST Text is Disabledtrue
+[INFO ] 2025-02-13 11:05:56.011 [main] Log - Verify 'Cost For Misc Fixed Including GST' Field is loaded with data and is disabled. :true
+[INFO ] 2025-02-13 11:05:56.023 [main] Log - View Misc Fixed Asset Details Grid Heading is displayed
+[INFO ] 2025-02-13 11:05:57.064 [main] Log - Cancel button in View Misc Fixed Asset Details Page is displayed By.xpath: //div[text()='Cancel']
+[INFO ] 2025-02-13 11:06:04.230 [main] Log - View Misc Fixed Asset Details Page is closed By.xpath: //button[@class='button secondary-green btn-medium d-flex align-items-center justify-content-center  ']
+[INFO ] 2025-02-13 11:06:04.231 [main] Log - 'View Misc Fixed Asset Details' page is closed. :true
+[INFO ] 2025-02-13 11:06:08.346 [main] Log - continue button in 'View Misc Fixed Asset Details' Page is displayed By.xpath: //button[@class='button secondary-green btn-medium d-flex align-items-center justify-content-center  ']
+[INFO ] 2025-02-13 11:06:12.477 [main] Log - clicked on continue button in 'View Misc Fixed Asset Details' Page
+[INFO ] 2025-02-13 11:06:12.512 [main] Log - Page navigates to the next component 'Vehicles'.
+[INFO ] 2025-02-13 11:06:12.513 [main] Log - Verify Page navigates to the next component Vehicles. :true
+[INFO ] 2025-02-13 11:06:14.933 [main] Log - Logout is done
+[INFO ] 2025-02-13 11:06:15.205 [main] Log - *** Test Suite Misc_Fixed_Asset_Module ending ***

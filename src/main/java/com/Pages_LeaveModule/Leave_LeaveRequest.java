@@ -113,7 +113,7 @@ public class Leave_LeaveRequest extends Base_Class
 
 		 }
 		
-	 public boolean uploadFile(String filePath) {
+	 public boolean uploadFile(String filePath) throws InterruptedException {
 	        UploadFile(PageRepositary.selectFile, filePath);
 			return false;	    
 	        }
