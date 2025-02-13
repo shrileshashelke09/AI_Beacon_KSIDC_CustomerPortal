@@ -163,12 +163,13 @@ public class MeansOfFinance_AllScenarios extends Base_Class {
 				ExtentTestManager.getTest().log(Status.PASS,"Text is entered in the field without any error" +Enterspecify );
 				ExtentTestManager.endTest();
 				
-				//TC009
-				ExtentTestManager.startTest("TC009 - Enter Term Loan From Other FI");
-				boolean Entertermloanfromotherfi = mfm.EnterTermLoanFromOtherFI(TermLoanFromOtherFI );
-				ExtentTestManager.getTest().log(Status.PASS,"1. Enter Term Loan From Other FI" +Entertermloanfromotherfi  );
-				ExtentTestManager.getTest().log(Status.PASS,"Text is entered in the field without any error" +Entertermloanfromotherfi );
-				ExtentTestManager.endTest();
+				
+				//TC012
+				ExtentTestManager.startTest("TC009 : Enter Term Loan From Other FI");
+                Log.info("Button visible !");
+                boolean Calculation = mfm.Calculation();
+                ExtentTestManager.getTest().log(Status.PASS, "Project cost amount captured" + Calculation);
+				
 				
 				//TC010
 				ExtentTestManager.startTest("TC010 : Click on the save as draft");
@@ -177,7 +178,7 @@ public class MeansOfFinance_AllScenarios extends Base_Class {
 				ExtentTestManager.endTest();
 				
 				//TC011
-				ExtentTestManager.startTest("TC010 : Click on the save and proceed");
+				ExtentTestManager.startTest("TC011 : Click on the save and proceed");
 				boolean Clickonthesaveandproceed = mfm.ClickontheSaveandproceed();
 				ExtentTestManager.getTest().log(Status.PASS , "Click on the save and proceed" + Clickonthesaveandproceed );
 				ExtentTestManager.endTest();

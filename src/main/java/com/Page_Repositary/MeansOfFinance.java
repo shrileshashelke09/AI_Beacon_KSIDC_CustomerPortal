@@ -14,6 +14,8 @@ public class MeansOfFinance {
 
 	public By ContinueButton = By.xpath("//button[@class='button primary btn-medium ms-auto']");
 	
+	public By ProjectCost = By.xpath("//span[@class='text-end pl-3']");
+	
 	public By ScrolltoProjectCost = By.xpath("//span[text()='Business Finance']");
 	
 	public By ScrolltolinePlantAndMachinery = By.xpath("//a[normalize-space()='4.2 Plant And Machinery']");
@@ -39,6 +41,14 @@ public class MeansOfFinance {
 	public By SaveAsDraft = By.xpath("//button[@class='button primary btn-medium d-flex align-items-center justify-content-center  ']");
 	
 	public By SaveAndProceed = By.xpath("//button[@class='button primary btn-medium d-flex align-items-center justify-content-center']");
+	
+	public By ScrolltoTchnology = By.xpath("//label[@title='Technology Optimization & Product Development (₹)']");
+
+    public By MeansOfFinance = By.xpath("//a[normalize-space()='4.12 Means Of Finance']");
+
+    public By scrolltoShare = By.xpath("//input[@placeholder='Share Capital (₹)']");
+    
+    public By ProjectCostVerification = By.xpath("//a[normalize-space()='4.1 Project Cost Verification']");
 	
 	
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [INFO ] 2025-02-12 11:52:59.476 [main] Log - *** Running test method SecurityLandModule...
 [INFO ] 2025-02-12 11:53:05.273 [main] Log - Driver has initialized successfully for Chromebrowser
 [INFO ] 2025-02-12 11:53:26.981 [main] Log - Title is displayed : KSIDC
@@ -28,3 +29,22 @@
 [INFO ] 2025-02-12 11:54:09.831 [main] Log - 6,00,000.00true
 [INFO ] 2025-02-12 11:54:12.299 [main] Log - Logout is done
 [INFO ] 2025-02-12 11:54:12.369 [main] Log - *** Test Suite SecurityLandModule ending ***
+=======
+[INFO ] 2025-02-05 14:31:41.460 [main] Log - *** Running test method Means of module...
+[INFO ] 2025-02-05 14:31:47.832 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-05 14:32:11.593 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-02-05 14:32:11.613 [main] Log - Button visible !
+[INFO ] 2025-02-05 14:32:41.547 [main] Log - Navigate to project cost pageBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-02-05 14:32:54.049 [main] Log - 1
+[INFO ] 2025-02-05 14:32:55.419 [main] Log - 1
+[INFO ] 2025-02-05 14:32:56.800 [main] Log - 1
+[INFO ] 2025-02-05 14:32:58.176 [main] Log - 1
+[INFO ] 2025-02-05 14:32:59.506 [main] Log - 1
+[INFO ] 2025-02-05 14:33:01.207 [main] Log - Test data
+[INFO ] 2025-02-05 14:33:01.426 [main] Log - Button visible !
+[INFO ] 2025-02-05 14:33:11.984 [main] Log - 46297990856.00
+[INFO ] 2025-02-05 14:33:18.842 [main] Log - Click on the Save as draftBy.xpath: //button[@class='button primary btn-medium d-flex align-items-center justify-content-center  ']
+[INFO ] 2025-02-05 14:33:25.694 [main] Log - Click on the Save and proceedBy.xpath: //button[@class='button primary btn-medium d-flex align-items-center justify-content-center']
+[INFO ] 2025-02-05 14:33:31.496 [main] Log - Logout is done
+[INFO ] 2025-02-05 14:33:31.657 [main] Log - *** Test Suite Means of module ending ***
+>>>>>>> d0a4ff4895f796fb8583ec3e4c53fad619a240f5
