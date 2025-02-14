@@ -9,6 +9,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.BasePackage.Base_Class;
 import com.Pages_BusinessInformation_Modules.Misc_Fixed_Asset_Module;
+import com.Pages_BusinessInformation_Modules.Security_Corporate_Guarantee_Module;
 import com.Pages_BusinessInformation_Modules.Security_MISC_Fixed_Assets_Module;
 import com.Utility.Log;
 import com.aventstack.extentreports.MediaEntityBuilder;
@@ -17,7 +18,7 @@ import com.extentReports.ExtentManager;
 import com.extentReports.ExtentTestManager;
 import com.listeners.TestListener;
 
-public class Security_MISC_Fixed_Assets_AllScenarios extends Base_Class{
+public class Security_Corporate_Gaurantee_AllScenarios extends Base_Class{
 
 	com.Utility.ExcelReader ExcelReader;
 	Base_Class Base_Class;
@@ -25,16 +26,17 @@ public class Security_MISC_Fixed_Assets_AllScenarios extends Base_Class{
 	TestListener TestListener;
 	com.Utility.ScreenShot screenShot;
 	Security_MISC_Fixed_Assets_Module SecMiscFixedAssetModule;
-
+	Security_Corporate_Guarantee_Module secCorpGaurantee; 
+	
 	@BeforeSuite
 	public void reference() {
-		ExcelReader = new com.Utility.ExcelReader("KSIDC_Sec_Misc_Fixed_Asset");
+		ExcelReader = new com.Utility.ExcelReader("KSIDC_Sec_Corporate_Gaurantee");
 		log = new Log();
 		TestListener = new TestListener();
 		screenShot = new com.Utility.ScreenShot(null);
 		Base_Class = new Base_Class();
-		SecMiscFixedAssetModule = new Security_MISC_Fixed_Assets_Module();
-
+		secCorpGaurantee = new Security_Corporate_Guarantee_Module();
+		
 }
 	@Test(dataProvider = "TestData4")
 	public void RUNALL(Map<Object, Object> testdata, ITestContext context) throws IOException, InterruptedException {
@@ -56,7 +58,7 @@ public class Security_MISC_Fixed_Assets_AllScenarios extends Base_Class{
 				// TC001
 				ExtentTestManager.startTest("TC001 : Login for Security Stage module");
 				Log.info("Button visible !");
-				boolean Login = SecMiscFixedAssetModule.login();
+				boolean Login = secCorpGaurantee.login();
 				ExtentTestManager.getTest().log(Status.PASS, "Enter Username" + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "Enter Password" + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "Clicked on Login Button" + Login);
@@ -64,46 +66,46 @@ public class Security_MISC_Fixed_Assets_AllScenarios extends Base_Class{
 				
 				// TC002
 				ExtentTestManager.startTest("TC002 : Verify page is on Security Stage");
-				boolean secStage = SecMiscFixedAssetModule.VerifySecurityStageAccess();
-				ExtentTestManager.getTest().log(Status.PASS, "Verify user is on Securtiy Stage page" + secStage);
-				Log.info("Security stage page verified successfully :" + secStage);
+				boolean TC002_result = secCorpGaurantee.VerifySecurityStageAccess();
+				ExtentTestManager.getTest().log(Status.PASS, "Verify user is on Securtiy Stage page" + TC002_result);
+				Log.info("Security stage page verified successfully :" + TC002_result);
 				
 
 				// TC003
-				ExtentTestManager.startTest("TC003 : Open 'Misc Fixed Asset Details' Component");
-				boolean openMiscFixAsset = SecMiscFixedAssetModule.OpenMiscFixedAssetDetails();
-				ExtentTestManager.getTest().log(Status.PASS, "verify 'Misc Fixed Asset Details' Component is opened" + openMiscFixAsset);
-				Log.info("Misc Fixed Asset Details page is verified successfully :" + openMiscFixAsset);
+				ExtentTestManager.startTest("TC003 : Open Corporate Guarantee details Component");
+				boolean TC003_result = secCorpGaurantee.OpenCorporateGuaranteeComponent();
+				ExtentTestManager.getTest().log(Status.PASS, "verify Corporate Guarantee details Component is opened" + TC003_result);
+				Log.info("Corporate Guarantee details page is verified successfully :" + TC003_result);
 				
 				// TC004
-				ExtentTestManager.startTest("TC004 : Click on 'MISC FIXED ASSETS' in Grid");
-				boolean ClickOnMiscFixAsset = SecMiscFixedAssetModule.ClickOnMiscFixedAssetsGrid();
-				ExtentTestManager.getTest().log(Status.PASS, "verify 'Misc Fixed Asset' Component is clicked" + ClickOnMiscFixAsset);
-				Log.info("Verify View Misc Fixed Asset Details' page is opened. :" + ClickOnMiscFixAsset);
+				ExtentTestManager.startTest("TC004 : Open Add Details Page");
+				boolean TC004_result = secCorpGaurantee.OpenAddDetailsPage();
+				ExtentTestManager.getTest().log(Status.PASS, "Add Details Page is opened" + TC004_result);
+				Log.info("Verify Add Details Page page is opened. :" + TC004_result);
 				
 				// TC005
-				ExtentTestManager.startTest("TC005 : Verify 'Misc Fixed Asset' Field");
-				boolean MiscFixedAssetField = SecMiscFixedAssetModule.VerifyMiscFixedAssetField();
-				ExtentTestManager.getTest().log(Status.PASS, "Verify 'Misc Fixed Asset' Field is visible and disabled" + MiscFixedAssetField);
-				Log.info("Verify Field is loaded with data and is disabled. :" + MiscFixedAssetField);
+				ExtentTestManager.startTest("TC005 : Select Entity from Dropdown");
+				boolean TC005_result = secCorpGaurantee.SelectEntityfromDropdown();
+				ExtentTestManager.getTest().log(Status.PASS, "Verify 'The selected Entity is displayed in the 'Entity Name' field" + TC005_result);
+				Log.info("Verify 'The selected Entity is displayed in the 'Entity Name' field. :" + TC005_result);
 				
 				// TC006
-				ExtentTestManager.startTest("TC006 : Verify 'Cost For Misc Fixed Including GST' Field");
-				boolean MiscFixedIncludingGSTField = SecMiscFixedAssetModule.VerifyCostForMiscFixedIncludingGSTField();
-				ExtentTestManager.getTest().log(Status.PASS, "Verify 'Cost For Misc Fixed Including GST' Field is visible and disabled" + MiscFixedIncludingGSTField);
-				Log.info("Verify 'Cost For Misc Fixed Including GST' Field is loaded with data and is disabled. :" + MiscFixedIncludingGSTField);
+				ExtentTestManager.startTest("TC006 : Verify Auto-Filled Share Field");
+				boolean TC006_result = secCorpGaurantee.VerifyAutoFilledShareField();
+				ExtentTestManager.getTest().log(Status.PASS, "Verify Share field is auto-filled correctly with share percentage." + TC006_result);
+				Log.info("Verify Share field is auto-filled correctly with share percentage. :" + TC006_result);
 				
 				// TC007
-				ExtentTestManager.startTest("TC007 : Cancel and Close 'View Misc Fixed Asset Details' Page");
-				boolean CancelandCloseViewMiscFixedAssetDetailsPage = SecMiscFixedAssetModule.CancelandCloseViewMiscFixedAssetDetailsPage();
-				ExtentTestManager.getTest().log(Status.PASS, "verify Misc Fixed Asset Details' page is closed." + CancelandCloseViewMiscFixedAssetDetailsPage);
-				Log.info("'View Misc Fixed Asset Details' page is closed. :" + CancelandCloseViewMiscFixedAssetDetailsPage);
+				ExtentTestManager.startTest("TC007 : Save and Verify Entity in Grid");
+				boolean TC007_result = secCorpGaurantee.SaveandVerifyEntityinGrid();
+				ExtentTestManager.getTest().log(Status.PASS, "verify Entity is saved and listed in the grid." + TC007_result);
+				Log.info("Verify Entity is saved and listed in the grid:" + TC007_result);
 				
 				// TC008
-				ExtentTestManager.startTest("TC008 : click on Continue to Next Component Vehicles");
-				boolean ContinuetoNextComponentVehicles = SecMiscFixedAssetModule.ContinuetoNextComponentVehicles();
-				ExtentTestManager.getTest().log(Status.PASS, "verify Page navigates to the next component Vehicles." + ContinuetoNextComponentVehicles);
-				Log.info("Verify Page navigates to the next component Vehicles. :" + ContinuetoNextComponentVehicles);
+				ExtentTestManager.startTest("TC008 : Navigate to Personal Guarantee");
+				boolean TC008_result = secCorpGaurantee.NavigatetoPersonalGuarantee();
+				ExtentTestManager.getTest().log(Status.PASS, "verify Page Navigates to Personal Guarantee." + TC008_result);
+				Log.info("Verify Page Navigates to Personal Guarantee. :" + TC008_result);
 				
 				//App Logout
 

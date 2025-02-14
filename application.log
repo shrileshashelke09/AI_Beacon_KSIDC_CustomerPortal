@@ -1,29 +1,28 @@
-[INFO ] 2025-02-13 11:05:02.868 [main] Log - *** Running test method Misc_Fixed_Asset_Module...
-[INFO ] 2025-02-13 11:05:04.353 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-02-13 11:05:20.413 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-02-13 11:05:23.420 [main] Log - Button visible !
-[INFO ] 2025-02-13 11:05:41.212 [main] Log - Login successfull
-[INFO ] 2025-02-13 11:05:41.213 [main] Log - Login successfully :true
-[INFO ] 2025-02-13 11:05:41.259 [main] Log - Security Misc_Fixed_Asset  component is visible.By.xpath: //li[@class='step active']//span[text()='Security']
-[INFO ] 2025-02-13 11:05:41.259 [main] Log - Security stage page verified successfully :true
-[INFO ] 2025-02-13 11:05:41.301 [main] Log - Misc Fixed Assets Details component  component is visible.By.xpath: //li[@class='step active']//a[text()='Misc Fixed Assets']
-[INFO ] 2025-02-13 11:05:45.553 [main] Log - Misc Fixed Assets Details Heading is visible.By.xpath: //h4[text()='Misc Fixed Asset Details ']
-[INFO ] 2025-02-13 11:05:45.553 [main] Log - Misc Fixed Asset Details page is verified successfully :true
-[INFO ] 2025-02-13 11:05:49.788 [main] Log - View Misc Fixed Asset Details Grid Heading is visible.By.xpath: //div[@class='edit-entrepreneur']
-[INFO ] 2025-02-13 11:05:51.800 [main] Log - Verify View Misc Fixed Asset Details' page is opened. :true
-[INFO ] 2025-02-13 11:05:55.926 [main] Log -  Misc Fixed Asset field is displayed By.xpath: //input[@name='MiscFixedAsset']
-[INFO ] 2025-02-13 11:05:55.958 [main] Log - Misc Fixed Asset Text is DisabledBy.xpath: //input[@name='MiscFixedAsset']
-[INFO ] 2025-02-13 11:05:55.958 [main] Log - Verify Field is loaded with data and is disabled. :true
-[INFO ] 2025-02-13 11:05:55.984 [main] Log - Cost For Misc Fixed Including GST Text field is displayed By.xpath: //input[@name='MiscFixedAsset']
-[INFO ] 2025-02-13 11:05:56.010 [main] Log - Cost For Misc Fixed Including GST Text is Disabledtrue
-[INFO ] 2025-02-13 11:05:56.011 [main] Log - Verify 'Cost For Misc Fixed Including GST' Field is loaded with data and is disabled. :true
-[INFO ] 2025-02-13 11:05:56.023 [main] Log - View Misc Fixed Asset Details Grid Heading is displayed
-[INFO ] 2025-02-13 11:05:57.064 [main] Log - Cancel button in View Misc Fixed Asset Details Page is displayed By.xpath: //div[text()='Cancel']
-[INFO ] 2025-02-13 11:06:04.230 [main] Log - View Misc Fixed Asset Details Page is closed By.xpath: //button[@class='button secondary-green btn-medium d-flex align-items-center justify-content-center  ']
-[INFO ] 2025-02-13 11:06:04.231 [main] Log - 'View Misc Fixed Asset Details' page is closed. :true
-[INFO ] 2025-02-13 11:06:08.346 [main] Log - continue button in 'View Misc Fixed Asset Details' Page is displayed By.xpath: //button[@class='button secondary-green btn-medium d-flex align-items-center justify-content-center  ']
-[INFO ] 2025-02-13 11:06:12.477 [main] Log - clicked on continue button in 'View Misc Fixed Asset Details' Page
-[INFO ] 2025-02-13 11:06:12.512 [main] Log - Page navigates to the next component 'Vehicles'.
-[INFO ] 2025-02-13 11:06:12.513 [main] Log - Verify Page navigates to the next component Vehicles. :true
-[INFO ] 2025-02-13 11:06:14.933 [main] Log - Logout is done
-[INFO ] 2025-02-13 11:06:15.205 [main] Log - *** Test Suite Misc_Fixed_Asset_Module ending ***
+[INFO ] 2025-02-14 14:50:10.445 [main] Log - *** Running test method Seurity_Corporate_Gaurantee_Module...
+[INFO ] 2025-02-14 14:50:11.975 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-14 14:50:38.872 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-02-14 14:50:41.890 [main] Log - Button visible !
+[INFO ] 2025-02-14 14:50:59.662 [main] Log - Login successfull
+[INFO ] 2025-02-14 14:50:59.663 [main] Log - Login successfully :true
+[INFO ] 2025-02-14 14:50:59.716 [main] Log - User is navigated to the Security stage.By.xpath: //li[@class='step active']//span[text()='Security']
+[INFO ] 2025-02-14 14:50:59.716 [main] Log - Security stage page verified successfully :true
+[INFO ] 2025-02-14 14:50:59.768 [main] Log - Security Corporate Gaurantee Details component  component is visible.By.xpath: //li[@class='step active']//a[text()='Corporate Guarantee']
+[INFO ] 2025-02-14 14:51:04.025 [main] Log - Corporate Guarantee Details page is opened.By.xpath: //h4[text()='Corporate Guarantee Details ']
+[INFO ] 2025-02-14 14:51:04.025 [main] Log - Corporate Guarantee details page is verified successfully :true
+[INFO ] 2025-02-14 14:51:08.281 [main] Log - Add Details page is opened and Entity Name Drop Down box and Share text box is visible and disable.
+[INFO ] 2025-02-14 14:51:10.301 [main] Log - Verify Add Details Page page is opened. :true
+[INFO ] 2025-02-14 14:51:18.517 [main] Log - Clicked on 'Entity Name' dropdownBy.xpath: //div[@class='rz-dropdown valid rz-state-empty rz-clear form-select select-main']
+[INFO ] 2025-02-14 14:51:22.697 [main] Log -  Selected an Entity from the list By.xpath: //span[text()='KERALA INSTITUTE123']
+[INFO ] 2025-02-14 14:51:22.721 [main] Log - The selected Entity is displayed in the 'Entity Name' field
+[INFO ] 2025-02-14 14:51:22.722 [main] Log - Verify 'The selected Entity is displayed in the 'Entity Name' field. :true
+[INFO ] 2025-02-14 14:51:22.785 [main] Log - Share field is not auto-filled
+[INFO ] 2025-02-14 14:51:22.786 [main] Log - Verify Share field is auto-filled correctly with share percentage. :true
+[INFO ] 2025-02-14 14:51:26.957 [main] Log - SaveAndProceedButton clicked successfully.
+[INFO ] 2025-02-14 14:51:28.017 [main] Log - Newly added entity in grid is displayed By.xpath: //div[@class='col-md-12 col-xxl-12 d-flex align-items-center total_amount']
+[INFO ] 2025-02-14 14:51:28.017 [main] Log - Verify Entity is saved and listed in the grid:true
+[INFO ] 2025-02-14 14:51:32.124 [main] Log - continue button in 'Corporate Gaurantee' Page is displayed By.xpath: //button[@class='button secondary-green btn-medium']
+[INFO ] 2025-02-14 14:51:36.305 [main] Log - clicked on continue button in 'Corporate Gaurantee Details' Page
+[INFO ] 2025-02-14 14:51:36.343 [main] Log - Personal Guarantee Detailss Heading is displayed.
+[INFO ] 2025-02-14 14:51:36.344 [main] Log - Verify Page Navigates to Personal Guarantee. :true
+[INFO ] 2025-02-14 14:51:38.706 [main] Log - Logout is done
+[INFO ] 2025-02-14 14:51:39.003 [main] Log - *** Test Suite Seurity_Corporate_Gaurantee_Module ending ***
