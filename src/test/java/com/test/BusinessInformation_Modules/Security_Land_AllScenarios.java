@@ -128,10 +128,10 @@ public class Security_Land_AllScenarios extends Base_Class {
 				
 				//TC003
 				
-				ExtentTestManager.startTest("TC003 : Verify 'Click on the test data'");
+				ExtentTestManager.startTest("TC003 : Verify 'Click on the List of Land'");
 				//boolean Login =  MeansOfFinance_Module.login();
-				boolean clickonthetestdata=slm.ClickontheTestData();
-				ExtentTestManager.getTest().log(Status.PASS , "Click Test Data" + clickonthetestdata);
+				boolean ClickontheListofLand=slm.ClickontheListofLand();
+				ExtentTestManager.getTest().log(Status.PASS , "Click Test Data" + ClickontheListofLand);
 				ExtentTestManager.endTest();
 				
 				//TC004

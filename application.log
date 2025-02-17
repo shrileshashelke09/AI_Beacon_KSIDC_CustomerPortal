@@ -1,50 +1,30 @@
-<<<<<<< HEAD
-[INFO ] 2025-02-12 11:52:59.476 [main] Log - *** Running test method SecurityLandModule...
-[INFO ] 2025-02-12 11:53:05.273 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-02-12 11:53:26.981 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-02-12 11:53:26.986 [main] Log - Button visible !
-[INFO ] 2025-02-12 11:53:48.603 [main] Log - Navigate to SecuritylandBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-02-12 11:54:01.394 [main] Log - Click on the Test DataBy.xpath: //a[@class='chip-text-wrapper text-decoration-none' and contains(@title, 'TEST DATA') and contains(@title, '₹10,10,000.00')]
-[INFO ] 2025-02-12 11:54:03.617 [main] Log - TEST DATAtrue
-[INFO ] 2025-02-12 11:54:03.917 [main] Log - 785477true
-[INFO ] 2025-02-12 11:54:04.165 [main] Log - 76543235true
-[INFO ] 2025-02-12 11:54:04.368 [main] Log - 76545true
-[INFO ] 2025-02-12 11:54:06.669 [main] Log - Drytrue
-[INFO ] 2025-02-12 11:54:06.887 [main] Log - 7656.00true
-[INFO ] 2025-02-12 11:54:07.182 [main] Log - true
-[INFO ] 2025-02-12 11:54:07.324 [main] Log - 680702true
-[INFO ] 2025-02-12 11:54:07.497 [main] Log - true
-[INFO ] 2025-02-12 11:54:07.725 [main] Log - true
-[INFO ] 2025-02-12 11:54:07.886 [main] Log - true
-[INFO ] 2025-02-12 11:54:08.064 [main] Log - true
-[INFO ] 2025-02-12 11:54:08.215 [main] Log - THRISSURtrue
-[INFO ] 2025-02-12 11:54:08.385 [main] Log - THIROORtrue
-[INFO ] 2025-02-12 11:54:08.582 [main] Log - THRISSURtrue
-[INFO ] 2025-02-12 11:54:08.854 [main] Log - true
-[INFO ] 2025-02-12 11:54:09.016 [main] Log - true
-[INFO ] 2025-02-12 11:54:09.155 [main] Log - 5,00,000.00true
-[INFO ] 2025-02-12 11:54:09.333 [main] Log - 5,00,000.00true
-[INFO ] 2025-02-12 11:54:09.502 [main] Log - 10,000.00true
-[INFO ] 2025-02-12 11:54:09.675 [main] Log - 2,00,000.00true
-[INFO ] 2025-02-12 11:54:09.831 [main] Log - 6,00,000.00true
-[INFO ] 2025-02-12 11:54:12.299 [main] Log - Logout is done
-[INFO ] 2025-02-12 11:54:12.369 [main] Log - *** Test Suite SecurityLandModule ending ***
-=======
-[INFO ] 2025-02-05 14:31:41.460 [main] Log - *** Running test method Means of module...
-[INFO ] 2025-02-05 14:31:47.832 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-02-05 14:32:11.593 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-02-05 14:32:11.613 [main] Log - Button visible !
-[INFO ] 2025-02-05 14:32:41.547 [main] Log - Navigate to project cost pageBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-02-05 14:32:54.049 [main] Log - 1
-[INFO ] 2025-02-05 14:32:55.419 [main] Log - 1
-[INFO ] 2025-02-05 14:32:56.800 [main] Log - 1
-[INFO ] 2025-02-05 14:32:58.176 [main] Log - 1
-[INFO ] 2025-02-05 14:32:59.506 [main] Log - 1
-[INFO ] 2025-02-05 14:33:01.207 [main] Log - Test data
-[INFO ] 2025-02-05 14:33:01.426 [main] Log - Button visible !
-[INFO ] 2025-02-05 14:33:11.984 [main] Log - 46297990856.00
-[INFO ] 2025-02-05 14:33:18.842 [main] Log - Click on the Save as draftBy.xpath: //button[@class='button primary btn-medium d-flex align-items-center justify-content-center  ']
-[INFO ] 2025-02-05 14:33:25.694 [main] Log - Click on the Save and proceedBy.xpath: //button[@class='button primary btn-medium d-flex align-items-center justify-content-center']
-[INFO ] 2025-02-05 14:33:31.496 [main] Log - Logout is done
-[INFO ] 2025-02-05 14:33:31.657 [main] Log - *** Test Suite Means of module ending ***
->>>>>>> d0a4ff4895f796fb8583ec3e4c53fad619a240f5
+[INFO ] 2025-02-17 15:25:27.838 [main] Log - *** Running test method SecurityLandModule...
+[INFO ] 2025-02-17 15:25:30.984 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-17 15:25:34.215 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-02-17 15:25:34.228 [main] Log - Button visible !
+[INFO ] 2025-02-17 15:26:04.339 [main] Log - Navigate to SecuritylandBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-02-17 15:26:17.461 [main] Log - Click on the List of LandBy.xpath: //a[@class='chip-text-wrapper text-decoration-none']
+[INFO ] 2025-02-17 15:26:19.743 [main] Log - TEST DATAtrue
+[INFO ] 2025-02-17 15:26:20.057 [main] Log - 785477true
+[INFO ] 2025-02-17 15:26:20.369 [main] Log - 76543235true
+[INFO ] 2025-02-17 15:26:20.685 [main] Log - 76545true
+[INFO ] 2025-02-17 15:26:23.130 [main] Log - Drytrue
+[INFO ] 2025-02-17 15:26:23.336 [main] Log - 7656.00true
+[INFO ] 2025-02-17 15:26:23.839 [main] Log - true
+[INFO ] 2025-02-17 15:26:24.036 [main] Log - 680702true
+[INFO ] 2025-02-17 15:26:24.289 [main] Log - true
+[INFO ] 2025-02-17 15:26:24.542 [main] Log - true
+[INFO ] 2025-02-17 15:26:24.761 [main] Log - true
+[INFO ] 2025-02-17 15:26:24.993 [main] Log - true
+[INFO ] 2025-02-17 15:26:25.224 [main] Log - THRISSURtrue
+[INFO ] 2025-02-17 15:26:25.541 [main] Log - THIROORtrue
+[INFO ] 2025-02-17 15:26:25.838 [main] Log - THRISSURtrue
+[INFO ] 2025-02-17 15:26:26.124 [main] Log - true
+[INFO ] 2025-02-17 15:26:26.354 [main] Log - true
+[INFO ] 2025-02-17 15:26:26.577 [main] Log - 5,00,000.00true
+[INFO ] 2025-02-17 15:26:26.861 [main] Log - 5,00,000.00true
+[INFO ] 2025-02-17 15:26:27.126 [main] Log - 10,000.00true
+[INFO ] 2025-02-17 15:26:27.394 [main] Log - 2,00,000.00true
+[INFO ] 2025-02-17 15:26:27.678 [main] Log - 6,00,000.00true
+[INFO ] 2025-02-17 15:26:30.392 [main] Log - Logout is done
+[INFO ] 2025-02-17 15:26:30.533 [main] Log - *** Test Suite SecurityLandModule ending ***

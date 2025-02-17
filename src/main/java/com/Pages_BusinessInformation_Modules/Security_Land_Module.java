@@ -53,9 +53,9 @@ public class Security_Land_Module extends Base_Class{
 		     }
 			
 			//TC003
-			public boolean ClickontheTestData() throws InterruptedException {
-				click(securityland.TestData);
-				Log.info("Click on the Test Data" + securityland.TestData);
+			public boolean ClickontheListofLand() throws InterruptedException {
+				click(securityland.ListofLand);
+				Log.info("Click on the List of Land" + securityland.ListofLand);
 				Thread.sleep(2000);
 				return true;
 
