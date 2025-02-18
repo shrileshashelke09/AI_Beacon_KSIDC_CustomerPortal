@@ -96,11 +96,145 @@ public class Security_Vehicle_Module extends Base_Class{
                 return !AutoloadedVehicleCategory.isEnabled();
             }
             
+            
+            //TC005
+            public static boolean validateVehicleManufacture() throws InterruptedException {
+	            WebElement AutoloadedVehicleManufacture = driver.findElement(By.xpath("//label[@title='Vehicle Manufacture'] //following-sibling::div//following-sibling::label"));
+	            System.out.println("Autoloaded Title Holder" + AutoloadedVehicleManufacture.getAttribute("title"));
+
+	            String ABC = AutoloadedVehicleManufacture.getAttribute("title");
+	            if (ABC.equals(AutoloadedVehicleManufacture.getAttribute("title"))) {
+	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedVehicleManufacture.getAttribute("title") + true);
+	                  Log.info(ABC + true);
+	                  return true;
+	            } else {
+	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
+
+	                  Thread.sleep(1000);
+	            }
+	        
+	            return true;
+	      
+			}
+			
+
+            public static boolean isVehicleManufacturefieldDisabled() {
+            	WebElement AutoloadedVehicleManufacture = driver.findElement(By.xpath("//label[@title='Vehicle Manufacture'] //following-sibling::div//following-sibling::label"));
+                return !AutoloadedVehicleManufacture.isEnabled();
+            }
+            
+            //TC006
+            public static boolean validateVehicleModel() throws InterruptedException {
+	            WebElement AutoloadedVehicleModel = driver.findElement(By.xpath("//input[@name='VehicleModel']"));
+	            System.out.println("Autoloaded Title Holder" + AutoloadedVehicleModel.getAttribute("title"));
+
+	            String ABC = AutoloadedVehicleModel.getAttribute("title");
+	            if (ABC.equals(AutoloadedVehicleModel.getAttribute("title"))) {
+	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedVehicleModel.getAttribute("title") + true);
+	                  Log.info(ABC + true);
+	                  return true;
+	            } else {
+	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
+
+	                  Thread.sleep(1000);
+	            }
+	        
+	            return true;
+	      
+			}
+			
+
+            public static boolean isVehicleModel() {
+            	WebElement AutoloadedVehicleModel = driver.findElement(By.xpath("//input[@name='VehicleModel']"));
+                return !AutoloadedVehicleModel.isEnabled();
+            }
+            
+            
+            //TC007
+            public static boolean validateVehicleColour() throws InterruptedException {
+	            WebElement AutoloadedVehicleColour = driver.findElement(By.xpath("//input[@name='VehicleColour']"));
+	            System.out.println("Autoloaded Title Holder" + AutoloadedVehicleColour.getAttribute("title"));
+
+	            String ABC = AutoloadedVehicleColour.getAttribute("title");
+	            if (ABC.equals(AutoloadedVehicleColour.getAttribute("title"))) {
+	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedVehicleColour.getAttribute("title") + true);
+	                  Log.info(ABC + true);
+	                  return true;
+	            } else {
+	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
+
+	                  Thread.sleep(1000);
+	            }
+	        
+	            return true;
+	      
+			}
+			
+
+            public static boolean isVehicleColour() {
+            	WebElement AutoloadedVehicleColour = driver.findElement(By.xpath("//input[@name='VehicleColour']"));
+                return !AutoloadedVehicleColour.isEnabled();
+            }
+            
 
 			
+            //TC008
+            public static boolean validateExShowRoomPrice() throws InterruptedException {
+	            WebElement AutoloadedExShowRoomPrice = driver.findElement(By.xpath("//input[@name='ExShowRoomPrice']"));
+	            System.out.println("Autoloaded Title Holder" + AutoloadedExShowRoomPrice.getAttribute("title"));
+
+	            String ABC = AutoloadedExShowRoomPrice.getAttribute("title");
+	            if (ABC.equals(AutoloadedExShowRoomPrice.getAttribute("title"))) {
+	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedExShowRoomPrice.getAttribute("title") + true);
+	                  Log.info(ABC + true);
+	                  return true;
+	            } else {
+	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
+
+	                  Thread.sleep(1000);
+	            }
+	        
+	            return true;
+	      
+			}
+			
+
+            public static boolean isExShowRoomPrice() {
+            	WebElement AutoloadedExShowRoomPrice = driver.findElement(By.xpath("//input[@name='ExShowRoomPrice']"));
+                return !AutoloadedExShowRoomPrice.isEnabled();
+            }
+            
+            
+            //TC009
+            public static boolean validateRegistration() throws InterruptedException {
+	            WebElement AutoloadedRegistration = driver.findElement(By.xpath("//input[@name='ExShowRoomPrice']"));
+	            System.out.println("Autoloaded Title Holder" + AutoloadedRegistration.getAttribute("title"));
+
+	            String ABC = AutoloadedRegistration.getAttribute("title");
+	            if (ABC.equals(AutoloadedRegistration.getAttribute("title"))) {
+	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedRegistration.getAttribute("title") + true);
+	                  Log.info(ABC + true);
+	                  return true;
+	            } else {
+	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
+
+	                  Thread.sleep(1000);
+	            }
+	        
+	            return true;
+	      
+			}
+			
+
+            public static boolean isRegistration() {
+            	WebElement AutoloadedRegistration = driver.findElement(By.xpath("//input[@name='ExShowRoomPrice']"));
+                return !AutoloadedRegistration.isEnabled();
+            }
+            
 			
 
 
+            
 		
 }
 				

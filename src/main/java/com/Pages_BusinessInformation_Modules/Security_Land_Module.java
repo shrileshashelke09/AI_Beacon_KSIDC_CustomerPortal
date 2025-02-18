@@ -235,7 +235,7 @@ public class Security_Land_Module extends Base_Class{
             //TC0010
             
             public static boolean validateExtendOfLandWet() throws InterruptedException {
-	            WebElement AutoloadedExtendOfLandWet = driver.findElement(By.xpath("///input[@name='ExtendOfLand']"));
+	            WebElement AutoloadedExtendOfLandWet = driver.findElement(By.xpath("//input[@name='ExtendOfLand']"));
 	            System.out.println("Autoloaded Extend Of Land Wet" + AutoloadedExtendOfLandWet.getAttribute("title"));
 
 	            String ABC = AutoloadedExtendOfLandWet.getAttribute("title");
@@ -683,4 +683,38 @@ public class Security_Land_Module extends Base_Class{
             	WebElement AutoloadedAproxMarketValue = driver.findElement(By.xpath("//input[@name='AproxMarketValue']"));
                 return !AutoloadedAproxMarketValue.isEnabled();
             }
+            
+            
+            public boolean ScrolltoCancel() throws InterruptedException {
+            	 ScrollUntilElementVisible(securityland.AproxMarketValue);
+            	 Thread.sleep(2000);
+ 			    Log.info("Scroll to Cancel" + securityland.AproxMarketValue);
+ 				return true;
+ 			
+             
+            }
+            //TC027
+            public boolean ClickOntheCancel() throws InterruptedException {
+				click(securityland.Cancel);
+				Thread.sleep(2000);
+			    Log.info("Click on the Cancel" + securityland.Cancel);
+				return true;
+			}
+            
+            public boolean ScrolltoContinue() throws InterruptedException {
+            	ScrollUntilElementVisible(securityland.SavedDetailes);
+				Thread.sleep(1000);
+				Log.info("Navigates to Continue" + securityland.SavedDetailes);
+				return true;
+            }
+            
+            //TC028
+            public boolean ClickOntheContinue() throws InterruptedException {
+            	
+				click(securityland.Continue);
+	            Log.info("Click on the Continue" + securityland.Cancel);
+				Thread.sleep(2000);
+				return true;
+			}
+            
 }

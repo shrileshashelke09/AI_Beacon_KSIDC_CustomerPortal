@@ -4,8 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
-//import org.testng.Assert;
-// import org.testng.Assert;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -164,6 +163,112 @@ public class Security_Vehicle_AllScenarios extends Base_Class {
            //     ExtentTestManager.getTest().log(Status.PASS, "Vehicle Category field is disabled");
                 ExtentTestManager.endTest();
 			
+                
+                //TC005
+                ExtentTestManager.startTest("TC005 - Verify 'Vehicle Manufacture' Field Loaded");
+				boolean validateVehicleManufacture = true;
+				try {
+					validateVehicleManufacture = Security_Vehicle_Module.validateVehicleManufacture();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Vehicle Manufacture' field is populated with data for the selected item" + validateVehicleManufacture);
+                ExtentTestManager.getTest().log(Status.PASS, "'Vehicle Manufacture' field is filled with relevant data" + validateVehicleManufacture);
+               
+                
+               
+             //  boolean isVehicleManufacturefieldDisabled =true;
+		      //  	try {
+		      //  		isVehicleManufacturefieldDisabled = Security_Vehicle_Module.isVehicleManufacturefieldDisabled();
+			//	} catch (Exception e) {
+					// TODO Auto-generated catch block
+			//		e.printStackTrace();
+			//	}
+            //    Assert.assertTrue(isVehicleManufacturefieldDisabled, "Vehicle Manufacture field should be disabled");
+            //    ExtentTestManager.getTest().log(Status.PASS, "Vehicle Manufacture field is disabled");
+                ExtentTestManager.endTest();
+                
+                //TC006
+                
+                ExtentTestManager.startTest("TC006 - Verify 'Vehicle Model' Field Loaded");
+				boolean validateVehicleModel = true;
+				try {
+					validateVehicleModel = Security_Vehicle_Module.validateVehicleModel();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Vehicle Model' field is populated with data for the selected item" + validateVehicleModel);
+                ExtentTestManager.getTest().log(Status.PASS, "'Vehicle Model' field is filled with relevant data" + validateVehicleModel);
+               
+                
+               
+               boolean isDisabled =true;
+		        	try {
+					isDisabled = Security_Vehicle_Module.isVehicleModel();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isDisabled, "Vehicle Model field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Vehicle Model field is disabled");
+                ExtentTestManager.endTest();
+			
+                
+                //TC007
+                ExtentTestManager.startTest("TC007 - Verify 'Vehicle Colour' Field Loaded");
+				boolean validateVehicleColour = true;
+				try {
+					validateVehicleColour = Security_Vehicle_Module.validateVehicleColour();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Vehicle Colour' field is populated with data for the selected item" + validateVehicleColour);
+                ExtentTestManager.getTest().log(Status.PASS, "'Vehicle Colour' field is filled with relevant data" + validateVehicleColour);
+               
+                
+               
+               boolean isVehicleColour =true;
+		        	try {
+		        		isVehicleColour = Security_Vehicle_Module.isVehicleColour();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isVehicleColour, "Vehicle Colour field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Vehicle colour field is disabled");
+                ExtentTestManager.endTest();
+			
+                
+                
+                //Tc008
+                ExtentTestManager.startTest("TC007 - Verify 'Ex-Showroom Price' Field Loaded");
+				boolean validateExShowRoomPrice = true;
+				try {
+					validateExShowRoomPrice = Security_Vehicle_Module.validateExShowRoomPrice();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Vehicle Colour' field is populated with data for the selected item" + validateExShowRoomPrice);
+                ExtentTestManager.getTest().log(Status.PASS, "'Vehicle Colour' field is filled with relevant data" + validateExShowRoomPrice);
+               
+                
+               
+               boolean isExShowRoomPrice =true;
+		        	try {
+		        		isExShowRoomPrice = Security_Vehicle_Module.isExShowRoomPrice();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isExShowRoomPrice, "Vehicle Colour field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Vehicle colour field is disabled");
+                ExtentTestManager.endTest();
+                
+                
 				
 				//App Logout
 				

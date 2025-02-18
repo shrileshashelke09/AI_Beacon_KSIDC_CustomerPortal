@@ -748,11 +748,67 @@ public class Security_Land_AllScenarios extends Base_Class {
 				}
                 Assert.assertTrue(isDisabled32, "Aprox Market Value field should be disabled");
                 ExtentTestManager.getTest().log(Status.PASS, "Aprox Market Value field is disabled");
-                ExtentTestManager.endTest();
+               // ExtentTestManager.endTest();
                 
+                boolean ScrolltoCancel =true;
+                try {
+                	ScrolltoCancel =slm.ScrolltoCancel();
+                } catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ExtentTestManager.getTest().log(Status.PASS,"Navigates to cancel" + ScrolltoCancel);
+				ExtentTestManager.getTest().log(Status.PASS,"Click on the Cancel" + ScrolltoCancel);
+				ExtentTestManager.endTest();
+                	
+                	
+                
+                
+                //TC027
+                ExtentTestManager.startTest("TC0027 - Click on the Cancel");
+				//boolean MeansOfFinance = MeansOfFinance_Module.Navigatetomeansoffinance();
+				boolean ClickOntheCancel = true;
+				try {
+					ClickOntheCancel = slm.ClickOntheCancel();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ExtentTestManager.getTest().log(Status.PASS,"Click on the Cancel" + ClickOntheCancel);
+				ExtentTestManager.getTest().log(Status.PASS,"The List of Land should be canceled" + ClickOntheCancel);
+				//ExtentTestManager.endTest();
+				
+				
+				
+				//ExtentTestManager.startTest("TC003 - Navigate to Land page");
+				//boolean MeansOfFinance = MeansOfFinance_Module.Navigatetomeansoffinance();
+				boolean ScrolltoContinue = true;
+				try {
+					ScrolltoContinue = slm.ScrolltoContinue();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ExtentTestManager.getTest().log(Status.PASS,"Scroll to Continue" + ScrolltoContinue);
+				ExtentTestManager.getTest().log(Status.PASS,"User should navigates to Continue" + ScrolltoContinue);
+				ExtentTestManager.endTest();
+				
+			
+			
+			//TC028
+			ExtentTestManager.startTest("TC0028 - Click on the Continue");
+			//boolean MeansOfFinance = MeansOfFinance_Module.Navigatetomeansoffinance();
+			boolean ClickOntheContinue = true;
+			try {
+				ClickOntheContinue = slm.ClickOntheContinue();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			ExtentTestManager.getTest().log(Status.PASS,"Click on the Continue" + ClickOntheContinue);
+			ExtentTestManager.getTest().log(Status.PASS,"The page should be redirected to the next page" + ClickOntheContinue);
+			ExtentTestManager.endTest();
 
 }
-			
 			
 			
 				
