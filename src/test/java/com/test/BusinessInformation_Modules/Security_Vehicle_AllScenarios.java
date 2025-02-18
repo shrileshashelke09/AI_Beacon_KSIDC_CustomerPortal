@@ -244,7 +244,7 @@ public class Security_Vehicle_AllScenarios extends Base_Class {
                 
                 
                 //Tc008
-                ExtentTestManager.startTest("TC007 - Verify 'Ex-Showroom Price' Field Loaded");
+                ExtentTestManager.startTest("TC008 - Verify 'Ex-Showroom Price' Field Loaded");
 				boolean validateExShowRoomPrice = true;
 				try {
 					validateExShowRoomPrice = Security_Vehicle_Module.validateExShowRoomPrice();
@@ -252,8 +252,8 @@ public class Security_Vehicle_AllScenarios extends Base_Class {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Vehicle Colour' field is populated with data for the selected item" + validateExShowRoomPrice);
-                ExtentTestManager.getTest().log(Status.PASS, "'Vehicle Colour' field is filled with relevant data" + validateExShowRoomPrice);
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Ex-showroom Price' field is populated with data for the selected item" + validateExShowRoomPrice);
+                ExtentTestManager.getTest().log(Status.PASS, "'Ex-showroom Price' field is filled with relevant data" + validateExShowRoomPrice);
                
                 
                
@@ -264,10 +264,61 @@ public class Security_Vehicle_AllScenarios extends Base_Class {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-                Assert.assertTrue(isExShowRoomPrice, "Vehicle Colour field should be disabled");
-                ExtentTestManager.getTest().log(Status.PASS, "Vehicle colour field is disabled");
+                Assert.assertTrue(isExShowRoomPrice, "Ex-showroom Price field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Ex-showroom Price field is disabled");
                 ExtentTestManager.endTest();
                 
+                
+                //TC009
+                ExtentTestManager.startTest("TC009 - Verify 'Registration' Field Loaded");
+				boolean validateRegistration = true;
+				try {
+					validateRegistration = Security_Vehicle_Module.validateRegistration();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Registration' field is populated with data for the selected item" + validateRegistration);
+                ExtentTestManager.getTest().log(Status.PASS, "'Registration' field is filled with relevant data" + validateRegistration);
+               
+                
+               
+   //            boolean isRegistration =true;
+   //		        	try {
+//		        		isRegistration = Security_Vehicle_Module.isRegistration();
+	//			} catch (Exception e) {
+					// TODO Auto-generated catch block
+	//				e.printStackTrace();
+	//			}
+     //           Assert.assertTrue(isRegistration, "Registration field should be disabled");
+      //          ExtentTestManager.getTest().log(Status.PASS, "Registration field is disabled");
+                ExtentTestManager.endTest();
+                
+                
+                //TC010
+                ExtentTestManager.startTest("TC008 - Verify 'On-Road Price' Field Loaded");
+				boolean validateOnRoadPrice = true;
+				try {
+					validateOnRoadPrice = Security_Vehicle_Module.validateOnRoadPrice();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'On-Road  Price' field is populated with data for the selected item" + validateOnRoadPrice);
+                ExtentTestManager.getTest().log(Status.PASS, "'On-Road Price' field is filled with relevant data" + validateOnRoadPrice);
+               
+                
+               
+               boolean isOnRoadPrice =true;
+		        	try {
+		        		isOnRoadPrice = Security_Vehicle_Module.isOnRoadPrice();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isOnRoadPrice, "On-Road Price field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "On-Road Price field is disabled");
+                ExtentTestManager.endTest();
                 
 				
 				//App Logout

@@ -1,35 +1,35 @@
-[INFO ] 2025-02-18 16:21:29.573 [main] Log - *** Running test method SecurityLandModule...
-[INFO ] 2025-02-18 16:21:32.341 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-02-18 16:21:45.662 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-02-18 16:21:45.674 [main] Log - Button visible !
-[INFO ] 2025-02-18 16:22:07.365 [main] Log - Navigate to SecuritylandBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-02-18 16:22:20.237 [main] Log - Click on the List of LandBy.xpath: //a[@class='chip-text-wrapper text-decoration-none']
-[INFO ] 2025-02-18 16:22:22.459 [main] Log - TEST DATAtrue
-[INFO ] 2025-02-18 16:22:22.644 [main] Log - 785477true
-[INFO ] 2025-02-18 16:22:22.816 [main] Log - 76543235true
-[INFO ] 2025-02-18 16:22:22.988 [main] Log - 76545true
-[INFO ] 2025-02-18 16:22:25.372 [main] Log - Drytrue
-[INFO ] 2025-02-18 16:22:25.561 [main] Log - 7656.00true
-[INFO ] 2025-02-18 16:22:25.759 [main] Log - 545.00true
-[INFO ] 2025-02-18 16:22:25.935 [main] Log - true
-[INFO ] 2025-02-18 16:22:26.096 [main] Log - 680702true
-[INFO ] 2025-02-18 16:22:26.249 [main] Log - true
-[INFO ] 2025-02-18 16:22:26.405 [main] Log - true
-[INFO ] 2025-02-18 16:22:26.560 [main] Log - true
-[INFO ] 2025-02-18 16:22:26.712 [main] Log - true
-[INFO ] 2025-02-18 16:22:26.857 [main] Log - THRISSURtrue
-[INFO ] 2025-02-18 16:22:27.029 [main] Log - THIROORtrue
-[INFO ] 2025-02-18 16:22:27.200 [main] Log - THRISSURtrue
-[INFO ] 2025-02-18 16:22:27.375 [main] Log - true
-[INFO ] 2025-02-18 16:22:27.516 [main] Log - true
-[INFO ] 2025-02-18 16:22:27.656 [main] Log - 5,00,000.00true
-[INFO ] 2025-02-18 16:22:27.813 [main] Log - 5,00,000.00true
-[INFO ] 2025-02-18 16:22:27.967 [main] Log - 10,000.00true
-[INFO ] 2025-02-18 16:22:28.107 [main] Log - 2,00,000.00true
-[INFO ] 2025-02-18 16:22:28.262 [main] Log - 6,00,000.00true
-[INFO ] 2025-02-18 16:22:30.338 [main] Log - Scroll to CancelBy.xpath: //input[@name='AproxMarketValue']
-[INFO ] 2025-02-18 16:22:36.709 [main] Log - Click on the CancelBy.xpath: //div[@class='button tertiary btn-medium d-flex align-items-center justify-content-center  ' ]
-[INFO ] 2025-02-18 16:22:37.802 [main] Log - Navigates to ContinueBy.xpath: //div[@style='font-size:10px;margin-top:20px']
-[INFO ] 2025-02-18 16:22:42.063 [main] Log - Click on the ContinueBy.xpath: //div[@class='button tertiary btn-medium d-flex align-items-center justify-content-center  ' ]
-[INFO ] 2025-02-18 16:22:46.584 [main] Log - Logout is done
-[INFO ] 2025-02-18 16:22:46.714 [main] Log - *** Test Suite SecurityLandModule ending ***
+[INFO ] 2025-02-18 17:05:22.822 [main] Log - *** Running test method SecurityLandModule...
+[INFO ] 2025-02-18 17:05:25.217 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-18 17:05:37.339 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-02-18 17:05:37.355 [main] Log - Button visible !
+[INFO ] 2025-02-18 17:06:00.560 [main] Log - Navigate to SecuritylandBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-02-18 17:06:13.386 [main] Log - Click on the List of LandBy.xpath: //a[@class='chip-text-wrapper text-decoration-none']
+[INFO ] 2025-02-18 17:06:15.601 [main] Log - TEST DATAtrue
+[INFO ] 2025-02-18 17:06:15.970 [main] Log - 785477true
+[INFO ] 2025-02-18 17:06:16.142 [main] Log - 76543235true
+[INFO ] 2025-02-18 17:06:16.331 [main] Log - 76545true
+[INFO ] 2025-02-18 17:06:18.679 [main] Log - true
+[INFO ] 2025-02-18 17:06:18.835 [main] Log - 7656.00true
+[INFO ] 2025-02-18 17:06:19.006 [main] Log - 545.00true
+[INFO ] 2025-02-18 17:06:19.197 [main] Log - true
+[INFO ] 2025-02-18 17:06:19.335 [main] Log - 680702true
+[INFO ] 2025-02-18 17:06:19.491 [main] Log - true
+[INFO ] 2025-02-18 17:06:19.630 [main] Log - true
+[INFO ] 2025-02-18 17:06:19.785 [main] Log - true
+[INFO ] 2025-02-18 17:06:19.922 [main] Log - true
+[INFO ] 2025-02-18 17:06:20.064 [main] Log - THRISSURtrue
+[INFO ] 2025-02-18 17:06:20.205 [main] Log - THIROORtrue
+[INFO ] 2025-02-18 17:06:20.359 [main] Log - THRISSURtrue
+[INFO ] 2025-02-18 17:06:20.518 [main] Log - true
+[INFO ] 2025-02-18 17:06:20.662 [main] Log - true
+[INFO ] 2025-02-18 17:06:20.767 [main] Log - 5,00,000.00true
+[INFO ] 2025-02-18 17:06:20.939 [main] Log - 5,00,000.00true
+[INFO ] 2025-02-18 17:06:21.079 [main] Log - 10,000.00true
+[INFO ] 2025-02-18 17:06:21.236 [main] Log - 2,00,000.00true
+[INFO ] 2025-02-18 17:06:21.394 [main] Log - 6,00,000.00true
+[INFO ] 2025-02-18 17:06:23.460 [main] Log - Scroll to CancelBy.xpath: //input[@name='AproxMarketValue']
+[INFO ] 2025-02-18 17:06:29.816 [main] Log - Click on the CancelBy.xpath: //div[@class='button tertiary btn-medium d-flex align-items-center justify-content-center  ' ]
+[INFO ] 2025-02-18 17:06:30.907 [main] Log - Navigates to ContinueBy.xpath: //div[@style='font-size:10px;margin-top:20px']
+[INFO ] 2025-02-18 17:06:35.187 [main] Log - Click on the ContinueBy.xpath: //div[@class='button tertiary btn-medium d-flex align-items-center justify-content-center  ' ]
+[INFO ] 2025-02-18 17:06:39.814 [main] Log - Logout is done
+[INFO ] 2025-02-18 17:06:39.900 [main] Log - *** Test Suite SecurityLandModule ending ***

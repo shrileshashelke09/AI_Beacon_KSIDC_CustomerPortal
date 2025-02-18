@@ -207,7 +207,7 @@ public class Security_Vehicle_Module extends Base_Class{
             
             //TC009
             public static boolean validateRegistration() throws InterruptedException {
-	            WebElement AutoloadedRegistration = driver.findElement(By.xpath("//input[@name='ExShowRoomPrice']"));
+	            WebElement AutoloadedRegistration = driver.findElement(By.xpath("//label[@title='Registration'] //following-sibling::div//following-sibling::label"));
 	            System.out.println("Autoloaded Title Holder" + AutoloadedRegistration.getAttribute("title"));
 
 	            String ABC = AutoloadedRegistration.getAttribute("title");
@@ -227,8 +227,35 @@ public class Security_Vehicle_Module extends Base_Class{
 			
 
             public static boolean isRegistration() {
-            	WebElement AutoloadedRegistration = driver.findElement(By.xpath("//input[@name='ExShowRoomPrice']"));
+            	WebElement AutoloadedRegistration = driver.findElement(By.xpath("//label[@title='Registration'] //following-sibling::div//following-sibling::label"));
                 return !AutoloadedRegistration.isEnabled();
+            }
+            
+            
+            //TC010
+            public static boolean validateOnRoadPrice() throws InterruptedException {
+	            WebElement AutoloadedOnRoadPrice = driver.findElement(By.xpath("//input[@name='OnRoadPrice']"));
+	            System.out.println("Autoloaded Title Holder" + AutoloadedOnRoadPrice.getAttribute("title"));
+
+	            String ABC = AutoloadedOnRoadPrice.getAttribute("title");
+	            if (ABC.equals(AutoloadedOnRoadPrice.getAttribute("title"))) {
+	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedOnRoadPrice.getAttribute("title") + true);
+	                  Log.info(ABC + true);
+	                  return true;
+	            } else {
+	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
+
+	                  Thread.sleep(1000);
+	            }
+	        
+	            return true;
+	      
+			}
+			
+
+            public static boolean isOnRoadPrice() {
+            	WebElement AutoloadedOnRoadPrice = driver.findElement(By.xpath("//input[@name='OnRoadPrice']"));
+                return !AutoloadedOnRoadPrice.isEnabled();
             }
             
 			

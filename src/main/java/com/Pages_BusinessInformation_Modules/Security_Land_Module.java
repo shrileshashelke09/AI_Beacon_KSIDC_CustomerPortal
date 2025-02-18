@@ -180,7 +180,7 @@ public class Security_Land_Module extends Base_Class{
            
             public static boolean validateNature() throws InterruptedException {
                 Thread.sleep(1000);
-	            WebElement AutoloadedNature = driver.findElement(By.xpath("//label[@title='Nature']//following-sibling::div"));
+	            WebElement AutoloadedNature = driver.findElement(By.xpath("//label[@title='Nature']//following-sibling::div//following-sibling::label"));
 	            System.out.println("Autoloaded Nature" + AutoloadedNature.getAttribute("title"));
 
 	            String ABC = AutoloadedNature.getAttribute("title");
