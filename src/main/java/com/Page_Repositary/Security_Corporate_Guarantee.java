@@ -16,14 +16,7 @@ public class Security_Corporate_Guarantee {
 	public By ListOfCorporateGuaranteeGridHeading = By.xpath("//span[@class='chip-heading p-0']");
 	public By AddedEntityName = By.xpath("//a[@title='KERALA INSTITUTE123 - 0%']");
 	public By TotalShareGridValue = By.xpath("//div[@class='col-md-12 col-xxl-12 d-flex align-items-center total_amount']");
-	public By CorporateGauranteeContinueButton = By.xpath("//button[@class='button secondary-green btn-medium']");
+	public By CorporateGuaranteeContinueButton = By.xpath("//button[@class='button secondary-green btn-medium']");
 	public By PersonalGuaranteeDetailssHeading = By.xpath("//h4[text()='Personal Guarantee Details']");
 
-//	public By ContinueButton = By.xpath("");
-//	public By ContinueButton = By.xpath("");
-//	public By ContinueButton = By.xpath("");
-//	public By ContinueButton = By.xpath("");
-//	public By ContinueButton = By.xpath("");
-//	public By ContinueButton = By.xpath("");
-	
 }

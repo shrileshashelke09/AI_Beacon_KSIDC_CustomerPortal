@@ -21,7 +21,6 @@ public class Security_MISC_Fixed_Assets_Module extends Base_Class{
 		click(Sec_Misc_Fixed_Asset.ContinueButton);
 		Log.info("Login successfull");
 		return true;
-
 	}
 
 	// TC002

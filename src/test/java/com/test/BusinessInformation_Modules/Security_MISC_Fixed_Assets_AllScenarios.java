@@ -57,52 +57,52 @@ public class Security_MISC_Fixed_Assets_AllScenarios extends Base_Class{
 				ExtentTestManager.startTest("TC001 : Login for Security Stage module");
 				Log.info("Button visible !");
 				boolean Login = SecMiscFixedAssetModule.login();
-				ExtentTestManager.getTest().log(Status.PASS, "Enter Username" + Login);
-				ExtentTestManager.getTest().log(Status.PASS, "Enter Password" + Login);
-				ExtentTestManager.getTest().log(Status.PASS, "Clicked on Login Button" + Login);
+				ExtentTestManager.getTest().log(Status.PASS, "Enter Username: " + Login);
+				ExtentTestManager.getTest().log(Status.PASS, "Enter Password: " + Login);
+				ExtentTestManager.getTest().log(Status.PASS, "Clicked on Login Button: " + Login);
 				Log.info("Login successfully :" + Login);
 				
 				// TC002
 				ExtentTestManager.startTest("TC002 : Verify page is on Security Stage");
 				boolean secStage = SecMiscFixedAssetModule.VerifySecurityStageAccess();
-				ExtentTestManager.getTest().log(Status.PASS, "Verify user is on Securtiy Stage page" + secStage);
+				ExtentTestManager.getTest().log(Status.PASS, "Verify user is on Securtiy Stage page: " + secStage);
 				Log.info("Security stage page verified successfully :" + secStage);
 				
 
 				// TC003
 				ExtentTestManager.startTest("TC003 : Open 'Misc Fixed Asset Details' Component");
 				boolean openMiscFixAsset = SecMiscFixedAssetModule.OpenMiscFixedAssetDetails();
-				ExtentTestManager.getTest().log(Status.PASS, "verify 'Misc Fixed Asset Details' Component is opened" + openMiscFixAsset);
+				ExtentTestManager.getTest().log(Status.PASS, "verify 'Misc Fixed Asset Details' Component is opened: " + openMiscFixAsset);
 				Log.info("Misc Fixed Asset Details page is verified successfully :" + openMiscFixAsset);
 				
 				// TC004
 				ExtentTestManager.startTest("TC004 : Click on 'MISC FIXED ASSETS' in Grid");
 				boolean ClickOnMiscFixAsset = SecMiscFixedAssetModule.ClickOnMiscFixedAssetsGrid();
-				ExtentTestManager.getTest().log(Status.PASS, "verify 'Misc Fixed Asset' Component is clicked" + ClickOnMiscFixAsset);
+				ExtentTestManager.getTest().log(Status.PASS, "verify 'Misc Fixed Asset' Component is clicked: " + ClickOnMiscFixAsset);
 				Log.info("Verify View Misc Fixed Asset Details' page is opened. :" + ClickOnMiscFixAsset);
 				
 				// TC005
 				ExtentTestManager.startTest("TC005 : Verify 'Misc Fixed Asset' Field");
 				boolean MiscFixedAssetField = SecMiscFixedAssetModule.VerifyMiscFixedAssetField();
-				ExtentTestManager.getTest().log(Status.PASS, "Verify 'Misc Fixed Asset' Field is visible and disabled" + MiscFixedAssetField);
+				ExtentTestManager.getTest().log(Status.PASS, "Verify 'Misc Fixed Asset' Field is visible and disabled: " + MiscFixedAssetField);
 				Log.info("Verify Field is loaded with data and is disabled. :" + MiscFixedAssetField);
 				
 				// TC006
 				ExtentTestManager.startTest("TC006 : Verify 'Cost For Misc Fixed Including GST' Field");
 				boolean MiscFixedIncludingGSTField = SecMiscFixedAssetModule.VerifyCostForMiscFixedIncludingGSTField();
-				ExtentTestManager.getTest().log(Status.PASS, "Verify 'Cost For Misc Fixed Including GST' Field is visible and disabled" + MiscFixedIncludingGSTField);
+				ExtentTestManager.getTest().log(Status.PASS, "Verify 'Cost For Misc Fixed Including GST' Field is visible and disabled: " + MiscFixedIncludingGSTField);
 				Log.info("Verify 'Cost For Misc Fixed Including GST' Field is loaded with data and is disabled. :" + MiscFixedIncludingGSTField);
 				
 				// TC007
 				ExtentTestManager.startTest("TC007 : Cancel and Close 'View Misc Fixed Asset Details' Page");
 				boolean CancelandCloseViewMiscFixedAssetDetailsPage = SecMiscFixedAssetModule.CancelandCloseViewMiscFixedAssetDetailsPage();
-				ExtentTestManager.getTest().log(Status.PASS, "verify Misc Fixed Asset Details' page is closed." + CancelandCloseViewMiscFixedAssetDetailsPage);
+				ExtentTestManager.getTest().log(Status.PASS, "verify Misc Fixed Asset Details' page is closed.: " + CancelandCloseViewMiscFixedAssetDetailsPage);
 				Log.info("'View Misc Fixed Asset Details' page is closed. :" + CancelandCloseViewMiscFixedAssetDetailsPage);
 				
 				// TC008
 				ExtentTestManager.startTest("TC008 : click on Continue to Next Component Vehicles");
 				boolean ContinuetoNextComponentVehicles = SecMiscFixedAssetModule.ContinuetoNextComponentVehicles();
-				ExtentTestManager.getTest().log(Status.PASS, "verify Page navigates to the next component Vehicles." + ContinuetoNextComponentVehicles);
+				ExtentTestManager.getTest().log(Status.PASS, "verify Page navigates to the next component Vehicles.: " + ContinuetoNextComponentVehicles);
 				Log.info("Verify Page navigates to the next component Vehicles. :" + ContinuetoNextComponentVehicles);
 				
 				//App Logout

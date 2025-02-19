@@ -16,13 +16,5 @@ public class Security_Misc_Fixed_Assets {
 	public By MiscFixedAssetsContinueButton = By.xpath("//button[@class='button secondary-green btn-medium d-flex align-items-center justify-content-center  ']");
 	public By VehicleDetailsPageHeading = By.xpath("//h4[text()='Vehicle Details']");
 
-//	public By ContinueButton = By.xpath("//li[@class='step active']//span[text()='Security']");
-
-//	public By ContinueButton = By.xpath("");
-//	public By ContinueButton = By.xpath("");
-//	public By ContinueButton = By.xpath("");
-//	public By ContinueButton = By.xpath("");
-//	public By ContinueButton = By.xpath("");
-//	public By ContinueButton = By.xpath("");
 	
 }
