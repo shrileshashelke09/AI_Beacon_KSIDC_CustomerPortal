@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.BasePackage.Base_Class;
-import com.Pages_BusinessInformation_Modules.Security_Personal_Guarantee_Module;
+import com.Pages_BusinessInformation_Modules.Security_Summary_Module;
 import com.Utility.Log;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
@@ -16,23 +16,23 @@ import com.extentReports.ExtentManager;
 import com.extentReports.ExtentTestManager;
 import com.listeners.TestListener;
 
-public class Security_Personal_Guarantee_All_Scenarios extends Base_Class{
+public class Security_Summary_All_Scenarios extends Base_Class{
 
 	com.Utility.ExcelReader ExcelReader;
 	Base_Class Base_Class;
 	Log log;
 	TestListener TestListener;
 	com.Utility.ScreenShot screenShot;
-	Security_Personal_Guarantee_Module SecPersonalGuarantee;
+	Security_Summary_Module SecSummary;
 	
 	@BeforeSuite
 	public void reference() {
-		ExcelReader = new com.Utility.ExcelReader("KSIDC_Personal_Guarantee");
+		ExcelReader = new com.Utility.ExcelReader("KSIDC_Security_Summary");
 		log = new Log();
 		TestListener = new TestListener();
 		screenShot = new com.Utility.ScreenShot(null);
 		Base_Class = new Base_Class();
-		SecPersonalGuarantee = new Security_Personal_Guarantee_Module();
+		SecSummary = new Security_Summary_Module();
 		
 }
 	@Test(dataProvider = "TestData4")
@@ -55,67 +55,91 @@ public class Security_Personal_Guarantee_All_Scenarios extends Base_Class{
 				// TC001
 				ExtentTestManager.startTest("TC001 : Login for Security Stage module");
 				Log.info("Button visible !");
-				boolean Login = SecPersonalGuarantee.login();
+				boolean Login = SecSummary.login();
 				ExtentTestManager.getTest().log(Status.PASS, "Enter Username: " + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "Enter Password: " + Login);
 				ExtentTestManager.getTest().log(Status.PASS, "Clicked on Login Button: " + Login);
 				Log.info("Login successfully :" + Login);
 				
 				// TC002
-				ExtentTestManager.startTest("TC002 : Verify page is on Security Stage");
-				boolean TC002_result = SecPersonalGuarantee.VerifySecurityStageAccess();
-				ExtentTestManager.getTest().log(Status.PASS, "Verify user is on Securtiy Stage page: " + TC002_result);
-				Log.info("Security stage page verified successfully :" + TC002_result);
-				
+				ExtentTestManager.startTest("TC002 : Navigate to Security Stage");
+				boolean TC002_result = SecSummary.VerifySecurityStageAccess();
+				ExtentTestManager.getTest().log(Status.PASS, "User is taken to the Security stage of the application. : " + TC002_result);
+				Log.info("User is taken to the Security stage of the application. :" + TC002_result);
 
 				// TC003
-				ExtentTestManager.startTest("TC003 : Open Personal Guarantee details Component");
-				boolean TC003_result = SecPersonalGuarantee.OpenPersonalGuaranteeComponent();
-				ExtentTestManager.getTest().log(Status.PASS, "verify Personal Guarantee details Component is opened: " + TC003_result);
-				Log.info("Personal Guarantee details page is verified successfully :" + TC003_result);
+				ExtentTestManager.startTest("TC003 : Access Security Summary");
+				boolean TC003_result = SecSummary.AccessSecuritySummary();
+				ExtentTestManager.getTest().log(Status.PASS, "Security Summary Details page is opened. :" + TC003_result);
+				Log.info("Security Summary Details page is opened. :" + TC003_result);
 				
 				// TC004
-				ExtentTestManager.startTest("TC004 : Open Add Details Page");
-				boolean TC004_result = SecPersonalGuarantee.OpenAddDetailsPage();
-				ExtentTestManager.getTest().log(Status.PASS, "Add Details Page is opened: " + TC004_result);
-				Log.info("Verify Add Details Page page is opened. :" + TC004_result);
+				ExtentTestManager.startTest("TC004 : Verify Data in 'Plant & Machinery' Field");
+				boolean TC004_result = SecSummary.VerifyDatainPlantMachineryField();
+				ExtentTestManager.getTest().log(Status.PASS, "'Plant & Machinery' field shows data. : " + TC004_result);
+				Log.info("'Plant & Machinery' field shows data. :" + TC004_result);
 				
 				// TC005
-				ExtentTestManager.startTest("TC005 : Select Entrepreneur's Name from Entity Name Dropdown");
-				boolean TC005_result = SecPersonalGuarantee.SelectEntrepreneurfromDropdown();
-				ExtentTestManager.getTest().log(Status.PASS, "Verify The selected name is displayed in the dropdown: " + TC005_result);
-				Log.info("Verify The selected name is displayed in the dropdown: " + TC005_result);
+				ExtentTestManager.startTest("TC005 : Verify Data in 'Land' Field");
+				boolean TC005_result = SecSummary.VerifyDatainLandField();
+				ExtentTestManager.getTest().log(Status.PASS, "'Land Development' field shows data.:" + TC005_result);
+				Log.info("'Land Development' field shows data.: " + TC005_result);
 				
 				// TC006
-				ExtentTestManager.startTest("TC006 : Verify Age Field is Disabled");
-				boolean TC006_result = SecPersonalGuarantee.VerifyAgeFieldisDisabled();
-				ExtentTestManager.getTest().log(Status.PASS, "Age field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable.: " + TC006_result);
-				Log.info("Age field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable. :" + TC006_result);
+				ExtentTestManager.startTest("TC006 : Verify Data in 'Land Development' Field");
+				boolean TC006_result = SecSummary.VerifyDatainLandDevelopmentField();
+				ExtentTestManager.getTest().log(Status.PASS, "'Land Development' field shows data.: " + TC006_result);
+				Log.info("'Land Development' field shows data.:" + TC006_result);
 				
 				// TC007
-				ExtentTestManager.startTest("TC007 : Verify Share Field is Disabled");
-				boolean TC007_result = SecPersonalGuarantee.VerifyShareFieldisDisabled();
-				ExtentTestManager.getTest().log(Status.PASS, "Share field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable.: " + TC007_result);
-				Log.info("Share field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable. :" + TC007_result);
+				ExtentTestManager.startTest("TC007 : Verify Data in 'Utilities' Field");
+				boolean TC007_result = SecSummary.VerifyDatainUtilitiesField();
+				ExtentTestManager.getTest().log(Status.PASS, "Utilities' field shows data.: " + TC007_result);
+				Log.info("'Utilities' field shows data.:" + TC007_result);
 				
 				// TC008
-				ExtentTestManager.startTest("TC008 : Verify Net Worth Field is Disabled");
-				boolean TC008_result = SecPersonalGuarantee.VerifyNetWorthFieldisDisabled();
-				ExtentTestManager.getTest().log(Status.PASS, "Net Worth field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable.: " + TC008_result);
-				Log.info("Net Worth field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable. :" + TC008_result);
+				ExtentTestManager.startTest("TC008 : Verify Data in 'Misc Fixed Assets' Field.");
+				boolean TC008_result = SecSummary.VerifyDatainMiscFixedAssetsField();
+				ExtentTestManager.getTest().log(Status.PASS, "'Misc Fixed Assets' field shows data.: " + TC008_result);
+				Log.info("'Misc Fixed Assets' field shows data.:" + TC008_result);
 				
 				// TC009
-				ExtentTestManager.startTest("TC009 : Save and Verify Entity in Grid");
-				boolean TC009_result = SecPersonalGuarantee.SaveandVerifyEntityinGrid();
-				ExtentTestManager.getTest().log(Status.PASS, "verify Entity is saved and listed in the grid.: " + TC009_result);
-				Log.info("Verify Entity is saved and listed in the grid:" + TC009_result);
+				ExtentTestManager.startTest("TC009 : Verify Data in 'Vehicles' Field.");
+				boolean TC009_result = SecSummary.VerifyDatainVehiclesField();
+				ExtentTestManager.getTest().log(Status.PASS, "'Vehicles' field shows data.: " + TC009_result);
+				Log.info("'Vehicles' field shows data.:" + TC009_result);
 				
 				// TC010
-				ExtentTestManager.startTest("TC010 : Navigate to Collateral Security");
-				boolean TC010_result = SecPersonalGuarantee.NavigatetoCollateralSecurity();
-				ExtentTestManager.getTest().log(Status.PASS, "verify Page Navigates to Collateral Security.: " + TC010_result);
-				Log.info("Verify Page Navigates to Collateral Security. :" + TC010_result);
+				ExtentTestManager.startTest("TC010 : Verify Data in 'Collateral Security' Field.");
+				boolean TC010_result = SecSummary.VerifyDatainCollateralSecurityField();
+				ExtentTestManager.getTest().log(Status.PASS, "'Collateral Security' field shows data.: " + TC010_result);
+				Log.info("'Collateral Security' field shows data.:" + TC010_result);
 				
+				
+				// TC011
+				ExtentTestManager.startTest("TC011 : Verify Total Amount Display");
+				boolean TC011_result = SecSummary.VerifyTotalAmountDisplay();
+				ExtentTestManager.getTest().log(Status.PASS, "Total Amount is shown correctly on the page.: " + TC011_result);
+				Log.info("Total Amount is shown correctly on the page. :" + TC011_result);
+				
+				// TC012
+				ExtentTestManager.startTest("TC012 : Verify Personal Guarantee Percentage Display.");
+				boolean TC012_result = SecSummary.VerifyPersonalGuaranteePercentageDisplay();
+				ExtentTestManager.getTest().log(Status.PASS, "Personal Guarantee percentage is shown correctly.: " + TC012_result);
+				Log.info("Personal Guarantee percentage is shown correctly.:" + TC012_result);
+				
+				// TC013
+				ExtentTestManager.startTest("TC013 : Verify Corporate Guarantee Percentage Display.");
+				boolean TC013_result = SecSummary.VerifyCorporateGuaranteePercentageDisplay();
+				ExtentTestManager.getTest().log(Status.PASS, "Corporate Guarantee percentage is shown correctly.: " + TC013_result);
+				Log.info("Corporate Guarantee percentage is shown correctly.:" + TC013_result);
+		
+				// TC014
+				ExtentTestManager.startTest("TC014 : Continue to Document Upload.");
+				boolean TC014_result = SecSummary.ContinuetoDocumentUpload();
+				ExtentTestManager.getTest().log(Status.PASS, "Document Upload window is opened.: " + TC014_result);
+				Log.info("Document Upload window is opened.:" + TC014_result);
+
 				//App Logout
 
 				Thread.sleep(2000);

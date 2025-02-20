@@ -69,7 +69,6 @@ public class Security_Personal_Guarantee_Module extends Base_Class{
 		ElementDisplayed(Sec_per_Guarantee.EntrepreneursNameDropDown);
 		click(Sec_per_Guarantee.EntrepreneursNameDropDown);
 		Log.info("Clicked on 'Entrepreneurs Name' dropdown" + Sec_per_Guarantee.EntrepreneursNameDropDown);
-		
 		ElementDisplayed(Sec_per_Guarantee.EntrepreneursNameDropDownValue);
 		String dropdownValue = driver.findElement(Sec_per_Guarantee.EntrepreneursNameDropDownValue).getText();
 		click(Sec_per_Guarantee.EntrepreneursNameDropDownValue);
