@@ -69,14 +69,15 @@ public class Security_Personal_Guarantee_Module extends Base_Class{
 		ElementDisplayed(Sec_per_Guarantee.EntrepreneursNameDropDown);
 		click(Sec_per_Guarantee.EntrepreneursNameDropDown);
 		Log.info("Clicked on 'Entrepreneurs Name' dropdown" + Sec_per_Guarantee.EntrepreneursNameDropDown);
-		ElementDisplayed(Sec_per_Guarantee.EntrepreneursNameDropDownValue_HEMLATA_HEGDE);
-		String dropdownValue = driver.findElement(Sec_per_Guarantee.EntrepreneursNameDropDownValue_HEMLATA_HEGDE).getText();
-		click(Sec_per_Guarantee.EntrepreneursNameDropDownValue_HEMLATA_HEGDE);
-		Log.info(" Selected an Entrepreneur from the list " + Sec_per_Guarantee.EntrepreneursNameDropDownValue_HEMLATA_HEGDE);
+		
+		ElementDisplayed(Sec_per_Guarantee.EntrepreneursNameDropDownValue);
+		String dropdownValue = driver.findElement(Sec_per_Guarantee.EntrepreneursNameDropDownValue).getText();
+		click(Sec_per_Guarantee.EntrepreneursNameDropDownValue);
+		Log.info(" Selected an Entrepreneur from the list " + Sec_per_Guarantee.EntrepreneursNameDropDownValue);
 		String SelectedDropdownValue = driver.findElement(Sec_per_Guarantee.Selected_EntrepreneursNameDropDownValue).getText();
 		if(dropdownValue.equals(SelectedDropdownValue))
 		{
-			Log.info("The selected Entity is displayed in the 'Entity Name' field" );
+			Log.info("The selected Entity is displayed in the 'Entity Name' field" + SelectedDropdownValue );
 		}
 		else
 		{
@@ -93,11 +94,10 @@ public class Security_Personal_Guarantee_Module extends Base_Class{
 			ElementDisplayed(Sec_per_Guarantee.AgeTxtBox);
 			CheckElementDisable(Sec_per_Guarantee.AgeTxtBox);
 			
-			String autoFillShareValue = driver.findElement(Sec_per_Guarantee.AgeTxtBox).getAttribute("title").toString();
-			System.out.println(autoFillShareValue);
-			if(autoFillShareValue.length()>0)
+			String autoFillAgeValue = driver.findElement(Sec_per_Guarantee.AgeTxtBox).getAttribute("title").toString();
+			if(autoFillAgeValue.length()>0)
 			{
-				Log.info("Age field is auto-filled correctly with share percentage");
+				Log.info("Age field is auto-filled correctly with share percentage: "+autoFillAgeValue);
 			}
 			else
 			{
@@ -123,10 +123,9 @@ public class Security_Personal_Guarantee_Module extends Base_Class{
 			ElementDisplayed(Sec_per_Guarantee.ShareValueTxtBox);
 			CheckElementDisable(Sec_per_Guarantee.ShareValueTxtBox);
 			String autoFillShareValue = driver.findElement(Sec_per_Guarantee.ShareValueTxtBox).getAttribute("title").toString();
-			System.out.println(autoFillShareValue);
 			if(autoFillShareValue.length()>0)
 			{
-				Log.info("Share field is auto-filled correctly with share percentage");
+				Log.info("Share field is auto-filled correctly with share percentage: "+autoFillShareValue);
 			}
 			else
 			{
@@ -152,11 +151,10 @@ public class Security_Personal_Guarantee_Module extends Base_Class{
 		ElementDisplayed(Sec_per_Guarantee.NetWorthValueTxtBox);
 //		ElementDisplayed(Sec_per_Guarantee.NetWorthValueTxtBox);
 		CheckElementDisable(Sec_per_Guarantee.NetWorthValueTxtBox);
-		String autoFillShareValue = driver.findElement(Sec_per_Guarantee.NetWorthValueTxtBox).getAttribute("title").toString();
-		System.out.println(autoFillShareValue);
-		if(autoFillShareValue.length()>0)
+		String autoFillNetWorthValue = driver.findElement(Sec_per_Guarantee.NetWorthValueTxtBox).getAttribute("title").toString();
+		if(autoFillNetWorthValue.length()>0)
 		{
-			Log.info("Net Worth field is auto-filled correctly with share percentage");
+			Log.info("Net Worth field is auto-filled correctly with share percentage: "+autoFillNetWorthValue);
 		}
 		else
 		{

@@ -12,7 +12,7 @@ public class Security_Personal_Guarantee {
 	public By AgeTxtBox = By.xpath("//input[@name='Age']");
 	public By ShareValueTxtBox = By.xpath("//input[@name='Share']");
 	public By NetWorthValueTxtBox = By.xpath("//input[@name='NetWorth']");
-	public By EntrepreneursNameDropDownValue_HEMLATA_HEGDE = By.xpath("//li[@aria-label='HEMLATA HEGDE']");
+	public By EntrepreneursNameDropDownValue = By.xpath("(//li[@role='option'])[1]");
 	public By SaveAndProceedButton = By.xpath("//button[text()='Save and Proceed']");
 	public By Selected_EntrepreneursNameDropDownValue= By.xpath("//label[text()='HEMLATA HEGDE']");
 	public By ListOfCorporateGuaranteeGridHeading = By.xpath("//span[@class='chip-heading p-0']");

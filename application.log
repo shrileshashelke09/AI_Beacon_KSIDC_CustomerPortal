@@ -1,35 +1,35 @@
-[INFO ] 2025-02-19 11:57:16.379 [main] Log - *** Running test method Securityt_Personal_Guarantee_Module...
-[INFO ] 2025-02-19 11:57:18.432 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-02-19 11:57:32.144 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-02-19 11:57:35.152 [main] Log - Button visible !
-[INFO ] 2025-02-19 11:57:53.349 [main] Log - Login successfull
-[INFO ] 2025-02-19 11:57:53.350 [main] Log - Login successfully :true
-[INFO ] 2025-02-19 11:57:53.423 [main] Log - User is navigated to the Security stage.By.xpath: //li[@class='step active']//span[text()='Security']
-[INFO ] 2025-02-19 11:57:53.423 [main] Log - Security stage page verified successfully :true
-[INFO ] 2025-02-19 11:57:53.489 [main] Log - Security Personal Guarantee Details component  component is visible.By.xpath: //li[@class='step active']//a[text()='Personal Guarantee']
-[INFO ] 2025-02-19 11:57:57.778 [main] Log - Personal Guarantee Details page is opened.By.xpath: //h4[text()='Personal Guarantee Details']
-[INFO ] 2025-02-19 11:57:57.778 [main] Log - Personal Guarantee details page is verified successfully :true
-[INFO ] 2025-02-19 11:58:05.278 [main] Log - Add Details page is opened and Entrepreneurs Name Drop Down box, Age Text Box, Share Text Box, and Net Worth Text Box is visible.
-[INFO ] 2025-02-19 11:58:07.290 [main] Log - Verify Add Details Page page is opened. :true
-[INFO ] 2025-02-19 11:58:15.598 [main] Log - Clicked on 'Entrepreneurs Name' dropdownBy.xpath: //label[@class='rz-dropdown-label rz-inputtext  rz-placeholder']
-[INFO ] 2025-02-19 11:58:19.898 [main] Log -  Selected an Entrepreneur from the list By.xpath: //li[@aria-label='HEMLATA HEGDE']
-[INFO ] 2025-02-19 11:58:19.939 [main] Log - The selected Entity is displayed in the 'Entity Name' field
-[INFO ] 2025-02-19 11:58:19.940 [main] Log - Verify The selected name is displayed in the dropdown: true
-[INFO ] 2025-02-19 11:58:20.043 [main] Log - Age field is auto-filled correctly with share percentage
-[INFO ] 2025-02-19 11:58:20.149 [main] Log - Age field is not editable
-[INFO ] 2025-02-19 11:58:20.150 [main] Log - Age field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable. :true
-[INFO ] 2025-02-19 11:58:20.256 [main] Log - Share field is auto-filled correctly with share percentage
-[INFO ] 2025-02-19 11:58:20.346 [main] Log - Share field is not editable
-[INFO ] 2025-02-19 11:58:20.347 [main] Log - Share field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable. :true
-[INFO ] 2025-02-19 11:58:20.452 [main] Log - Net Worth field is auto-filled correctly with share percentage
-[INFO ] 2025-02-19 11:58:20.543 [main] Log - Net Worth field is not editable
-[INFO ] 2025-02-19 11:58:20.543 [main] Log - Net Worth field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable. :true
-[INFO ] 2025-02-19 11:58:27.823 [main] Log - Save And Proceed Button clicked successfully.
-[INFO ] 2025-02-19 11:58:30.035 [main] Log - Entity is saved and displayed in the Grid 
-[INFO ] 2025-02-19 11:58:30.036 [main] Log - Verify Entity is saved and listed in the grid:true
-[INFO ] 2025-02-19 11:58:37.235 [main] Log - continue button in 'Personal Guarantee' Page is displayed By.xpath: //button[@class='button secondary-green btn-medium d-flex align-items-center justify-content-center  ']
-[INFO ] 2025-02-19 11:58:41.475 [main] Log - clicked on continue button in 'Personal Guarantee Details' Page
-[INFO ] 2025-02-19 11:58:41.526 [main] Log - Collateral Security Details Heading is displayed.
-[INFO ] 2025-02-19 11:58:41.526 [main] Log - Verify Page Navigates to Collateral Security. :true
-[INFO ] 2025-02-19 11:58:44.050 [main] Log - Logout is done
-[INFO ] 2025-02-19 11:58:44.690 [main] Log - *** Test Suite Securityt_Personal_Guarantee_Module ending ***
+[INFO ] 2025-02-20 14:35:53.794 [main] Log - *** Running test method Security_Personal_Guarantee_Module...
+[INFO ] 2025-02-20 14:35:55.391 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-20 14:36:07.054 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-02-20 14:36:10.065 [main] Log - Button visible !
+[INFO ] 2025-02-20 14:36:27.999 [main] Log - Login successfull
+[INFO ] 2025-02-20 14:36:28.000 [main] Log - Login successfully :true
+[INFO ] 2025-02-20 14:36:28.045 [main] Log - User is navigated to the Security stage.By.xpath: //li[@class='step active']//span[text()='Security']
+[INFO ] 2025-02-20 14:36:28.046 [main] Log - Security stage page verified successfully :true
+[INFO ] 2025-02-20 14:36:28.091 [main] Log - Security Personal Guarantee Details component  component is visible.By.xpath: //li[@class='step active']//a[text()='Personal Guarantee']
+[INFO ] 2025-02-20 14:36:32.346 [main] Log - Personal Guarantee Details page is opened.By.xpath: //h4[text()='Personal Guarantee Details']
+[INFO ] 2025-02-20 14:36:32.347 [main] Log - Personal Guarantee details page is verified successfully :true
+[INFO ] 2025-02-20 14:36:39.748 [main] Log - Add Details page is opened and Entrepreneurs Name Drop Down box, Age Text Box, Share Text Box, and Net Worth Text Box is visible.
+[INFO ] 2025-02-20 14:36:41.762 [main] Log - Verify Add Details Page page is opened. :true
+[INFO ] 2025-02-20 14:36:50.044 [main] Log - Clicked on 'Entrepreneurs Name' dropdownBy.xpath: //label[@class='rz-dropdown-label rz-inputtext  rz-placeholder']
+[INFO ] 2025-02-20 14:36:54.226 [main] Log -  Selected an Entrepreneur from the list By.xpath: (//li[@role='option'])[1]
+[INFO ] 2025-02-20 14:36:54.258 [main] Log - The selected Entity is displayed in the 'Entity Name' fieldHEMLATA HEGDE
+[INFO ] 2025-02-20 14:36:54.258 [main] Log - Verify The selected name is displayed in the dropdown: true
+[INFO ] 2025-02-20 14:36:54.353 [main] Log - Age field is auto-filled correctly with share percentage: 4
+[INFO ] 2025-02-20 14:36:54.449 [main] Log - Age field is not editable
+[INFO ] 2025-02-20 14:36:54.449 [main] Log - Age field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable. :true
+[INFO ] 2025-02-20 14:36:54.541 [main] Log - Share field is auto-filled correctly with share percentage: 50
+[INFO ] 2025-02-20 14:36:54.599 [main] Log - Share field is not editable
+[INFO ] 2025-02-20 14:36:54.599 [main] Log - Share field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable. :true
+[INFO ] 2025-02-20 14:36:54.668 [main] Log - Net Worth field is auto-filled correctly with share percentage: 20025.00
+[INFO ] 2025-02-20 14:36:54.731 [main] Log - Net Worth field is not editable
+[INFO ] 2025-02-20 14:36:54.731 [main] Log - Net Worth field is pre-filled, reflects the Entrepreneur's age, is disabled, and not editable. :true
+[INFO ] 2025-02-20 14:37:02.013 [main] Log - Save And Proceed Button clicked successfully.
+[INFO ] 2025-02-20 14:37:04.159 [main] Log - Entity is saved and displayed in the Grid 
+[INFO ] 2025-02-20 14:37:04.160 [main] Log - Verify Entity is saved and listed in the grid:true
+[INFO ] 2025-02-20 14:37:11.288 [main] Log - continue button in 'Personal Guarantee' Page is displayed By.xpath: //button[@class='button secondary-green btn-medium d-flex align-items-center justify-content-center  ']
+[INFO ] 2025-02-20 14:37:15.500 [main] Log - clicked on continue button in 'Personal Guarantee Details' Page
+[INFO ] 2025-02-20 14:37:15.534 [main] Log - Collateral Security Details Heading is displayed.
+[INFO ] 2025-02-20 14:37:15.535 [main] Log - Verify Page Navigates to Collateral Security. :true
+[INFO ] 2025-02-20 14:37:17.949 [main] Log - Logout is done
+[INFO ] 2025-02-20 14:37:18.227 [main] Log - *** Test Suite Security_Personal_Guarantee_Module ending ***
