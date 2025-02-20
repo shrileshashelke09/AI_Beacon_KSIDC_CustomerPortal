@@ -296,7 +296,7 @@ public class Security_Vehicle_AllScenarios extends Base_Class {
                 
                 
                 //TC010
-                ExtentTestManager.startTest("TC008 - Verify 'On-Road Price' Field Loaded");
+                ExtentTestManager.startTest("TC010 - Verify 'On-Road Price' Field Loaded");
 				boolean validateOnRoadPrice = true;
 				try {
 					validateOnRoadPrice = Security_Vehicle_Module.validateOnRoadPrice();
@@ -319,6 +319,216 @@ public class Security_Vehicle_AllScenarios extends Base_Class {
                 Assert.assertTrue(isOnRoadPrice, "On-Road Price field should be disabled");
                 ExtentTestManager.getTest().log(Status.PASS, "On-Road Price field is disabled");
                 ExtentTestManager.endTest();
+                
+                
+                //TC011
+                ExtentTestManager.startTest("TC011 - Verify 'Vehicle Number' Field Loaded");
+				boolean validateVehicleNumber = true;
+				try {
+					validateVehicleNumber = Security_Vehicle_Module.validateVehicleNumber();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Vehicle Number' field is populated with data for the selected item" + validateVehicleNumber);
+                ExtentTestManager.getTest().log(Status.PASS, "'Vehicle Number' field is filled with relevant data" + validateVehicleNumber);
+               
+                
+               
+               boolean isVehicleNumber =true;
+		        	try {
+		        		isVehicleNumber = Security_Vehicle_Module.isVehicleNumber();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isVehicleNumber, "Vehicle Number field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Vehicle Number field is disabled");
+                ExtentTestManager.endTest();
+                
+                
+                //TC012
+                ExtentTestManager.startTest("TC012 - Verify 'Engine Number' Field Loaded");
+				boolean validateEngineNumber = true;
+				try {
+					validateEngineNumber = Security_Vehicle_Module.validateEngineNumber();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Engine Number' field is populated with data for the selected item" + validateEngineNumber);
+                ExtentTestManager.getTest().log(Status.PASS, "'Engine Number' field is filled with relevant data" + validateEngineNumber);
+               
+                
+               
+               boolean isEngineNumber =true;
+		        	try {
+		        		isEngineNumber = Security_Vehicle_Module.isEngineNumber();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isEngineNumber, "Engine Number field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Engine Number field is disabled");
+                ExtentTestManager.endTest();
+                
+                
+                //TC013
+                ExtentTestManager.startTest("TC013 - Verify 'Chase Number' Field Loaded");
+				boolean validateChaseNumber = true;
+				try {
+					validateChaseNumber = Security_Vehicle_Module.validateChaseNumber();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Chase Number' field is populated with data for the selected item" + validateChaseNumber);
+                ExtentTestManager.getTest().log(Status.PASS, "'Chase Number' field is filled with relevant data" + validateChaseNumber);
+               
+                
+               
+               boolean isChaseNumber =true;
+		        	try {
+		        		isChaseNumber = Security_Vehicle_Module.isChaseNumber();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isChaseNumber, "Chase Number field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Chase Number field is disabled");
+                ExtentTestManager.endTest();
+                
+                
+                //TC014
+                ExtentTestManager.startTest("TC014 - Verify 'Registration Date' Field Loaded");
+				boolean validateRegistrationDate = true;
+				try {
+					validateRegistrationDate = Security_Vehicle_Module.validateRegistrationDate();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Registration Date' field is populated with data for the selected item" + validateRegistrationDate);
+                ExtentTestManager.getTest().log(Status.PASS, "'Registration Date' field is filled with relevant data" + validateRegistrationDate);
+               
+                
+               
+               boolean isRegistrationDate =true;
+		        	try {
+		        		isRegistrationDate = Security_Vehicle_Module.isRegistrationDate();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isRegistrationDate, "Registration Date field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Registration Date field is disabled");
+                ExtentTestManager.endTest();
+                
+                //TC015
+                ExtentTestManager.startTest("TC015 - Verify 'Insurance Provider' Field Loaded");
+				boolean validateInsuranceProvider = true;
+				try {
+					validateInsuranceProvider = Security_Vehicle_Module.validateInsuranceProvider();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Insurance Provider' field is populated with data for the selected item" + validateInsuranceProvider);
+                ExtentTestManager.getTest().log(Status.PASS, "'Insurance Provider' field is filled with relevant data" + validateInsuranceProvider);
+               
+                
+               
+      //         boolean isInsuranceProvider =true;
+		//        	try {
+		 //       		isInsuranceProvider = Security_Vehicle_Module.isInsuranceProvider();
+		//		} catch (Exception e) {
+					// TODO Auto-generated catch block
+		//			e.printStackTrace();
+		//		}
+         //       Assert.assertTrue(isInsuranceProvider, "Insurance Provider field should be disabled");
+          //      ExtentTestManager.getTest().log(Status.PASS, "Insurance Provider field is disabled");
+                ExtentTestManager.endTest();
+                
+                
+                //TC016
+                ExtentTestManager.startTest("TC016 - Verify 'Insurance Amount' Field Loaded");
+				boolean validateInsuranceAmount = true;
+				try {
+					validateInsuranceAmount = Security_Vehicle_Module.validateInsuranceAmount();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Insurance Amount' field is populated with data for the selected item" + validateInsuranceAmount);
+                ExtentTestManager.getTest().log(Status.PASS, "'Insurance Amount' field is filled with relevant data" + validateInsuranceAmount);
+               
+                
+               
+               boolean isInsuranceAmount =true;
+		        	try {
+		        		isInsuranceAmount = Security_Vehicle_Module.isInsuranceAmount();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isInsuranceAmount, "Insurance Amount field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Insurance Amount field is disabled");
+                ExtentTestManager.endTest();
+				
+                
+                
+                
+                //TC017
+                ExtentTestManager.startTest("TC017 - Verify 'Road Tax' Field Loaded");
+				boolean validateRoadTax = true;
+				try {
+					validateRoadTax = Security_Vehicle_Module.validateRoadTax();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Road Tax' field is populated with data for the selected item" + validateRoadTax);
+                ExtentTestManager.getTest().log(Status.PASS, "'Road Tax' field is filled with relevant data" + validateRoadTax);
+               
+                
+               
+               boolean isRoadTax =true;
+		        	try {
+		        		isRoadTax = Security_Vehicle_Module.isRoadTax();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isRoadTax, "Road Tax field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Road Tax field is disabled");
+                ExtentTestManager.endTest();
+                
+                
+                //TC018
+                ExtentTestManager.startTest("TC017 - Verify 'Registration And Other Charges' Field Loaded");
+				boolean validateRegistrationAndOtherCharges = true;
+				try {
+					validateRegistrationAndOtherCharges = Security_Vehicle_Module.validateRegistrationAndOtherCharges();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Registration And Other Charges' field is populated with data for the selected item" + validateRegistrationAndOtherCharges);
+                ExtentTestManager.getTest().log(Status.PASS, "'Registration And Other Charges' field is filled with relevant data" + validateRegistrationAndOtherCharges);
+               
+                
+               
+               boolean isRegistrationAndOtherCharges =true;
+		        	try {
+		        		isRegistrationAndOtherCharges = Security_Vehicle_Module.isRegistrationAndOtherCharges();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isRegistrationAndOtherCharges, "Registration And Other Charges field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Registration And Other Charges field is disabled");
+                ExtentTestManager.endTest();
+                
                 
 				
 				//App Logout
