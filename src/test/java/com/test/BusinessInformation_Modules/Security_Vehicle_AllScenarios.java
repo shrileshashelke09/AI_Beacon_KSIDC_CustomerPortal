@@ -505,7 +505,7 @@ public class Security_Vehicle_AllScenarios extends Base_Class {
                 
                 
                 //TC018
-                ExtentTestManager.startTest("TC017 - Verify 'Registration And Other Charges' Field Loaded");
+                ExtentTestManager.startTest("TC018 - Verify 'Registration And Other Charges' Field Loaded");
 				boolean validateRegistrationAndOtherCharges = true;
 				try {
 					validateRegistrationAndOtherCharges = Security_Vehicle_Module.validateRegistrationAndOtherCharges();
@@ -530,6 +530,112 @@ public class Security_Vehicle_AllScenarios extends Base_Class {
                 ExtentTestManager.endTest();
                 
                 
+                //TC019
+                ExtentTestManager.startTest("TC019 - Verify 'Dealer Discount' Field Loaded");
+				boolean validateDealerDiscount = true;
+				try {
+					validateDealerDiscount = Security_Vehicle_Module.validateDealerDiscount();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Dealer Discount' field is populated with data for the selected item" + validateDealerDiscount);
+                ExtentTestManager.getTest().log(Status.PASS, "'Dealer Discount' field is filled with relevant data" + validateDealerDiscount);
+               
+                
+               
+               boolean isDealerDiscount =true;
+		        	try {
+		        		isDealerDiscount = Security_Vehicle_Module.isDealerDiscount();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isDealerDiscount, "Dealer Discount should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Dealer Discount field is disabled");
+                
+                
+                
+               
+				boolean ScrolltoDownPayment = true;
+				try {
+					ScrolltoDownPayment = svm.ScrolltoDownPayment();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ExtentTestManager.getTest().log(Status.PASS,"Scroll to  Down Payment " + ScrolltoDownPayment);
+				ExtentTestManager.getTest().log(Status.PASS,"User is scroll  to Down Payment" + ScrolltoDownPayment);
+				ExtentTestManager.endTest();
+				
+				
+				//TC020
+				 ExtentTestManager.startTest("TC020 - Verify 'Down Payment' Field Loaded");
+					boolean validateDownPayment = true;
+					try {
+						validateDownPayment = Security_Vehicle_Module.validateDownPayment();
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+	                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Down Payment' field is populated with data for the selected item" + validateDownPayment);
+	                ExtentTestManager.getTest().log(Status.PASS, "'Down Payment' field is filled with relevant data" + validateDownPayment);
+	               
+	                
+	               
+	               boolean isDownPayment =true;
+			        	try {
+			        		isDownPayment = Security_Vehicle_Module.isDownPayment();
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+	                Assert.assertTrue(isDownPayment, "Down Payment field should be disabled");
+	                ExtentTestManager.getTest().log(Status.PASS, "Down Payment field is disabled");
+	                ExtentTestManager.endTest();
+	                
+	                
+	                //TC021
+	                ExtentTestManager.startTest("TC0021 - Click on the Cancel");
+					boolean ClickOnTheCancel = true;
+					try {
+						ClickOnTheCancel = svm.ClickOnTheCancel();
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					ExtentTestManager.getTest().log(Status.PASS,"Click on the Cancel" + ClickOnTheCancel);
+					ExtentTestManager.getTest().log(Status.PASS,"The List of Vehicle should be closed" + ClickOnTheCancel);
+					ExtentTestManager.endTest();
+				
+					
+					
+					//TC022
+					ExtentTestManager.startTest("TC0022 - Click on the Continue");
+					
+					boolean ScrolltoContinue =true;
+		        	try {
+		        		ScrolltoContinue = svm.ScrolltoContinue();
+				     } catch (Exception e) {
+				    	// TODO Auto-generated catch block
+					        e.printStackTrace();
+				     }
+		        	ExtentTestManager.getTest().log(Status.PASS,"Scroll to  Continue " + ScrolltoContinue);
+					ExtentTestManager.getTest().log(Status.PASS,"User is scroll  to Continue" + ScrolltoContinue);
+					
+					
+					boolean ClickOnTheContinue = true;
+					try {
+						ClickOnTheContinue = svm.ClickOnTheContinue();
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					ExtentTestManager.getTest().log(Status.PASS,"Click on the Continue" + ClickOnTheContinue);
+					ExtentTestManager.getTest().log(Status.PASS,"User is navigated to the next page" + ClickOnTheContinue);
+				    ExtentTestManager.endTest();
+	                
+				
 				
 				//App Logout
 				

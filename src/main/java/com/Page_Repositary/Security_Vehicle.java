@@ -19,5 +19,15 @@ public class Security_Vehicle {
 	public By VehicleCategory = By.xpath("//label[@title='Vehicle Category']//following-sibling::div");
 	
 	public By Total = By.xpath("//span[normalize-space()='Total']");
+	
+	public By DownPayment = By.xpath("//input[@name='DownPayment']");
+	
+	public By Cancel = By.xpath("//div[@class='button tertiary btn-medium d-flex align-items-center justify-content-center  ']");
+	
+	public By ScrolltoContinue = By.xpath("//div[@style='font-size:10px;margin-top:20px']");
+	
+	public By Continue = By.xpath("//button[@class='button secondary-green btn-medium d-flex align-items-center justify-content-center  ']");
+	
+	
 
 }

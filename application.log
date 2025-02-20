@@ -1,35 +1,26 @@
-[INFO ] 2025-02-20 11:10:06.466 [main] Log - *** Running test method SecurityLandModule...
-[INFO ] 2025-02-20 11:10:08.428 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-02-20 11:10:21.189 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-02-20 11:10:21.192 [main] Log - Button visible !
-[INFO ] 2025-02-20 11:10:42.691 [main] Log - Navigate to SecuritylandBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-02-20 11:10:55.640 [main] Log - Click on the List of LandBy.xpath: //a[@class='chip-text-wrapper text-decoration-none']
-[INFO ] 2025-02-20 11:10:57.890 [main] Log - TEST DATAtrue
-[INFO ] 2025-02-20 11:10:58.059 [main] Log - 785477true
-[INFO ] 2025-02-20 11:10:58.233 [main] Log - 76543235true
-[INFO ] 2025-02-20 11:10:58.404 [main] Log - 76545true
-[INFO ] 2025-02-20 11:11:00.717 [main] Log - true
-[INFO ] 2025-02-20 11:11:00.873 [main] Log - 7656.00true
-[INFO ] 2025-02-20 11:11:01.044 [main] Log - 545.00true
-[INFO ] 2025-02-20 11:11:01.216 [main] Log - true
-[INFO ] 2025-02-20 11:11:01.370 [main] Log - 680702true
-[INFO ] 2025-02-20 11:11:01.541 [main] Log - true
-[INFO ] 2025-02-20 11:11:01.687 [main] Log - true
-[INFO ] 2025-02-20 11:11:01.827 [main] Log - true
-[INFO ] 2025-02-20 11:11:01.997 [main] Log - true
-[INFO ] 2025-02-20 11:11:02.152 [main] Log - THRISSURtrue
-[INFO ] 2025-02-20 11:11:02.322 [main] Log - THIROORtrue
-[INFO ] 2025-02-20 11:11:02.479 [main] Log - THRISSURtrue
-[INFO ] 2025-02-20 11:11:02.650 [main] Log - true
-[INFO ] 2025-02-20 11:11:02.789 [main] Log - true
-[INFO ] 2025-02-20 11:11:02.929 [main] Log - 5,00,000.00true
-[INFO ] 2025-02-20 11:11:03.102 [main] Log - 5,00,000.00true
-[INFO ] 2025-02-20 11:11:03.257 [main] Log - 10,000.00true
-[INFO ] 2025-02-20 11:11:03.414 [main] Log - 2,00,000.00true
-[INFO ] 2025-02-20 11:11:03.613 [main] Log - 6,00,000.00true
-[INFO ] 2025-02-20 11:11:05.691 [main] Log - Scroll to CancelBy.xpath: //input[@name='AproxMarketValue']
-[INFO ] 2025-02-20 11:11:12.030 [main] Log - Click on the CancelBy.xpath: //div[@class='button tertiary btn-medium d-flex align-items-center justify-content-center  ' ]
-[INFO ] 2025-02-20 11:11:13.122 [main] Log - Navigates to ContinueBy.xpath: //div[@style='font-size:10px;margin-top:20px']
-[INFO ] 2025-02-20 11:11:17.435 [main] Log - Click on the ContinueBy.xpath: //div[@class='button tertiary btn-medium d-flex align-items-center justify-content-center  ' ]
-[INFO ] 2025-02-20 11:11:21.911 [main] Log - Logout is done
-[INFO ] 2025-02-20 11:11:21.977 [main] Log - *** Test Suite SecurityLandModule ending ***
+[INFO ] 2025-02-20 12:47:55.272 [main] Log - *** Running test method SecurityVehicleModule...
+[INFO ] 2025-02-20 12:47:58.074 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-20 12:48:01.578 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-02-20 12:48:01.590 [main] Log - Button visible !
+[INFO ] 2025-02-20 12:48:28.195 [main] Log - Navigate to Security VehicleBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-02-20 12:48:48.635 [main] Log - 2 wheelertrue
+[INFO ] 2025-02-20 12:48:48.882 [main] Log - true
+[INFO ] 2025-02-20 12:48:49.145 [main] Log - TEst vehicletrue
+[INFO ] 2025-02-20 12:48:49.456 [main] Log - redtrue
+[INFO ] 2025-02-20 12:48:49.787 [main] Log - 7,876.00true
+[INFO ] 2025-02-20 12:48:50.094 [main] Log - true
+[INFO ] 2025-02-20 12:48:50.309 [main] Log - 6,988.00true
+[INFO ] 2025-02-20 12:48:50.625 [main] Log - KL 18 Y 5432true
+[INFO ] 2025-02-20 12:48:50.940 [main] Log - 589true
+[INFO ] 2025-02-20 12:48:51.273 [main] Log - GTREtrue
+[INFO ] 2025-02-20 12:48:51.594 [main] Log - true
+[INFO ] 2025-02-20 12:48:51.840 [main] Log - true
+[INFO ] 2025-02-20 12:48:52.087 [main] Log - 56,987.00true
+[INFO ] 2025-02-20 12:48:52.373 [main] Log - 56,589.00true
+[INFO ] 2025-02-20 12:48:52.635 [main] Log - 5,201.00true
+[INFO ] 2025-02-20 12:48:52.872 [main] Log - 2,556.00true
+[INFO ] 2025-02-20 12:48:54.222 [main] Log - 5,565.00true
+[INFO ] 2025-02-20 12:48:58.600 [main] Log - Click on the CancelBy.xpath: //div[@class='button tertiary btn-medium d-flex align-items-center justify-content-center  ']
+[INFO ] 2025-02-20 12:49:06.028 [main] Log - Click on the CancelBy.xpath: //button[@class='button secondary-green btn-medium d-flex align-items-center justify-content-center  ']
+[INFO ] 2025-02-20 12:49:10.762 [main] Log - Logout is done
+[INFO ] 2025-02-20 12:49:10.928 [main] Log - *** Test Suite SecurityVehicleModule ending ***

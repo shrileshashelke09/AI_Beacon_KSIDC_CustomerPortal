@@ -503,8 +503,65 @@ public class Security_Vehicle_Module extends Base_Class{
                 return !AutoloadedDealerDiscount.isEnabled();
             }
             
+            public boolean ScrolltoDownPayment() throws InterruptedException {
+				ScrollUntilElementVisible(securityvehicle.DownPayment);
+				Thread.sleep(1000);
+				return true;
+			}
+            
+            
+            //TC020
+            public static boolean validateDownPayment() throws InterruptedException {
+	            WebElement AutoloadedDownPayment  = driver.findElement(By.xpath("//input[@name='DownPayment']"));
+	            System.out.println("Autoloaded Down Payment" + AutoloadedDownPayment.getAttribute("title"));
+
+	            String ABC = AutoloadedDownPayment.getAttribute("title");
+	            if (ABC.equals(AutoloadedDownPayment.getAttribute("title"))) {
+	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedDownPayment.getAttribute("title") + true);
+	                  Log.info(ABC + true);
+	                  return true;
+	            } else {
+	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
+
+	                  Thread.sleep(1000);
+	            }
+	        
+	            return true;
+	      
+			}
 			
 
+            public static boolean isDownPayment() {
+            	WebElement AutoloadedDownPayment = driver.findElement(By.xpath("//input[@name='DownPayment']"));
+                return !AutoloadedDownPayment.isEnabled();
+            }
+            
+            
+            //TC021
+            public boolean ClickOnTheCancel() throws InterruptedException {
+				click(securityvehicle.Cancel);
+	            Log.info("Click on the Cancel" + securityvehicle.Cancel);
+				Thread.sleep(2000);
+				return true;
+			}
+			
+
+            
+            //TC022
+            public boolean ScrolltoContinue() throws InterruptedException {
+				ScrollUntilElementVisible(securityvehicle.ScrolltoContinue);
+				Thread.sleep(1000);
+				return true;
+			}
+            
+            
+            public boolean ClickOnTheContinue() throws InterruptedException {
+				click(securityvehicle.Continue);
+	            Log.info("Click on the Cancel" + securityvehicle.Continue);
+				Thread.sleep(2000);
+				return true;
+			}
+            
 
             
 		
