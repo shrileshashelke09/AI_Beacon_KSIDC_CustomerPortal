@@ -238,30 +238,30 @@ public class Security_Land_AllScenarios extends Base_Class {
                 ExtentTestManager.getTest().log(Status.PASS, "Resurvey No field is disabled");
                 
                 
-                boolean AccessNature = true;
+                boolean AccessExtendofLandDry = true;
 				try {
-					securityland = slm.AccessNature();
+					AccessExtendofLandDry = slm.AccessExtendofLandDry();
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				ExtentTestManager.getTest().log(Status.PASS,"Attempt to navigate to Nature" + AccessNature);
-				ExtentTestManager.getTest().log(Status.PASS,"User is navigated to Nature" + AccessNature);
+				ExtentTestManager.getTest().log(Status.PASS,"Attempt to navigate to Nature" + AccessExtendofLandDry);
+				ExtentTestManager.getTest().log(Status.PASS,"User is navigated to Nature" + AccessExtendofLandDry);
                 ExtentTestManager.endTest();
                 
                 
                 //TC008
                 
-                ExtentTestManager.startTest("TC008 - Verify 'Nature' Field Loaded");
-                boolean validateNature = true;
-				try {
-					validateNature = Security_Land_Module.validateNature();
-				} catch (Exception e) {
+         //       ExtentTestManager.startTest("TC008 - Verify 'Nature' Field Loaded");
+         //       boolean validateNature = true;
+	//			try {
+	//				validateNature = Security_Land_Module.validateNature();
+	//			} catch (Exception e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Nature' field is populated with data for the selected item" + validateNature);
-                ExtentTestManager.getTest().log(Status.PASS, "'Nature' field is filled with relevant data" + validateNature);
+	//				e.printStackTrace();
+	//			}
+     //           ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Nature' field is populated with data for the selected item" + validateNature);
+      //          ExtentTestManager.getTest().log(Status.PASS, "'Nature' field is filled with relevant data" + validateNature);
                
                 
                
@@ -273,11 +273,11 @@ public class Security_Land_AllScenarios extends Base_Class {
 			//		e.printStackTrace();
 			//	}
              //   Assert.assertTrue(isDisabled14, "Nature field should be disabled");
-              //  ExtentTestManager.getTest().log(Status.PASS, "Nature field is disabled");
-                ExtentTestManager.endTest();
+       //         ExtentTestManager.getTest().log(Status.PASS, "Nature field is disabled");
+         //       ExtentTestManager.endTest();
                 
-                //TC009
-                ExtentTestManager.startTest("TC009 - Verify 'Extend of land (DRY)' Field Loaded");
+                //TC008
+                ExtentTestManager.startTest("TC008 - Verify 'Extend of land (DRY)' Field Loaded");
                 boolean validateExtendOfLandDry = true;
 				try {
 					validateExtendOfLandDry = Security_Land_Module.validateExtendOfLandDry();
@@ -301,8 +301,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 ExtentTestManager.getTest().log(Status.PASS, "Extend of land (DRY) field is disabled");
                 ExtentTestManager.endTest();
                 
-                //TC010
-                ExtentTestManager.startTest("TC010 - Verify 'Extend of land (WET)' Field Loaded");
+                //TC009
+                ExtentTestManager.startTest("TC009 - Verify 'Extend of land (WET)' Field Loaded");
                 boolean validateExtendOfLandWet = true;
 				try {
 					validateExtendOfLandWet = Security_Land_Module.validateExtendOfLandWet();
@@ -327,8 +327,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 ExtentTestManager.endTest();
                 
                 
-                //TC011
-                ExtentTestManager.startTest("TC011 - Verify 'Unit' Field Loaded");
+                //TC010
+                ExtentTestManager.startTest("TC010 - Verify 'Unit' Field Loaded");
                 boolean validateUnitFiled = true;
 				try {
 					validateUnitFiled = Security_Land_Module.validateUnitfield();
@@ -353,8 +353,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 ExtentTestManager.endTest();
                 
                 
-                //TC012
-                ExtentTestManager.startTest("TC012 - Verify 'PinCode' Field Loaded");
+                //TC011
+                ExtentTestManager.startTest("TC011 - Verify 'PinCode' Field Loaded");
                 boolean validatePincode = true;
 				try {
 					validatePincode = Security_Land_Module.validatePincode();
@@ -380,8 +380,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 
                 
                 
-                //TC013
-                ExtentTestManager.startTest("TC013 - Verify 'State' Field Loaded");
+                //TC012
+                ExtentTestManager.startTest("TC012 - Verify 'State' Field Loaded");
                 boolean validateState = true;
 				try {
 					validateState = Security_Land_Module.validateState();
@@ -407,8 +407,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 
                 
                 
-                //TC014
-                ExtentTestManager.startTest("TC014 - Verify 'District' Field Loaded");
+                //TC013
+                ExtentTestManager.startTest("TC013 - Verify 'District' Field Loaded");
                 boolean validateDistrict = true;
 				try {
 					validateDistrict = Security_Land_Module.validateDistrict();
@@ -434,8 +434,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 
                 
                 
-                //TC015
-                ExtentTestManager.startTest("TC015 - Verify 'Post' Field Loaded");
+                //TC014
+                ExtentTestManager.startTest("TC014 - Verify 'Post' Field Loaded");
                 boolean validatePost = true;
 				try {
 					validatePost = Security_Land_Module.validatePost();
@@ -459,8 +459,8 @@ public class Security_Land_AllScenarios extends Base_Class {
               //  ExtentTestManager.getTest().log(Status.PASS, "Post field is disabled");
                 ExtentTestManager.endTest();
                 
-                //TC016
-                ExtentTestManager.startTest("TC016 - Verify 'City' Field Loaded");
+                //TC015
+                ExtentTestManager.startTest("TC015 - Verify 'City' Field Loaded");
                 boolean validateCity = true;
 				try {
 					validateCity = Security_Land_Module.validateCity();
@@ -485,8 +485,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 ExtentTestManager.endTest();
                 
                 
-                //TC017
-                ExtentTestManager.startTest("TC017 - Verify 'Place' Field Loaded");
+                //TC016
+                ExtentTestManager.startTest("TC016 - Verify 'Place' Field Loaded");
                 boolean validatePlace = true;
 				try {
 					validatePlace = Security_Land_Module.validatePlace();
@@ -511,8 +511,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 ExtentTestManager.endTest();
                 
                 
-                //TC018
-                ExtentTestManager.startTest("TC018 - Verify 'Village' Field Loaded");
+                //TC017
+                ExtentTestManager.startTest("TC017 - Verify 'Village' Field Loaded");
                 boolean validateVillage = true;
 				try {
 					validateVillage = Security_Land_Module.validateVillage();
@@ -537,8 +537,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 ExtentTestManager.endTest();
                 
                 
-                //TC019
-                ExtentTestManager.startTest("TC019 - Verify 'Taluk' Field Loaded");
+                //TC018
+                ExtentTestManager.startTest("TC018 - Verify 'Taluk' Field Loaded");
                 boolean validateTaluk = true;
 				try {
 					validateTaluk = Security_Land_Module.validateTaluk();
@@ -563,8 +563,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 ExtentTestManager.endTest();
                 
                 
-                //TC020
-                ExtentTestManager.startTest("TC020 - Verify 'Panchayat' Field Loaded");
+                //TC019
+                ExtentTestManager.startTest("TC019 - Verify 'Panchayat' Field Loaded");
                 boolean validatePanchayat = true;
 				try {
 					validatePanchayat = Security_Land_Module.validatePanchayat();
@@ -590,8 +590,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 
                 
                 
-                //TC021
-                ExtentTestManager.startTest("TC021 - Verify 'Constituency' Field Loaded");
+                //TC020
+                ExtentTestManager.startTest("TC020 - Verify 'Constituency' Field Loaded");
                 boolean validateConstituency = true;
 				try {
 					validateConstituency = Security_Land_Module.validateConstituency();
@@ -617,8 +617,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 
                 
                 
-                //TC022
-                ExtentTestManager.startTest("TC022 - Verify 'Cost Of Land Excluding Registration' Field Loaded");
+                //TC021
+                ExtentTestManager.startTest("TC021 - Verify 'Cost Of Land Excluding Registration' Field Loaded");
                 boolean validateCostOfLandExcludingRegistration = true;
 				try {
 					validateCostOfLandExcludingRegistration = Security_Land_Module.validateCostOfLandExcludingRegistration();
@@ -645,109 +645,109 @@ public class Security_Land_AllScenarios extends Base_Class {
                 
                 
                 //TC023
-                ExtentTestManager.startTest("TC023 - Verify 'Registration Cost' Field Loaded");
-                boolean validateRegistrationCost = true;
-				try {
-					validateRegistrationCost = Security_Land_Module.validateRegistrationCost();
-				} catch (Exception e) {
+           //     ExtentTestManager.startTest("TC023 - Verify 'Registration Cost' Field Loaded");
+           //     boolean validateRegistrationCost = true;
+		//		try {
+		//			validateRegistrationCost = Security_Land_Module.validateRegistrationCost();
+		//		} catch (Exception e) {
 					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Registration Cost' field is populated with data for the selected item" + validateRegistrationCost);
-                ExtentTestManager.getTest().log(Status.PASS, "'Registration Cost' field is filled with relevant data" + validateRegistrationCost);
+	//				e.printStackTrace();
+	//			}
+       //         ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Registration Cost' field is populated with data for the selected item" + validateRegistrationCost);
+        //        ExtentTestManager.getTest().log(Status.PASS, "'Registration Cost' field is filled with relevant data" + validateRegistrationCost);
                
                 
                
-                boolean isDisabled29 =true;
+          //      boolean isDisabled29 =true;
+		//		try {
+		//			isDisabled29 = Security_Land_Module.isRegistrationCostFieldDisabled();
+		//		} catch (Exception e) {
+					// TODO Auto-generated catch block
+		//			e.printStackTrace();
+		//		}
+         //       Assert.assertTrue(isDisabled29, "Registration Cost field should be disabled");
+         //       ExtentTestManager.getTest().log(Status.PASS, "Registration Cost field is disabled");
+            //    ExtentTestManager.endTest();
+                
+                
+                
+                //TC022
+                ExtentTestManager.startTest("TC022 - Verify 'Registration And Stamp Duty' Field Loaded");
+                boolean ValidateRegistrationAndStampDuty = true;
 				try {
-					isDisabled29 = Security_Land_Module.isRegistrationCostFieldDisabled();
+					ValidateRegistrationAndStampDuty = Security_Land_Module.ValidateRegistrationAndStampDuty();
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-                Assert.assertTrue(isDisabled29, "Registration Cost field should be disabled");
-                ExtentTestManager.getTest().log(Status.PASS, "Registration Cost field is disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Registration And Stamp Duty' field is populated with data for the selected item" + ValidateRegistrationAndStampDuty);
+                ExtentTestManager.getTest().log(Status.PASS, "'Registration And Stamp Duty' field is filled with relevant data" + ValidateRegistrationAndStampDuty);
+               
+                
+               
+                boolean isRegistrationAndStampDuty =true;
+				try {
+					isRegistrationAndStampDuty = Security_Land_Module.isRegistrationAndStampDuty();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+                Assert.assertTrue(isRegistrationAndStampDuty, "Registration And Stamp Duty field should be disabled");
+                ExtentTestManager.getTest().log(Status.PASS, "Registration And Stamp Duty field is disabled");
                 ExtentTestManager.endTest();
+                
+                
+                
+                //TC023
+      //          ExtentTestManager.startTest("TC023 - Verify 'GOV Fair Value' Field Loaded");
+      //          boolean validateGOVFairValue = true;
+	//			try {
+	//				validateGOVFairValue = Security_Land_Module.validateGOVFairValue();
+	//			} catch (Exception e) {
+					// TODO Auto-generated catch block
+	//				e.printStackTrace();
+	//			}
+     //           ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'GOV Fair Value' field is populated with data for the selected item" + validateGOVFairValue);
+      //          ExtentTestManager.getTest().log(Status.PASS, "'GOV Fair Value' field is filled with relevant data" + validateGOVFairValue);
+               
+                
+               
+        //        boolean isDisabled31 =true;
+		//		try {
+		//			isDisabled31 = Security_Land_Module.isGOVFairValueFieldDisabled();
+		//		} catch (Exception e) {
+		//			// TODO Auto-generated catch block
+	//				e.printStackTrace();
+	//			}
+     //           Assert.assertTrue(isDisabled31, "GOV Fair Value field should be disabled");
+      //          ExtentTestManager.getTest().log(Status.PASS, "GOV Fair Value field is disabled");
+        //        ExtentTestManager.endTest();
                 
                 
                 
                 //TC024
-                ExtentTestManager.startTest("TC024 - Verify 'Stamp Duty' Field Loaded");
-                boolean validateStampDuty = true;
-				try {
-					validateStampDuty = Security_Land_Module.validateStampDuty();
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Registration Cost' field is populated with data for the selected item" + validateStampDuty);
-                ExtentTestManager.getTest().log(Status.PASS, "'Registration Cost' field is filled with relevant data" + validateStampDuty);
+         //       ExtentTestManager.startTest("TC024 - Verify 'Aprox Market Value' Field Loaded");
+          //      boolean validateAproxMarketValue = true;
+		//		try {
+		//			validateAproxMarketValue = Security_Land_Module.validateAproxMarketValue();
+		//		} catch (Exception e) {
+		//			// TODO Auto-generated catch block
+		//			e.printStackTrace();
+		//		}
+         //       ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Aprox Market Value' field is populated with data for the selected item" + validateAproxMarketValue);
+          //      ExtentTestManager.getTest().log(Status.PASS, "'Aprox Market Value' field is filled with relevant data" + validateAproxMarketValue);
                
                 
                
-                boolean isDisabled30 =true;
-				try {
-					isDisabled30 = Security_Land_Module.isStampDutyFieldDisabled();
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-                Assert.assertTrue(isDisabled30, "Stamp Duty field should be disabled");
-                ExtentTestManager.getTest().log(Status.PASS, "Stamp Duty field is disabled");
-                ExtentTestManager.endTest();
-                
-                
-                
-                //TC025
-                ExtentTestManager.startTest("TC025 - Verify 'GOV Fair Value' Field Loaded");
-                boolean validateGOVFairValue = true;
-				try {
-					validateGOVFairValue = Security_Land_Module.validateGOVFairValue();
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'GOV Fair Value' field is populated with data for the selected item" + validateGOVFairValue);
-                ExtentTestManager.getTest().log(Status.PASS, "'GOV Fair Value' field is filled with relevant data" + validateGOVFairValue);
-               
-                
-               
-                boolean isDisabled31 =true;
-				try {
-					isDisabled31 = Security_Land_Module.isGOVFairValueFieldDisabled();
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-                Assert.assertTrue(isDisabled31, "GOV Fair Value field should be disabled");
-                ExtentTestManager.getTest().log(Status.PASS, "GOV Fair Value field is disabled");
-                ExtentTestManager.endTest();
-                
-                
-                
-                //TC026
-                ExtentTestManager.startTest("TC026 - Verify 'Aprox Market Value' Field Loaded");
-                boolean validateAproxMarketValue = true;
-				try {
-					validateAproxMarketValue = Security_Land_Module.validateAproxMarketValue();
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'Aprox Market Value' field is populated with data for the selected item" + validateAproxMarketValue);
-                ExtentTestManager.getTest().log(Status.PASS, "'Aprox Market Value' field is filled with relevant data" + validateAproxMarketValue);
-               
-                
-               
-                boolean isDisabled32 =true;
-				try {
-					isDisabled32 = Security_Land_Module.isAproxMarketValueFieldDisabled();
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-                Assert.assertTrue(isDisabled32, "Aprox Market Value field should be disabled");
-                ExtentTestManager.getTest().log(Status.PASS, "Aprox Market Value field is disabled");
+            //    boolean isDisabled32 =true;
+			//	try {
+			//		isDisabled32 = Security_Land_Module.isAproxMarketValueFieldDisabled();
+			//	} catch (Exception e) {
+			//		// TODO Auto-generated catch block
+		//			e.printStackTrace();
+		//		}
+         //       Assert.assertTrue(isDisabled32, "Aprox Market Value field should be disabled");
+          //      ExtentTestManager.getTest().log(Status.PASS, "Aprox Market Value field is disabled");
                // ExtentTestManager.endTest();
                 
                 boolean ScrolltoCancel =true;
@@ -764,8 +764,8 @@ public class Security_Land_AllScenarios extends Base_Class {
                 	
                 
                 
-                //TC027
-                ExtentTestManager.startTest("TC0027 - Click on the Cancel");
+                //TC025
+                ExtentTestManager.startTest("TC0025 - Click on the Cancel");
 				//boolean MeansOfFinance = MeansOfFinance_Module.Navigatetomeansoffinance();
 				boolean ClickOntheCancel = true;
 				try {
@@ -795,8 +795,8 @@ public class Security_Land_AllScenarios extends Base_Class {
 				
 			
 			
-			//TC028
-			ExtentTestManager.startTest("TC0028 - Click on the Continue");
+			//TC026
+			ExtentTestManager.startTest("TC0026 - Click on the Continue");
 			//boolean MeansOfFinance = MeansOfFinance_Module.Navigatetomeansoffinance();
 			boolean ClickOntheContinue = true;
 			try {

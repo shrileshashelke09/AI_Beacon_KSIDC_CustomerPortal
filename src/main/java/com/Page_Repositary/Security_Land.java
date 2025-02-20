@@ -16,9 +16,13 @@ public class Security_Land {
 	
 	public By TitleHolder = By.xpath("//input[@name='TitleHolder' and @title='TEST DATA' and @class='rz-textbox rz-state-disabled valid form-control input-main']\r\n"+ "");
 	
-	public By Nature = By.xpath("//label[@title='Nature']//following-sibling::div//following-sibling::label");
+	public By ExtendofLandDry = By.xpath("//input[@name='ExtendOfLandDRY']");
+	
+	// public By Nature = By.xpath("//label[@title='Nature']//following-sibling::div//following-sibling::label");
 	
 	public By AproxMarketValue =By.xpath("//input[@name='AproxMarketValue']");
+	
+	public By RegistrationAndStampDuty =By.xpath("//input[@name='RegistrationAmount']");
 	
 	public By Cancel = By.xpath("//div[@class='button tertiary btn-medium d-flex align-items-center justify-content-center  ' ]");
 	

@@ -169,8 +169,8 @@ public class Security_Land_Module extends Base_Class{
                 return !AutoloadedResurveyNo.isEnabled();
             }
             
-            public boolean AccessNature() throws InterruptedException {
-				ScrollUntilElementVisible(securityland.Nature);
+            public boolean AccessExtendofLandDry() throws InterruptedException {
+				ScrollUntilElementVisible(securityland.ExtendofLandDry);
 				Thread.sleep(1000);
 				return true;
             }
@@ -178,31 +178,31 @@ public class Security_Land_Module extends Base_Class{
             
             //TC008
            
-            public static boolean validateNature() throws InterruptedException {
-                Thread.sleep(1000);
-	            WebElement AutoloadedNature = driver.findElement(By.xpath("//label[@title='Nature']//following-sibling::div//following-sibling::label"));
-	            System.out.println("Autoloaded Nature" + AutoloadedNature.getAttribute("title"));
+      //      public static boolean validateNature() throws InterruptedException {
+      //          Thread.sleep(1000);
+	   //         WebElement AutoloadedNature = driver.findElement(By.xpath("//label[@title='Nature']//following-sibling::div//following-sibling::label"));
+	    //        System.out.println("Autoloaded Nature" + AutoloadedNature.getAttribute("title"));
 
-	            String ABC = AutoloadedNature.getAttribute("title");
-	            if (ABC.equals(AutoloadedNature.getAttribute("title"))) {
-	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedNature.getAttribute("title") + true);
-	                  Log.info(ABC + true);
-	                  return true;
-	            } else {
-	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
+	   //         String ABC = AutoloadedNature.getAttribute("title");
+	  //          if (ABC.equals(AutoloadedNature.getAttribute("title"))) {
+	  //                ExtentTestManager.getTest().log(Status.PASS, AutoloadedNature.getAttribute("title") + true);
+	   //               Log.info(ABC + true);
+	   //               return true;
+	    //        } else {
+	    //              ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
 
-	                  Thread.sleep(1000);
-	            }
+	      //            Thread.sleep(1000);
+	      //      }
 	        
-	            return true;
+	       //     return true;
 	      
-			}
+	//		}
 			
 
-            public static boolean isNatureFielddDisabled() {
-          	WebElement AutoloadedNature = driver.findElement(By.xpath("//label[@title='Nature']//following-sibling::div//following-sibling::label"));
-           return !AutoloadedNature.isEnabled();
-            }
+      //      public static boolean isNatureFielddDisabled() {
+       //   	WebElement AutoloadedNature = driver.findElement(By.xpath("//label[@title='Nature']//following-sibling::div//following-sibling::label"));
+       //    return !AutoloadedNature.isEnabled();
+       //     }
             
             
             
@@ -579,39 +579,39 @@ public class Security_Land_Module extends Base_Class{
             
             
             //TC023
-            public static boolean validateRegistrationCost() throws InterruptedException {
-	            WebElement AutoloadedRegistrationCost = driver.findElement(By.xpath("//input[@name='RegistrationAmount']"));
-	            System.out.println("Autoloaded Cost Of Land Excluding Registration" + AutoloadedRegistrationCost.getAttribute("title"));
+          //  public static boolean validateRegistrationCost() throws InterruptedException {
+	     //       WebElement AutoloadedRegistrationCost = driver.findElement(By.xpath("//input[@name='RegistrationAmount']"));
+	      //      System.out.println("Autoloaded Cost Of Land Excluding Registration" + AutoloadedRegistrationCost.getAttribute("title"));
 
-	            String ABC = AutoloadedRegistrationCost.getAttribute("title");
-	            if (ABC.equals(AutoloadedRegistrationCost.getAttribute("title"))) {
-	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedRegistrationCost.getAttribute("title") + true);
-	                  Log.info(ABC + true);
-	                  return true;
-	            } else {
-	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
+	      //      String ABC = AutoloadedRegistrationCost.getAttribute("title");
+	       //     if (ABC.equals(AutoloadedRegistrationCost.getAttribute("title"))) {
+	      //            ExtentTestManager.getTest().log(Status.PASS, AutoloadedRegistrationCost.getAttribute("title") + true);
+	       //           Log.info(ABC + true);
+	      //            return true;
+	      //      } else {
+	      //            ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
 
-	                  Thread.sleep(1000);
-	            }
+	        //          Thread.sleep(1000);
+	      //      }
 	        
-	            return true;
+	      //      return true;
 	      
-			}
+	//		}
 			
 
-            public static boolean isRegistrationCostFieldDisabled() {
-            	WebElement AutoloadedRegistrationCost = driver.findElement(By.xpath("//input[@name='RegistrationAmount']"));
-                return !AutoloadedRegistrationCost.isEnabled();
-            }
+        //    public static boolean isRegistrationCostFieldDisabled() {
+        //    	WebElement AutoloadedRegistrationCost = driver.findElement(By.xpath("//input[@name='RegistrationAmount']"));
+       //         return !AutoloadedRegistrationCost.isEnabled();
+       //     }
             
             //TC024
-            public static boolean validateStampDuty() throws InterruptedException {
-	            WebElement AutoloadedStampDuty = driver.findElement(By.xpath("//input[@name='StampDuty']"));
-	            System.out.println("Autoloaded Stamp Duty" + AutoloadedStampDuty.getAttribute("title"));
+            public static boolean ValidateRegistrationAndStampDuty() throws InterruptedException {
+	            WebElement AutoloadedRegistrationAndStampDuty = driver.findElement(By.xpath("//input[@name='RegistrationAmount']"));
+	            System.out.println("Autoloaded Registration And Stamp Duty" + AutoloadedRegistrationAndStampDuty.getAttribute("title"));
 
-	            String ABC = AutoloadedStampDuty.getAttribute("title");
-	            if (ABC.equals(AutoloadedStampDuty.getAttribute("title"))) {
-	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedStampDuty.getAttribute("title") + true);
+	            String ABC = AutoloadedRegistrationAndStampDuty.getAttribute("title");
+	            if (ABC.equals(AutoloadedRegistrationAndStampDuty.getAttribute("title"))) {
+	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedRegistrationAndStampDuty.getAttribute("title") + true);
 	                  Log.info(ABC + true);
 	                  return true;
 	            } else {
@@ -625,70 +625,70 @@ public class Security_Land_Module extends Base_Class{
 			}
 			
 
-            public static boolean isStampDutyFieldDisabled() {
-            	WebElement AutoloadedStampDuty = driver.findElement(By.xpath("//input[@name='StampDuty']"));
-                return !AutoloadedStampDuty.isEnabled();
+            public static boolean isRegistrationAndStampDuty() {
+            	WebElement AutoloadedRegistrationAndStampDuty = driver.findElement(By.xpath("//input[@name='RegistrationAmount']"));
+                return !AutoloadedRegistrationAndStampDuty.isEnabled();
             }
             
             
             //TC025
-            public static boolean validateGOVFairValue() throws InterruptedException {
-	            WebElement AutoloadedGOVFairValue = driver.findElement(By.xpath("//input[@name='GOVFairValue']"));
-	            System.out.println("Autoloaded GOV Fair Value" + AutoloadedGOVFairValue.getAttribute("title"));
+    //        public static boolean validateGOVFairValue() throws InterruptedException {
+	//            WebElement AutoloadedGOVFairValue = driver.findElement(By.xpath("//input[@name='GOVFairValue']"));
+	//           System.out.println("Autoloaded GOV Fair Value" + AutoloadedGOVFairValue.getAttribute("title"));
 
-	            String ABC = AutoloadedGOVFairValue.getAttribute("title");
-	            if (ABC.equals(AutoloadedGOVFairValue.getAttribute("title"))) {
-	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedGOVFairValue.getAttribute("title") + true);
-	                  Log.info(ABC + true);
-	                  return true;
-	            } else {
-	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
+	//            String ABC = AutoloadedGOVFairValue.getAttribute("title");
+	//            if (ABC.equals(AutoloadedGOVFairValue.getAttribute("title"))) {
+	//                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedGOVFairValue.getAttribute("title") + true);
+	 //                 Log.info(ABC + true);
+	 //                 return true;
+	 //           } else {
+	 //                ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
 
-	                  Thread.sleep(1000);
-	            }
-	        
-	            return true;
+	 //                 Thread.sleep(1000);
+	 //           }
+	 //       
+	 //           return true;
 	      
-			}
+	//		}
 			
 
-            public static boolean isGOVFairValueFieldDisabled() {
-            	WebElement AutoloadedGOVFairValue = driver.findElement(By.xpath("//input[@name='GOVFairValue']"));
-                return !AutoloadedGOVFairValue.isEnabled();
-            }
+      //      public static boolean isGOVFairValueFieldDisabled() {
+       //     	WebElement AutoloadedGOVFairValue = driver.findElement(By.xpath("//input[@name='GOVFairValue']"));
+       //         return !AutoloadedGOVFairValue.isEnabled();
+        //    }
             
             
             //TC026
-            public static boolean validateAproxMarketValue() throws InterruptedException {
-	            WebElement AutoloadedAproxMarketValue = driver.findElement(By.xpath("//input[@name='AproxMarketValue']"));
-	            System.out.println("Autoloaded Aprox Market Value" + AutoloadedAproxMarketValue.getAttribute("title"));
-
-	            String ABC = AutoloadedAproxMarketValue.getAttribute("title");
-	            if (ABC.equals(AutoloadedAproxMarketValue.getAttribute("title"))) {
-	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedAproxMarketValue.getAttribute("title") + true);
-	                  Log.info(ABC + true);
-	                  return true;
-	            } else {
-	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
-
-	                  Thread.sleep(1000);
-	            }
+    //        public static boolean validateAproxMarketValue() throws InterruptedException {
+	 //           WebElement AutoloadedAproxMarketValue = driver.findElement(By.xpath("//input[@name='AproxMarketValue']"));
+	 //           System.out.println("Autoloaded Aprox Market Value" + AutoloadedAproxMarketValue.getAttribute("title"));////
+//
+//	            String ABC = AutoloadedAproxMarketValue.getAttribute("title");
+//	            if (ABC.equals(AutoloadedAproxMarketValue.getAttribute("title"))) {
+//	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedAproxMarketValue.getAttribute("title") + true);
+//	                  Log.info(ABC + true);
+//	                  return true;
+//	            } else {
+//	                  ExtentTestManager.getTest().log(Status.FAIL, "rfe43rsd4: " + false);
+//
+//	                  Thread.sleep(1000);
+	 //           }
 	        
-	            return true;
+	//            return true;
 	      
-			}
+	//		}
 			
 
-            public static boolean isAproxMarketValueFieldDisabled() {
-            	WebElement AutoloadedAproxMarketValue = driver.findElement(By.xpath("//input[@name='AproxMarketValue']"));
-                return !AutoloadedAproxMarketValue.isEnabled();
-            }
+       //     public static boolean isAproxMarketValueFieldDisabled() {
+       //     	WebElement AutoloadedAproxMarketValue = driver.findElement(By.xpath("//input[@name='AproxMarketValue']"));
+        //        return !AutoloadedAproxMarketValue.isEnabled();
+       //     }
             
             
-            public boolean ScrolltoCancel() throws InterruptedException {
-            	 ScrollUntilElementVisible(securityland.AproxMarketValue);
+           public boolean ScrolltoCancel() throws InterruptedException {
+           	 ScrollUntilElementVisible(securityland.RegistrationAndStampDuty);
             	 Thread.sleep(2000);
- 			    Log.info("Scroll to Cancel" + securityland.AproxMarketValue);
+ 			    Log.info("Scroll to Cancel" + securityland.RegistrationAndStampDuty);
  				return true;
  			
              
