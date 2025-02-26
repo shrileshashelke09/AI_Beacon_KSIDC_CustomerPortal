@@ -18,7 +18,7 @@ import com.extentReports.ExtentTestManager;
 public class Security_Personal_Guarantee_Module extends Base_Class{
 
 	Security_Personal_Guarantee Sec_per_Guarantee = new Security_Personal_Guarantee();
-	
+	JavascriptExecutor js = (JavascriptExecutor) driver;
 	// TC001
 
 	public boolean login() throws InterruptedException, IOException {
@@ -199,7 +199,6 @@ public class Security_Personal_Guarantee_Module extends Base_Class{
 				ElementToBeVisible(Sec_per_Guarantee.TotalShareGridValue);
 				ScrollUntilElementVisible(Sec_per_Guarantee.TotalShareGridValue);
 				Thread.sleep(1000);
-				
 				ElementDisplayed(Sec_per_Guarantee.TotalShareGridValue);
 				ElementDisplayed(Sec_per_Guarantee.TotalNetWorthGridValue);
 				ElementDisplayed(Sec_per_Guarantee.PercentageofNetWorthGridValue);

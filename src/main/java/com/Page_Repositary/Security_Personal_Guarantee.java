@@ -3,7 +3,7 @@ package com.Page_Repositary;
 import org.openqa.selenium.By;
 
 public class Security_Personal_Guarantee {
-	public By SecurtiyStageActive = By.xpath("//span[@class='step-heading' and text()='Security']");
+	public By SecurtiyStageActive = By.xpath("//li//span[text()='Security']");
 	public By ContinueButton = By.xpath("//button[@class='button primary btn-medium ms-auto']");
 	public By SecurityPersonalGuaranteetButton = By.xpath("//li//a[text()='Personal Guarantee']");
 	public By PersonalGuaranteeDetailsHeading = By.xpath("//h4[text()='Personal Guarantee Details']");

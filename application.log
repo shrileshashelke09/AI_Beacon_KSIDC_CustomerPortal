@@ -1,2 +1,21 @@
-[INFO ] 2025-02-20 18:58:13.582 [main] Log - *** Running test method Security_Personal_Guarantee_Module...
-[INFO ] 2025-02-20 18:58:15.112 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-26 13:35:58.099 [main] Log - *** Running test method Security_Summary_Module...
+[INFO ] 2025-02-26 13:35:59.835 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-26 13:36:12.481 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-02-26 13:36:15.501 [main] Log - Button visible !
+[INFO ] 2025-02-26 13:36:33.203 [main] Log - Login successfull
+[INFO ] 2025-02-26 13:36:33.204 [main] Log - Login successfully :true
+[INFO ] 2025-02-26 13:36:41.541 [main] Log - User is navigated to the Security stage.By.xpath: //li//span[text()='Security']
+[INFO ] 2025-02-26 13:36:41.542 [main] Log - User is taken to the Security stage of the application. :true
+[INFO ] 2025-02-26 13:36:42.607 [main] Log - Document Upload Details button is visible.By.xpath: //li//a[text()='5.12' and text()='Document Upload']
+[INFO ] 2025-02-26 13:36:46.797 [main] Log - Upload Document Component Details page is opened. :true
+[INFO ] 2025-02-26 13:36:53.007 [main] Log - Document preview opens, displaying its contents. :true
+[INFO ] 2025-02-26 13:36:57.121 [main] Log - path is :C:\Users\nilesh.bhoir\Documents\GitHub\AI_Beacon_KSIDC_CustomerPortal
+[INFO ] 2025-02-26 13:36:58.177 [main] Log - File Upload pop-up window appears.: true
+[INFO ] 2025-02-26 13:37:02.476 [main] Log - PDF document is uploaded successfully.:true
+[INFO ] 2025-02-26 13:37:10.735 [main] Log - Document preview opens, displaying its contents.:true
+[INFO ] 2025-02-26 13:37:14.833 [main] Log - path is :C:\Users\nilesh.bhoir\Documents\GitHub\AI_Beacon_KSIDC_CustomerPortal
+[INFO ] 2025-02-26 13:37:15.885 [main] Log - File Upload pop-up window opens.:true
+[INFO ] 2025-02-26 13:37:17.107 [main] Log - PDF document is uploaded successfully.:true
+[INFO ] 2025-02-26 13:37:23.460 [main] Log - User is navigated to 'Submit Application and Application Summary' stage.:true
+[INFO ] 2025-02-26 13:37:25.819 [main] Log - Logout is done
+[INFO ] 2025-02-26 13:37:26.141 [main] Log - *** Test Suite Security_Summary_Module ending ***
