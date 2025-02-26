@@ -3,9 +3,9 @@ package com.Page_Repositary;
 import org.openqa.selenium.By;
 
 public class Security_Personal_Guarantee {
-	public By SecurtiyStageActive = By.xpath("//li[@class='step active']//span[text()='Security']");
+	public By SecurtiyStageActive = By.xpath("//span[@class='step-heading' and text()='Security']");
 	public By ContinueButton = By.xpath("//button[@class='button primary btn-medium ms-auto']");
-	public By SecurityPersonalGuaranteetButton = By.xpath("//li[@class='step active']//a[text()='Personal Guarantee']");
+	public By SecurityPersonalGuaranteetButton = By.xpath("//li//a[text()='Personal Guarantee']");
 	public By PersonalGuaranteeDetailsHeading = By.xpath("//h4[text()='Personal Guarantee Details']");
 	public By AddDetailsButton = By.xpath("//button[@class='button btn-medium secondary w-auto']");
 	public By EntrepreneursNameDropDown = By.xpath("//label[@class='rz-dropdown-label rz-inputtext  rz-placeholder']");

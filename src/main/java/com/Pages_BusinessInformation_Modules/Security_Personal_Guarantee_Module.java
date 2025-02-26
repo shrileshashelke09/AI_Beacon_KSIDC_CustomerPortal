@@ -2,6 +2,10 @@ package com.Pages_BusinessInformation_Modules;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+
 import com.BasePackage.Base_Class;
 import com.Page_Repositary.Misc_Fixed_Asset;
 import com.Page_Repositary.Security_Corporate_Guarantee;
@@ -14,6 +18,7 @@ import com.extentReports.ExtentTestManager;
 public class Security_Personal_Guarantee_Module extends Base_Class{
 
 	Security_Personal_Guarantee Sec_per_Guarantee = new Security_Personal_Guarantee();
+	
 	// TC001
 
 	public boolean login() throws InterruptedException, IOException {
@@ -29,6 +34,13 @@ public class Security_Personal_Guarantee_Module extends Base_Class{
 	public boolean VerifySecurityStageAccess() throws InterruptedException {
 		
 		ScrollUntilElementVisible(Sec_per_Guarantee.SecurtiyStageActive);
+		Thread.sleep(1000);
+		ScrollUP();
+		ElementToBeVisible(Sec_per_Guarantee.SecurtiyStageActive);
+		click(Sec_per_Guarantee.SecurtiyStageActive);
+		Thread.sleep(1000);
+		ScrollUntilElementVisible(Sec_per_Guarantee.SecurtiyStageActive);
+		Thread.sleep(1000);
 		ElementToBeVisible(Sec_per_Guarantee.SecurtiyStageActive);
 		Log.info("User is navigated to the Security stage." + Sec_per_Guarantee.SecurtiyStageActive);
 		return true;
@@ -36,7 +48,9 @@ public class Security_Personal_Guarantee_Module extends Base_Class{
 
 	// TC003
 	public boolean OpenPersonalGuaranteeComponent() throws InterruptedException {
-		
+		ScrollUntilElementVisible(Sec_per_Guarantee.SecurityPersonalGuaranteetButton);
+		Thread.sleep(1000);
+		ScrollUP();
 		ElementToBeVisible(Sec_per_Guarantee.SecurityPersonalGuaranteetButton);
 		ElementDisplayed(Sec_per_Guarantee.SecurityPersonalGuaranteetButton);
 		Log.info("Security Personal Guarantee Details component  component is visible." + Sec_per_Guarantee.SecurityPersonalGuaranteetButton);
@@ -178,6 +192,7 @@ public class Security_Personal_Guarantee_Module extends Base_Class{
 
 				ElementToBeVisible(Sec_per_Guarantee.SaveAndProceedButton);
 				ScrollUntilElementVisible(Sec_per_Guarantee.SaveAndProceedButton);
+				Thread.sleep(1000);
 				ScrollUP();
 				click(Sec_per_Guarantee.SaveAndProceedButton);
 				Log.info("Save And Proceed Button clicked successfully.");
@@ -187,7 +202,7 @@ public class Security_Personal_Guarantee_Module extends Base_Class{
 				
 				ElementDisplayed(Sec_per_Guarantee.TotalShareGridValue);
 				ElementDisplayed(Sec_per_Guarantee.TotalNetWorthGridValue);
-				ElementDisplayed(Sec_per_Guarantee.TotalNetWorthGridValue);
+				ElementDisplayed(Sec_per_Guarantee.PercentageofNetWorthGridValue);
 				Thread.sleep(1000);
 				Log.info("Entity is saved and displayed in the Grid ");
 				return true;
