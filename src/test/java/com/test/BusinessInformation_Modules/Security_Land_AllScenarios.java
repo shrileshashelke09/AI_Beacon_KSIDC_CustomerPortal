@@ -100,15 +100,15 @@ public class Security_Land_AllScenarios extends Base_Class {
 				//TC002
 				ExtentTestManager.startTest("TC002 - Navigate to Land page");
 				//boolean MeansOfFinance = MeansOfFinance_Module.Navigatetomeansoffinance();
-				boolean securityland = true;
+				boolean Navigatetosecurityland = true;
 				try {
-					securityland = slm.Navigatetosecurityland();
+					Navigatetosecurityland = slm.Navigatetosecurityland();
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				ExtentTestManager.getTest().log(Status.PASS,"Attempt to navigate to Land" + securityland);
-				ExtentTestManager.getTest().log(Status.PASS,"User is navigated to Land page successfully" + securityland);
+				ExtentTestManager.getTest().log(Status.PASS,"Attempt to navigate to Land" + Navigatetosecurityland);
+				ExtentTestManager.getTest().log(Status.PASS,"User is navigated to Land page successfully" + Navigatetosecurityland);
 				//ExtentTestManager.endTest();
 				
 				
@@ -117,7 +117,7 @@ public class Security_Land_AllScenarios extends Base_Class {
 				//boolean MeansOfFinance = MeansOfFinance_Module.Navigatetomeansoffinance();
 				boolean AccessSecurityLand = true;
 				try {
-					securityland = slm.AccessSecurityLand();
+					AccessSecurityLand = slm.AccessSecurityLand();
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

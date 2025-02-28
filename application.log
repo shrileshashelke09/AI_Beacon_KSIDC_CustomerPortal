@@ -1,31 +1,17 @@
-[INFO ] 2025-02-20 16:51:31.609 [main] Log - *** Running test method SecurityLandModule...
-[INFO ] 2025-02-20 16:51:33.751 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-02-20 16:51:48.045 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-02-20 16:51:48.050 [main] Log - Button visible !
-[INFO ] 2025-02-20 16:52:09.628 [main] Log - Navigate to SecuritylandBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-02-20 16:52:22.540 [main] Log - Click on the List of LandBy.xpath: //a[@class='chip-text-wrapper text-decoration-none']
-[INFO ] 2025-02-20 16:52:24.792 [main] Log - TEST LAND DATAtrue
-[INFO ] 2025-02-20 16:52:24.964 [main] Log - 256true
-[INFO ] 2025-02-20 16:52:25.136 [main] Log - 202true
-[INFO ] 2025-02-20 16:52:25.308 [main] Log - 5698true
-[INFO ] 2025-02-20 16:52:26.554 [main] Log - 55.00true
-[INFO ] 2025-02-20 16:52:26.724 [main] Log - 65.00true
-[INFO ] 2025-02-20 16:52:26.895 [main] Log - true
-[INFO ] 2025-02-20 16:52:27.036 [main] Log - 123456true
-[INFO ] 2025-02-20 16:52:27.207 [main] Log - true
-[INFO ] 2025-02-20 16:52:27.348 [main] Log - true
-[INFO ] 2025-02-20 16:52:27.489 [main] Log - true
-[INFO ] 2025-02-20 16:52:27.629 [main] Log - true
-[INFO ] 2025-02-20 16:52:27.784 [main] Log - ADDED PLACEtrue
-[INFO ] 2025-02-20 16:52:27.940 [main] Log - ADDED VILAGEtrue
-[INFO ] 2025-02-20 16:52:28.113 [main] Log - ADDED TALUKtrue
-[INFO ] 2025-02-20 16:52:28.284 [main] Log - true
-[INFO ] 2025-02-20 16:52:28.424 [main] Log - true
-[INFO ] 2025-02-20 16:52:28.564 [main] Log - 56,00,225.00true
-[INFO ] 2025-02-20 16:52:28.749 [main] Log - 98,878.00true
-[INFO ] 2025-02-20 16:52:30.853 [main] Log - Scroll to CancelBy.xpath: //input[@name='RegistrationAmount']
-[INFO ] 2025-02-20 16:52:37.200 [main] Log - Click on the CancelBy.xpath: //div[@class='button tertiary btn-medium d-flex align-items-center justify-content-center  ' ]
-[INFO ] 2025-02-20 16:52:38.277 [main] Log - Navigates to ContinueBy.xpath: //div[@style='font-size:10px;margin-top:20px']
-[INFO ] 2025-02-20 16:52:42.561 [main] Log - Click on the ContinueBy.xpath: //div[@class='button tertiary btn-medium d-flex align-items-center justify-content-center  ' ]
-[INFO ] 2025-02-20 16:52:47.135 [main] Log - Logout is done
-[INFO ] 2025-02-20 16:52:47.221 [main] Log - *** Test Suite SecurityLandModule ending ***
+[INFO ] 2025-02-28 12:56:40.965 [main] Log - *** Running test method Collateral_Security...
+[INFO ] 2025-02-28 12:56:43.976 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-02-28 12:57:00.579 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-02-28 12:57:00.596 [main] Log - Button visible !
+[INFO ] 2025-02-28 12:57:22.746 [main] Log - Navigate to Collateral SecurityBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-02-28 12:57:46.648 [main] Log - Silpa
+[INFO ] 2025-02-28 12:57:58.723 [main] Log - Poovathingal
+[INFO ] 2025-02-28 12:58:00.053 [main] Log - 676732349737
+[INFO ] 2025-02-28 12:58:01.384 [main] Log - 765434556
+[INFO ] 2025-02-28 12:58:02.678 [main] Log - 7643545
+[INFO ] 2025-02-28 12:58:04.007 [main] Log - 26977
+[INFO ] 2025-02-28 12:58:05.319 [main] Log - 5455
+[INFO ] 2025-02-28 12:58:06.619 [main] Log - 765443
+[INFO ] 2025-02-28 12:58:19.766 [main] Log - 680581
+[INFO ] 2025-02-28 12:59:09.386 [main] Log - Thiroor
+[INFO ] 2025-02-28 12:59:23.014 [main] Log - Logout is done
+[INFO ] 2025-02-28 12:59:23.146 [main] Log - *** Test Suite Collateral_Security ending ***

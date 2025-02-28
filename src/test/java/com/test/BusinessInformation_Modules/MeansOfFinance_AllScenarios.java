@@ -66,7 +66,7 @@ public class MeansOfFinance_AllScenarios extends Base_Class {
        			 String UnsecuredLoan = testdata.get("UnsecuredLoan").toString();
 				 String IncentivesAndGrants = testdata.get("IncentivesAndGrants").toString();
 				 String Others = testdata.get("Others").toString();
- 			     String TermLoanFromOtherFI = testdata.get("TermLoanFromOtherFI").toString();
+ 		//	     String TermLoanFromOtherFI = testdata.get("TermLoanFromOtherFI").toString();
 		//		 String AppliedTermLoan = testdata.get("AppliedTermLoan").toString();
 				 String Specify = testdata.get("Specify").toString();
 				
@@ -164,7 +164,7 @@ public class MeansOfFinance_AllScenarios extends Base_Class {
 				ExtentTestManager.endTest();
 				
 				
-				//TC012
+				//TC009
 				ExtentTestManager.startTest("TC009 : Enter Term Loan From Other FI");
                 Log.info("Button visible !");
                 boolean Calculation = mfm.Calculation();
