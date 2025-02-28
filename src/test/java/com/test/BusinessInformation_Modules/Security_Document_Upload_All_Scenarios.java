@@ -28,7 +28,7 @@ public class Security_Document_Upload_All_Scenarios extends Base_Class{
 	
 	@BeforeSuite
 	public void reference() {
-		ExcelReader = new com.Utility.ExcelReader("KSIDC_Security_Summary");
+		ExcelReader = new com.Utility.ExcelReader("KSIDC_Document_Upload");
 		log = new Log();
 		TestListener = new TestListener();
 		screenShot = new com.Utility.ScreenShot(null);

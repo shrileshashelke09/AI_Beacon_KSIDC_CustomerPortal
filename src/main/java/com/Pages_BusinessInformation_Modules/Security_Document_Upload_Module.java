@@ -68,7 +68,6 @@ public class Security_Document_Upload_Module extends Base_Class{
 			ElementDisplayed(Sec_Doc_Upload.AddMachineryDocumentButton);
 			click(Sec_Doc_Upload.AddMachineryDocumentButton);
 			ExtentTestManager.getTest().log(Status.PASS, "Clicked on the document add under 'Plant and Machinery'.");
-			ScrollUntilElementVisible(Sec_Doc_Upload.COMBUSTION_ENGINE_MACHINERY_DOCUMENT_Heading);
 			Thread.sleep(1000);
 			ScrollUP();
 			return true;
@@ -101,7 +100,6 @@ public class Security_Document_Upload_Module extends Base_Class{
 			ScrollUP();
 			click(Sec_Doc_Upload.AddLandDocumentButton);
 			ExtentTestManager.getTest().log(Status.PASS, "Clicked on the document add under 'Land'.");
-			ScrollUntilElementVisible(Sec_Doc_Upload.TEST_LAND_DATA_DOCUMENT_Heading);
 			Thread.sleep(1000);
 			ScrollUP();
 			return true;
