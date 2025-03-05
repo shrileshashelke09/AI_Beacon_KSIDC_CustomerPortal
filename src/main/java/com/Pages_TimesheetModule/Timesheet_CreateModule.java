@@ -70,7 +70,7 @@ public class Timesheet_CreateModule extends Base_Class
 			return false;
 	    }
 
-	    public boolean uploadFile(String filePath) {
+	    public boolean uploadFile(String filePath) throws InterruptedException {
 	        UploadFile(PageRepositary.fileUpload, filePath);
 			return false;	    
 	        }

@@ -306,7 +306,7 @@ public static  String  GetEmailOTP(String Email) throws ClassNotFoundException {
 		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, -200);");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 	
 	}
 	
