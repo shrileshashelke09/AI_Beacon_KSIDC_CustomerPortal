@@ -2,25 +2,25 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-28T12:56:39 IST" name="Default suite" finished-at="2025-02-28T12:59:23 IST" duration-ms="163566">
+  <suite started-at="2025-03-10T12:58:06 IST" name="Default suite" finished-at="2025-03-10T13:01:27 IST" duration-ms="200703">
     <groups>
     </groups>
-    <test started-at="2025-02-28T12:56:39 IST" name="Default test" finished-at="2025-02-28T12:59:23 IST" duration-ms="163566">
+    <test started-at="2025-03-10T12:58:06 IST" name="Default test" finished-at="2025-03-10T13:01:27 IST" duration-ms="200703">
       <class name="com.test.BusinessInformation_Modules.Collateral_Security_AllScenarios">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Collateral_Security_AllScenarios@5b218417]" started-at="2025-02-28T12:56:38 IST" name="reference" finished-at="2025-02-28T12:56:39 IST" duration-ms="781" status="PASS">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Collateral_Security_AllScenarios@5b218417]" started-at="2025-03-10T12:58:06 IST" name="reference" finished-at="2025-03-10T12:58:06 IST" duration-ms="846" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
-        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Collateral_Security_AllScenarios@5b218417]" started-at="2025-02-28T12:56:40 IST" name="RUNALL" data-provider="TestData4" finished-at="2025-02-28T12:59:23 IST" duration-ms="162335" status="PASS">
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Collateral_Security_AllScenarios@5b218417]" started-at="2025-03-10T12:58:08 IST" name="RUNALL" data-provider="TestData4" finished-at="2025-03-10T13:01:27 IST" duration-ms="199462" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AadhaarNo=676732349737, Address=Poovathingal, CostOfLandAsPerDocument=65445534, DocNo=765434556, ExtentOfLandDRY=765443, ExtentOfLandWet=5455, PinCode=680581, Place=Thiroor, ResurveyNo=26977, Run=Yes, SurveyNo=7643545, Taluk=Thrissur, TestScenario=Collateral_Security, TitleHolder=Silpa, Village=Kolazhy}]]>
+                <![CDATA[{AadhaarNo=333333333333, Address=Poovathingal, BuildingAge=5, BuildingArea=2500, CostForTheBuilding=4000000, CostOfLandAsPerDocument=65445534, DocNo=765434556, ExtentOfLandDRY=765443, ExtentOfLandWet=5455, PinCode=123456, Place=Thiroor, ResurveyNo=26977, Run=Yes, SurveyNo=7643545, Taluk=Kannur, TestScenario=Collateral_Security, TitleHolder=Silpa, Village=Kannur}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@301aa982]]>
+                <![CDATA[org.testng.TestRunner@c6634d]]>
               </value>
             </param>
           </params>

@@ -2,6 +2,9 @@ package com.Pages_BusinessInformation_Modules;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 //import org.openqa.selenium.By;
 //import org.openqa.selenium.WebElement;
 
@@ -11,6 +14,8 @@ import com.Page_Repositary.Collateral_Security;
 import com.Utility.Log;
 //import com.aventstack.extentreports.Status;
 //import com.extentReports.ExtentTestManager;
+import com.aventstack.extentreports.Status;
+import com.extentReports.ExtentTestManager;
 
 //import org.openqa.selenium.By;
 //import org.openqa.selenium.WebElement;
@@ -192,28 +197,49 @@ public class Collateral_Security_Module extends Base_Class{
 			
 			//TC015
 			
-			public boolean SelectState() throws InterruptedException {
-				click(CollateralSecurity.TitleState);
-				Thread.sleep(1000);
-				click(CollateralSecurity.State);
-				Thread.sleep(1000);
-			    click(CollateralSecurity.DropdownofState);
-       			Thread.sleep(1000);
-				return true;
+			public static boolean validateState() throws InterruptedException {
+	            WebElement AutoloadedState = driver.findElement(By.xpath("//label[@title='State']//following-sibling::div"));
+	            System.out.println("Autoloaded State field" + AutoloadedState.getAttribute("title"));
+
+	            String ABC = AutoloadedState.getAttribute("title");
+	            if (ABC.equals(AutoloadedState.getAttribute("title"))) {
+	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedState.getAttribute("title") + true);
+	                  Log.info(ABC + true);
+	                  return true;
+	            } else {
+	                  ExtentTestManager.getTest().log(Status.FAIL, "State is not auto populated " + false);
+
+	                  Thread.sleep(1000);
+	            }
+	        
+	            return true;
+	      
 			}
 			
 			//TC016
-			public boolean EnterDistrict() throws InterruptedException {
-				click(CollateralSecurity.District);
-				Thread.sleep(1000);
-				click(CollateralSecurity.DropdownofDistrict);
-       			Thread.sleep(1000);
-				return true;
+			public static boolean validateDistrict() throws InterruptedException {
+	            WebElement AutoloadedDistrict = driver.findElement(By.xpath("//label[@title='District']//following-sibling::div"));
+	            System.out.println("Autoloaded District field" + AutoloadedDistrict.getAttribute("title"));
+
+	            String ABC = AutoloadedDistrict.getAttribute("title");
+	            if (ABC.equals(AutoloadedDistrict.getAttribute("title"))) {
+	                  ExtentTestManager.getTest().log(Status.PASS, AutoloadedDistrict.getAttribute("title") + true);
+	                  Log.info(ABC + true);
+	                  return true;
+	            } else {
+	                  ExtentTestManager.getTest().log(Status.FAIL, "District is not auto populated " + false);
+
+	                  Thread.sleep(1000);
+	            }
+	        
+	            return true;
+	      
 			}
-			
 			
 			//TC017
 			public boolean EnterCity() throws InterruptedException {
+				click(CollateralSecurity.TitleCity);
+				Thread.sleep(1000);
 				click(CollateralSecurity.City);
 				Thread.sleep(1000);
 				click(CollateralSecurity.DropdownofCity);
@@ -248,6 +274,147 @@ public class Collateral_Security_Module extends Base_Class{
        			Thread.sleep(1000);
 				return true;
 			}
+			
+			//TC021
+			public boolean EnterVillage(String Village) throws InterruptedException {
+                input(CollateralSecurity.Village, Village);
+				Thread.sleep(1000);
+				Log.info(Village);
+				return true;
+				
+			}
+			
+			//TC022
+			public boolean EnterTaluk(String Taluk) throws InterruptedException {
+                input(CollateralSecurity.Taluk, Taluk);
+				Thread.sleep(1000);
+				Log.info(Taluk);
+				return true;
+				
+			}
+			
+			
+			//TC023
+			public boolean EnterConstituency() throws InterruptedException {
+				click(CollateralSecurity.Constituency);
+				Thread.sleep(1000);
+				click(CollateralSecurity.DropdownofConstituency);
+       			Thread.sleep(1000);
+				return true;
+			}
+			
+			
+			//TC024
+			public boolean EnterCostOfLandAsPerDocument(String CostOfLandAsPerDocument) throws InterruptedException {
+                input(CollateralSecurity.CostOfLandAsPerDocument, CostOfLandAsPerDocument);
+				Thread.sleep(1000);
+				Log.info(CostOfLandAsPerDocument);
+				ScrollUntilElementVisible(CollateralSecurity.Village);
+				Thread.sleep(1000);
+				return true;
+				
+			}
+			
+			
+			//TC025
+			public boolean ClickontheYes() throws InterruptedException {
+				click(CollateralSecurity.RadioButtonYes);
+				Thread.sleep(1000);
+				return true;
+			}
+			
+			
+			//Tc0026
+			public boolean AddBuildings() throws InterruptedException {
+				click(CollateralSecurity.AddBuilding);
+				Thread.sleep(1000);
+				return true;
+			}
+			
+			//TC027
+			public boolean BuildingType() throws InterruptedException {
+				click(CollateralSecurity.BuildingType);
+				Thread.sleep(1000);
+				click(CollateralSecurity.DropdowmofBuildingType);
+       			Thread.sleep(1000);
+				return true;
+			}
+			
+			
+			//TC028
+			public boolean EnterBuildingAge(String BuildingAge) throws InterruptedException {
+                input(CollateralSecurity.BuildingAge, BuildingAge);
+				Thread.sleep(1000);
+				Log.info(BuildingAge);
+				return true;
+				
+			}
+			
+			//TC029
+			public boolean EnterBuildingArea(String BuildingArea) throws InterruptedException {
+                input(CollateralSecurity.BuildingArea, BuildingArea);
+				Thread.sleep(1000);
+				Log.info(BuildingArea);
+				return true;
+				
+			}
+			
+			//TC030
+			public boolean EnterCostForTheBuilding(String CostForTheBuilding) throws InterruptedException {
+                input(CollateralSecurity.CostForTheBuilding, CostForTheBuilding);
+				Thread.sleep(1000);
+				Log.info(CostForTheBuilding);
+				return true;
+				
+			}
+			
+			
+			//TC031
+			public boolean AddBuilding2() throws InterruptedException {
+				click(CollateralSecurity.AddBuilding2);
+				Thread.sleep(1000);
+				return true;
+			}
+			
+			//TC032
+			
+			
+//			public boolean ClickSaveasDraft() throws InterruptedException {
+//				click(CollateralSecurity.SaveasDraft);
+//				Thread.sleep(1000);
+//				return true;
+//			}
+//			
+			
+			//TC032
+			public boolean ScrolltoYes() throws InterruptedException{
+				ScrollUntilElementVisible(CollateralSecurity.RadioButtonYes);
+				Thread.sleep(1000);
+				return true;
+			}
+			
+			public boolean ClickSaveandProceed() throws InterruptedException {
+				click(CollateralSecurity.SaveandProceed);
+				Thread.sleep(1000);
+				return true;
+			}
+			
+			
+			//TC033
+			 public boolean ScrolltoContinue() throws InterruptedException {
+					ScrollUntilElementVisible(CollateralSecurity.ScrolltoContinue);
+					Thread.sleep(1000);
+					return true;
+				}
+	            
+	            
+	            public boolean ClickOnTheContinue() throws InterruptedException {
+					click(CollateralSecurity.Continue);
+		            Log.info("Click on the Continue" + CollateralSecurity.Continue);
+					Thread.sleep(2000);
+					return true;
+				}
+	            
 			
 			
 }

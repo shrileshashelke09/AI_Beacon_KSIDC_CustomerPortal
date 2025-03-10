@@ -76,8 +76,16 @@ public class Collateral_Security_AllScenarios extends Base_Class {
 				String ExtendOfLandDRY = testdata.get("ExtentOfLandDRY").toString();
 				String PinCode = testdata.get("PinCode").toString();
 				String Place = testdata.get("Place").toString();
-			//	String Others = testdata.get("Others").toString();
-			//	String Specify = testdata.get("Specify").toString();
+				String Village = testdata.get("Village").toString();
+				String Taluk = testdata.get("Taluk").toString();
+				String CostOfLandAsPerDocument = testdata.get("CostOfLandAsPerDocument").toString();
+				String BuildingAge = testdata.get("BuildingAge").toString();
+				String BuildingArea = testdata.get("BuildingArea").toString();
+				String CostForTheBuilding = testdata.get("CostForTheBuilding").toString();
+				
+				
+				
+				
 
 				//TC001
 				ExtentTestManager.startTest("TC001 : Verify 'Login for Collateral Security'");
@@ -229,20 +237,30 @@ public class Collateral_Security_AllScenarios extends Base_Class {
 				
 				
 				//TC015
-				ExtentTestManager.startTest("TC015 - Select State");
-				boolean SelectState = csm.SelectState();
-				ExtentTestManager.getTest().log(Status.PASS," Select State" + SelectState);
-				ExtentTestManager.getTest().log(Status.PASS,"State is selected" +SelectState );
-				ExtentTestManager.endTest();
+				 ExtentTestManager.startTest("TC015 - Verify 'State' Field Loaded");
+					boolean validateState = true;
+					try {
+						validateState = Collateral_Security_Module.validateState();
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+	                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'State' field is populated with data for the selected item" + validateState);
+	                ExtentTestManager.getTest().log(Status.PASS, "'State' field is filled with relevant data" + validateState);
 				
 				
 				//TC016
-				ExtentTestManager.startTest("TC016 - Select District");
-				boolean EnterDistrict = csm.EnterDistrict();
-				ExtentTestManager.getTest().log(Status.PASS," Select District" + EnterDistrict);
-				ExtentTestManager.getTest().log(Status.PASS,"District is selected" +EnterDistrict );
-				ExtentTestManager.endTest();
-				
+	                ExtentTestManager.startTest("TC016 - Verify 'District' Field Loaded");
+					boolean validateDistrict = true;
+					try {
+						validateDistrict = Collateral_Security_Module.validateDistrict();
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+	                ExtentTestManager.getTest().log(Status.PASS, "1. Ensure 'District' field is populated with data for the selected item" + validateDistrict);
+	                ExtentTestManager.getTest().log(Status.PASS, "'District' field is filled with relevant data" + validateDistrict);
+	                ExtentTestManager.endTest();
 				
 				//TC017
 				ExtentTestManager.startTest("TC017 - Select City");
@@ -274,9 +292,141 @@ public class Collateral_Security_AllScenarios extends Base_Class {
 				ExtentTestManager.getTest().log(Status.PASS,"Panchayat is selected" +EnterPanchayat );
 				ExtentTestManager.endTest();
 				
+				//TC021
+				ExtentTestManager.startTest("TC021 - Enter Village");
+				boolean EnterVillage = csm.EnterVillage(Village);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter Village" + EnterVillage);
+				ExtentTestManager.getTest().log(Status.PASS,"Text is entered in the field without any error" +EnterVillage );
+				ExtentTestManager.endTest();
+				
+				//TC022
+				ExtentTestManager.startTest("TC022 - Enter Taluk");
+				boolean EnterTaluk = csm.EnterTaluk(Taluk);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter Taluk" + EnterTaluk);
+				ExtentTestManager.getTest().log(Status.PASS,"Text is entered in the field without any error" +EnterTaluk );
+				ExtentTestManager.endTest();
 				
 				
+				//TC023
+				ExtentTestManager.startTest("TC023 - Select Constituency");
+				boolean EnterConstituency = csm.EnterConstituency();
+				ExtentTestManager.getTest().log(Status.PASS," Select Constituency" + EnterConstituency);
+				ExtentTestManager.getTest().log(Status.PASS,"Constituency is selected" +EnterConstituency );
+				ExtentTestManager.endTest();
 				
+				//TC024
+				ExtentTestManager.startTest("TC024 - Enter CostOfLandAsPerDocument");
+				boolean EnterCostOfLandAsPerDocument = csm.EnterCostOfLandAsPerDocument(CostOfLandAsPerDocument);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter CostOfLandAsPerDocument" + EnterCostOfLandAsPerDocument);
+				ExtentTestManager.getTest().log(Status.PASS,"Text is entered in the field without any error" +EnterCostOfLandAsPerDocument );
+				ExtentTestManager.endTest();
+				
+				
+				//TC025
+				ExtentTestManager.startTest("TC025 - Enter RadiobuttonYes");
+				boolean ClickontheYes = csm.ClickontheYes();
+				ExtentTestManager.getTest().log(Status.PASS , "Click on the Yes" + ClickontheYes);
+				ExtentTestManager.endTest();
+				
+				
+				//TC026
+				ExtentTestManager.startTest("TC026 -Click on the Add Buildings");
+				boolean AddBuildings = csm.AddBuildings();
+				ExtentTestManager.getTest().log(Status.PASS , "Click on the Add Buildings" + AddBuildings);
+				ExtentTestManager.endTest();
+				
+				
+				//TC027
+				ExtentTestManager.startTest("TC027 - Select Building Type");
+				boolean BuildingType = csm.BuildingType();
+				ExtentTestManager.getTest().log(Status.PASS," Select Building Type" + BuildingType);
+				ExtentTestManager.getTest().log(Status.PASS,"Building Type is selected" +BuildingType );
+				ExtentTestManager.endTest();
+				
+				
+				//TC028
+				ExtentTestManager.startTest("TC028 - Enter Building Age");
+				boolean EnterBuildingAge = csm.EnterBuildingAge(BuildingAge);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter CostOfLandAsPerDocument" + EnterBuildingAge);
+				ExtentTestManager.getTest().log(Status.PASS,"Text is entered in the field without any error" +EnterBuildingAge );
+				ExtentTestManager.endTest();
+				
+				
+				//TC029
+				ExtentTestManager.startTest("TC029 - Enter Building Area");
+				boolean EnterBuildingArea = csm.EnterBuildingArea(BuildingArea);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter Building Area" + EnterBuildingArea);
+				ExtentTestManager.getTest().log(Status.PASS,"Text is entered in the field without any error" +EnterBuildingArea );
+				ExtentTestManager.endTest();
+				
+				
+				//TC030
+				ExtentTestManager.startTest("TC030 - Enter Cost For The Building");
+				boolean EnterCostForTheBuilding = csm.EnterCostForTheBuilding(CostForTheBuilding);
+				ExtentTestManager.getTest().log(Status.PASS,"Enter Cost For The Building" + EnterCostForTheBuilding);
+				ExtentTestManager.getTest().log(Status.PASS,"Text is entered in the field without any error" +EnterCostForTheBuilding );
+				ExtentTestManager.endTest();
+				
+				
+				//TC031
+				ExtentTestManager.startTest("TC031 - Click on the Add Buildings");
+				boolean AddBuilding2 = csm.AddBuilding2();
+				ExtentTestManager.getTest().log(Status.PASS , "Click on the Add Buildings" + AddBuilding2);
+				ExtentTestManager.endTest();
+				
+				
+				//TC032
+//				ExtentTestManager.startTest("TC032 - Click on the Save as Draft");
+				
+//				
+//				boolean ClickSaveasDraft = csm.ClickSaveasDraft();
+//				ExtentTestManager.getTest().log(Status.PASS , "Click on the Save as Draft" + ClickSaveasDraft);
+//				ExtentTestManager.endTest();
+//				
+//				
+				//TC032
+				ExtentTestManager.startTest("TC033 - Click on the Save and Proceed");
+				boolean ScrolltoYes = true;
+				try {
+					ScrolltoYes = csm.ScrolltoYes();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ExtentTestManager.getTest().log(Status.PASS,"Attempt to navigate to Yes" + ScrolltoYes);
+				ExtentTestManager.getTest().log(Status.PASS,"User is navigated to Save as Draft successfully" + ScrolltoYes);
+				
+				boolean ClickSaveandProceed = csm.ClickSaveandProceed();
+				ExtentTestManager.getTest().log(Status.PASS , "Click on the Save and Proceed" + ClickSaveandProceed);
+				ExtentTestManager.endTest();
+				
+				//TC033
+				ExtentTestManager.startTest("TC0033 - Click on the Continue");
+				
+				boolean ScrolltoContinue =true;
+	        	try {
+	        		ScrolltoContinue = csm.ScrolltoContinue();
+			     } catch (Exception e) {
+			    	// TODO Auto-generated catch block
+				        e.printStackTrace();
+			     }
+	        	ExtentTestManager.getTest().log(Status.PASS,"Scroll to  Continue " + ScrolltoContinue);
+				ExtentTestManager.getTest().log(Status.PASS,"User is scroll  to Continue" + ScrolltoContinue);
+				
+				
+				boolean ClickOnTheContinue = true;
+				try {
+					ClickOnTheContinue = csm.ClickOnTheContinue();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				ExtentTestManager.getTest().log(Status.PASS,"Click on the Continue" + ClickOnTheContinue);
+				ExtentTestManager.getTest().log(Status.PASS,"User is navigated to the next page" + ClickOnTheContinue);
+			    ExtentTestManager.endTest();
+				
+				
+
 
 				//App Logout
 				

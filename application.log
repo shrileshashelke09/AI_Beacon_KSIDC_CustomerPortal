@@ -1,17 +1,26 @@
-[INFO ] 2025-02-28 12:56:40.965 [main] Log - *** Running test method Collateral_Security...
-[INFO ] 2025-02-28 12:56:43.976 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-02-28 12:57:00.579 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-02-28 12:57:00.596 [main] Log - Button visible !
-[INFO ] 2025-02-28 12:57:22.746 [main] Log - Navigate to Collateral SecurityBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-02-28 12:57:46.648 [main] Log - Silpa
-[INFO ] 2025-02-28 12:57:58.723 [main] Log - Poovathingal
-[INFO ] 2025-02-28 12:58:00.053 [main] Log - 676732349737
-[INFO ] 2025-02-28 12:58:01.384 [main] Log - 765434556
-[INFO ] 2025-02-28 12:58:02.678 [main] Log - 7643545
-[INFO ] 2025-02-28 12:58:04.007 [main] Log - 26977
-[INFO ] 2025-02-28 12:58:05.319 [main] Log - 5455
-[INFO ] 2025-02-28 12:58:06.619 [main] Log - 765443
-[INFO ] 2025-02-28 12:58:19.766 [main] Log - 680581
-[INFO ] 2025-02-28 12:59:09.386 [main] Log - Thiroor
-[INFO ] 2025-02-28 12:59:23.014 [main] Log - Logout is done
-[INFO ] 2025-02-28 12:59:23.146 [main] Log - *** Test Suite Collateral_Security ending ***
+[INFO ] 2025-03-10 12:58:08.422 [main] Log - *** Running test method Collateral_Security...
+[INFO ] 2025-03-10 12:58:12.632 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-03-10 12:58:25.653 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-03-10 12:58:25.671 [main] Log - Button visible !
+[INFO ] 2025-03-10 12:58:47.650 [main] Log - Navigate to Collateral SecurityBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-03-10 12:59:12.017 [main] Log - Silpa
+[INFO ] 2025-03-10 12:59:24.106 [main] Log - Poovathingal
+[INFO ] 2025-03-10 12:59:25.441 [main] Log - 333333333333
+[INFO ] 2025-03-10 12:59:26.818 [main] Log - 765434556
+[INFO ] 2025-03-10 12:59:28.115 [main] Log - 7643545
+[INFO ] 2025-03-10 12:59:29.425 [main] Log - 26977
+[INFO ] 2025-03-10 12:59:30.761 [main] Log - 5455
+[INFO ] 2025-03-10 12:59:32.095 [main] Log - 765443
+[INFO ] 2025-03-10 12:59:45.280 [main] Log - 123456
+[INFO ] 2025-03-10 12:59:45.529 [main] Log - true
+[INFO ] 2025-03-10 12:59:45.684 [main] Log - true
+[INFO ] 2025-03-10 13:00:13.707 [main] Log - Thiroor
+[INFO ] 2025-03-10 13:00:25.662 [main] Log - Kannur
+[INFO ] 2025-03-10 13:00:26.932 [main] Log - Kannur
+[INFO ] 2025-03-10 13:00:38.913 [main] Log - 65445534
+[INFO ] 2025-03-10 13:01:02.785 [main] Log - 5
+[INFO ] 2025-03-10 13:01:04.031 [main] Log - 2500
+[INFO ] 2025-03-10 13:01:05.281 [main] Log - 4000000
+[INFO ] 2025-03-10 13:01:22.794 [main] Log - Click on the ContinueBy.xpath: //button[@class='button secondary-green btn-medium']
+[INFO ] 2025-03-10 13:01:27.564 [main] Log - Logout is done
+[INFO ] 2025-03-10 13:01:27.677 [main] Log - *** Test Suite Collateral_Security ending ***

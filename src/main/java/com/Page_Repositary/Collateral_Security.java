@@ -54,19 +54,59 @@ public class Collateral_Security {
 	
 	public By DropdownofDistrict = By.xpath("(//li[@role='option'])[68]");
 	
+	public By TitleCity = By.xpath("//label[@title='City']");
+	
 	public By City = By.xpath("//label[@title='City']//following-sibling::div");
 	
-	public By DropdownofCity = By.xpath("(//li[@role='option'])[86]");
+	public By DropdownofCity = By.xpath("(//li[@role='option'])[25]");
 	
 	public By Post = By.xpath("//label[@title='Post']//following-sibling::div");
 	
-	public By DropdownofPost = By.xpath("(//li[@role='option'])[86]");
+	public By DropdownofPost = By.xpath("(//li[@role='option'])[26]");
 	
 	public By Place = By.xpath("//input[@name='Place']");
 	
 	public By Panchayat = By.xpath("//label[@title='Panchayat']//following-sibling::div");
 	
-	public By DropdownofPanchayat = By.xpath("(//li[@role='option'])[86]");
+	public By DropdownofPanchayat = By.xpath("(//li[@role='option'])[26]");
+	
+	public By Village = By.xpath("//input[@name='Village']");
+	
+	public By Taluk = By.xpath("//input[@name='Taluk']");
+	
+	public By Constituency = By.xpath("//label[@title='Constituency']//following-sibling::div");
+	
+	public By DropdownofConstituency = By.xpath("(//li[@role='option'])[26]");
+	
+	public By CostOfLandAsPerDocument = By.xpath("//input[@name='CostOfLandIncludingRegistration']");
+	
+	public By RadioButtonYes = By.xpath("//div[@class='rz-radio-btn']");
+	
+	public By AddBuilding = By.xpath("//div[@class='add-button d-flex align-items-center justify-content-end']//following-sibling::a");
+	
+	public By BuildingType = By.xpath("//label[@title='Building Type']//following-sibling::div");
+	
+	public By DropdowmofBuildingType = By.xpath("(//li[@role='option'])[27]");
+	
+	public By BuildingAge = By.xpath("//input[@name='BuildingAge']");
+	
+	public By BuildingArea = By.xpath("//input[@name='BuildingArea']");
+	
+	public By CostForTheBuilding = By.xpath("//input[@name='CostForTheBuilding']");
+	
+	public By AddBuilding2 = By.xpath("//button[@class='button primary btn-medium']");
+	
+	public By SaveasDraft = By.xpath("//button[text()='Save as Draft']");
+	
+	public By SaveandProceed = By.xpath("//button[@type='submit']");
+	
+	public By ScrolltoContinue = By.xpath("//div[@style='font-size:10px;margin-top:20px']");
+	
+	public By Continue = By.xpath("//button[@class='button secondary-green btn-medium']");
+	
+	
+	
+	
 	
 	
 	
