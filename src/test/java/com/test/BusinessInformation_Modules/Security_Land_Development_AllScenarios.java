@@ -30,7 +30,7 @@ public class Security_Land_Development_AllScenarios extends Base_Class {
 
 		@BeforeSuite
 		public void reference() {
-			ExcelReader = new com.Utility.ExcelReader("KSIDC_Security_Plant_Machinery");
+			ExcelReader = new com.Utility.ExcelReader("KSIDC_Security_Land_Development");
 			log = new Log();
 			TestListener = new TestListener();
 			screenShot = new com.Utility.ScreenShot(null);

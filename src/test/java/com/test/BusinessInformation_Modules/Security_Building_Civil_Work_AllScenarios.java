@@ -30,7 +30,7 @@ public class Security_Building_Civil_Work_AllScenarios extends Base_Class {
 
 		@BeforeSuite
 		public void reference() {
-			ExcelReader = new com.Utility.ExcelReader("KSIDC_Security_Plant_Machinery");
+			ExcelReader = new com.Utility.ExcelReader("KSIDC_Sec_Building_Civil_Work");
 			log = new Log();
 			TestListener = new TestListener();
 			screenShot = new com.Utility.ScreenShot(null);
