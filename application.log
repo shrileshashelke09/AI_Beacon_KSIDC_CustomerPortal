@@ -1,26 +1,18 @@
-[INFO ] 2025-03-10 12:58:08.422 [main] Log - *** Running test method Collateral_Security...
-[INFO ] 2025-03-10 12:58:12.632 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-03-10 12:58:25.653 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-03-10 12:58:25.671 [main] Log - Button visible !
-[INFO ] 2025-03-10 12:58:47.650 [main] Log - Navigate to Collateral SecurityBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-03-10 12:59:12.017 [main] Log - Silpa
-[INFO ] 2025-03-10 12:59:24.106 [main] Log - Poovathingal
-[INFO ] 2025-03-10 12:59:25.441 [main] Log - 333333333333
-[INFO ] 2025-03-10 12:59:26.818 [main] Log - 765434556
-[INFO ] 2025-03-10 12:59:28.115 [main] Log - 7643545
-[INFO ] 2025-03-10 12:59:29.425 [main] Log - 26977
-[INFO ] 2025-03-10 12:59:30.761 [main] Log - 5455
-[INFO ] 2025-03-10 12:59:32.095 [main] Log - 765443
-[INFO ] 2025-03-10 12:59:45.280 [main] Log - 123456
-[INFO ] 2025-03-10 12:59:45.529 [main] Log - true
-[INFO ] 2025-03-10 12:59:45.684 [main] Log - true
-[INFO ] 2025-03-10 13:00:13.707 [main] Log - Thiroor
-[INFO ] 2025-03-10 13:00:25.662 [main] Log - Kannur
-[INFO ] 2025-03-10 13:00:26.932 [main] Log - Kannur
-[INFO ] 2025-03-10 13:00:38.913 [main] Log - 65445534
-[INFO ] 2025-03-10 13:01:02.785 [main] Log - 5
-[INFO ] 2025-03-10 13:01:04.031 [main] Log - 2500
-[INFO ] 2025-03-10 13:01:05.281 [main] Log - 4000000
-[INFO ] 2025-03-10 13:01:22.794 [main] Log - Click on the ContinueBy.xpath: //button[@class='button secondary-green btn-medium']
-[INFO ] 2025-03-10 13:01:27.564 [main] Log - Logout is done
-[INFO ] 2025-03-10 13:01:27.677 [main] Log - *** Test Suite Collateral_Security ending ***
+[INFO ] 2025-03-18 15:26:56.256 [main] Log - *** Running test method Bank Profile...
+[INFO ] 2025-03-18 15:26:58.219 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-03-18 15:27:01.731 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-03-18 15:27:01.755 [main] Log - Button visible !
+[INFO ] 2025-03-18 15:27:27.641 [main] Log - Click on the Profile buttonBy.xpath: //div[@class='gap-2 d-lg-flex d-none']//a[@class='d-block button round-button bg-secondary-green-80 link-dark text-decoration-none dropdown-toggle']
+[INFO ] 2025-03-18 15:27:33.997 [main] Log - Click on the Bank ProfileBy.xpath: //ul[@class='dropdown-menu text-small user-dropdown mt-4 show']//a[text()='Bank Profile']
+[INFO ] 2025-03-18 15:27:39.497 [main] Log - SBIN0000007
+[INFO ] 2025-03-18 15:27:43.712 [main] Log - Click on the Bank NameBy.xpath: //label[@title='Bank Name']
+[INFO ] 2025-03-18 15:27:46.837 [main] Log - STATE BANK OF INDIAtrue
+[INFO ] 2025-03-18 15:27:51.024 [main] Log - Click on the Branch NameBy.xpath: //label[@title='Branch Name']
+[INFO ] 2025-03-18 15:27:53.132 [main] Log - ANGULtrue
+[INFO ] 2025-03-18 15:27:55.272 [main] Log - Silpa
+[INFO ] 2025-03-18 15:27:57.482 [main] Log - 555555555555555
+[INFO ] 2025-03-18 15:27:59.671 [main] Log - 555555555555555
+[INFO ] 2025-03-18 15:28:01.842 [main] Log - path is :D:\KSIDC\AI_Beacon_KSIDC_CustomerPortal
+[INFO ] 2025-03-18 15:28:14.538 [main] Log - Click on the SaveBy.xpath: //button[@type='submit']
+[INFO ] 2025-03-18 15:28:20.079 [main] Log - Logout is done
+[INFO ] 2025-03-18 15:28:20.220 [main] Log - *** Test Suite Bank Profile ending ***

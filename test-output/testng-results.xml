@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-10T12:58:06 IST" name="Default suite" finished-at="2025-03-10T13:01:27 IST" duration-ms="200703">
+  <suite started-at="2025-03-18T15:26:55 IST" name="Default suite" finished-at="2025-03-18T15:28:20 IST" duration-ms="84877">
     <groups>
     </groups>
-    <test started-at="2025-03-10T12:58:06 IST" name="Default test" finished-at="2025-03-10T13:01:27 IST" duration-ms="200703">
-      <class name="com.test.BusinessInformation_Modules.Collateral_Security_AllScenarios">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Collateral_Security_AllScenarios@5b218417]" started-at="2025-03-10T12:58:06 IST" name="reference" finished-at="2025-03-10T12:58:06 IST" duration-ms="846" status="PASS">
+    <test started-at="2025-03-18T15:26:55 IST" name="Default test" finished-at="2025-03-18T15:28:20 IST" duration-ms="84877">
+      <class name="com.test.BusinessInformation_Modules.Bank_Profile_AllScenarios">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Bank_Profile_AllScenarios@5b218417]" started-at="2025-03-18T15:26:54 IST" name="reference" finished-at="2025-03-18T15:26:55 IST" duration-ms="549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
-        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Collateral_Security_AllScenarios@5b218417]" started-at="2025-03-10T12:58:08 IST" name="RUNALL" data-provider="TestData4" finished-at="2025-03-10T13:01:27 IST" duration-ms="199462" status="PASS">
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Bank_Profile_AllScenarios@5b218417]" started-at="2025-03-18T15:26:56 IST" name="RUNALL" data-provider="TestData4" finished-at="2025-03-18T15:28:20 IST" duration-ms="84072" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{AadhaarNo=333333333333, Address=Poovathingal, BuildingAge=5, BuildingArea=2500, CostForTheBuilding=4000000, CostOfLandAsPerDocument=65445534, DocNo=765434556, ExtentOfLandDRY=765443, ExtentOfLandWet=5455, PinCode=123456, Place=Thiroor, ResurveyNo=26977, Run=Yes, SurveyNo=7643545, Taluk=Kannur, TestScenario=Collateral_Security, TitleHolder=Silpa, Village=Kannur}]]>
+                <![CDATA[{AccountHolderName=Silpa, AccountNumber=555555555555555, BankName=SBI, BranchName=Thiroor, IFSCCode=SBIN0000007, ReTypeAccountNumber=555555555555555, Run=Yes, TestScenario=Bank Profile}]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@c6634d]]>
+                <![CDATA[org.testng.TestRunner@f4c0e4e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RUNALL -->
-      </class> <!-- com.test.BusinessInformation_Modules.Collateral_Security_AllScenarios -->
+      </class> <!-- com.test.BusinessInformation_Modules.Bank_Profile_AllScenarios -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

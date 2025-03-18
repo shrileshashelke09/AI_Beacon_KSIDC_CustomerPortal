@@ -333,7 +333,7 @@ public static  String  GetEmailOTP(String Email) throws ClassNotFoundException {
 		Thread.sleep(1000);
 		Log.info("path is :" + path1);
 		Thread.sleep(1000);
-        uploadElement.sendKeys(path);
+        uploadElement.sendKeys(path1 + path);
         
 	}
 	
