@@ -105,7 +105,7 @@ public class Base_Class {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.MINUTES);
 		Log.info("Driver has initialized successfully for "+Browser+"browser");
 		driver.get(Url);
-		Thread.sleep(2000);
+		Thread.sleep(60000);
 		Pagetitle = driver.getTitle();
 		Log.info("Title is displayed : "+Pagetitle);
 		

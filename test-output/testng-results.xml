@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-17T10:20:42 IST" name="Default suite" finished-at="2025-03-17T10:22:07 IST" duration-ms="84497">
+  <suite started-at="2025-03-19T16:11:06 IST" name="Default suite" finished-at="2025-03-19T16:14:11 IST" duration-ms="184466">
     <groups>
     </groups>
-    <test started-at="2025-03-17T10:20:42 IST" name="Default test" finished-at="2025-03-17T10:22:07 IST" duration-ms="84497">
-      <class name="com.test.BusinessInformation_Modules.Application_Summary_AllScenarios">
-        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Application_Summary_AllScenarios@8c3b9d]" started-at="2025-03-17T10:20:42 IST" name="reference" finished-at="2025-03-17T10:20:42 IST" duration-ms="394" status="PASS">
+    <test started-at="2025-03-19T16:11:06 IST" name="Default test" finished-at="2025-03-19T16:14:11 IST" duration-ms="184466">
+      <class name="com.test.BusinessInformation_Modules.Application_Summary_Basic_Info_AllScenarios">
+        <test-method is-config="true" signature="reference()[pri:0, instance:com.test.BusinessInformation_Modules.Application_Summary_Basic_Info_AllScenarios@13fd2ccd]" started-at="2025-03-19T16:11:05 IST" name="reference" finished-at="2025-03-19T16:11:06 IST" duration-ms="1118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reference -->
-        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Application_Summary_AllScenarios@8c3b9d]" started-at="2025-03-17T10:20:43 IST" name="RUNALL" data-provider="TestData4" finished-at="2025-03-17T10:22:07 IST" duration-ms="83915" status="PASS">
+        <test-method signature="RUNALL(java.util.Map,org.testng.ITestContext)[pri:0, instance:com.test.BusinessInformation_Modules.Application_Summary_Basic_Info_AllScenarios@13fd2ccd]" started-at="2025-03-19T16:11:08 IST" name="RUNALL" data-provider="TestData4" finished-at="2025-03-19T16:14:11 IST" duration-ms="183035" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,14 +20,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@79a1728c]]>
+                <![CDATA[org.testng.TestRunner@1d25c1c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RUNALL -->
-      </class> <!-- com.test.BusinessInformation_Modules.Application_Summary_AllScenarios -->
+      </class> <!-- com.test.BusinessInformation_Modules.Application_Summary_Basic_Info_AllScenarios -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,54 +1,54 @@
-[INFO ] 2025-03-17 10:20:43.419 [main] Log - *** Running test method Security_Plant_Machinary_Module...
-[INFO ] 2025-03-17 10:20:44.899 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-03-17 10:21:13.859 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-03-17 10:21:30.728 [main] Log - Logged in successfullyBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-03-17 10:21:30.729 [main] Log - Login successfully :true
-[INFO ] 2025-03-17 10:21:35.994 [main] Log - Application summary page landedBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-03-17 10:21:37.039 [main] Log - 'Business Information' stage is selected at the top.By.xpath: //button[@class='nav-link active']
-[INFO ] 2025-03-17 10:21:38.100 [main] Log - 'Basic Information' page name is selected in 'Go To Page'.By.xpath: //label[text()='Basic Information']
-[INFO ] 2025-03-17 10:21:39.154 [main] Log - 'Basic Information' page is opened in the window.By.xpath: //h5[text()='Basic Information']
-[INFO ] 2025-03-17 10:21:40.392 [main] Log - UDYAM-MH-19-0044030true
-[INFO ] 2025-03-17 10:21:40.478 [main] Log - M/S 3 IDEA TECHNOLOGY LLPtrue
-[INFO ] 2025-03-17 10:21:40.585 [main] Log - Business Entities Created by Statutetrue
-[INFO ] 2025-03-17 10:21:40.672 [main] Log - ACTIVITIES OF OTHER TRANSPORT AGENCIEStrue
-[INFO ] 2025-03-17 10:21:40.787 [main] Log - 15/09/2015true
-[INFO ] 2025-03-17 10:21:40.884 [main] Log - 23/02/2021true
-[INFO ] 2025-03-17 10:21:40.981 [main] Log - 9876543213true
-[INFO ] 2025-03-17 10:21:42.109 [main] Log - 01234567899true
-[INFO ] 2025-03-17 10:21:42.214 [main] Log - accounts@3idea.intrue
-[INFO ] 2025-03-17 10:21:42.312 [main] Log - CustomerPortal123true
-[INFO ] 2025-03-17 10:21:42.394 [main] Log - 701,TRADE WORLD BUILDINGtrue
-[INFO ] 2025-03-17 10:21:42.494 [main] Log - LOWER PARELtrue
-[INFO ] 2025-03-17 10:21:42.606 [main] Log - KAMALA MILL COMPOUND,LOWER PARELtrue
-[INFO ] 2025-03-17 10:21:42.707 [main] Log - 400013true
-[INFO ] 2025-03-17 10:21:42.792 [main] Log - Indiatrue
-[INFO ] 2025-03-17 10:21:42.877 [main] Log - KERALAtrue
-[INFO ] 2025-03-17 10:21:44.018 [main] Log - KANNURtrue
-[INFO ] 2025-03-17 10:21:44.102 [main] Log - payyanurtrue
-[INFO ] 2025-03-17 10:21:44.168 [main] Log - payyanurtrue
-[INFO ] 2025-03-17 10:21:44.263 [main] Log - Test Data Post Kannurtrue
-[INFO ] 2025-03-17 10:21:45.407 [main] Log - HUYTG5656Atrue
-[INFO ] 2025-03-17 10:21:45.491 [main] Log - 83true
-[INFO ] 2025-03-17 10:21:45.567 [main] Log - L17110MH197true
-[INFO ] 2025-03-17 10:21:45.648 [main] Log - 22AAAAA0000A1Z5true
-[INFO ] 2025-03-17 10:21:45.721 [main] Log - 20.00true
-[INFO ] 2025-03-17 10:21:45.802 [main] Log - 80.00true
-[INFO ] 2025-03-17 10:21:46.949 [main] Log - 12345678912345true
-[INFO ] 2025-03-17 10:21:48.059 [main] Log - D4565true
-[INFO ] 2025-03-17 10:21:48.129 [main] Log - ABCD1234true
-[INFO ] 2025-03-17 10:21:53.512 [main] Log - Pop up displayedBy.xpath: //div[normalize-space()='View Bank Account Details']
-[INFO ] 2025-03-17 10:21:53.586 [main] Log - SBIN0070576true
-[INFO ] 2025-03-17 10:21:53.660 [main] Log - STATE BANK OF INDIAtrue
-[INFO ] 2025-03-17 10:21:53.737 [main] Log - PUTHIYARAtrue
-[INFO ] 2025-03-17 10:21:53.807 [main] Log - SAVINGStrue
-[INFO ] 2025-03-17 10:21:53.883 [main] Log - Singletrue
-[INFO ] 2025-03-17 10:21:53.950 [main] Log - 0110040500000013true
-[INFO ] 2025-03-17 10:21:59.225 [main] Log - Popup ClosedBy.xpath: //span[@class='rzi rzi-times']
-[INFO ] 2025-03-17 10:22:00.305 [main] Log - Total Gendder count displayedBy.xpath: //h6[@class='ms-auto']
-[INFO ] 2025-03-17 10:22:00.383 [main] Log - 1true
-[INFO ] 2025-03-17 10:22:00.464 [main] Log - 1true
-[INFO ] 2025-03-17 10:22:00.553 [main] Log - 0true
-[INFO ] 2025-03-17 10:22:01.597 [main] Log - Terms and Condition checkbox checkedBy.xpath: //span[@class='rz-chkbox-icon rzi rzi-check']
-[INFO ] 2025-03-17 10:22:03.704 [main] Log - Continue Button visibleBy.xpath: //button[normalize-space()='Continue']
-[INFO ] 2025-03-17 10:22:06.480 [main] Log - Logout is done
-[INFO ] 2025-03-17 10:22:07.252 [main] Log - *** Test Suite Security_Plant_Machinary_Module ending ***
+[INFO ] 2025-03-19 16:11:08.391 [main] Log - *** Running test method Security_Plant_Machinary_Module...
+[INFO ] 2025-03-19 16:11:12.503 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-03-19 16:13:08.379 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-03-19 16:13:26.428 [main] Log - Logged in successfullyBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-03-19 16:13:26.432 [main] Log - Login successfully :true
+[INFO ] 2025-03-19 16:13:32.866 [main] Log - Application summary page landedBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-03-19 16:13:33.932 [main] Log - 'Business Information' stage is selected at the top.By.xpath: //button[@class='nav-link active']
+[INFO ] 2025-03-19 16:13:35.088 [main] Log - 'Basic Information' page name is selected in 'Go To Page'.By.xpath: //label[text()='Basic Information']
+[INFO ] 2025-03-19 16:13:40.137 [main] Log - 'Basic Information' page is opened in the window.By.xpath: //h5[text()='Basic Information']
+[INFO ] 2025-03-19 16:13:41.578 [main] Log - UDYAM-MH-19-0044030true
+[INFO ] 2025-03-19 16:13:41.740 [main] Log - M/S 3 IDEA TECHNOLOGY LLPtrue
+[INFO ] 2025-03-19 16:13:41.853 [main] Log - Business Entities Created by Statutetrue
+[INFO ] 2025-03-19 16:13:41.971 [main] Log - ACTIVITIES OF OTHER TRANSPORT AGENCIEStrue
+[INFO ] 2025-03-19 16:13:42.060 [main] Log - 15/09/2015true
+[INFO ] 2025-03-19 16:13:42.133 [main] Log - 23/02/2021true
+[INFO ] 2025-03-19 16:13:42.230 [main] Log - 9876543213true
+[INFO ] 2025-03-19 16:13:43.478 [main] Log - 01234567899true
+[INFO ] 2025-03-19 16:13:43.575 [main] Log - accounts@3idea.intrue
+[INFO ] 2025-03-19 16:13:43.644 [main] Log - CustomerPortal123true
+[INFO ] 2025-03-19 16:13:43.738 [main] Log - 701,TRADE WORLD BUILDINGtrue
+[INFO ] 2025-03-19 16:13:43.841 [main] Log - LOWER PARELtrue
+[INFO ] 2025-03-19 16:13:43.941 [main] Log - KAMALA MILL COMPOUND,LOWER PARELtrue
+[INFO ] 2025-03-19 16:13:44.043 [main] Log - 400013true
+[INFO ] 2025-03-19 16:13:44.142 [main] Log - Indiatrue
+[INFO ] 2025-03-19 16:13:44.245 [main] Log - KERALAtrue
+[INFO ] 2025-03-19 16:13:45.508 [main] Log - KANNURtrue
+[INFO ] 2025-03-19 16:13:45.597 [main] Log - payyanurtrue
+[INFO ] 2025-03-19 16:13:45.666 [main] Log - payyanurtrue
+[INFO ] 2025-03-19 16:13:45.735 [main] Log - Test Data Post Kannurtrue
+[INFO ] 2025-03-19 16:13:46.957 [main] Log - EPMPK6501Otrue
+[INFO ] 2025-03-19 16:13:47.048 [main] Log - 83true
+[INFO ] 2025-03-19 16:13:47.123 [main] Log - L17110MH197true
+[INFO ] 2025-03-19 16:13:47.197 [main] Log - 22AAAAA0000A1Z5true
+[INFO ] 2025-03-19 16:13:47.282 [main] Log - 20.00true
+[INFO ] 2025-03-19 16:13:47.356 [main] Log - 80.00true
+[INFO ] 2025-03-19 16:13:48.538 [main] Log - 12345678912345true
+[INFO ] 2025-03-19 16:13:49.766 [main] Log - D4565true
+[INFO ] 2025-03-19 16:13:49.939 [main] Log - ABCD1234true
+[INFO ] 2025-03-19 16:13:56.170 [main] Log - Pop up displayedBy.xpath: //div[normalize-space()='View Bank Account Details']
+[INFO ] 2025-03-19 16:13:56.330 [main] Log - SBIN0070576true
+[INFO ] 2025-03-19 16:13:56.464 [main] Log - STATE BANK OF INDIAtrue
+[INFO ] 2025-03-19 16:13:56.574 [main] Log - PUTHIYARAtrue
+[INFO ] 2025-03-19 16:13:56.679 [main] Log - SAVINGStrue
+[INFO ] 2025-03-19 16:13:56.792 [main] Log - Singletrue
+[INFO ] 2025-03-19 16:13:56.918 [main] Log - 0110040500000013true
+[INFO ] 2025-03-19 16:14:02.823 [main] Log - Popup ClosedBy.xpath: //span[@class='rzi rzi-times']
+[INFO ] 2025-03-19 16:14:03.952 [main] Log - Total Gendder count displayedBy.xpath: //h6[@class='ms-auto']
+[INFO ] 2025-03-19 16:14:04.030 [main] Log - 1true
+[INFO ] 2025-03-19 16:14:04.127 [main] Log - 1true
+[INFO ] 2025-03-19 16:14:04.199 [main] Log - 0true
+[INFO ] 2025-03-19 16:14:05.261 [main] Log - Terms and Condition checkbox checkedBy.xpath: //span[@class='rz-chkbox-icon rzi rzi-check']
+[INFO ] 2025-03-19 16:14:07.442 [main] Log - Continue Button visibleBy.xpath: //button[normalize-space()='Continue']
+[INFO ] 2025-03-19 16:14:10.469 [main] Log - Logout is done
+[INFO ] 2025-03-19 16:14:11.228 [main] Log - *** Test Suite Security_Plant_Machinary_Module ending ***
