@@ -1,18 +1,9 @@
-[INFO ] 2025-03-18 15:26:56.256 [main] Log - *** Running test method Bank Profile...
-[INFO ] 2025-03-18 15:26:58.219 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-03-18 15:27:01.731 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-03-18 15:27:01.755 [main] Log - Button visible !
-[INFO ] 2025-03-18 15:27:27.641 [main] Log - Click on the Profile buttonBy.xpath: //div[@class='gap-2 d-lg-flex d-none']//a[@class='d-block button round-button bg-secondary-green-80 link-dark text-decoration-none dropdown-toggle']
-[INFO ] 2025-03-18 15:27:33.997 [main] Log - Click on the Bank ProfileBy.xpath: //ul[@class='dropdown-menu text-small user-dropdown mt-4 show']//a[text()='Bank Profile']
-[INFO ] 2025-03-18 15:27:39.497 [main] Log - SBIN0000007
-[INFO ] 2025-03-18 15:27:43.712 [main] Log - Click on the Bank NameBy.xpath: //label[@title='Bank Name']
-[INFO ] 2025-03-18 15:27:46.837 [main] Log - STATE BANK OF INDIAtrue
-[INFO ] 2025-03-18 15:27:51.024 [main] Log - Click on the Branch NameBy.xpath: //label[@title='Branch Name']
-[INFO ] 2025-03-18 15:27:53.132 [main] Log - ANGULtrue
-[INFO ] 2025-03-18 15:27:55.272 [main] Log - Silpa
-[INFO ] 2025-03-18 15:27:57.482 [main] Log - 555555555555555
-[INFO ] 2025-03-18 15:27:59.671 [main] Log - 555555555555555
-[INFO ] 2025-03-18 15:28:01.842 [main] Log - path is :D:\KSIDC\AI_Beacon_KSIDC_CustomerPortal
-[INFO ] 2025-03-18 15:28:14.538 [main] Log - Click on the SaveBy.xpath: //button[@type='submit']
-[INFO ] 2025-03-18 15:28:20.079 [main] Log - Logout is done
-[INFO ] 2025-03-18 15:28:20.220 [main] Log - *** Test Suite Bank Profile ending ***
+[INFO ] 2025-04-01 12:25:28.961 [main] Log - *** Running test method Submit Application...
+[INFO ] 2025-04-01 12:25:32.914 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-04-01 12:25:44.982 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-04-01 12:25:44.988 [main] Log - Button visible !
+[INFO ] 2025-04-01 12:26:09.929 [main] Log - Navigate to Collateral SecurityBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-04-01 12:26:21.175 [main] Log - path is :D:\KSIDC\AI_Beacon_KSIDC_CustomerPortal
+[INFO ] 2025-04-01 12:26:55.424 [main] Log - OTP ENteredBy.xpath: //input[@name='MobileOTP']
+[INFO ] 2025-04-01 12:27:03.671 [main] Log - Logout is done
+[INFO ] 2025-04-01 12:27:03.855 [main] Log - *** Test Suite Submit Application ending ***
