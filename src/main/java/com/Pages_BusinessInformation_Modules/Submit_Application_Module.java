@@ -230,7 +230,9 @@ public class Submit_Application_Module extends Base_Class{
 			
 			//TC014
 			public boolean VisibilityOfVerifyCodeButton() {
+				
 			    try {
+			    	Thread.sleep(1000);
 			        WebDriverWait wait = new WebDriverWait(driver, 30); // Wait up to 10 seconds
 			        WebElement icon = wait.until(ExpectedConditions.visibilityOfElementLocated(SubmitApplication.VerifyCodeButton));
 			        return icon.isDisplayed();

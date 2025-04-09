@@ -1,9 +1,4 @@
-[INFO ] 2025-04-01 12:25:28.961 [main] Log - *** Running test method Submit Application...
-[INFO ] 2025-04-01 12:25:32.914 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-04-01 12:25:44.982 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-04-01 12:25:44.988 [main] Log - Button visible !
-[INFO ] 2025-04-01 12:26:09.929 [main] Log - Navigate to Collateral SecurityBy.xpath: //button[@class='button primary btn-medium ms-auto']
-[INFO ] 2025-04-01 12:26:21.175 [main] Log - path is :D:\KSIDC\AI_Beacon_KSIDC_CustomerPortal
-[INFO ] 2025-04-01 12:26:55.424 [main] Log - OTP ENteredBy.xpath: //input[@name='MobileOTP']
-[INFO ] 2025-04-01 12:27:03.671 [main] Log - Logout is done
-[INFO ] 2025-04-01 12:27:03.855 [main] Log - *** Test Suite Submit Application ending ***
+[INFO ] 2025-04-09 09:53:42.942 [main] Log - *** Running test method Submit Application...
+[INFO ] 2025-04-09 09:53:45.258 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-04-09 09:54:56.851 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-04-09 09:54:56.857 [main] Log - Button visible !

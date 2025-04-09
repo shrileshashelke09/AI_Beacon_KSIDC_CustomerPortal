@@ -28,7 +28,7 @@ public class Submit_Application {
 	
 	public By Submit = By.xpath("//input[@class='button primary btn-medium']");
 	
-	public By VerificationCodeField = By.xpath("//input[@name='MobileOTP']");
+	public By VerificationCodeField = By.xpath("//input[@id='hLrl3kZmGU']");
 	
 	public By VerifyCodeButton = By.xpath("//button[@class=' w-100 button primary btn-medium']");
 	
