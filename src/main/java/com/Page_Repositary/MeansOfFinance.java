@@ -20,6 +20,8 @@ public class MeansOfFinance {
 	
 	public By ScrolltolinePlantAndMachinery = By.xpath("//a[normalize-space()='4.2 Plant And Machinery']");
 	
+	public By ProjectCostandMeansofFinance = By.xpath("//div[@class='step-context']//span[text()='Project Cost and Means of finance Finalization']");
+	
 	public By Scrolltostep4 = By.xpath("//a[normalize-space()='4.12 Means Of Finance']");
 	
 	public By ShareCapital = By.xpath("//input[@placeholder='Share Capital (₹)']");

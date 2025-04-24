@@ -28,6 +28,8 @@ public class Security_Vehicle {
 	
 	public By Continue = By.xpath("//button[@class='button secondary-green btn-medium d-flex align-items-center justify-content-center  ']");
 	
+	public By Security = By.xpath("//span[text()='Security']");
+	
 	
 
 }

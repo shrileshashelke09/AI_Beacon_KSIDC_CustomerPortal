@@ -45,7 +45,10 @@ public class MeansOfFinance_Module extends Base_Class{
 			
 			ScrollUntilElementVisible(Meansoffinance.ScrolltoProjectCost);
 			Thread.sleep(1000);
+			click(Meansoffinance.ProjectCostandMeansofFinance);
+			Thread.sleep(1000);
 			ScrollUntilElementVisible(Meansoffinance.ScrolltolinePlantAndMachinery);
+			
 			Log.info("Navigate to project cost page" + Meansoffinance.ContinueButton);
 			String TotalAmountProjectCost = driver.findElement(By.xpath("//span[@class='text-end pl-3']")).getText();
 			System.out.println("Project Cost Amount ::"+TotalAmountProjectCost);

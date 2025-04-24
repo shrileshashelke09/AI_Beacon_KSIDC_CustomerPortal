@@ -1,4 +1,16 @@
-[INFO ] 2025-04-09 09:53:42.942 [main] Log - *** Running test method Submit Application...
-[INFO ] 2025-04-09 09:53:45.258 [main] Log - Driver has initialized successfully for Chromebrowser
-[INFO ] 2025-04-09 09:54:56.851 [main] Log - Title is displayed : KSIDC
-[INFO ] 2025-04-09 09:54:56.857 [main] Log - Button visible !
+[INFO ] 2025-04-24 12:52:54.893 [main] Log - *** Running test method Means of module...
+[INFO ] 2025-04-24 12:52:57.590 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-04-24 12:53:05.100 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-04-24 12:53:05.114 [main] Log - Button visible !
+[INFO ] 2025-04-24 12:53:51.142 [main] Log - Navigate to project cost pageBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-04-24 12:54:02.664 [main] Log - 1
+[INFO ] 2025-04-24 12:54:03.851 [main] Log - 1
+[INFO ] 2025-04-24 12:54:05.055 [main] Log - 1
+[INFO ] 2025-04-24 12:54:06.215 [main] Log - 1
+[INFO ] 2025-04-24 12:54:07.450 [main] Log - 1
+[INFO ] 2025-04-24 12:54:08.621 [main] Log - Test data
+[INFO ] 2025-04-24 12:54:08.679 [main] Log - Button visible !
+[INFO ] 2025-04-24 12:54:20.550 [main] Log - Click on the Save as draftBy.xpath: //button[@class='button primary btn-medium d-flex align-items-center justify-content-center  ']
+[INFO ] 2025-04-24 12:54:26.792 [main] Log - Click on the Save and proceedBy.xpath: //button[@class='button primary btn-medium d-flex align-items-center justify-content-center']
+[INFO ] 2025-04-24 12:54:31.244 [main] Log - Logout is done
+[INFO ] 2025-04-24 12:54:31.369 [main] Log - *** Test Suite Means of module ending ***
