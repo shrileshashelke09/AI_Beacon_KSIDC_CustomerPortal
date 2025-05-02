@@ -32,5 +32,5 @@ public class Submit_Application {
 	
 	public By VerifyCodeButton = By.xpath("//button[@class=' w-100 button primary btn-medium']");
 	
-	 //test
+	 
 }
