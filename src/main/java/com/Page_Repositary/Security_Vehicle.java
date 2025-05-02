@@ -12,6 +12,9 @@ public class Security_Vehicle {
 	
 	public By Utilities = By.xpath("//a[normalize-space()='5.5 Utilities']");
 	
+	public By Security = By.xpath("//span[text()='Security']");
+	
+	
 	public By Vehicle = By.xpath("//a[normalize-space()='5.7 Vehicles']");
 	
 	public By ListOfVehicle = By.xpath("//a[@class='chip-text-wrapper text-decoration-none']");

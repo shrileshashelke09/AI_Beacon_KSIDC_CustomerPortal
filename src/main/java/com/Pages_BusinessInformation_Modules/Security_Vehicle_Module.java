@@ -44,8 +44,10 @@ public class Security_Vehicle_Module extends Base_Class{
 				//ScrollUntilElementVisible(Meansoffinanceobj.ScrolltoProjectCost);
 				ScrollUntilElementVisible(securityvehicle.ScrolltoBusinessfinance);
 				Thread.sleep(1000);
-				ScrollUntilElementVisible(securityvehicle.Utilities);
-				Thread.sleep(1000);
+				//ScrollUntilElementVisible(securityvehicle.Utilities);
+				//Thread.sleep(1000);
+				click(securityvehicle.Security);
+				Thread.sleep(2000);
 				click(securityvehicle.Vehicle);
 				Thread.sleep(2000);
 				return true;

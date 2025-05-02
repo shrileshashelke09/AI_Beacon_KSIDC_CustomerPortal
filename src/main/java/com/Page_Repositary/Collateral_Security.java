@@ -8,7 +8,7 @@ public class Collateral_Security {
 
 	public By ScrolltoBusinessfinance = By.xpath("//span[text()='Business Finance']");
 
-	public By Security = By.xpath("(//span[text()='Security'])[1]");
+	public By Security = By.xpath("//span[text()='Security']");
 	
 	public By Utilities = By.xpath("//a[normalize-space()='5.5 Utilities']");
 	

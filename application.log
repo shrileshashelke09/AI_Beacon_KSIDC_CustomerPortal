@@ -1,0 +1,7 @@
+[INFO ] 2025-04-30 12:48:12.341 [main] Log - *** Running test method SecurityVehicleModule...
+[INFO ] 2025-04-30 12:48:14.363 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-04-30 12:49:24.270 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-04-30 12:49:24.286 [main] Log - Button visible !
+[INFO ] 2025-04-30 12:49:45.828 [main] Log - Navigate to Security VehicleBy.xpath: //button[@class='button primary btn-medium ms-auto']
+[INFO ] 2025-05-02 09:47:40.241 [main] Log - Logout is done
+[INFO ] 2025-05-02 09:47:40.385 [main] Log - *** Test Suite SecurityVehicleModule ending ***
