@@ -24,4 +24,7 @@
 [ERROR] 2025-04-09 10:05:01.982 [main] Log - Expected condition failed: waiting for element to be clickable: By.xpath: (//button[@class='button secondary btn-medium'])[2] (tried for 90 second(s) with 500 milliseconds interval)
 [INFO ] 2025-04-09 10:05:03.107 [main] Log - Logout is done
 [INFO ] 2025-04-09 10:05:03.447 [main] Log - *** Test Suite Submit Application ending ***
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
