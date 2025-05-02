@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [INFO ] 2025-04-24 12:52:54.893 [main] Log - *** Running test method Means of module...
 [INFO ] 2025-04-24 12:52:57.590 [main] Log - Driver has initialized successfully for Chromebrowser
 [INFO ] 2025-04-24 12:53:05.100 [main] Log - Title is displayed : KSIDC
@@ -14,3 +15,13 @@
 [INFO ] 2025-04-24 12:54:26.792 [main] Log - Click on the Save and proceedBy.xpath: //button[@class='button primary btn-medium d-flex align-items-center justify-content-center']
 [INFO ] 2025-04-24 12:54:31.244 [main] Log - Logout is done
 [INFO ] 2025-04-24 12:54:31.369 [main] Log - *** Test Suite Means of module ending ***
+=======
+[INFO ] 2025-04-09 09:53:42.942 [main] Log - *** Running test method Submit Application...
+[INFO ] 2025-04-09 09:53:45.258 [main] Log - Driver has initialized successfully for Chromebrowser
+[INFO ] 2025-04-09 09:54:56.851 [main] Log - Title is displayed : KSIDC
+[INFO ] 2025-04-09 09:54:56.857 [main] Log - Button visible !
+[ERROR] 2025-04-09 10:05:01.982 [main] Log - *** Test execution Submit Application failed...
+[ERROR] 2025-04-09 10:05:01.982 [main] Log - Expected condition failed: waiting for element to be clickable: By.xpath: (//button[@class='button secondary btn-medium'])[2] (tried for 90 second(s) with 500 milliseconds interval)
+[INFO ] 2025-04-09 10:05:03.107 [main] Log - Logout is done
+[INFO ] 2025-04-09 10:05:03.447 [main] Log - *** Test Suite Submit Application ending ***
+>>>>>>> Stashed changes
